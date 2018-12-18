@@ -9,29 +9,32 @@
 # Title & Description
 # ------------------------------------------------------------------------------
 
-title: Quire Starter
-subtitle: Multiformat Publishing
+title: Corpus Vasorum Antiquorum, Fascicule 10
+subtitle: Athenian Red-Figured Column and Volute Kraters
 reading_line:
-short_title:
+short_title: CVA 10
 
 description:
   one_line:
   full: >-
-    Quire is a digital publishing framework built on top of the Hugo static site generator. Generate Web, PDF, and print books (with Epub coming soon) from a single set of text files.
+    Cataloging some hundred thousand examples of ancient Greek painted pottery held in collections around the world, the authoritative *Corpus Vasorum Antiquorum* (Corpus of Ancient Vases) is the oldest research project of the Union Académique Internationale. Nearly four hundred volumes have been published since the first fascicule appeared in 1922.
+
+    This new fascicule of the CVA—the tenth issued by the J. Paul Getty Museum and the first ever to be published open access—presents a selection of Attic red-figure column- and volute-kraters ranging from 520 to 510 B.C. through the early fourth century B.C. Among the works included are a significant dinoid volute-krater and a volute-krater with the Labors of Herakles that is attributed to the Kleophrades Painter.
+
 
 # ------------------------------------------------------------------------------
 # Publication Details
 # ------------------------------------------------------------------------------
 
-pub_date:
+pub_date: 2018-08-01
 language: en
 pub_type: book # book | journal-periodical | other
 
 identifier:
-  isbn:
+  isbn: 9781606066034
 
 publisher:
-  - name: J. Paul Getty Trust
+  - name: J. Paul Getty Museum
     location: Los Angeles
     url: http://www.getty.edu
     logo: logo-getty.png
@@ -43,34 +46,17 @@ publisher:
 contributor_as_it_appears:
 
 contributor:
-  - id: rvalland
+  - id: dtsiafakis
     type: primary
-    first_name: Rose
-    last_name: Valland
-    title: Chair
-    affiliation: Commission for the Protection of Works of Art
-    bio: "Rose Antonia Maria Valland (1 November 1898 – 18 September 1980) was a French art historian, member of the French Resistance, captain in the French military, and one of the most decorated women in French history. She secretly recorded details of the Nazi plundering of National French and private Jewish-owned art from France; and, working with the French Resistance, she saved thousands of works of art."
-    url: https://en.wikipedia.org/wiki/Rose_Valland
-    pic: contributors/rose-valland.jpg
-  - id: ddiderot
-    type: primary
-    first_name: Denis
-    last_name: Diderot
-    title: Chief Editor
-    affiliation: Encyclopédie
-    bio: "Denis Diderot (5 October 1713 – 31 July 1784) was a French philosopher, art critic, and writer. He was a prominent figure during the Enlightenment and is best known for serving as co-founder, chief editor, and contributor to the Encyclopédie along with Jean le Rond d’Alembert."
-    url: https://en.wikipedia.org/wiki/Denis_Diderot
-    pic: contributors/denis-diderot.jpg
-  - id: ipikwik
-    first_name: Ida
-    last_name: Pikwik
+    first_name: Despoina
+    last_name: Tsiafakis
 
 
 # ------------------------------------------------------------------------------
 # Copright & License
 # ------------------------------------------------------------------------------
 
-copyright: © 2017 J. Paul Getty Trust
+copyright: © 2018 J. Paul Getty Trust
 
 license:
   name: Creative Commons Attribution 4.0 International License
@@ -111,33 +97,18 @@ resource_link:
 # ------------------------------------------------------------------------------
 
 subject:
-  - type: keyword
-    name: lemons, oranges, marmalade
-  - type: bisac
-    name: ART HISTORY / English / Jams
-    identifer: ART0009210
-  - type: getty
-    name: Paul Cézanne
-    identifier: "http://vocab.getty.edu/ulan/500004793"
-  - type: keyword
-    name: still life
-  - type: getty
-    name: Hampshire
-    identifier: "http://vocab.getty.edu/tgn/7008139"
-  - type: getty
-    name: oil pastels
-    identifier: "http://vocab.getty.edu/aat/300230810"
-  - type: getty
-    name: Still Life with Blue Pot
-    identifier: "http://www.getty.edu/cona/CONAFullSubject.aspx?subid=700002042"
+  - type:
+    name:
+    identifer:
 
 # ------------------------------------------------------------------------------
 # Revision History
 # ------------------------------------------------------------------------------
 
 revision_history:
-  - date:
+  - date: 2018-07-01
     summary:
+      - First edition
 
 repository_url:
 
@@ -145,4 +116,4 @@ repository_url:
 # Promo Image
 # ------------------------------------------------------------------------------
 
-promo_image: promo_image.png
+promo_image:

@@ -9,7 +9,7 @@
 
 baseURL: ""
 
-title: "Quire Starter"
+title: "Corpus Vasorum Antiquorum, Fascicule 10"
 languageCode: "en-us"
 theme: "quire-starter-theme"
 publishDir: site
