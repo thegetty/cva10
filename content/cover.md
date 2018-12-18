@@ -6,4 +6,6 @@ type: cover
 slug: .
 ---
 
-French art in the popular imagination is often characterized by the dreamy, dauby landscapes of the Impressionists and the bolder, more vibrant work of 20th-century greats living *la vie bohème* in Paris. But still more of the genres that we associate with the art historical canon were pioneered in France. Pinpointing the very beginning of “French” art may prove an impossible task, but the region has been rich in creative expression since cave paintings were rendered at Lascaux an estimated 17,300 years ago, making them some of the earliest artistic traces in human history.
+Cataloging some hundred thousand examples of ancient Greek painted pottery held in collections around the world, the authoritative Corpus Vasorum Antiquorum (Corpus of Ancient Vases) is the oldest research project of the Union Académique Internationale. Nearly four hundred volumes have been published since the first fascicule appeared in 1922.
+
+This new fascicule of the CVA—the tenth issued by the J. Paul Getty Museum and the first ever to be published open access—presents a selection of Attic redfigured column and volute kraters ranging from 520 to 510 BCE through the early fourth century CE. Among the works included are a significant dinoid volute krater and a volute krater with the Labors of Herakles that is attributed to the Kleophrades Painter.
