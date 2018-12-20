@@ -1,0 +1,22 @@
+{{/*
+
+  This custom shortcode is based on the q-cite shortcode, but simply displays
+  the text of abbreviated items on hover.
+
+  {{< q-abbr "*BAPD*" >}}
+
+*/}}
+
+{{- $abbr := .Get 0 -}}
+
+{{- range $.Site.Data.abbreviations.listing -}}
+    {{- if eq .abbreviation $abbr -}}
+    {{- $.Scratch.Add "citation" .citation -}}
+    {{- end -}}
+{{- end -}}
+
+{{- if ($.Scratch.Get "citation") -}}
+  <span class="quire-citation"><span class="visually-hidden">Abbreviation: </span>{{- markdownify $abbr -}}<span class="quire-citation__content">{{- markdownify ($.Scratch.Get "citation") -}}</span></span>
+{{- else -}}
+  <strong style="color: red;">MISSING ABBREVIATION: {{ markdownify $abbr -}}</strong>
+{{- end -}}
