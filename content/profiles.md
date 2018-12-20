@@ -4,4 +4,4 @@ type: page
 weight: 300
 ---
 
-TK
+{{< q-figure id="86AE205-profile" >}}
