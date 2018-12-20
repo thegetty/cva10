@@ -1,0 +1,33 @@
+{{/*
+  Adapted from the single page default template. Adds table of abbreviations,
+  generated from the abbreviations.yml file. Sorting is based on the order
+  in the YAML file.
+*/}}
+
+{{ define "main" }}
+
+<div class="{{ partial "page-class.html" . }}" id="main" role="main">
+  {{ partial "page-header.html" . }}
+
+
+  <section class="section quire-page__content" id="content">
+    <div class="container">
+      <div class="content">
+        {{ with .Content }}
+        {{ . }}
+        <hr />
+        {{ end }}
+        <table>
+          <tbody>
+        {{- range $.Site.Data.abbreviations.listing -}}
+          <tr><td>{{ .abbreviation | markdownify }}</td><td>{{ .citation | markdownify }}</td></tr>
+        {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+</div>
+{{ end }}
+
