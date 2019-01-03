@@ -15,3 +15,74 @@ object_list:
     subject: akontist, athlete, bridle, deer, dog, goat, *halteres*, himation, horse, javelin, jumper, *kentron*, panther, pick, sponge, staff, stick, strigil, trainer
     figure:
       - src: 86AE205.jpg
+
+  - id: 2
+    plates: 521–23
+    accession_number: 73.AE.135
+    bareiss_number:
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Column-
+    attribution: Myson
+    attributor: D. von Bothmer
+    date: -490 to -480
+    subject: athlete, dancing girl, *diskobolos*, diskos, *krotalon*, owl (on diskos), wreath
+    figure:
+      - src: 73AE135.jpg
+
+  - id: 3
+    plates: 524, 1–2
+    accession_number: 86.AE.211.1 and 86.AE.211.2
+    bareiss_number: 307 a and 307 b
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Column-
+    attribution: Near the Eucharides Painter
+    attributor: J. R. Guy
+    date: -480
+    subject: breast bands (on horses), chariot, charioteer, chiton, Dionysos, feline (unspecified), himation, horse, *kentron*, *quadriga*
+    figure:
+      - src: 86AE2111.jpg
+      - src: 86AE2112.jpg
+
+  - id: 4
+    plates: 524, 3–4
+    accession_number: 86.AE.207
+    bareiss_number: 253
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Column-
+    attribution: Dokimasia Painter
+    attributor: J. M. Padgett
+    date: -470 to -460
+    subject: chiton, himation, Poseidon, scepter, trident, wreath, Zeus
+    figure:
+      - src: 86AE207.jpg
+
+  - id: 5
+    plates: 525–27
+    accession_number: 86.AE.206
+    bareiss_number: 31
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Column-
+    attribution: Tyszkiewicz Painter
+    attributor: J. D. Beazley
+    date: -480
+    subject: animal skin, chiton, fillet, himation, *krobylos*, maenad, satyr, scepter, thyrsos, wreath, Zeus
+    figure:
+      - src: 86AE206.jpg
+
+  - id: 6
+    plates: 528–30
+    accession_number: 83.AE.252
+    bareiss_number:
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Column-
+    attribution: Pan Painter
+    attributor: J. Frel
+    date: -480 to -470
+    subject: altar, blood, dinos, *epipyron*, fire/flames, herm, himation, *kanoun*, kylix, offerings, pillar, staff
+    figure:
+      - src: 83AE252.jpg
