@@ -162,4 +162,190 @@ object_list:
       - src: 78AE38058.jpg
       - src: 78AE38062.jpg
       - src: 78AE38067.jpg
-      
+
+  - id: 12
+    plates: 541–43
+    accession_number: 81.AE.161
+    bareiss_number:
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Column-
+    attribution: Florence Painter or Workshop
+    attributor: J. M. Padgett
+    date: -450
+    subject: boar, chiton, himation, lion, maenad, mantle, satyr, strigil, thyrsos
+    figure:
+      - src: 81AE161.jpg
+
+  - id: 13
+    plates: 544–46
+    accession_number: 82.AE.143
+    bareiss_number:
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Column-
+    attribution: Painter of London E 489
+    attributor: J. R. Guy
+    date: -460 to -450
+    subject: cloak, column (Ionic), fillet, himation, Oidipous, *petasos*, *sakkos*, spear, Sphinx, staff, stick
+    figure:
+      - src: 82AE143.jpg
+
+  - id: 14
+    plates: 547, 1–2
+    accession_number: 86.AE.204
+    bareiss_number: 312
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Column-
+    attribution: Unattributed
+    attributor:
+    date: -450 to -425
+    subject: charioteer, horse, peplos, reins
+    figure:
+      - src: 86AE204.jpg
+
+  - id: 15
+    plates: 547, 3–4
+    accession_number: 86.AE.209.1 and 86.AE.209.2
+    bareiss_number:
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Column-
+    attribution: Unattributed
+    attributor:
+    date: -475 to -450
+    subject:
+    figure:
+      - src: 86AE2091.jpg
+      - src: 86AE2092.jpg
+
+  - id: 16
+    plates: 547, 5–6
+    accession_number: 79.AE.95.12 and 79.AE.95.13
+    bareiss_number:
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Column-
+    attribution: Unattributed
+    attributor:
+    date: -450
+    subject:
+    figure:
+      - src: 79AE9512.jpg
+      - src: 79AE9513.jpg
+
+  - id: 17
+    plates: 548, 1–2
+    accession_number: 81.AE.188.7
+    bareiss_number:
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Volute-
+    attribution: Euthymides or early Kleophrades Painter
+    attributor: J. R. Guy and J. Gaunt
+    date: -520 to -510
+    subject: drinking horn, *krotalon*, maenad, satyr, wreath
+    figure:
+      - src: 81AE1887.jpg
+
+  - id: 18
+    plates: 548, 3–4
+    accession_number: 80.AE.138.13
+    bareiss_number:
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Volute-
+    attribution: Euthymides
+    attributor: J. R. Guy and M. Robertson
+    date: -500
+    subject: helmet, warrior
+    figure:
+      - src: 80AE13813.jpg
+
+  - id: 19
+    plates: 549–57
+    accession_number: 77.AE.11, 86.AE.587, 97.AE.58.2, and 98.AE.82.1–12
+    bareiss_number:
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Volute-
+    attribution: Kleophrades Painter
+    attributor: J. D. Beazley
+    date: -490 to -480
+    subject: Ajax (Telamonian), Amazons, animal skin, apples of the Hesperides, archer, arrow, Athena, Atlas, blood, bow, branch, bull (shield device), centaur (shield device), Cheiron, chiton, *chitoniskos*, club, corselet, Doris, Eurytion, fillet, fish, Geryon, *gorytus*, greaves, helmet, Herakles, himation, hoplite, horse, Hydra (Lernean), inscription, Iolaos, *kodon*, *krobylos*, Ladon, lion (shield device), Nereid, Nereus, Orthros, Pegasos (shield device), Peleus, *pelta*, quiver, *salpinx*, shield, snake, spear, staff, sword, *thakos*, Thetis, torch, tree, *triskeles* (shield device), trumpeter, warrior
+    figure:
+      - src: 77AE11.jpg
+      - src: 86AE587.jpg
+      - src: 97AE582.jpg
+      - src: 98AE821-12.jpg
+
+  - id: 20
+    plates: 558, 1–2
+    accession_number: 86.AE.202
+    bareiss_number: 91
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Volute-
+    attribution: Kleophrades Painter
+    attributor: D. Tsiafakis
+    date: -490 to -480
+    subject: chiton, Ilioupersis, mantle, tripod
+    figure:
+      - src: 86AE202.jpg
+
+  - id: 21
+    plates: 558, 3–4
+    accession_number: 86.AE.203
+    bareiss_number: 329
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Volute-
+    attribution: Triptolemos Painter
+    attributor: J. R. Guy
+    date: -480
+    subject: chiton, cushion, Dionysos, himation, kantharos, phiale, symposion, vine, wreath
+    figure:
+      - src: 86AE203.jpg
+
+  - id: 22
+    plates: 558, 5–6
+    accession_number: 76.AE.131.10
+    bareiss_number:
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Volute-
+    attribution: Unattributed
+    attributor:
+    date: -500 to -400
+    subject: chariot, wheel
+    figure:
+      - src: 76AE13110.jpg
+
+  - id: 23
+    plates: 559–63
+    accession_number: 79.AE.198
+    bareiss_number:
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Volute-
+    attribution: Polygnotos
+    attributor: J. R. Guy
+    date: -440 to -435
+    subject: Ajax (Locrian), amphora, animal skin, Athena, attendant (female), belt, chest, chiton, diadem, earring, feline (unspecified), fillet, headband, helmet, himation, Ilioupersis, inscription, kantharos, Kassandra, *krobylos*, maenad, Menelaos, Palladion, peplos, priestess, satyr, shield, spear, star (shield device), statue, stick, thiasos, thyrsos, torch, wineskin
+    figure:
+      - src: 79AE198.jpg
+
+  - id: 24
+    plates: 564–73
+    accession_number: 87.AE.93
+    bareiss_number:
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Volute-
+    attribution: M1 and M2 (formerly known as the Meleager Painter)
+    attributor: K. Kathariou
+    date: -400 to -390
+    subject: Adonis, animal skin, Aphrodite, Arimasp, attendant (female), aulos, baldric, banqueter, bed/couch/*kline*, blanket, bracelet, bull, chest, chignon, chiton, chlamys, club, cushion, deer, diadem, Dionysos, dog, earring, *ependytes*, Eros, fillet, food, footstool, fruit, grapevine, griffin, headband, hare, himation, kantharos, *keras*, komast/reveler, *kottabos*, *lagobolon*, lyre, maenad, mantle, mirror, necklace, peplos, Persephone, *pilos* (conical hat), plate, satyr, shield, Silenos, spear, stemless drinking cup, string of beads, sword, symposion, table, Theseus, thyrsos, torch, tree, *tympanon*
+    figure:
+      - src: 87AE93.jpg
