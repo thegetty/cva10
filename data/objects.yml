@@ -86,3 +86,80 @@ object_list:
     subject: altar, blood, dinos, *epipyron*, fire/flames, herm, himation, *kanoun*, kylix, offerings, pillar, staff
     figure:
       - src: 83AE252.jpg
+
+  - id: 7
+    plates: 531–32, 533, 1–3
+    accession_number: 83.AE.255
+    bareiss_number:
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Column-
+    attribution: Geras Painter
+    attributor: J. M. Padgett
+    date: -480 to -470
+    subject: chiton, herm, himation, *kanoun*, *sakkos*
+    figure:
+      - src: 83AE255.jpg
+
+  - id: 8
+    plates: 533, 4–5
+    accession_number: 83.AE.284.201
+    bareiss_number:
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Column-
+    attribution: Triptolemos Painter
+    attributor: J. R. Guy
+    date: -470
+    subject:
+    figure:
+      - src: 83AE284201.jpg
+
+  - id: 9
+    plates: 534–36
+    accession_number: 81.AE.37
+    bareiss_number:
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Column-
+    attribution: Harrow Painter
+    attributor: J. D. Beazley
+    date: -480
+    subject: altar, fillet, herm, himation, mantle, stick
+    figure:
+      - src: 81AE37.jpg
+
+  - id: 10
+    plates: 537
+    accession_number: 86.AE.208 and 86.AE.210
+    bareiss_number: 379
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Column-
+    attribution: Group of Undetermined Mannerists
+    attributor: D. von Bothmer
+    date: -480
+    subject: chiton, Dionysos, flower, grapes, maenad, necklace, offerings, *popana*, table
+    figure:
+      - src: 86AE208.jpg
+      - src: 86AE210.jpg
+
+  - id: 11
+    plates: 538–40
+    accession_number: 78.AE.380.1, 78.AE.380.25, 78.AE.380.36, 78.AE.380.58, 78.AE.380.62, and 78.AE.380.67
+    bareiss_number:
+    fabric: Athenian
+    technique: Red-figure
+    shape_name: Krater, Column-
+    attribution: Agrigento Painter
+    attributor: J. R. Guy
+    date: -460
+    subject: fillet, flower, inscription, mantle, staff, stick, torch, wreath
+    figure:
+      - src: 78AE3801.jpg
+      - src: 78AE38025.jpg
+      - src: 78AE38036.jpg
+      - src: 78AE38058.jpg
+      - src: 78AE38062.jpg
+      - src: 78AE38067.jpg
+      
