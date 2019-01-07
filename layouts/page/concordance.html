@@ -1,0 +1,35 @@
+{{/*
+  Adapted from the single page default template. Adds concordance table,
+  generated from the objects.yml file.
+*/}}
+
+{{ define "main" }}
+
+<div class="{{ partial "page-class.html" . }}" id="main" role="main">
+  {{ partial "page-header.html" . }}
+
+
+  <section class="section quire-page__content" id="content">
+    <div class="container">
+      <div class="content">
+        {{ with .Content }}
+        {{ . }}
+        <hr />
+        {{ end }}
+        <table>
+          <thead>
+            <tr><th>Accession number</th><th>Bareiss number</th><th>CVA number</th></tr>
+          </thead>
+          <tbody>
+        {{- range $.Site.Data.objects.object_list -}}
+          <tr><td>{{ .accession_number }}</td><td>{{ .bareiss_number }}</td><td>{{ .id }}</td></tr>
+        {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+</div>
+{{ end }}
+
