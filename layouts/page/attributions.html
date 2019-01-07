@@ -1,0 +1,69 @@
+{{/*
+  Adapted from the single page default template. Adds an attributions table,
+  generated from the objects.yml file.
+
+  The code below first ranges across the objects.yml file and for each entry
+  grabs the attribution, id, plate and accession number and adds them to a
+  Scratch map, keyed to the attribution name and range index value. At the
+  same time, a number is added to a Scratch variable for each name, if the
+  name is used more than once, the number adds up. This allows the table logic
+  to know when a single name is associated with more than one row.
+
+  For the table, as each row is built from Scratch map range, the attribution
+  name <td> is left out after the first instance of the name's occurrance. The
+  Scratch variable number created above is used as a rowspan value.
+
+*/}}
+
+{{ define "main" }}
+
+{{- range $index, $element := $.Site.Data.objects.object_list -}}
+
+  {{- $d := dict "attribution" .attribution "id" .id "plates" .plates "accession_number" .accession_number -}}
+
+  {{- $name := lower (replaceRE ",|\\(|\\)|\\s" "" .attribution) -}}
+  {{- $val := printf "%s-%s" $name (string (add $index 1)) -}}
+  {{- $.Page.Scratch.SetInMap "attributions" $val $d -}}
+
+  {{- $.Page.Scratch.Add $name 1 -}}
+
+{{- end -}}
+
+
+<div class="{{ partial "page-class.html" . }}" id="main" role="main">
+  {{ partial "page-header.html" . }}
+
+  <section class="section quire-page__content" id="content">
+    <div class="container">
+      <div class="content">
+        {{- with .Content -}}
+        {{ . }}
+        <hr />
+        {{- end -}}
+        <table>
+          <thead>
+            <tr><th>Attribution</th><th>CVA number</th><th>Plate number</th><th>Accession number</th></tr>
+          </thead>
+          <tbody>
+            {{- range ($.Page.Scratch.Get "attributions") -}}
+            <tr>
+              {{ $name := lower (replaceRE ",|\\(|\\)|\\s" "" .attribution) -}}
+              {{- if in ($.Page.Scratch.Get "names") .attribution -}}
+              {{- else -}}
+              <td rowspan="{{ $.Page.Scratch.Get $name }}">{{ .attribution }}</td>
+              {{- end }}
+              <td>{{ .id }}</td>
+              <td>{{ .plates }}</td>
+              <td>{{ .accession_number }}</td>
+            </tr>
+            {{- $.Page.Scratch.Add "names" (slice .attribution) -}}
+            {{- end -}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+</div>
+{{ end }}
+
