@@ -1,8 +1,4 @@
----
-title: Preface
-type: page
-weight: 5
----
+**PREFACE**
 
 This *CVA* fascicule presents a selection of Attic red-figure kraters from the collection of the J. Paul Getty Museum. The volume contains the column- and volute-kraters, which range from 520/510 B.C. to the early fourth century B.C.; many are works of known potters and painters. Their presentation accords, in general, with the chronological sequence established by Sir John Beazley. The descriptions follow the format provided by the members of the USA *CVA* Committee, and attributions made by other scholars are credited under the heading ATTRIBUTION AND DATE. These vases have come to the Museum from a variety of sources, mostly from the art market. A number were part of the collection of Walter and Molly Bareiss. The origin of the vases, along with their known histories, is provided under the heading PROVENANCE. The last version of the complete manuscript was delivered in late 2013. Since then, some new bibliographic references have appeared and are included in the entries. Additions to the bibliography were made until 2015, with a few more in 2016 and 2017.
 
