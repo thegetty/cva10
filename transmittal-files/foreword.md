@@ -1,9 +1,3 @@
----
-title: Foreword
-type: page
-weight: 4
----
-
 **FOREWORD**
 
 The J. Paul Getty Museum’s extensive collection of Greek painted pottery is especially rich in Athenian black- and red-figure vases of the sixth and fifth centuries B.C. Examples of two of the most distinctive and popular shapes of that period, column-kraters and volute-kraters, are gathered in this fascicule of the *Corpus Vasorum Antiquorum*, the tenth of the series devoted to the holdings of the J. Paul Getty Museum. These are large vessels, made for mixing wine and water at the symposium. The column-krater—called the “Corinthian krater” in antiquity—takes its modern name from the columnar supports at the rim. It was developed in Corinth by the end of the seventh century B.C. and soon adopted also by potters in Athens, where the shape is one of the most enduring. Volute-kraters are, in the words of Sir John Beazley, “the vase-shape which has more of the temple in it than any other.” Typically large, with high curling handles, these vases are often finely potted and present expansive fields for decoration. As with many pottery vessel shapes, the form also occurs in metal, and the Getty’s dinoid krater ([87.AE.93](http://www.getty.edu/art/collection/objects/12887/attributed-to-the-meleager-painter-attic-red-figure-dinoid-volute-krater-and-stand-greek-attic-390-380-bc/?dz=#6da56a1036ead85f4bcb603716745032e109ce6f); [entry no. 24](file:///Users/RBarth/Desktop/CVA%2010/COPYEDITING/round%203-%20Sharon%20finalized%20files%2012.7.18/24)) offers a striking example of ceramicists emulating and elaborating upon that costlier medium.
