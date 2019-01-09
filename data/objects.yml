@@ -3,7 +3,7 @@ object_display_order:
   - accession_number
 object_list:
   - id: 1
-    plates: 518--20
+    plates: 518–20
     accession_number: 86.AE.205
     bareiss_number: 342
     fabric: Athenian
@@ -14,7 +14,15 @@ object_list:
     date: -490 to -480
     subject: akontist, athlete, bridle, deer, dog, goat, *halteres*, himation, horse, javelin, jumper, *kentron*, panther, pick, sponge, staff, stick, strigil, trainer
     figure:
-      - src: 86AE205.jpg
+      - id: 86AE205-a
+      - id: 86AE205-b
+      - id: 86AE205-c
+      - id: 86AE205-d
+      - id: 86AE205-e
+      - id: 86AE205-f
+      - id: 86AE205-g
+      - id: 86AE205-h
+      - id: 86AE205-i
 
   - id: 2
     plates: 521–23
