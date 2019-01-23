@@ -74,160 +74,214 @@ figure_list:
     caption: "[Catalogue no. 24c](/catalogue/24/)"
     alt: "Line drawing profile view of the krater"
 
-  - id: "73AE135-a"
+  - id: "73AE135-front"
     src: objects/00821901.jpg
+    alt: "One view of a vase, the body depicting a woman holding cups or bells"
     description: "Mixing Vessel with a Dancing Girl; Myson (Greek (Attic), active 500–475 B.C.); Athens, Greece; about 490 B.C.; Terracotta; 35 × 34.5 × 30 cm (13 3/4 × 13 9/16 × 11 13/16 in.); 73.AE.135"
 
-  - id: "73AE135-b"
+  - id: "73AE135-back"
     src: objects/008219F3V1.jpg
+    alt: "Another view of the vase, the body depicting a man holding a disk"
     description: "Mixing Vessel with a Dancing Girl; Myson (Greek (Attic), active 500–475 B.C.); Athens, Greece; about 490 B.C.; Terracotta; 35 × 34.5 × 30 cm (13 3/4 × 13 9/16 × 11 13/16 in.); 73.AE.135"
 
-  - id: "73AE135-c"
+  - id: "73AE135-side-a"
     src: objects/008219F4V1.jpg
+    alt: "Side view of the vase, showing some decoration on the right side of the neck and at the base of the body, but not showing the figures (almost all black)"
     description: "Mixing Vessel with a Dancing Girl; Myson (Greek (Attic), active 500–475 B.C.); Athens, Greece; about 490 B.C.; Terracotta; 35 × 34.5 × 30 cm (13 3/4 × 13 9/16 × 11 13/16 in.); 73.AE.135"
 
-  - id: "73AE135-d"
+  - id: "73AE135-side-b"
     src: objects/008219F5V1.jpg
+    alt: "The other side of the vase, showing some decoration on the left side of the neck and along the base of the body, but not showing the figures (almost all black)"
     description: "Mixing Vessel with a Dancing Girl; Myson (Greek (Attic), active 500–475 B.C.); Athens, Greece; about 490 B.C.; Terracotta; 35 × 34.5 × 30 cm (13 3/4 × 13 9/16 × 11 13/16 in.); 73.AE.135"
 
-  - id: "73AE135-e"
+  - id: "73AE135-top"
     src: objects/008219F6V1.jpg
+    alt: "View of the top of the vase, not showing any decoration (just black)"
     description: "Mixing Vessel with a Dancing Girl; Myson (Greek (Attic), active 500–475 B.C.); Athens, Greece; about 490 B.C.; Terracotta; 35 × 34.5 × 30 cm (13 3/4 × 13 9/16 × 11 13/16 in.); 73.AE.135"
 
-  - id: "76AE13110-a"
+  - id: "73AE135-detail-a"
+    src: objects/###.jpg
+    alt: "Detail showing just the female figure"
+    description: "Mixing Vessel with a Dancing Girl; Myson (Greek (Attic), active 500–475 B.C.); Athens, Greece; about 490 B.C.; Terracotta; 35 × 34.5 × 30 cm (13 3/4 × 13 9/16 × 11 13/16 in.); 73.AE.135"
+
+  - id: "73AE135-detail-b"
+    src: objects/###.jpg
+    alt: "Detail showing just the male figure"
+    description: "Mixing Vessel with a Dancing Girl; Myson (Greek (Attic), active 500–475 B.C.); Athens, Greece; about 490 B.C.; Terracotta; 35 × 34.5 × 30 cm (13 3/4 × 13 9/16 × 11 13/16 in.); 73.AE.135"
+
+  - id: "73AE135-detail-c"
+    src: objects/###.jpg
+    alt: "Detail showing the man's head and the disk"
+    description: "Mixing Vessel with a Dancing Girl; Myson (Greek (Attic), active 500–475 B.C.); Athens, Greece; about 490 B.C.; Terracotta; 35 × 34.5 × 30 cm (13 3/4 × 13 9/16 × 11 13/16 in.); 73.AE.135"
+
+  - id: "76AE13110-front"
     src: objects/00865801.jpg
+    alt: "Pottery fragment with black lines"
     description: 76.AE.131.10
 
-  - id: "76AE13110-b"
+  - id: "76AE13110-back"
     src: objects/008658F1V1.jpg
+    alt: "The back of the pottery fragment"
     description: 76.AE.131.10
 
-  - id: "77AE11-a"
+  - id: "77AE11-detail-g"
     src: objects/008713D32V1.jpg
+    alt: "A detail of the neck, with people on horses carrying spears"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
-  - id: "77AE11-b"
+  - id: "77AE11-back"
     src: objects/00871301.jpg
+    alt: "Another view of a restored vase, with a black body and decoration around the neck"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
-  - id: "77AE11-c"
+  - id: "77AE11-detail-j"
     src: objects/008713D33V1.jpg
+    alt: "A detail of the neck, showing several people and a lot of damage"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
-  - id: "77AE11-d"
+  - id: "77AE11-detail-f"
     src: objects/008713D34V1.jpg
+    alt: "A detail of the neck, with men with shields and spears and several people partially visible"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
-  - id: "77AE11-e"
+  - id: "77AE11-detail-i"
     src: objects/008713D35V1.jpg
+    alt: "A detail of the neck, showing three people on foot"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
-  - id: "77AE11-f"
+  - id: "77AE11-detail-h"
     src: objects/008713D36V1.jpg
+    alt: "A detail of the neck, with people and horses chasing/attacking one person"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
-  - id: "77AE11-g"
+  - id: "77AE11-detail-k"
     src: objects/008713D37V1.jpg
+    alt: "A detail of the neck, showing people approaching a sitting man"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
-  - id: "77AE11-h"
+  - id: "77AE11-detail-a"
     src: objects/008713D38V1.jpg
+    alt: "A detail of the neck, mostly showing missing decoration"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
-  - id: "77AE11-i"
+  - id: "77AE11-detail-b"
     src: objects/008713D39V1.jpg
+    id: "A detail of the neck, showing people in battle & large areas of damage"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
-  - id: "77AE11-j"
+  - id: "77AE11-detail-c"
     src: objects/008713D40V1.jpg
+    alt: "A detail of the neck, showing a lot of people in battle"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
-  - id: "77AE11-k"
+  - id: "77AE11-detail-d"
     src: objects/008713D41V1.jpg
+    alt: "A detail of the neck, which includes a multi-headed serpent and a lot of missing decoration"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
-  - id: "77AE11-l"
+  - id: "77AE11-detail-e"
     src: objects/008713D42V1.jpg
+    alt: "A detail of the neck, showing lots of damage and a small portion of another multi-headed serpent"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
-  - id: "77AE11-m"
+  - id: "77AE11-front"
     src: objects/008713F11V1.jpg
+    alt: "View of the pre-conservation vase with a black body and some decoration around the neck"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
-  - id: "77AE11-n"
+  - id: "77AE11-side-a"
     src: objects/008713F12V1.jpg
+    alt: "One side of the restored vase"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
-  - id: "77AE11-o"
+  - id: "77AE11-side-b"
     src: objects/008713F13V1.jpg
+    alt: "The other side of the restored vase"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
-  - id: "77AE11-p"
+  - id: "77AE11-top"
     src: objects/008713F14V1.jpg
+    alt: "View from the top, with clearly visible damage"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
-  - id: "78AE3801"
+  - id: "78AE3801-front"
     src: objects/11430101.jpg
+    alt: "One view of a vase, with the body decoration showing four people"
     description: "Attic Red-Figure Column Krater; Agrigento Painter; Athens, Greece, Europe; 470–460 B.C.; Terracotta; 33.5 cm (13 3/16 in.); 78.AE.380.1"
 
-  - id: "78AE3801"
+  - id: "78AE3801-back"
     src: objects/114301F1V1.jpg
+    alt: "Another view of the vase, the body decoration showing three people"
     description: "Attic Red-Figure Column Krater; Agrigento Painter; Athens, Greece, Europe; 470–460 B.C.; Terracotta; 33.5 cm (13 3/16 in.); 78.AE.380.1"
 
-  - id: "78AE3801"
+  - id: "78AE3801-side-b"
     src: objects/114301F2V1.jpg
+    alt: "The other side of the vase"
     description: "Attic Red-Figure Column Krater; Agrigento Painter; Athens, Greece, Europe; 470–460 B.C.; Terracotta; 33.5 cm (13 3/16 in.); 78.AE.380.1"
 
-  - id: "78AE3801"
+  - id: "78AE3801-side-a"
     src: objects/114301F3V1.jpg
+    alt: "One side of the vase"
     description: "Attic Red-Figure Column Krater; Agrigento Painter; Athens, Greece, Europe; 470–460 B.C.; Terracotta; 33.5 cm (13 3/16 in.); 78.AE.380.1"
 
-  - id: "78AE3801"
+  - id: "78AE3801-top"
     src: objects/114301F4V1.jpg
+    alt: "The top of the vase, showing a little bit of decoration"
     description: "Attic Red-Figure Column Krater; Agrigento Painter; Athens, Greece, Europe; 470–460 B.C.; Terracotta; 33.5 cm (13 3/16 in.); 78.AE.380.1"
 
-  - id: "79AE198-a"
+  - id: "79AE198-front"
     src: objects/01032401.jpg
+    alt: "The top portion of a broken vase (lip, neck, and part of the shoulder), image showing one portion with people and patterns"
     description: "Attic Red-Figure Volute Krater; Attributed to Polygnotos (Greek (Attic), active 450–430 B.C.); Athens, Greece; about 445–430 B.C.; Terracotta; 28.8 × 47.7 cm (11 5/16 × 18 3/4 in.); 79.AE.198"
 
-  - id: "79AE198-b"
+  - id: "79AE198-detail-i"
     src: objects/010324D1V1.jpg
+    alt: "A detail of the neck ring?, showing a pattern and a black area with a lot of damage"
     description: "Attic Red-Figure Volute Krater; Attributed to Polygnotos (Greek (Attic), active 450–430 B.C.); Athens, Greece; about 445–430 B.C.; Terracotta; 28.8 × 47.7 cm (11 5/16 × 18 3/4 in.); 79.AE.198"
 
-  - id: "79AE198-c"
-    src: objects/010324D2V1.jpg
+  - id: "79AE198-detail-j"
+    src: objects/010324D2V1.
+    alt: "Another detail of the neck ring?, showing a pattern, portions of two heads, and a black area with a lot of damage"
     description: "Attic Red-Figure Volute Krater; Attributed to Polygnotos (Greek (Attic), active 450–430 B.C.); Athens, Greece; about 445–430 B.C.; Terracotta; 28.8 × 47.7 cm (11 5/16 × 18 3/4 in.); 79.AE.198"
 
-  - id: "79AE198-d"
+  - id: "79AE198-detail-l"
     src: objects/010324D3V1.jpg
+    alt: "A small detail from the neck, that includes a ring with dots"
     description: "Attic Red-Figure Volute Krater; Attributed to Polygnotos (Greek (Attic), active 450–430 B.C.); Athens, Greece; about 445–430 B.C.; Terracotta; 28.8 × 47.7 cm (11 5/16 × 18 3/4 in.); 79.AE.198"
 
-  - id: "79AE198-e"
+  - id: "79AE198-detail-k"
     src: objects/010324D4V1.jpg
+    alt: "A detail of the neck ring?, that includes a pattern, and a foot"
     description: "Attic Red-Figure Volute Krater; Attributed to Polygnotos (Greek (Attic), active 450–430 B.C.); Athens, Greece; about 445–430 B.C.; Terracotta; 28.8 × 47.7 cm (11 5/16 × 18 3/4 in.); 79.AE.198"
 
-  - id: "79AE198-f"
+  - id: "79AE198-detail-m"
     src: objects/010324D5V1.jpg
+    alt: "A small detail of the neck, that includes part of a person carrying a large stick and looking up"
     description: "Attic Red-Figure Volute Krater; Attributed to Polygnotos (Greek (Attic), active 450–430 B.C.); Athens, Greece; about 445–430 B.C.; Terracotta; 28.8 × 47.7 cm (11 5/16 × 18 3/4 in.); 79.AE.198"
 
-  - id: "79AE198-g"
+  - id: "79AE198-back"
     src: objects/010324F2V1.jpg
+    alt: "The opposite side of the top portion of the broken vase, showing people and patterns, including a man dropping a vase, and a large hole"
     description: "Attic Red-Figure Volute Krater; Attributed to Polygnotos (Greek (Attic), active 450–430 B.C.); Athens, Greece; about 445–430 B.C.; Terracotta; 28.8 × 47.7 cm (11 5/16 × 18 3/4 in.); 79.AE.198"
 
-  - id: "79AE198-h"
+  - id: "79AE198-side-a"
     src: objects/010324F4V1.jpg
+    alt: "Another view of the top portion of the broken vase, showing where a handle looks like it broke off, showing more people and patterns"
     description: "Attic Red-Figure Volute Krater; Attributed to Polygnotos (Greek (Attic), active 450–430 B.C.); Athens, Greece; about 445–430 B.C.; Terracotta; 28.8 × 47.7 cm (11 5/16 × 18 3/4 in.); 79.AE.198"
 
-  - id: "79AE198-i"
+  - id: "79AE198-side-b"
     src: objects/010324F6V1.jpg
+    alt: "The other side of the top portion of the broken vase where a handle looks like it broke off, showing more people and patterns"
     description: "Attic Red-Figure Volute Krater; Attributed to Polygnotos (Greek (Attic), active 450–430 B.C.); Athens, Greece; about 445–430 B.C.; Terracotta; 28.8 × 47.7 cm (11 5/16 × 18 3/4 in.); 79.AE.198"
 
-  - id: "79AE9512-a"
+  - id: "79AE9512-front"
     src: objects/02486201.jpg
+    alt: "Two pottery fragments, each showing a vine with heart-shaped leaves"
     description: "79.AE.95.12, 79.AE.95.13"
 
-  - id: "79AE9512-b"
+  - id: "79AE9512-back"
     src: objects/024862F1V1.jpg
+    Alt: "The back side of the two pottery fragments, one mostly black, the other is mottled"
     description: "79.AE.95.12, 79.AE.95.13"
 
   - id: "79AE9512-c"
@@ -238,213 +292,254 @@ figure_list:
     src: objects/024863F1V1.jpg
     description: "79.AE.95.12, 79.AE.95.13"
 
-  - id: "80AE13813-a"
+  - id: "80AE13813-front"
     src: objects/01717901.jpg
+    alt: "Pottery fragment showing a pattern made of dots and curves"
     description: 80.AE.138.13
 
-  - id: "80AE13813-b"
+  - id: "80AE13813-back"
     src: objects/017179F1V1.jpg
+    alt: "The back of the pottery fragment, half black"
     description: 80.AE.138.13
 
-  - id: "81AE161-a"
+  - id: "81AE161-front"
     src: objects/gml_01153701.jpg
+    alt: "One view of a vase, with the body showing three people, two of them are naked and have tails"
     description: "Attic Red-Figure Column Krater; Unknown; Athens, Greece, Europe; about 460 B.C.; Terracotta; 30.5 cm (12 in.); 81.AE.161"
 
-  - id: "81AE161-b"
+  - id: "81AE161-back"
     src: objects/gml_011537F2V1.jpg
+    alt: "Another view of the vase, the body decoration showing two people in clothes"
     description: "Attic Red-Figure Column Krater; Unknown; Athens, Greece, Europe; about 460 B.C.; Terracotta; 30.5 cm (12 in.); 81.AE.161"
 
-  - id: "81AE161-c"
+  - id: "81AE161-side-a"
     src: objects/gml_011537F4V1.jpg
+    alt: "One side of the vase, with the neck decoration visible on the left"
     description: "Attic Red-Figure Column Krater; Unknown; Athens, Greece, Europe; about 460 B.C.; Terracotta; 30.5 cm (12 in.); 81.AE.161"
 
-  - id: "81AE161-d"
+  - id: "81AE161-side-b"
     src: objects/gml_011537F6V1.jpg
+    alt: "The other side of the vase, with the neck decoration visible on the right"
     description: "Attic Red-Figure Column Krater; Unknown; Athens, Greece, Europe; about 460 B.C.; Terracotta; 30.5 cm (12 in.); 81.AE.161"
 
-  - id: "81AE161-e"
+  - id: "81AE161-top"
     src: objects/gml_011537F8V1.jpg
+    alt: "The top of the vase"
     description: "Attic Red-Figure Column Krater; Unknown; Athens, Greece, Europe; about 460 B.C.; Terracotta; 30.5 cm (12 in.); 81.AE.161"
 
-  - id: "81AE1887-a"
+  - id: "81AE1887-front"
     src: objects/02666601.jpg
+    alt: "A pottery fragment showing a repeating pattern (possibly stylized flowers?)"
     description: 81.AE.188.7
 
-  - id: "81AE1887-b"
+  - id: "81AE1887-back"
     src: objects/026666F1V1.jpg
+    alt: "The back of the pottery fragment, mostly black"
     description: 81.AE.188.7
 
-  - id: "82AE143-a"
+  - id: "82AE143-front"
     src: objects/gml_01230201.jpg
+    alt: "One view of a vase, with the body decoration depicting three people and a griffin(?) on a pedestal"
     description: "Attic Red-Figure Column Krater; Attributed to the Painter of London E489; Athens, Greece, Europe; about 460 B.C.; Terracotta; 38.5 × 30.5 cm (15 3/16 × 12 in.); 82.AE.143"
 
-  - id: "82AE143-b"
+  - id: "82AE143-side-a"
     src: objects/gml_012302F10V1.jpg
+    alt: "One side of the vase, with the neck's decoration appearing on the right"
     description: "Attic Red-Figure Column Krater; Attributed to the Painter of London E489; Athens, Greece, Europe; about 460 B.C.; Terracotta; 38.5 × 30.5 cm (15 3/16 × 12 in.); 82.AE.143"
 
-  - id: "82AE143-c"
+  - id: "82AE143-back"
     src: objects/gml_012302F11V1.jpg
+    alt: "Another view of a vase, with the body decoration depicting three people in clothes"
     description: "Attic Red-Figure Column Krater; Attributed to the Painter of London E489; Athens, Greece, Europe; about 460 B.C.; Terracotta; 38.5 × 30.5 cm (15 3/16 × 12 in.); 82.AE.143"
 
-  - id: "82AE143-d"
+  - id: "82AE143-side-b"
     src: objects/gml_012302F12V1.jpg
+    alt: "The other side of the vase, with the neck's decoration appearing on the left"
     description: "Attic Red-Figure Column Krater; Attributed to the Painter of London E489; Athens, Greece, Europe; about 460 B.C.; Terracotta; 38.5 × 30.5 cm (15 3/16 × 12 in.); 82.AE.143"
 
-  - id: "82AE143-e"
+  - id: "82AE143-top"
     src: objects/gml_012302F8V1.jpg
+    alt: "The top of the vase"
     description: "Attic Red-Figure Column Krater; Attributed to the Painter of London E489; Athens, Greece, Europe; about 460 B.C.; Terracotta; 38.5 × 30.5 cm (15 3/16 × 12 in.); 82.AE.143"
 
-  - id: "83AE252-a"
+  - id: "83AE252-front"
     src: objects/gml_01241101.jpg
+    alt: "One view of a vase, the body showing three people, two of them holding things, standing next to a larger object"
     description: "Attic Red-Figure Column Krater; Pan Painter; Athens, Greece, Europe; about 480–470 B.C.; Terracotta; 32.5 × 24.7 cm (12 13/16 × 9 3/4 in.); 83.AE.252"
 
-  - id: "83AE252-b"
+  - id: "83AE252-back"
     src: objects/gml_012411F2V1.jpg
+    alt: "Another view of the vase, the body showing two people standing on either side of a pedestal that is holding a vase"
     description: "Attic Red-Figure Column Krater; Pan Painter; Athens, Greece, Europe; about 480–470 B.C.; Terracotta; 32.5 × 24.7 cm (12 13/16 × 9 3/4 in.); 83.AE.252"
 
-  - id: "83AE252-c"
+  - id: "83AE252-side-a"
     src: objects/gml_012411F4V1.jpg
+    alt: "One side of the vase"
     description: "Attic Red-Figure Column Krater; Pan Painter; Athens, Greece, Europe; about 480–470 B.C.; Terracotta; 32.5 × 24.7 cm (12 13/16 × 9 3/4 in.); 83.AE.252"
 
-  - id: "83AE252-d"
+  - id: "83AE252-side-b"
     src: objects/gml_012411F6V1.jpg
+    alt: "The other side of the vase"
     description: "Attic Red-Figure Column Krater; Pan Painter; Athens, Greece, Europe; about 480–470 B.C.; Terracotta; 32.5 × 24.7 cm (12 13/16 × 9 3/4 in.); 83.AE.252"
 
-  - id: "83AE252-e"
+  - id: "83AE252-top"
     src: objects/gml_012411F8V1.jpg
+    alt: "The top of the vase"
     description: "Attic Red-Figure Column Krater; Pan Painter; Athens, Greece, Europe; about 480–470 B.C.; Terracotta; 32.5 × 24.7 cm (12 13/16 × 9 3/4 in.); 83.AE.252"
 
-  - id: "83AE255-f"
+  - id: "83AE255-front"
     src: objects/gml_01241401.jpg
+    alt: "One view of a vase, the body depicting two people, one holding what may be a crown"
     description: "Attic Red-Figure Column Krater; Manner of Pan Painter; Athens, Greece, Europe; about 470 B.C.; Terracotta; 31.3 × 23.6 cm (12 5/16 × 9 5/16 in.); 83.AE.255"
 
-  - id: "83AE255-g"
+  - id: "83AE255-side-a"
     src: objects/gml_012414F2V1.jpg
+    alt: "One side of the vase"
     description: "Attic Red-Figure Column Krater; Manner of Pan Painter; Athens, Greece, Europe; about 470 B.C.; Terracotta; 31.3 × 23.6 cm (12 5/16 × 9 5/16 in.); 83.AE.255"
 
-  - id: "83AE255-h"
+  - id: "83AE255-back"
     src: objects/gml_012414F4V1.jpg
+    alt: "Another view of the vase, the body depicting one person"
     description: "Attic Red-Figure Column Krater; Manner of Pan Painter; Athens, Greece, Europe; about 470 B.C.; Terracotta; 31.3 × 23.6 cm (12 5/16 × 9 5/16 in.); 83.AE.255"
 
-  - id: "83AE255-i"
+  - id: "83AE255-side-b"
     src: objects/gml_012414F6V1.jpg
+    alt: "The other side of the vase"
     description: "Attic Red-Figure Column Krater; Manner of Pan Painter; Athens, Greece, Europe; about 470 B.C.; Terracotta; 31.3 × 23.6 cm (12 5/16 × 9 5/16 in.); 83.AE.255"
 
-  - id: "83AE255-j"
+  - id: "83AE255-top"
     src: objects/gml_012414F8V1.jpg
+    alt: "The top of the vase"
     description: "Attic Red-Figure Column Krater; Manner of Pan Painter; Athens, Greece, Europe; about 470 B.C.; Terracotta; 31.3 × 23.6 cm (12 5/16 × 9 5/16 in.); 83.AE.255"
 
-  - id: "83AE284201-a"
+  - id: "83AE284201-front"
     src: objects/03364901.jpg
+    alt: "Damaged pottery fragment showing curved lines that may depict part of a face, shoulder, and arm"
     description: 83.AE.284.201
 
-  - id: "83AE284201-b"
+  - id: "83AE284201-back"
     src: objects/033649F1V1.jpg
+    alt: "Back side of the pottery fragment that is just black (aside from the damage)"
     description: 83.AE.284.201
 
-  - id: "86AE202-a"
+  - id: "86AE202-front"
     src: objects/01404401.jpg
+    alt: "Pottery fragment showing some of the clothing of two people"
     description: 86.AE.202
 
-  - id: "86AE202-b"
+  - id: "86AE202-back"
     src: objects/014044F1V1.jpg
+    alt: "The back of the pottery fragment, mostly black"
     description: 86.AE.202
 
-  - id: "86AE203-a"
+  - id: "86AE203-front"
     src: objects/01404501.jpg
+    alt: "Pottery fragment showing a geometric pattern and a reclining person holding a vase"
     description: 86.AE.203
 
-  - id: "86AE203-b"
+  - id: "86AE203-back"
     src: objects/014045F1V1.jpg
+    alt: "The back of the pottery fragment, mostly black"
     description: 86.AE.203
 
-  - id: "86AE204-a"
+  - id: "86AE204-front"
     src: objects/01404601.jpg
+    alt: "Pottery fragment showing a hand holding reigns (possibly) and part of another person's clothes"
     description: 86.AE.204
 
-  - id: "86AE204-b"
+  - id: "86AE204-back"
     src: objects/014046F1V1.jpg
+    alt: "Back of the pottery fragment (black with red lines)"
     description: 86.AE.204
 
-  - id: "86AE205-a"
+  - id: "86AE205-front"
     src: objects/01404701.jpg
     alt: "One view of a vase, the body depicting two horses and two men"
     description: 86.AE.205
 
-  - id: "86AE205-b"
+  - id: "86AE205-back"
     src: objects/014047F1V1.jpg
     alt: "The another view of the vase, the body depicting three men, one in clothes"
     description: 86.AE.205
 
-  - id: "86AE205-c"
+  - id: "86AE205-side-a"
     src: objects/014047F2V1.jpg
     alt: "View of one side of the vase, with a horse just visible on the right"
     description: 86.AE.205
 
-  - id: "86AE205-d"
+  - id: "86AE205-side-b"
     src: objects/014047F3V1.jpg
     alt: "View of the other side of the vase, with a horse just visible on the left"
     description: 86.AE.205
 
-  - id: "86AE205-e"
+  - id: "86AE205-top"
     src: objects/014047F4V1.jpg
     alt: "View of the top of the vase with various animal silhouettes visible"
     description: 86.AE.205
 
-  - id: "86AE205-f"
+  - id: "86AE205-detail-a"
     src: objects/###.jpg
     alt: "Detail of the two horses and two men"
     description: 86.AE.205
 
-  - id: "86AE205-g"
+  - id: "86AE205-detail-b"
     src: objects/###.jpg
     alt: "Detail of the three men"
     description: 86.AE.205
 
-  - id: "86AE205-h"
+  - id: "86AE205-detail-c"
     src: objects/###.jpg
     alt: "B/w detail of a horse"
     description: 86.AE.205
 
-  - id: "86AE205-i"
+  - id: "86AE205-detail-d"
     src: objects/###.jpg
     alt: "B/w detail of one of the men"
     description: 86.AE.205
 
-  - id: "86AE206-a"
+  - id: "86AE206-back"
     src: objects/01404801.jpg
+    alt: "Another view of a vase, the body showing two people, one clothed and one not clothed (except for animal skins)"
     description: 86.AE.206
 
-  - id: "86AE206-b"
+  - id: "86AE206-front"
     src: objects/014048F2V1.jpg
+    alt: "One view of the vase, the body showing three people"
     description: 86.AE.206
 
-  - id: "86AE206-c"
+  - id: "86AE206-side-a"
     src: objects/014048F3V1.jpg
+    alt: "One side of the vase"
     description: 86.AE.206
 
-  - id: "86AE206-d"
+  - id: "86AE206-side-b"
     src: objects/014048F4V1.jpg
+    alt: "The other side of the vase"
     description: 86.AE.206
 
-  - id: "86AE206-e"
+  - id: "86AE206-top"
     src: objects/014048F5V1.jpg
+    alt: "The top of the vase"
     description: 86.AE.206
 
-  - id: "86AE207-a"
+  - id: "86AE207-front"
     src: objects/01404901.jpg
+    alt: "Pottery fragment with a black background and showing part of a man with a beard wearing clothing"
     description: 86.AE.207
 
-  - id: "86AE207-b"
+  - id: "86AE207-back"
     src: objects/014049F1V1.jpg
+    alt: "The reverse side of the pottery fragment in illustration #20 (entry 4, view 1) (just showing lines)"
     description: 86.AE.207
 
-  - id: "86AE208-a"
+  - id: "86AE208-front"
     src: objects/01405001.jpg
+    alt: "Two pottery fragments, one showing a person's head and some decoration, the other showing a person's body, some decoration, and another object"
     description: "86.AE.208, 86.AE.210"
 
-  - id: "86AE208-b"
+  - id: "86AE208-back"
     src: objects/014050F1V1.jpg
+    alt: "The back side of the two pottery fragments"
     description: "86.AE.208, 86.AE.210"
 
   - id: "86AE208-c"
@@ -455,12 +550,14 @@ figure_list:
     src: objects/014054F1V1.jpg
     description: "86.AE.208, 86.AE.210"
 
-  - id: "86AE2091-a"
+  - id: "86AE2091-front"
     src: objects/01405201.jpg
+    alt: "Two pottery fragments, one mostly light brown, the other mostly black"
     description: "86.AE.209.1, 86.AE.209.2"
 
-  - id: "86AE2091-b"
+  - id: "86AE2091-back"
     src: objects/014052F1V1.jpg
+    alt: "Back of the two pottery fragments, one mostly black, the other mostly grey"
     description: "86.AE.209.1, 86.AE.209.2"
 
   - id: "86AE2091-c"
@@ -471,144 +568,177 @@ figure_list:
     src: objects/014053F1V1.jpg
     description: "86.AE.209.1, 86.AE.209.2"
 
-  - id: "86AE2111-a"
+  - id: "83AE2111-front"
     src: objects/01405601.jpg
+    alt: "Two pottery fragments, both with a black background and red images, one showing a pattern of dots and a part of a body wearing material & the other showing the front torso of maybe two horses and then a cheetah head & neck"
     description: "86.AE.211.1, 86.AE.211.2"
 
-  - id: "86AE2111-b"
+  - id: "83AE2111-back"
     src: objects/014056F1V1.jpg
+    alt: "The reverse side of the two pottery fragments in illustration #18 (entry 3, view 1) (mostly black with some wear)"
     description: "86.AE.211.1, 86.AE.211.2"
 
-  - id: "86AE2111-c"
+  - id: "83AE2111-c"
     src: objects/01405701.jpg
     description: "86.AE.211.1, 86.AE.211.2"
 
-  - id: "86AE2111-d"
+  - id: "83AE2111-d"
     src: objects/014057F1V1.jpg
     description: "86.AE.211.1, 86.AE.211.2"
 
-  - id: "86AE587-a"
+  - id: "86AE587-front"
     src: objects/01494001.jpg
+    alt: "A pottery fragment showing two feet, one planted and underneath a flowing garment, the other poised above"
     description: 86.AE.587
 
-  - id: "86AE587-b"
+  - id: "86AE587-back"
     src: objects/014940F1V1.jpg
+    alt: "The back of the pottery fragment, partially black"
     description: 86.AE.587
 
-  - id: "87AE93-a"
+  - id: "87AE93-front"
     src: objects/01499801.jpg
+    alt: "One view of a highly decorated vase with ornate handles"
     description: 87.AE.93
 
-  - id: "87AE93-b"
+  - id: "87AE93-detail-f"
     src: objects/014998D25V1.jpg
+    alt: "Another detail of the neck of the vase, showing three people reclining and no emptiness on either side"
     description: 87.AE.93
 
-  - id: "87AE93-c"
+  - id: "87AE93-detail-g"
     src: objects/014998D26V1.jpg
+    alt: "Another detail of the neck of the vase, showing three people reclining and a black area on the right"
     description: 87.AE.93
 
-  - id: "87AE93-d"
+  - id: "87AE93-detail-a"
     src: objects/014998D27V1.jpg
+    alt: "A detail of one of the handles"
     description: 87.AE.93
 
-  - id: "87AE93-e"
+  - id: "87AE93-detail-l"
     src: objects/014998D28V1.jpg
+    alt: "Another detail of the foot of the vase, with some white showing and all the people in motion"
     description: 87.AE.93
 
-  - id: "87AE93-f"
+  - id: "87AE93-detail-m"
     src: objects/014998D29V1.jpg
+    alt: "Smaller detail of the foot, with several people, the one in the middle draped in an animal skin and carrying a shield"
     description: 87.AE.93
 
-  - id: "87AE93-g"
+  - id: "87AE93-detail-n"
     src: objects/014998D30V1.jpg
+    alt: "Smaller detail of the foot, with several people, the one in the middle holding a staff upright"
     description: 87.AE.93
 
-  - id: "87AE93-h"
+  - id: "87AE93-detail-o"
     src: objects/014998D31V1.jpg
+    alt: "Smaller detail of the foot, with several people and a hare on the right"
     description: 87.AE.93
 
-  - id: "87AE93-i"
+  - id: "87AE93-detail-p"
     src: objects/014998D32V1.jpg
+    alt: "Smaller detail of the foot, with several people and a person chasing a hare in the middle"
     description: 87.AE.93
 
-  - id: "87AE93-j"
+  - id: "87AE93-detail-q"
     src: objects/014998D33V1.jpg
+    alt: "Smaller detail of the foot, with several people and a person chasing a hare on the left"
     description: 87.AE.93
 
-  - id: "87AE93-k"
+  - id: "87AE93-detail-r"
     src: objects/014998D34V1.jpg
+    alt: "Smaller detail of the foot, with several people and a person reclining on the far right"
     description: 87.AE.93
 
-  - id: "87AE93-l"
+  - id: "87AE93-detail-b"
     src: objects/014998D35V1.jpg
+    alt: "A detail from the other side of the neck, showing three women, the one on the left holding a mirror"
     description: 87.AE.93
 
-  - id: "87AE93-m"
+  - id: "87AE93-detail-d"
     src: objects/014998D36V1.jpg
+    alt: "Another detail from the other side of the neck, showing three women, the one in the middle reclining, and a winged being"
     description: 87.AE.93
 
-  - id: "87AE93-n"
+  - id: "87AE93-detail-c"
     src: objects/014998D37V1.jpg
+    alt: "Another detail from the other side of the neck, showing three women, the one in the middle holding a mirror"
     description: 87.AE.93
 
-  - id: "87AE93-o"
+  - id: "87AE93-detail-e"
     src: objects/014998D38V1.jpg
+    alt: "A detail of the neck of the vase, showing two people reclining and a black area on the left"
     description: 87.AE.93
 
-  - id: "87AE93-p"
+  - id: "87AE93-back"
     src: objects/014998F13V1.jpg
+    alt: "Another view of the highly decorated vase with ornate handles"
     description: 87.AE.93
 
-  - id: "87AE93-q"
+  - id: "87AE93-side-a"
     src: objects/014998F14V1.jpg
+    alt: "One side of the vase"
     description: 87.AE.93
 
-  - id: "87AE93-r"
+  - id: "87AE93-side-b"
     src: objects/014998F15V1.jpg
+    alt: "The other side of the vase"
     description: 87.AE.93
 
-  - id: "87AE93-s"
+  - id: "87AE93-top"
     src: objects/014998F16V1.jpg
+    alt: "A top view of the vase"
     description: 87.AE.93
 
-  - id: "87AE93-t"
+  - id: "87AE93-detail-h"
     src: objects/014998F17V1.jpg
+    alt: "One detail of the foot of the vase, with some white showing and a seated person"
     description: 87.AE.93
 
-  - id: "87AE93-u"
+  - id: "87AE93-detail-j"
     src: objects/014998F18V1.jpg
+    alt: "Another detail of the foot of the vase, with no white easily visible"
     description: 87.AE.93
 
-  - id: "87AE93-v"
+  - id: "87AE93-detail-k"
     src: objects/014998F19V1.jpg
+    alt: "Another detail of the foot of the vase, with a little white showing on the right"
     description: 87.AE.93
 
-  - id: "87AE93-w"
+  - id: "87AE93-detail-i"
     src: objects/014998F20V1.jpg
+    alt: "Another detail of the foot of the vase, with some white showing and all the people in motion"
     description: 87.AE.93
 
-  - id: "87AE93-x"
+  - id: "87AE93-detail-t"
     src: objects/gml_014998D5V1.jpg
+    alt: "Another detail of the top of the foot, showing what looks like a griffin with its head lunging toward a person on the ground"
     description: "Mixing Vessel with Adonis, Aphrodite, and Persephone; Attributed to the Meleager Painter (Greek (Attic), active 420–380 B.C.); Athens, Greece; 390–380 B.C.; Terracotta; 78.7 × 40.6 cm (31 × 16 in.); 87.AE.93"
 
-  - id: "87AE93-y"
+  - id: "87AE93-detail-v"
     src: objects/014998D39V1.jpg
+    alt: "A detail of the top of the foot, showing what looks like a griffin with its head pulled back, looking at a person on the ground"
     description: 87.AE.93
 
-  - id: "97AE582-a"
+  - id: "97AE582-front"
     src: objects/03815701.jpg
+    alt: "A pottery fragment showing two heads of people who may be playing musical instruments"
     description: 97.AE.58.2
 
-  - id: "97AE582-b"
+  - id: "97AE582-back"
     src: objects/038157F1V1.jpg
+    alt: "The back of the pottery fragment, all black"
     description: 97.AE.58.2
 
-  - id: "98AE821-a"
+  - id: "98AE821-front"
     src: objects/13264101.jpg
+    alt: "Twelve tiny pottery fragments"
     description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
 
-  - id: "98AE821-b"
+  - id: "98AE821-back"
     src: objects/132641F4V1.jpg
+    alt: "The backs of the twelve tiny pottery fragments"
     description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
 
   - id: "98AE821-c"
@@ -706,4 +836,3 @@ figure_list:
   - id: "98AE821-z"
     src: objects/132653F1V1.jpg
     description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-

@@ -14,15 +14,15 @@ object_list:
     date: -490 to -480
     subject: akontist, athlete, bridle, deer, dog, goat, *halteres*, himation, horse, javelin, jumper, *kentron*, panther, pick, sponge, staff, stick, strigil, trainer
     figure:
-      - id: 86AE205-a
-      - id: 86AE205-b
-      - id: 86AE205-c
-      - id: 86AE205-d
-      - id: 86AE205-e
-      - id: 86AE205-f
-      - id: 86AE205-g
-      - id: 86AE205-h
-      - id: 86AE205-i
+      - id: 86AE205-front
+      - id: 86AE205-back
+      - id: 86AE205-side-a
+      - id: 86AE205-side-b
+      - id: 86AE205-top
+      - id: 86AE205-detail-a
+      - id: 86AE205-detail-b
+      - id: 86AE205-detail-c
+      - id: 86AE205-detail-d
 
   - id: 2
     plates: 521–23
@@ -36,7 +36,14 @@ object_list:
     date: -490 to -480
     subject: athlete, dancing girl, *diskobolos*, diskos, *krotalon*, owl (on diskos), wreath
     figure:
-      - src: 73AE135.jpg
+      - id: 73AE135-front
+      - id: 73AE135-back
+      - id: 73AE135-side-a
+      - id: 73AE135-side-b
+      - id: 73AE135-top
+      - id: 73AE135-detail-a
+      - id: 73AE135-detail-b
+      - id: 73AE135-detail-c
 
   - id: 3
     plates: 524, 1–2
@@ -50,8 +57,8 @@ object_list:
     date: -480
     subject: breast bands (on horses), chariot, charioteer, chiton, Dionysos, feline (unspecified), himation, horse, *kentron*, *quadriga*
     figure:
-      - src: 86AE2111.jpg
-      - src: 86AE2112.jpg
+      - id: 83AE2111-front
+      - id: 83AE2111-back
 
   - id: 4
     plates: 524, 3–4
@@ -65,7 +72,8 @@ object_list:
     date: -470 to -460
     subject: chiton, himation, Poseidon, scepter, trident, wreath, Zeus
     figure:
-      - src: 86AE207.jpg
+      - id: 86AE207-front
+      - id: 86AE207-back
 
   - id: 5
     plates: 525–27
@@ -79,7 +87,13 @@ object_list:
     date: -480
     subject: animal skin, chiton, fillet, himation, *krobylos*, maenad, satyr, scepter, thyrsos, wreath, Zeus
     figure:
-      - src: 86AE206.jpg
+      - id: 86AE206-front
+      - id: 86AE206-back
+      - id: 86AE206-side-a
+      - id: 86AE206-side-b
+      - id: 86AE206-top
+      - id: 86AE206-detail-a
+      - id: 86AE206-detail-b
 
   - id: 6
     plates: 528–30
@@ -93,7 +107,15 @@ object_list:
     date: -480 to -470
     subject: altar, blood, dinos, *epipyron*, fire/flames, herm, himation, *kanoun*, kylix, offerings, pillar, staff
     figure:
-      - src: 83AE252.jpg
+      - id: 83AE252-front
+      - id: 83AE252-back
+      - id: 83AE252-side-a
+      - id: 83AE252-side-b
+      - id: 83AE252-top
+      - id: 83AE252-detail-a
+      - id: 83AE252-detail-b
+      - id: 83AE252-detail-c
+      - id: 83AE252-detail-d
 
   - id: 7
     plates: 531–32, 533, 1–3
@@ -107,7 +129,14 @@ object_list:
     date: -480 to -470
     subject: chiton, herm, himation, *kanoun*, *sakkos*
     figure:
-      - src: 83AE255.jpg
+      - id: 83AE255-front
+      - id: 83AE255-back
+      - id: 83AE255-side-a
+      - id: 83AE255-side-b
+      - id: 83AE255-top
+      - id: 83AE255-detail-a
+      - id: 83AE255-detail-b
+      - id: 83AE255-detail-c
 
   - id: 8
     plates: 533, 4–5
@@ -121,7 +150,8 @@ object_list:
     date: -470
     subject:
     figure:
-      - src: 83AE284201.jpg
+      - id: 83AE284201-front
+      - id: 83AE284201-back
 
   - id: 9
     plates: 534–36
@@ -135,7 +165,14 @@ object_list:
     date: -480
     subject: altar, fillet, herm, himation, mantle, stick
     figure:
-      - src: 81AE37.jpg
+      - id: 81AE37-front
+      - id: 81AE37-back
+      - id: 81AE37-side-a
+      - id: 81AE37-side-b
+      - id: 81AE37-top
+      - id: 81AE37-detail-a
+      - id: 81AE37-detail-b
+      - id: 81AE37-detail-c
 
   - id: 10
     plates: 537
@@ -149,8 +186,8 @@ object_list:
     date: -480
     subject: chiton, Dionysos, flower, grapes, maenad, necklace, offerings, *popana*, table
     figure:
-      - src: 86AE208.jpg
-      - src: 86AE210.jpg
+      - id: 86AE208-front
+      - id: 86AE208-back
 
   - id: 11
     plates: 538–40
@@ -164,12 +201,15 @@ object_list:
     date: -460
     subject: fillet, flower, inscription, mantle, staff, stick, torch, wreath
     figure:
-      - src: 78AE3801.jpg
-      - src: 78AE38025.jpg
-      - src: 78AE38036.jpg
-      - src: 78AE38058.jpg
-      - src: 78AE38062.jpg
-      - src: 78AE38067.jpg
+      - id: 78AE3801-front
+      - id: 78AE3801-back
+      - id: 78AE3801-side-a
+      - id: 78AE3801-side-b
+      - id: 78AE3801-top
+      - id: 78AE3801-detail-a
+      - id: 78AE3801-detail-b
+      - id: 78AE3801-detail-c
+      - id: 78AE3801-detail-d
 
   - id: 12
     plates: 541–43
@@ -183,7 +223,15 @@ object_list:
     date: -450
     subject: boar, chiton, himation, lion, maenad, mantle, satyr, strigil, thyrsos
     figure:
-      - src: 81AE161.jpg
+      - id: 81AE161-front
+      - id: 81AE161-back
+      - id: 81AE161-side-a
+      - id: 81AE161-side-b
+      - id: 81AE161-top
+      - id: 81AE161-detail-a
+      - id: 81AE161-detail-b
+      - id: 81AE161-detail-c
+      - id: 81AE161-detail-d
 
   - id: 13
     plates: 544–46
@@ -197,7 +245,13 @@ object_list:
     date: -460 to -450
     subject: cloak, column (Ionic), fillet, himation, Oidipous, *petasos*, *sakkos*, spear, Sphinx, staff, stick
     figure:
-      - src: 82AE143.jpg
+      - id: 82AE143-front
+      - id: 82AE143-back
+      - id: 82AE143-side-a
+      - id: 82AE143-side-b
+      - id: 82AE143-top
+      - id: 82AE143-detail-a
+      - id: 82AE143-detail-b
 
   - id: 14
     plates: 547, 1–2
@@ -211,7 +265,8 @@ object_list:
     date: -450 to -425
     subject: charioteer, horse, peplos, reins
     figure:
-      - src: 86AE204.jpg
+      - id: 86AE204-front
+      - id: 86AE204-back
 
   - id: 15
     plates: 547, 3–4
@@ -225,8 +280,9 @@ object_list:
     date: -475 to -450
     subject:
     figure:
-      - src: 86AE2091.jpg
-      - src: 86AE2092.jpg
+      - id: 86AE2091-front
+      - id: 86AE2091-back
+
 
   - id: 16
     plates: 547, 5–6
@@ -240,8 +296,8 @@ object_list:
     date: -450
     subject:
     figure:
-      - src: 79AE9512.jpg
-      - src: 79AE9513.jpg
+      - id: 79AE9512-front
+      - id: 79AE9512-back
 
   - id: 17
     plates: 548, 1–2
@@ -255,7 +311,8 @@ object_list:
     date: -520 to -510
     subject: drinking horn, *krotalon*, maenad, satyr, wreath
     figure:
-      - src: 81AE1887.jpg
+      - id: 81AE1887-front
+      - id: 81AE1887-back
 
   - id: 18
     plates: 548, 3–4
@@ -269,7 +326,8 @@ object_list:
     date: -500
     subject: helmet, warrior
     figure:
-      - src: 80AE13813.jpg
+      - id: 80AE13813-front
+      - id: 80AE13813-back
 
   - id: 19
     plates: 549–57
@@ -283,10 +341,28 @@ object_list:
     date: -490 to -480
     subject: Ajax (Telamonian), Amazons, animal skin, apples of the Hesperides, archer, arrow, Athena, Atlas, blood, bow, branch, bull (shield device), centaur (shield device), Cheiron, chiton, *chitoniskos*, club, corselet, Doris, Eurytion, fillet, fish, Geryon, *gorytus*, greaves, helmet, Herakles, himation, hoplite, horse, Hydra (Lernean), inscription, Iolaos, *kodon*, *krobylos*, Ladon, lion (shield device), Nereid, Nereus, Orthros, Pegasos (shield device), Peleus, *pelta*, quiver, *salpinx*, shield, snake, spear, staff, sword, *thakos*, Thetis, torch, tree, *triskeles* (shield device), trumpeter, warrior
     figure:
-      - src: 77AE11.jpg
-      - src: 86AE587.jpg
-      - src: 97AE582.jpg
-      - src: 98AE821-12.jpg
+      - id: 77AE11-front
+      - id: 77AE11-back
+      - id: 77AE11-side-a
+      - id: 77AE11-side-b
+      - id: 77AE11-top
+      - id: 77AE11-detail-a
+      - id: 77AE11-detail-b
+      - id: 77AE11-detail-c
+      - id: 77AE11-detail-d
+      - id: 77AE11-detail-e
+      - id: 77AE11-detail-f
+      - id: 77AE11-detail-g
+      - id: 77AE11-detail-h
+      - id: 77AE11-detail-i
+      - id: 77AE11-detail-j
+      - id: 77AE11-detail-k
+      - id: 86AE587-front
+      - id: 86AE587-back
+      - id: 97AE582-front
+      - id: 97AE582-back
+      - id: 98AE821-front
+      - id: 98AE821-back
 
   - id: 20
     plates: 558, 1–2
@@ -300,7 +376,8 @@ object_list:
     date: -490 to -480
     subject: chiton, Ilioupersis, mantle, tripod
     figure:
-      - src: 86AE202.jpg
+      - id: 86AE202-front
+      - id: 86AE202-back
 
   - id: 21
     plates: 558, 3–4
@@ -314,7 +391,8 @@ object_list:
     date: -480
     subject: chiton, cushion, Dionysos, himation, kantharos, phiale, symposion, vine, wreath
     figure:
-      - src: 86AE203.jpg
+      - id: 86AE203-front
+      - id: 86AE203-back
 
   - id: 22
     plates: 558, 5–6
@@ -328,7 +406,8 @@ object_list:
     date: -500 to -400
     subject: chariot, wheel
     figure:
-      - src: 76AE13110.jpg
+      - id: 76AE13110-front
+      - id: 76AE13110-back
 
   - id: 23
     plates: 559–63
@@ -342,7 +421,23 @@ object_list:
     date: -440 to -435
     subject: Ajax (Locrian), amphora, animal skin, Athena, attendant (female), belt, chest, chiton, diadem, earring, feline (unspecified), fillet, headband, helmet, himation, Ilioupersis, inscription, kantharos, Kassandra, *krobylos*, maenad, Menelaos, Palladion, peplos, priestess, satyr, shield, spear, star (shield device), statue, stick, thiasos, thyrsos, torch, wineskin
     figure:
-      - src: 79AE198.jpg
+      - id: 79AE198-front
+      - id: 79AE198-back
+      - id: 79AE198-side-a
+      - id: 79AE198-side-b
+      - id: 79AE198-detail-a
+      - id: 79AE198-detail-b
+      - id: 79AE198-detail-c
+      - id: 79AE198-detail-d
+      - id: 79AE198-detail-e
+      - id: 79AE198-detail-f
+      - id: 79AE198-detail-g
+      - id: 79AE198-detail-h
+      - id: 79AE198-detail-i
+      - id: 79AE198-detail-j
+      - id: 79AE198-detail-k
+      - id: 79AE198-detail-l
+      - id: 79AE198-detail-m
 
   - id: 24
     plates: 564–73
@@ -356,4 +451,31 @@ object_list:
     date: -400 to -390
     subject: Adonis, animal skin, Aphrodite, Arimasp, attendant (female), aulos, baldric, banqueter, bed/couch/*kline*, blanket, bracelet, bull, chest, chignon, chiton, chlamys, club, cushion, deer, diadem, Dionysos, dog, earring, *ependytes*, Eros, fillet, food, footstool, fruit, grapevine, griffin, headband, hare, himation, kantharos, *keras*, komast/reveler, *kottabos*, *lagobolon*, lyre, maenad, mantle, mirror, necklace, peplos, Persephone, *pilos* (conical hat), plate, satyr, shield, Silenos, spear, stemless drinking cup, string of beads, sword, symposion, table, Theseus, thyrsos, torch, tree, *tympanon*
     figure:
-      - src: 87AE93.jpg
+      - id: 87AE93-front
+      - id: 87AE93-back
+      - id: 87AE93-side-a
+      - id: 87AE93-side-b
+      - id: 87AE93-detail-a
+      - id: 87AE93-top
+      - id: 87AE93-detail-b
+      - id: 87AE93-detail-c
+      - id: 87AE93-detail-d
+      - id: 87AE93-detail-e
+      - id: 87AE93-detail-f
+      - id: 87AE93-detail-g
+      - id: 87AE93-detail-h
+      - id: 87AE93-detail-i
+      - id: 87AE93-detail-j
+      - id: 87AE93-detail-k
+      - id: 87AE93-detail-l
+      - id: 87AE93-detail-m
+      - id: 87AE93-detail-n
+      - id: 87AE93-detail-o
+      - id: 87AE93-detail-p
+      - id: 87AE93-detail-q
+      - id: 87AE93-detail-r
+      - id: 87AE93-detail-s
+      - id: 87AE93-detail-t
+      - id: 87AE93-detail-u
+      - id: 87AE93-detail-v
+      - id: 87AE93-detail-w
