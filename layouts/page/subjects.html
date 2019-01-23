@@ -1,0 +1,90 @@
+{{/*
+  This is similar to the attributions page template. Adds a subject index table,
+  generated from the objects.yml file.
+
+  The code below first ranges across the objects.yml file and for each entry
+  if there is a list of one or more subject terms, it adds the subject, id, and
+  accession number to a Scratch map, keyed to the subject term and the id
+  number. At the same time, a number is added to a Scratch variable for each
+  subject, if the subject  is used more than once, the number adds up. This
+  allows the table logic to know when a single name is associated with more
+  than one row.
+
+  For the table, as each row is built from Scratch map range, the subject
+  name <td> is left out after the first instance of the name's occurrance. The
+  Scratch variable number created above is used as a rowspan value.
+
+*/}}
+
+{{- define "main" -}}
+
+{{- range $.Site.Data.objects.object_list -}}
+
+  {{- if .subject -}}
+
+  {{- $.Scratch.Add "id" .id -}}
+  {{- $.Scratch.Add "accession_number" .accession_number -}}
+
+  {{- range ( split .subject ", ") -}}
+    {{- $d := dict "subject" . "id" ($.Scratch.Get "id") "accession_number" ($.Scratch.Get "accession_number") -}}
+    {{- $subject := lower (replaceRE ",|\\(|\\)|\\s|\\*" "" .) -}}
+
+    {{/* so that the subjects sort correctly, the following adds a zero
+      to the id number if it is lower than 10. So the numbers for sorting
+      are 01, 02, 03 instead of 1, 2, 3 */}}
+    {{- if lt ($.Scratch.Get "id") 10 -}}
+      {{- $sort := printf "%s%s" "0" (string ($.Scratch.Get "id")) -}}
+      {{- $.Scratch.Add "sort" $sort -}}
+    {{- else -}}
+      {{- $.Scratch.Add "sort" (string ($.Scratch.Get "id")) -}}
+    {{- end -}}
+
+    {{- $val := printf "%s-%s" $subject ($.Scratch.Get "sort") -}}
+    {{- $.Page.Scratch.SetInMap "subjects" $val $d -}}
+
+    {{- $.Page.Scratch.Add $subject 1 -}}
+  {{- end -}}
+
+  {{- $.Scratch.Delete "id" -}}
+  {{- $.Scratch.Delete "accession_number" -}}
+
+  {{- end -}}
+
+{{- end -}}
+
+<div class="{{- partial "page-class.html" . -}}" id="main" role="main">
+  {{- partial "page-header.html" . -}}
+
+  <section class="section quire-page__content" id="content">
+    <div class="container">
+      <div class="content">
+        {{- with .Content -}}
+        {{- . -}}
+        <hr />
+        {{- end -}}
+        <table>
+          <thead>
+            <tr><th>Subject</th><th>CVA Number</th><th>J. Paul Getty Museum Accession Number</th></tr>
+          </thead>
+          <tbody>
+            {{- range ($.Page.Scratch.Get "subjects") -}}
+            <tr>
+              {{- $subject := lower (replaceRE ",|\\(|\\)|\\s|\\*" "" .subject) -}}
+              {{- if in ($.Page.Scratch.Get "names") $subject -}}
+              {{- else -}}
+              <td rowspan="{{- $.Page.Scratch.Get $subject -}}">{{- .subject | markdownify -}}</td>
+              {{- $.Page.Scratch.Add "names" (slice $subject) -}}
+              {{- end -}}
+              <td><a href="../catalogue/{{ .id }}">{{- .id -}}</a></td>
+              <td>{{- .accession_number -}}</td>
+            </tr>
+            {{- end -}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+</div>
+{{- end -}}
+
