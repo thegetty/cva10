@@ -18,11 +18,11 @@
         {{ end }}
         <table>
           <thead>
-            <tr><th>Accession number</th><th>Bareiss number</th><th>CVA number</th></tr>
+            <tr><th>J. Paul Getty Museum Accession Number</th><th>Bareiss Collection Number</th><th>CVA Number</th></tr>
           </thead>
           <tbody>
         {{- range $.Site.Data.objects.object_list -}}
-          <tr><td>{{ .accession_number }}</td><td>{{ .bareiss_number }}</td><td>{{ .id }}</td></tr>
+          <tr><td>{{ .accession_number }}</td><td>{{ .bareiss_number }}</td><td><a href="../catalogue/{{ .id }}">{{ .id }}</a></td></tr>
         {{ end }}
           </tbody>
         </table>

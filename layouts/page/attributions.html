@@ -42,7 +42,7 @@
         {{- end -}}
         <table>
           <thead>
-            <tr><th>Attribution</th><th>CVA number</th><th>Plate number</th><th>Accession number</th></tr>
+            <tr><th>Attribution</th><th>CVA Number</th><th>Plate Number</th><th>J. Paul Getty Museum Accession Number</th></tr>
           </thead>
           <tbody>
             {{- range ($.Page.Scratch.Get "attributions") -}}
@@ -52,7 +52,7 @@
               {{- else -}}
               <td rowspan="{{ $.Page.Scratch.Get $name }}">{{ .attribution }}</td>
               {{- end }}
-              <td>{{ .id }}</td>
+              <td><a href="../catalogue/{{ .id }}">{{ .id }}</a></td>
               <td>{{ .plates }}</td>
               <td>{{ .accession_number }}</td>
             </tr>
