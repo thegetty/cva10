@@ -284,14 +284,6 @@ figure_list:
     Alt: "The back side of the two pottery fragments, one mostly black, the other is mottled"
     description: "79.AE.95.12, 79.AE.95.13"
 
-  - id: "79AE9512-c"
-    src: objects/02486301.jpg
-    description: "79.AE.95.12, 79.AE.95.13"
-
-  - id: "79AE9512-d"
-    src: objects/024863F1V1.jpg
-    description: "79.AE.95.12, 79.AE.95.13"
-
   - id: "80AE13813-front"
     src: objects/01717901.jpg
     alt: "Pottery fragment showing a pattern made of dots and curves"
@@ -542,14 +534,6 @@ figure_list:
     alt: "The back side of the two pottery fragments"
     description: "86.AE.208, 86.AE.210"
 
-  - id: "86AE208-c"
-    src: objects/01405401.jpg
-    description: "86.AE.208, 86.AE.210"
-
-  - id: "86AE208-d"
-    src: objects/014054F1V1.jpg
-    description: "86.AE.208, 86.AE.210"
-
   - id: "86AE2091-front"
     src: objects/01405201.jpg
     alt: "Two pottery fragments, one mostly light brown, the other mostly black"
@@ -560,14 +544,6 @@ figure_list:
     alt: "Back of the two pottery fragments, one mostly black, the other mostly grey"
     description: "86.AE.209.1, 86.AE.209.2"
 
-  - id: "86AE2091-c"
-    src: objects/01405301.jpg
-    description: "86.AE.209.1, 86.AE.209.2"
-
-  - id: "86AE2091-d"
-    src: objects/014053F1V1.jpg
-    description: "86.AE.209.1, 86.AE.209.2"
-
   - id: "83AE2111-front"
     src: objects/01405601.jpg
     alt: "Two pottery fragments, both with a black background and red images, one showing a pattern of dots and a part of a body wearing material & the other showing the front torso of maybe two horses and then a cheetah head & neck"
@@ -576,14 +552,6 @@ figure_list:
   - id: "83AE2111-back"
     src: objects/014056F1V1.jpg
     alt: "The reverse side of the two pottery fragments in illustration #18 (entry 3, view 1) (mostly black with some wear)"
-    description: "86.AE.211.1, 86.AE.211.2"
-
-  - id: "83AE2111-c"
-    src: objects/01405701.jpg
-    description: "86.AE.211.1, 86.AE.211.2"
-
-  - id: "83AE2111-d"
-    src: objects/014057F1V1.jpg
     description: "86.AE.211.1, 86.AE.211.2"
 
   - id: "86AE587-front"
@@ -739,100 +707,4 @@ figure_list:
   - id: "98AE821-back"
     src: objects/132641F4V1.jpg
     alt: "The backs of the twelve tiny pottery fragments"
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-c"
-    src: objects/13264201.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-d"
-    src: objects/132642F1V1.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-e"
-    src: objects/13264301.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-f"
-    src: objects/132643F1V1.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-g"
-    src: objects/13264401.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-h"
-    src: objects/132644F1V1.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-i"
-    src: objects/13264501.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-j"
-    src: objects/132645F1V1.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-k"
-    src: objects/13264601.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-l"
-    src: objects/132646F1V1.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-m"
-    src: objects/13264701.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-n"
-    src: objects/132647F1V1.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-o"
-    src: objects/13264801.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-p"
-    src: objects/132648F1V1.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-q"
-    src: objects/13264901.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-r"
-    src: objects/132649F1V1.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-s"
-    src: objects/13265001.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-t"
-    src: objects/132650F1V1.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-u"
-    src: objects/13265101.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-v"
-    src: objects/132651F1V1.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-w"
-    src: objects/13265201.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-x"
-    src: objects/132652F1V1.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-y"
-    src: objects/13265301.jpg
-    description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
-
-  - id: "98AE821-z"
-    src: objects/132653F1V1.jpg
     description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
