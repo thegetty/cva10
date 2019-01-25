@@ -73,6 +73,7 @@
         justify-content: center;
         width: 9.125in;
         margin: 0 .25in;
+        height: 10.625in;
       }
       .plates-area.column {
         display: flex;
@@ -81,7 +82,7 @@
       }
       .plates-area p {
         text-align: center;
-        flex-basis: 100%;
+        width: 100%;
       }
       figure {
         margin: .25in .25in 0;
@@ -126,11 +127,6 @@
         a.simple-nav {
           display: none;
         }
-        .page {
-          max-width: calc(9.625in - 2px);
-          height: calc(11.875in - 2px);
-          border: 1px solid #777;
-        }
       }
 
     </style>
@@ -160,7 +156,7 @@
         {{ .Scratch.Add "index" 1 }}
         {{ range .Page.Params.cva_figure_groups }}
           {{ range .figures }}
-            <figure id="fig-{{ ($.Scratch.Get "index") }}">
+            <figure id="fig-{{ ($.Scratch.Get "index") }}" style="height: {{ add $height .25 }}in;">
               <img src="/img/{{ range where $.Site.Data.figures.figure_list "id" "==" .id }}{{ .src }}{{ end }}" style="height: {{ $height }}in;" />
               <figcaption><span class="label">{{ ($.Scratch.Get "index") }}</span><span class="caption">{{ .caption }}</span></figcaption>
             </figure>
