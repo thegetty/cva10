@@ -30,8 +30,11 @@
   </head>
   <style>
 
+      {{ $width := 9.625 }}
+      {{ $height := 11.875 }}
+
       @page {
-        size: 9.625in 11.875in;
+        size: {{ $width }}in {{ $height }}in;
         margin: 0;
       }
 
@@ -43,12 +46,12 @@
       }
       .page {
         margin: 0 auto;
-        max-width: 9.625in;
-        height: 11.875in;
+        max-width: {{ $width }}in;
+        height: {{ $height }}in;
         background: #fff;
       }
       .margin {
-        max-width: 9.125in;
+        max-width: {{ sub $width .5 }}in;
         height: .25in;
         padding: .25in .25in 0;
         letter-spacing: 1px;
@@ -71,9 +74,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 9.125in;
+        width: {{ sub $width .5 }}in;
         margin: 0 .25in;
-        height: 10.625in;
+        height: {{ sub $height 1.25 }}in;
       }
       .plates-area.column {
         display: flex;
@@ -100,7 +103,7 @@
         text-transform: none;
       }
       img {
-        max-width: 8.125in;
+        max-width: {{ sub $width 1 }}in;
       }
       a.simple-nav {
         position: fixed;
@@ -142,14 +145,13 @@
         <div class="plates-area{{ with .Page.Params.cva_plate_layout.style }} {{ . }}{{ end }}">
         {{ $len := len .Page.Params.cva_figure_groups }}
         {{ $rows := .Page.Params.cva_plate_layout.rows }}
-        {{ $pageHeight := 11.875 }}
 
         {{ $margins := mul .75 2 }}
         {{ $labels := mul $rows .25 }}
         {{ $accessionNumbers := mul $len .25 }}
         {{ $rowPadding := sub $rows 1 | mul .25 }}
 
-        {{ $height := div (sub $pageHeight (add $margins (add $labels (add $accessionNumbers $rowPadding)))) $rows }}
+        {{ $height := div (sub $height (add $margins (add $labels (add $accessionNumbers $rowPadding)))) $rows }}
 
         {{ $imageHeight := printf "%s%s" $height "in" }}
 
@@ -181,7 +183,7 @@
         {{ if eq .Next.Section .Section }}
         <a href="{{ .Next.Permalink }}" rel="next" class="simple-nav next">▶</a>
         {{ end }}
-        
+
     </div>
   </body>
 </html>
