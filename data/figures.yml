@@ -100,17 +100,17 @@ figure_list:
     description: "Mixing Vessel with a Dancing Girl; Myson (Greek (Attic), active 500–475 B.C.); Athens, Greece; about 490 B.C.; Terracotta; 35 × 34.5 × 30 cm (13 3/4 × 13 9/16 × 11 13/16 in.); 73.AE.135"
 
   - id: "73AE135-detail-a"
-    src: objects/###.jpg
+    src: objects/00821901-detail-a.jpg
     alt: "Detail showing just the female figure"
     description: "Mixing Vessel with a Dancing Girl; Myson (Greek (Attic), active 500–475 B.C.); Athens, Greece; about 490 B.C.; Terracotta; 35 × 34.5 × 30 cm (13 3/4 × 13 9/16 × 11 13/16 in.); 73.AE.135"
 
   - id: "73AE135-detail-b"
-    src: objects/###.jpg
+    src: objects/008219F3V1-detail-b.jpg
     alt: "Detail showing just the male figure"
     description: "Mixing Vessel with a Dancing Girl; Myson (Greek (Attic), active 500–475 B.C.); Athens, Greece; about 490 B.C.; Terracotta; 35 × 34.5 × 30 cm (13 3/4 × 13 9/16 × 11 13/16 in.); 73.AE.135"
 
   - id: "73AE135-detail-c"
-    src: objects/###.jpg
+    src: objects/008219F3V1-detail-c.jpg
     alt: "Detail showing the man's head and the disk"
     description: "Mixing Vessel with a Dancing Girl; Myson (Greek (Attic), active 500–475 B.C.); Athens, Greece; about 490 B.C.; Terracotta; 35 × 34.5 × 30 cm (13 3/4 × 13 9/16 × 11 13/16 in.); 73.AE.135"
 
@@ -240,7 +240,7 @@ figure_list:
     description: "Attic Red-Figure Volute Krater; Attributed to Polygnotos (Greek (Attic), active 450–430 B.C.); Athens, Greece; about 445–430 B.C.; Terracotta; 28.8 × 47.7 cm (11 5/16 × 18 3/4 in.); 79.AE.198"
 
   - id: "79AE198-detail-j"
-    src: objects/010324D2V1.
+    src: objects/010324D2V1.jpg
     alt: "Another detail of the neck ring?, showing a pattern, portions of two heads, and a black area with a lot of damage"
     description: "Attic Red-Figure Volute Krater; Attributed to Polygnotos (Greek (Attic), active 450–430 B.C.); Athens, Greece; about 445–430 B.C.; Terracotta; 28.8 × 47.7 cm (11 5/16 × 18 3/4 in.); 79.AE.198"
 
@@ -470,12 +470,12 @@ figure_list:
     description: 86.AE.205
 
   - id: "86AE205-detail-a"
-    src: objects/###.jpg
+    src: objects/01404701-detail-a.jpg
     alt: "Detail of the two horses and two men"
     description: 86.AE.205
 
   - id: "86AE205-detail-b"
-    src: objects/###.jpg
+    src: objects/014047F1V1-detail-b.jpg
     alt: "Detail of the three men"
     description: 86.AE.205
 
@@ -709,28 +709,13 @@ figure_list:
     alt: "The backs of the twelve tiny pottery fragments"
     description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
 
-  - id: "73AE135-detail-a"
-    src: objects/###.jpg
-    alt: "Detail showing just the female figure"
-    description: 73.AE.135
-
-  - id: "73AE135-detail-b"
-    src: objects/###.jpg
-    alt: "Detail showing just the male figure"
-    description: 73.AE.135
-
-  - id: "73AE135-detail-c"
-    src: objects/###.jpg
-    alt: "Detail showing the man's head and the disk"
-    description: 73.AE.135
-
   - id: "78AE3801-detail-a"
-    src: objects/###.jpg
+    src: objects/11430101-detail-a.jpg
     alt: "Detail of the vase, showing the four people"
     description: 78.AE.380.1
 
   - id: "78AE3801-detail-b"
-    src: objects/###.jpg
+    src: objects/114301F1V1-detail-b.jpg
     alt: "Other side detail of the vase, showing three people"
     description: 78.AE.380.1
 
@@ -745,177 +730,157 @@ figure_list:
     description: 78.AE.380.1
 
   - id: "79AE198-detail-a"
-    src: objects/###.jpg
+    src: objects/01032401-detail-a.jpg
     alt: "Detail of the shoulder, showing five heads"
     description: 79.AE.198
 
   - id: "79AE198-detail-b"
-    src: objects/###.jpg
+    src: objects/01032401-detail-b.jpg
     alt: "A smaller detail of 79AE198-detail-a showing two heads"
     description: 79.AE.198
 
   - id: "79AE198-detail-c"
-    src: objects/###.jpg
+    src: objects/01032401-detail-c.jpg
     alt: "Another smaller detail of 79AE198-detail-a showing three heads"
     description: 79.AE.198
 
   - id: "79AE198-detail-d"
-    src: objects/###.jpg
+    src: objects/010324F4V1-detail-d.jpg
     alt: "Another smaller detail of 79AE198-detail-a focused on one head but including part of the body of another person"
     description: 79.AE.198
 
   - id: "79AE198-detail-e"
-    src: objects/###.jpg
+    src: objects/01032401-detail-e.jpg
     alt: "A detail of the neck, showing several people with animal skins and one with a small cat"
     description: 79.AE.198
 
   - id: "79AE198-detail-f"
-    src: objects/###.jpg
+    src: objects/010324F6V1-detail-f.jpg
     alt: "Another detail of the neck, showing several people, perhaps an animal skin draped over the back of a human-like creature, and perhaps another vase in the air"
     description: 79.AE.198
 
   - id: "79AE198-detail-g"
-    src: objects/###.jpg
+    src: objects/010324F2V1-detail-g.jpg
     alt: "Another detail of the neck, showing several people and one man dropping a vase"
     description: 79.AE.198
 
   - id: "79AE198-detail-h"
-    src: objects/###.jpg
+    src: objects/010324F4V1-detail-h.jpg
     alt: "Another detail of the neck, showing several people and, perhaps, a vase in the air"
     description: 79.AE.198
 
   - id: "81AE161-detail-a"
-    src: objects/###.jpg
+    src: objects/gml_01153701-detail-a.jpg
     alt: "Detail of the three people"
     description: 81.AE.161
 
   - id: "81AE161-detail-b"
-    src: objects/###.jpg
+    src: objects/gml_01153701-detail-b.jpg
     alt: "Detail of the vase's neck decoration that looks like heart-shaped leaves on a vine"
     description: 81.AE.161
 
   - id: "81AE161-detail-c"
-    src: objects/###.jpg
+    src: objects/gml_01153701-detail-c.jpg
     alt: "Detail of the vase's lip (?) showing wild animals"
     description: 81.AE.161
 
   - id: "81AE161-detail-d"
-    src: objects/###.jpg
+    src: objects/gml_011537F2V1-detail-d.jpg
     alt: "Detail of the two people wearing clothing"
     description: 81.AE.161
 
   - id: "81AE37-front"
-    src: objects/###.jpg
+    src: objects/gm_01108401.jpg
     alt: "One view of a vase, the body decoration depicting two people, one with an outstretched arm, and leaves forming a pattern on the vase's neck"
     description: 81.AE.37
 
   - id: "81AE37-back"
-    src: objects/###.jpg
+    src: objects/gm_011084F9V1.jpg
     alt: "Another view of the vase, the body decoration includes one person holding a cane or staff and no decoration on the neck"
     description: 81.AE.37
 
   - id: "81AE37-side-a"
-    src: objects/###.jpg
+    src: objects/gm_011084F10V1.jpg
     alt: "Side view of the vase, with the leaves on the left"
     description: 81.AE.37
 
   - id: "81AE37-side-b"
-    src: objects/###.jpg
+    src: objects/gm_011084F11V1.jpg
     alt: "The other side view of the vase, with the leaves on the right"
     description: 81.AE.37
 
   - id: "81AE37-top"
-    src: objects/###.jpg
+    src: objects/gm_011084F12V1.jpg
     alt: "View of the top of the vase"
     description: 81.AE.37
 
   - id: "81AE37-detail-a"
-    src: objects/###.htm
+    src: objects/gm_01108401-detail-a.jpg
     alt: "Detail of the two people"
     description: 81.AE.37
 
   - id: "81AE37-detail-b"
-    src: objects/###.htm
+    src: objects/gm_01108401-detail-b.jpg
     alt: "Detail of the seat or altar next to the two people"
     description: 81.AE.37
 
   - id: "81AE37-detail-c"
-    src: objects/###.htm
+    src: objects/gm_011084F9V1-detail-c.jpg
     alt: "Detail of the person with the cane or staff"
     description: 81.AE.37
 
   - id: "82AE143-detail-a"
-    src: objects/###.jpg
+    src: objects/gml_01230201-detail-a.jpg
     alt: "Detail of the three people and griffin"
     description: 82.AE.143
 
   - id: "82AE143-detail-b"
-    src: objects/###.jpg
+    src: objects/gml_012302F11V1-detail-b.jpg
     alt: "Detail of the three people"
     description: 82.AE.143
 
   - id: "83AE252-detail-a"
-    src: objects/###.jpg
+    src: objects/gml_01241101-detail-a.jpg
     alt: "Detail of the three people"
     description: 82.AE.252
 
   - id: "83AE252-detail-b"
-    src: objects/###.jpg
+    src: objects/gml_01241101-detail-b.jpg
     alt: "Detail of the larger object"
     description: 83.AE.252
 
   - id: "83AE252-detail-c"
-    src: objects/###.jpg
+    src: objects/gml_01241101-detail-c.jpg
     alt: "Detail of an object held by one of the men (possibly a crown)"
     description: 83.AE.252
 
   - id: "83AE252-detail-d"
-    src: objects/###.jpg
+    src: objects/gml_012411F2V1-detail-d.jpg
     alt: "Detail of the two people"
     description: 83.AE.252
 
   - id: "83AE255-detail-a"
-    src: objects/###.jpg
+    src: objects/gml_01241401-detail-a.jpg
     alt: "Detail of the two figures"
     description: 83.AE.255
 
   - id: "83AE255-detail-b"
-    src: objects/###.jpg
+    src: objects/gml_012414F4V1-detail-b.jpg
     alt: "Detail of one figure"
     description: 83.AE.255
 
   - id: "83AE255-detail-c"
-    src: objects/###.jpg
+    src: objects/gml_01241401-detail-c.jpg
     alt: "Detail of the object (possibly a crown)"
     description: 83.AE.255
 
-  - id: "86AE205-detail-a"
-    src: objects/###.jpg
-    alt: "Detail of the two horses and two men"
-    description: 86.AE.205
-
-  - id: "86AE205-detail-b"
-    src: objects/###.jpg
-    alt: "Detail of the three men"
-    description: 86.AE.205
-
-  - id: "86AE205-detail-c"
-    src: objects/###.jpg
-    alt: "Detail of a horse"
-    description: 86.AE.205
-
-  - id: "86AE205-detail-d"
-    src: objects/###.jpg
-    alt: "Detail of one of the men"
-    description: 86.AE.205
-
   - id: "86AE206-detail-a"
-    src: objects/###.jpg
+    src: objects/014048F2V1-detail-a.jpg
     alt: "Detail of the three people"
     description: 86.AE.206
 
   - id: "86AE206-detail-b"
-    src: objects/###.jpg
+    src: objects/01404801-detail-b.jpg
     alt: "Detail of the two people"
     description: 86.AE.206
 
