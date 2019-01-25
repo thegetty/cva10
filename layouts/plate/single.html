@@ -1,0 +1,187 @@
+{{/*
+  A specialized layout for Corpus Vasorum Antiquorum (CVA) Plates. This is a
+  complete HTML document and does not rely on the `default/baseof.html`
+  template that all other pages in the typical Quire project rely on. In this
+  way, all the standard Quire navigation and interactions have been stripped
+  away, leaving a very basic page meant primarily for print output.
+
+  Notes:
+
+  - The online view includes some Next/Prev navigation primarily
+    to aid in development of these plates
+  - All the CSS is currently self-contained in this document
+
+*/}}
+
+<!DOCTYPE html>
+<html lang="{{ .Site.Data.publication.language }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    {{- if eq .Params.online false -}}
+    <meta name="robots" content="noindex">
+    {{- end }}
+    <title>Plate {{ .File.BaseFileName }} | {{ .Site.Data.publication.title }}</title>
+    {{ partial "metadata.html" . }}
+
+    {{ partial "analytics.html" . }}
+
+  </head>
+  <style>
+
+      @page {
+        size: 9.625in 11.875in;
+        margin: 0;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background: #777;
+        text-transform: uppercase;
+      }
+      .page {
+        margin: 0 auto;
+        max-width: 9.625in;
+        height: 11.875in;
+        background: #fff;
+      }
+      .margin {
+        max-width: 9.125in;
+        height: .25in;
+        padding: .25in .25in 0;
+        letter-spacing: 1px;
+        font-size: .9rem;
+      }
+      .margin span:first-child {
+        float: left;
+      }
+      .margin span:last-child {
+        float: right;
+        text-align: right;
+      }
+      .plate-number {
+        text-transform: none;
+        font-size: 1.5rem;
+        letter-spacing: 0;
+        margin-top: -.25rem;
+      }
+      .plates-area {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 9.125in;
+        margin: 0 .25in;
+      }
+      .plates-area.column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .plates-area p {
+        text-align: center;
+        flex-basis: 100%;
+      }
+      figure {
+        margin: .25in .25in 0;
+      }
+      p,
+      figcaption {
+        margin: 0;
+        height: .25in;
+        text-align: center;
+      }
+      figcaption .label {
+        float: left;
+      }
+      figcaption .caption {
+        text-transform: none;
+      }
+      img {
+        max-width: 8.125in;
+      }
+      a.simple-nav {
+        position: fixed;
+        top: 40vh;
+        font-size: 2rem;
+        line-height: 1.6;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        background: #777;
+        text-align: center;
+        height: 3rem;
+        width: 3rem;
+        border-radius: .25rem;
+        font-family: sans-serif;
+      }
+      a.simple-nav.previous {
+        left: 1vw;
+      }
+      a.simple-nav.next {
+        right: 1vw;
+      }
+      @media print {
+        a.simple-nav {
+          display: none;
+        }
+        .page {
+          max-width: calc(9.625in - 2px);
+          height: calc(11.875in - 2px);
+          border: 1px solid #777;
+        }
+      }
+
+    </style>
+  <body>
+
+    <div class="page" id="plate-{{ .File.BaseFileName }}">
+
+        <div class="margin">
+          <span class="fasicule">{{ .Site.Data.publication.cva.institution }} ({{ .Site.Data.publication.cva.fasicule_no }})</span>
+          <span class="plate-number">Plate {{ .File.BaseFileName }}</span>
+        </div>
+
+        <div class="plates-area{{ with .Page.Params.cva_plate_layout.style }} {{ . }}{{ end }}">
+        {{ $len := len .Page.Params.cva_figure_groups }}
+        {{ $rows := .Page.Params.cva_plate_layout.rows }}
+        {{ $pageHeight := 11.875 }}
+
+        {{ $margins := mul .75 2 }}
+        {{ $labels := mul $rows .25 }}
+        {{ $accessionNumbers := mul $len .25 }}
+        {{ $rowPadding := sub $rows 1 | mul .25 }}
+
+        {{ $height := div (sub $pageHeight (add $margins (add $labels (add $accessionNumbers $rowPadding)))) $rows }}
+
+        {{ $imageHeight := printf "%s%s" $height "in" }}
+
+        {{ .Scratch.Add "index" 1 }}
+        {{ range .Page.Params.cva_figure_groups }}
+          {{ range .figures }}
+            <figure id="fig-{{ ($.Scratch.Get "index") }}">
+              <img src="/img/{{ range where $.Site.Data.figures.figure_list "id" "==" .id }}{{ .src }}{{ end }}" style="height: {{ $height }}in;" />
+              <figcaption><span class="label">{{ ($.Scratch.Get "index") }}</span><span class="caption">{{ .caption }}</span></figcaption>
+            </figure>
+            {{ $.Scratch.Add "index" 1 }}
+          {{ end }}
+          <p>{{ .accession_no }}</p>
+        {{ end }}
+        {{ .Scratch.Delete "index" }}
+        </div>
+
+        <div class="margin">
+
+          {{ $countryPlateNumber := add (sub .Site.Data.publication.cva.country_plate_start .Site.Data.publication.cva.plate_start) (int .File.BaseFileName) }}
+
+          <span>{{ .Site.Data.publication.cva.country }} {{ $countryPlateNumber }}</span>
+          <span>{{ .Page.Params.cva_typology }}</span>
+        </div>
+
+        <a href="{{ .Prev.Permalink }}" rel="prev" class="simple-nav previous">◀</a>
+        <a href="{{ .Next.Permalink }}" rel="next" class="simple-nav next">▶</a>
+
+    </div>
+  </body>
+</html>
