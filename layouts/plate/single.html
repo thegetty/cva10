@@ -32,6 +32,7 @@
 
       {{ $width := 9.625 }}
       {{ $height := 11.875 }}
+      {{ $columnWidth := div (sub $width 1.5) 2 }}
 
       @page {
         size: {{ $width }}in {{ $height }}in;
@@ -70,22 +71,45 @@
         letter-spacing: 0;
         margin-top: -.25rem;
       }
+      .plates-wrapper {
+        display: flex;
+        align-items: center;
+        height: {{ sub $height 1.25 }}in;
+        width: {{ sub $width .5 }}in;
+        margin: 0 .25in;
+      }
       .plates-area {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: {{ sub $width .5 }}in;
-        margin: 0 .25in;
-        height: {{ sub $height 1.25 }}in;
+        width: 100%;
       }
       .plates-area.column {
         display: flex;
         flex-direction: column;
         align-items: center;
       }
+      .plates-area.grid {
+        display: inline-block;
+      }
+      .plates-area.grid figure,
+      .plates-area.grid img {
+        width: {{ $columnWidth }}in;
+      }
+      .plates-area.grid figure {
+        float: left;
+      }
+      .plates-area.grid figure {
+        float: left;
+      }
+      .plates-area.grid figure:last-of-type:nth-of-type(odd) {
+        margin-left: {{ div (add $columnWidth .5) 2 }}in;
+        margin-right: {{ div (add $columnWidth .5) 2 }}in;
+      }
       .plates-area p {
         text-align: center;
         width: 100%;
+        clear: both;
       }
       figure {
         margin: .25in .25in 0;
@@ -142,31 +166,33 @@
           <span class="plate-number">Plate {{ .File.BaseFileName }}</span>
         </div>
 
-        <div class="plates-area{{ with .Page.Params.cva_plate_layout.style }} {{ . }}{{ end }}">
-        {{ $len := len .Page.Params.cva_figure_groups }}
-        {{ $rows := .Page.Params.cva_plate_layout.rows }}
+        <div class="plates-wrapper">
+          <div class="plates-area{{ with .Page.Params.cva_plate_layout.style }} {{ . }}{{ end }}">
+          {{ $len := len .Page.Params.cva_figure_groups }}
+          {{ $rows := .Page.Params.cva_plate_layout.rows }}
 
-        {{ $margins := mul .75 2 }}
-        {{ $labels := mul $rows .25 }}
-        {{ $accessionNumbers := mul $len .25 }}
-        {{ $rowPadding := sub $rows 1 | mul .25 }}
+          {{ $margins := mul .75 2 }}
+          {{ $labels := mul $rows .25 }}
+          {{ $accessionNumbers := mul $len .25 }}
+          {{ $rowPadding := sub $rows 1 | mul .25 }}
 
-        {{ $height := div (sub $height (add $margins (add $labels (add $accessionNumbers $rowPadding)))) $rows }}
+          {{ $height := div (sub $height (add $margins (add $labels (add $accessionNumbers $rowPadding)))) $rows }}
 
-        {{ $imageHeight := printf "%s%s" $height "in" }}
+          {{ $imageHeight := printf "%s%s" $height "in" }}
 
-        {{ .Scratch.Add "index" 1 }}
-        {{ range .Page.Params.cva_figure_groups }}
-          {{ range .figures }}
-            <figure id="fig-{{ ($.Scratch.Get "index") }}" style="height: {{ add $height .25 }}in;">
-              <img src="/img/{{ range where $.Site.Data.figures.figure_list "id" "==" .id }}{{ .src }}{{ end }}" style="height: {{ $height }}in;" />
-              <figcaption><span class="label">{{ ($.Scratch.Get "index") }}</span><span class="caption">{{ .caption }}</span></figcaption>
-            </figure>
-            {{ $.Scratch.Add "index" 1 }}
+          {{ .Scratch.Add "index" 1 }}
+          {{ range .Page.Params.cva_figure_groups }}
+            {{ range .figures }}
+              <figure id="fig-{{ ($.Scratch.Get "index") }}" style="max-height: {{ add $height .25 }}in;">
+                <img src="/img/{{ range where $.Site.Data.figures.figure_list "id" "==" .id }}{{ .src }}{{ end }}" style="max-height: {{ $height }}in;" />
+                <figcaption><span class="label">{{ ($.Scratch.Get "index") }}</span><span class="caption">{{ .caption }}</span></figcaption>
+              </figure>
+              {{ $.Scratch.Add "index" 1 }}
+            {{ end }}
+            <p>{{ .accession_no }}</p>
           {{ end }}
-          <p>{{ .accession_no }}</p>
-        {{ end }}
-        {{ .Scratch.Delete "index" }}
+          {{ .Scratch.Delete "index" }}
+          </div>
         </div>
 
         <div class="margin">
