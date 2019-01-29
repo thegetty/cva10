@@ -885,16 +885,16 @@ figure_list:
     description: 86.AE.206
 
   - id: "87AE93-detail-s"
-    src: objects/###.jpg
+    src: objects/gml_014998D13V1.jpg
     alt: "Another detail of the top of the foot, showing a hare running away from a dog and a man"
     description: 87.AE.93
 
   - id: "87AE93-detail-u"
-    src: objects/###.jpg
+    src: objects/gml_014998D23V1.jpg
     alt: "Another detail of the top of the foot, showing a person slaying a deer"
     description: 87.AE.93
 
   - id: "87AE93-detail-w"
-    src: objects/###.jpg
+    src: objects/gml_014998D24V1.jpg
     alt: "Another detail of the top of the foot, showing a person subduing a bull"
     description: 87.AE.93
