@@ -84,6 +84,13 @@
         justify-content: center;
         width: 100%;
       }
+      .group-wrapper {
+        display: inherit;
+        flex-wrap: inherit;
+        justify-content: inherit;
+        flex-direction: inherit;
+        align-items: inherit;
+      }
       .figure-wrapper {
         display: flex;
         flex-basis: 100%;
@@ -108,8 +115,8 @@
         float: left;
       }
       .plates-area.grid figure:last-of-type:nth-of-type(odd) {
-        margin-left: {{ div (add $columnWidth .5) 2 }}in;
-        margin-right: {{ div (add $columnWidth .5) 2 }}in;
+        margin-left: {{ add (div (add $columnWidth .5) 2) .25 }}in;
+        margin-right: {{ add (div (add $columnWidth .5) 2) .25 }}in;
       }
       .plates-area p {
         text-align: center;
@@ -160,6 +167,66 @@
           display: none;
         }
       }
+
+      // CUSTOM LAYOUTS FOR PLATES 523, 533, 536, and 268
+
+      #plate-523 #fig-1 {
+        flex-basis: 100%;
+        margin-left: 2.875in;
+      }
+      #plate-523 #fig-3 {
+        height: 2.5in;
+      }
+      #plate-523 #fig-3 img {
+        height: 2.25in;
+      }
+
+      #plate-533 #group-83AE284201 figure {
+        width: {{ $columnWidth }}in;
+        display: inline-block;
+      }
+      #plate-533 #group-83AE284201 figure img {
+        width: 100%;
+      }
+      #plate-533 #group-83AE255 {
+        height: 6.875in;
+        width: 7in;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+      }
+      #plate-533 #fig-1 {
+        width: 3.5in;
+      }
+      #plate-533 #fig-2 {
+        width: 2in;
+      }
+      #plate-533 #fig-3 {
+        width: 2.5in;
+        align-self: flex-start;
+      }
+      #plate-533 img {
+        width: 100%;
+      }
+      #plate-533 #group-83AE255 p {
+        position: absolute;
+        top: 7.325in;
+        left: 0;
+      }
+
+      #plate-536 #fig-2 {
+        height: 3in;
+        margin-top: 2.1875in;
+      }
+      #plate-536 #fig-2 img {
+        height: 2.75in;
+      }
+
+      #plate-568 #fig-1 {
+        flex-basis: 100%;
+        margin-left: 1in;
+      }
+
 
     </style>
   <body>
@@ -217,9 +284,25 @@
               <p>{{ .accession_no }}</p>
             {{ end }}
 
+          {{ else if eq .Page.Params.cva_plate_layout.style "custom" }}
+
+            {{ range .Page.Params.cva_figure_groups }}
+              <div class="group-wrapper" id="group-{{ replaceRE "\\.|\\s" "" .accession_no }}">
+              {{ range .figures }}
+                <figure id="fig-{{ ($.Scratch.Get "index") }}">
+                  <img src="/img/{{ range where $.Site.Data.figures.figure_list "id" "==" .id }}{{ .src }}{{ end }}" />
+                  <figcaption><span class="label">{{ ($.Scratch.Get "index") }}</span><span class="caption">{{ .caption }}</span></figcaption>
+                </figure>
+                {{ $.Scratch.Add "index" 1 }}
+              {{ end }}
+              <p>{{ .accession_no }}</p>
+              </div>
+            {{ end }}
+
           {{ else }}
 
             {{ range .Page.Params.cva_figure_groups }}
+              <div class="group-wrapper" id="group-{{ replaceRE "\\.|\\s" "" .accession_no }}">
               {{ range .figures }}
                 <figure id="fig-{{ ($.Scratch.Get "index") }}" style="max-height: {{ add $height .25 }}in;">
                   <img src="/img/{{ range where $.Site.Data.figures.figure_list "id" "==" .id }}{{ .src }}{{ end }}" style="max-height: {{ $height }}in;" />
@@ -228,6 +311,7 @@
                 {{ $.Scratch.Add "index" 1 }}
               {{ end }}
               <p>{{ .accession_no }}</p>
+              </div>
             {{ end }}
 
           {{ end }}
