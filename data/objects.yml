@@ -3,7 +3,7 @@ object_display_order:
   - accession_number
 object_list:
   - id: 1
-    plates: 518–20
+    plates: "518–20"
     accession_number: 86.AE.205
     bareiss_number: 342
     fabric: Athenian
@@ -25,7 +25,7 @@ object_list:
       - id: 86AE205-detail-d
 
   - id: 2
-    plates: 521–23
+    plates: "521–23"
     accession_number: 73.AE.135
     bareiss_number:
     fabric: Athenian
@@ -46,13 +46,13 @@ object_list:
       - id: 73AE135-detail-c
 
   - id: 3
-    plates: 524, 1–2
+    plates: "524, 1–2"
     accession_number: 86.AE.211.1 and 86.AE.211.2
     bareiss_number: 307 a and 307 b
     fabric: Athenian
     technique: Red-figure
     shape_name: Krater, Column-
-    attribution: Near the Eucharides Painter
+    attribution: Eucharides Painter, Near the
     attributor: J. R. Guy
     date: -480
     subject: breast bands (on horses), chariot, charioteer, chiton, Dionysos, feline (unspecified), himation, horse, *kentron*, *quadriga*
@@ -61,7 +61,7 @@ object_list:
       - id: 83AE2111-back
 
   - id: 4
-    plates: 524, 3–4
+    plates: "524, 3–4"
     accession_number: 86.AE.207
     bareiss_number: 253
     fabric: Athenian
@@ -76,7 +76,7 @@ object_list:
       - id: 86AE207-back
 
   - id: 5
-    plates: 525–27
+    plates: "525–27"
     accession_number: 86.AE.206
     bareiss_number: 31
     fabric: Athenian
@@ -96,7 +96,7 @@ object_list:
       - id: 86AE206-detail-b
 
   - id: 6
-    plates: 528–30
+    plates: "528–30"
     accession_number: 83.AE.252
     bareiss_number:
     fabric: Athenian
@@ -118,7 +118,7 @@ object_list:
       - id: 83AE252-detail-d
 
   - id: 7
-    plates: 531–32, 533, 1–3
+    plates: "531–32, 533, 1–3"
     accession_number: 83.AE.255
     bareiss_number:
     fabric: Athenian
@@ -139,7 +139,7 @@ object_list:
       - id: 83AE255-detail-c
 
   - id: 8
-    plates: 533, 4–5
+    plates: "533, 4–5"
     accession_number: 83.AE.284.201
     bareiss_number:
     fabric: Athenian
@@ -154,7 +154,7 @@ object_list:
       - id: 83AE284201-back
 
   - id: 9
-    plates: 534–36
+    plates: "534–36"
     accession_number: 81.AE.37
     bareiss_number:
     fabric: Athenian
@@ -175,13 +175,13 @@ object_list:
       - id: 81AE37-detail-c
 
   - id: 10
-    plates: 537
+    plates: "537"
     accession_number: 86.AE.208 and 86.AE.210
     bareiss_number: 379
     fabric: Athenian
     technique: Red-figure
     shape_name: Krater, Column-
-    attribution: Group of Undetermined Mannerists
+    attribution: Undetermined Mannerists, Group of
     attributor: D. von Bothmer
     date: -480
     subject: chiton, Dionysos, flower, grapes, maenad, necklace, offerings, *popana*, table
@@ -190,7 +190,7 @@ object_list:
       - id: 86AE208-back
 
   - id: 11
-    plates: 538–40
+    plates: "538–40"
     accession_number: 78.AE.380.1, 78.AE.380.25, 78.AE.380.36, 78.AE.380.58, 78.AE.380.62, and 78.AE.380.67
     bareiss_number:
     fabric: Athenian
@@ -212,7 +212,7 @@ object_list:
       - id: 78AE3801-detail-d
 
   - id: 12
-    plates: 541–43
+    plates: "541–43"
     accession_number: 81.AE.161
     bareiss_number:
     fabric: Athenian
@@ -234,13 +234,13 @@ object_list:
       - id: 81AE161-detail-d
 
   - id: 13
-    plates: 544–46
+    plates: "544–46"
     accession_number: 82.AE.143
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
     shape_name: Krater, Column-
-    attribution: Painter of London E 489
+    attribution: London E 489, Painter of
     attributor: J. R. Guy
     date: -460 to -450
     subject: cloak, column (Ionic), fillet, himation, Oidipous, *petasos*, *sakkos*, spear, Sphinx, staff, stick
@@ -254,7 +254,7 @@ object_list:
       - id: 82AE143-detail-b
 
   - id: 14
-    plates: 547, 1–2
+    plates: "547, 1–2"
     accession_number: 86.AE.204
     bareiss_number: 312
     fabric: Athenian
@@ -269,7 +269,7 @@ object_list:
       - id: 86AE204-back
 
   - id: 15
-    plates: 547, 3–4
+    plates: "547, 3–4"
     accession_number: 86.AE.209.1 and 86.AE.209.2
     bareiss_number:
     fabric: Athenian
@@ -285,7 +285,7 @@ object_list:
 
 
   - id: 16
-    plates: 547, 5–6
+    plates: "547, 5–6"
     accession_number: 79.AE.95.12 and 79.AE.95.13
     bareiss_number:
     fabric: Athenian
@@ -300,13 +300,14 @@ object_list:
       - id: 79AE9512-back
 
   - id: 17
-    plates: 548, 1–2
+    plates: "548, 1–2"
     accession_number: 81.AE.188.7
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
     shape_name: Krater, Volute-
-    attribution: Euthymides or early Kleophrades Painter
+    attribution: Euthymides; Kleophrades Painter
+    attribution_uncertain: true
     attributor: J. R. Guy and J. Gaunt
     date: -520 to -510
     subject: drinking horn, *krotalon*, maenad, satyr, wreath
@@ -315,7 +316,7 @@ object_list:
       - id: 81AE1887-back
 
   - id: 18
-    plates: 548, 3–4
+    plates: "548, 3–4"
     accession_number: 80.AE.138.13
     bareiss_number:
     fabric: Athenian
@@ -330,7 +331,7 @@ object_list:
       - id: 80AE13813-back
 
   - id: 19
-    plates: 549–57
+    plates: "549–57"
     accession_number: 77.AE.11, 86.AE.587, 97.AE.58.2, and 98.AE.82.1–12
     bareiss_number:
     fabric: Athenian
@@ -365,7 +366,7 @@ object_list:
       - id: 98AE821-back
 
   - id: 20
-    plates: 558, 1–2
+    plates: "558, 1–2"
     accession_number: 86.AE.202
     bareiss_number: 91
     fabric: Athenian
@@ -380,7 +381,7 @@ object_list:
       - id: 86AE202-back
 
   - id: 21
-    plates: 558, 3–4
+    plates: "558, 3–4"
     accession_number: 86.AE.203
     bareiss_number: 329
     fabric: Athenian
@@ -395,7 +396,7 @@ object_list:
       - id: 86AE203-back
 
   - id: 22
-    plates: 558, 5–6
+    plates: "558, 5–6"
     accession_number: 76.AE.131.10
     bareiss_number:
     fabric: Athenian
@@ -410,7 +411,7 @@ object_list:
       - id: 76AE13110-back
 
   - id: 23
-    plates: 559–63
+    plates: "559–63"
     accession_number: 79.AE.198
     bareiss_number:
     fabric: Athenian
@@ -440,7 +441,7 @@ object_list:
       - id: 79AE198-detail-m
 
   - id: 24
-    plates: 564–73
+    plates: "564–73"
     accession_number: 87.AE.93
     bareiss_number:
     fabric: Athenian
