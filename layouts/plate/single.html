@@ -84,6 +84,11 @@
         justify-content: center;
         width: 100%;
       }
+      .figure-wrapper {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+      }
       .plates-area.column {
         display: flex;
         flex-direction: column;
@@ -178,19 +183,55 @@
 
           {{ $height := div (sub $height (add $margins (add $labels (add $accessionNumbers $rowPadding)))) $rows }}
 
-          {{ $imageHeight := printf "%s%s" $height "in" }}
-
           {{ .Scratch.Add "index" 1 }}
-          {{ range .Page.Params.cva_figure_groups }}
-            {{ range .figures }}
-              <figure id="fig-{{ ($.Scratch.Get "index") }}" style="max-height: {{ add $height .25 }}in;">
-                <img src="/img/{{ range where $.Site.Data.figures.figure_list "id" "==" .id }}{{ .src }}{{ end }}" style="max-height: {{ $height }}in;" />
-                <figcaption><span class="label">{{ ($.Scratch.Get "index") }}</span><span class="caption">{{ .caption }}</span></figcaption>
-              </figure>
-              {{ $.Scratch.Add "index" 1 }}
+
+          {{ if in .Page.Params.cva_plate_layout.style "details" }}
+
+            {{ if in .Page.Params.cva_plate_layout.style "top" }}
+              {{ .Scratch.Add "details" (slice "1" "2") }}
+            {{ else if in .Page.Params.cva_plate_layout.style "middle" }}
+              {{ .Scratch.Add "details" (slice "2" "3") }}
+            {{ else }}
+              {{ .Scratch.Add "details" (slice "3" "4") }}
             {{ end }}
-            <p>{{ .accession_no }}</p>
+
+            {{ range .Page.Params.cva_figure_groups }}
+              {{ range .figures }}
+                {{ $i := $.Scratch.Get "index" }}
+                {{ if in ($.Scratch.Get "details") (string $i) }}
+                  <figure id="fig-{{ $i }}" style="max-height: {{ sub (add $height .25) 1 }}in;">
+                {{ else }}
+                  <div class="figure-wrapper">
+                    <figure id="fig-{{ $i }}" style="max-height: {{ add (add $height .25) .5 }}in;">
+                {{ end }}
+                    <img src="/img/{{ range where $.Site.Data.figures.figure_list "id" "==" .id }}{{ .src }}{{ end }}" style="{{ if in ($.Scratch.Get "details") (string $i) }}max-height: {{ sub $height 1 }}in;{{ else }}max-height: {{ add $height .5 }}in;{{ end }}" />
+                    <figcaption><span class="label">{{ ($.Scratch.Get "index") }}</span><span class="caption">{{ .caption }}</span></figcaption>
+                {{ if in ($.Scratch.Get "details") (string $i) }}
+                  </figure>
+                {{ else }}
+                    </figure>
+                  </div>
+                {{ end }}
+                {{ $.Scratch.Add "index" 1 }}
+              {{ end }}
+              <p>{{ .accession_no }}</p>
+            {{ end }}
+
+          {{ else }}
+
+            {{ range .Page.Params.cva_figure_groups }}
+              {{ range .figures }}
+                <figure id="fig-{{ ($.Scratch.Get "index") }}" style="max-height: {{ add $height .25 }}in;">
+                  <img src="/img/{{ range where $.Site.Data.figures.figure_list "id" "==" .id }}{{ .src }}{{ end }}" style="max-height: {{ $height }}in;" />
+                  <figcaption><span class="label">{{ ($.Scratch.Get "index") }}</span><span class="caption">{{ .caption }}</span></figcaption>
+                </figure>
+                {{ $.Scratch.Add "index" 1 }}
+              {{ end }}
+              <p>{{ .accession_no }}</p>
+            {{ end }}
+
           {{ end }}
+
           {{ .Scratch.Delete "index" }}
           </div>
         </div>

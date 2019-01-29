@@ -43,13 +43,18 @@ cva_figure_groups:
       - id: 86AE207-front
       - id: 86AE207-back
 cva_plate_layout:
-  style: column # column | grid | flow
+  style: column # see below for options
   rows: 2 # how many rows the images should take up on the plate
 cva_typology: Volute Krater # optional, displayed in lower corner of plate
 ---
 ```
 
-For the style under `cva_plate_layout`, it can be either column, grid or flow. Column will force the images to line up in a single column. Grid displays images in two-column grid. Flow will let the images fit as they can, side-by-side or singularly.
+For the style under `cva_plate_layout`, there are several pre-defined options:
+
+  - `flow` (default): Lets images fit as they can, side-by-side or singularly, and forces images to consistent height
+  - `column`: Puts images in single column, images forced to consistent height
+  - `grid`: Displays images in a two-column grid, images forced to consistent width
+  - `details-top`, `details-middle`, `details-bottom`: Given a set of four images on the page, will make the first two, the middle two, or the bottom two smaller.
 
 For more precise layouts, or for overrides to the default output, custom CSS must be utilized. Each plate and figure can be individually targeted in CSS with a standard format id: `plate-###` and `fig-#`.
 
