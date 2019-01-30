@@ -4,6 +4,7 @@ object_display_order:
 object_list:
   - id: 1
     plates: 518–20
+    plate_list: 518, 519, 520
     accession_number: 86.AE.205
     bareiss_number: 342
     fabric: Athenian
@@ -26,6 +27,7 @@ object_list:
 
   - id: 2
     plates: 521–23
+    plate_list: 521, 522, 523
     accession_number: 73.AE.135
     bareiss_number:
     fabric: Athenian
@@ -47,6 +49,7 @@ object_list:
 
   - id: 3
     plates: 524, 1–2
+    plate_list: 524
     accession_number: 86.AE.211.1 and 86.AE.211.2
     bareiss_number: 307 a and 307 b
     fabric: Athenian
@@ -62,6 +65,7 @@ object_list:
 
   - id: 4
     plates: 524, 3–4
+    plate_list: 524
     accession_number: 86.AE.207
     bareiss_number: 253
     fabric: Athenian
@@ -77,6 +81,7 @@ object_list:
 
   - id: 5
     plates: 525–27
+    plate_list: 525, 526, 527
     accession_number: 86.AE.206
     bareiss_number: 31
     fabric: Athenian
@@ -97,6 +102,7 @@ object_list:
 
   - id: 6
     plates: 528–30
+    plate_list: 528, 529, 530
     accession_number: 83.AE.252
     bareiss_number:
     fabric: Athenian
@@ -119,6 +125,7 @@ object_list:
 
   - id: 7
     plates: 531–32, 533, 1–3
+    plate_list: 531, 532, 533
     accession_number: 83.AE.255
     bareiss_number:
     fabric: Athenian
@@ -140,6 +147,7 @@ object_list:
 
   - id: 8
     plates: 533, 4–5
+    plate_list: 533
     accession_number: 83.AE.284.201
     bareiss_number:
     fabric: Athenian
@@ -155,6 +163,7 @@ object_list:
 
   - id: 9
     plates: 534–36
+    plate_list: 534, 535, 536
     accession_number: 81.AE.37
     bareiss_number:
     fabric: Athenian
@@ -176,6 +185,7 @@ object_list:
 
   - id: 10
     plates: 537
+    plate_list: 537
     accession_number: 86.AE.208 and 86.AE.210
     bareiss_number: 379
     fabric: Athenian
@@ -191,6 +201,7 @@ object_list:
 
   - id: 11
     plates: 538–40
+    plate_list: 538, 539, 540
     accession_number: 78.AE.380.1, 78.AE.380.25, 78.AE.380.36, 78.AE.380.58, 78.AE.380.62, and 78.AE.380.67
     bareiss_number:
     fabric: Athenian
@@ -213,6 +224,7 @@ object_list:
 
   - id: 12
     plates: 541–43
+    plate_list: 541, 542, 543
     accession_number: 81.AE.161
     bareiss_number:
     fabric: Athenian
@@ -235,6 +247,7 @@ object_list:
 
   - id: 13
     plates: 544–46
+    plate_list: 544, 545, 546
     accession_number: 82.AE.143
     bareiss_number:
     fabric: Athenian
@@ -255,6 +268,7 @@ object_list:
 
   - id: 14
     plates: 547, 1–2
+    plate_list: 547
     accession_number: 86.AE.204
     bareiss_number: 312
     fabric: Athenian
@@ -270,6 +284,7 @@ object_list:
 
   - id: 15
     plates: 547, 3–4
+    plate_list: 547
     accession_number: 86.AE.209.1 and 86.AE.209.2
     bareiss_number:
     fabric: Athenian
@@ -286,6 +301,7 @@ object_list:
 
   - id: 16
     plates: 547, 5–6
+    plate_list: 547
     accession_number: 79.AE.95.12 and 79.AE.95.13
     bareiss_number:
     fabric: Athenian
@@ -301,6 +317,7 @@ object_list:
 
   - id: 17
     plates: 548, 1–2
+    plate_list: 548
     accession_number: 81.AE.188.7
     bareiss_number:
     fabric: Athenian
@@ -316,6 +333,7 @@ object_list:
 
   - id: 18
     plates: 548, 3–4
+    plate_list: 548
     accession_number: 80.AE.138.13
     bareiss_number:
     fabric: Athenian
@@ -331,6 +349,7 @@ object_list:
 
   - id: 19
     plates: 549–57
+    plate_list: 549, 550, 551, 552, 553, 554, 555, 556, 557
     accession_number: 77.AE.11, 86.AE.587, 97.AE.58.2, and 98.AE.82.1–12
     bareiss_number:
     fabric: Athenian
@@ -366,6 +385,7 @@ object_list:
 
   - id: 20
     plates: 558, 1–2
+    plate_list: 558
     accession_number: 86.AE.202
     bareiss_number: 91
     fabric: Athenian
@@ -381,6 +401,7 @@ object_list:
 
   - id: 21
     plates: 558, 3–4
+    plate_list: 558
     accession_number: 86.AE.203
     bareiss_number: 329
     fabric: Athenian
@@ -396,6 +417,7 @@ object_list:
 
   - id: 22
     plates: 558, 5–6
+    plate_list: 558
     accession_number: 76.AE.131.10
     bareiss_number:
     fabric: Athenian
@@ -411,6 +433,7 @@ object_list:
 
   - id: 23
     plates: 559–63
+    plate_list: 559, 560, 561, 562, 563
     accession_number: 79.AE.198
     bareiss_number:
     fabric: Athenian
@@ -441,6 +464,7 @@ object_list:
 
   - id: 24
     plates: 564–73
+    plate_list: 564, 565, 567, 568, 569, 570, 571, 572, 573
     accession_number: 87.AE.93
     bareiss_number:
     fabric: Athenian
