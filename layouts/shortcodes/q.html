@@ -1,0 +1,29 @@
+{{ $key := .Get 0 }}
+
+{{ if eq $key "copyright" }}
+
+  {{ partial "copyright.html" . }}
+
+{{ else if eq $key "formats" }}
+
+  {{ $otherFormats := where .Site.Data.publication.resource_link "type" "other-format" }}
+  {{ partial "link-list.html" $otherFormats }}
+
+{{ else if eq $key "revisions" }}
+
+  {{ partial "revision-history.html" . }}
+
+{{ else }}
+
+{{ $keys := split $key "." }}
+
+{{ $.Scratch.Set "index" .Site.Data.publication }}
+{{ range $keys }}
+{{ $x := index ($.Scratch.Get "index") . }}
+{{ $.Scratch.Delete "index" }}
+{{ $.Scratch.Set "index" $x }}
+{{ end }}
+
+{{ printf "%s" ($.Scratch.Get "index") | markdownify }}
+
+{{ end }}
