@@ -1,110 +1,71 @@
-# Quire Starter
-_A Digital Publishing Framework from Getty Publications_
+# Corpus Vasorum Antiquorum (CVA)
 
-This is the starter template for
-[Quire](http://www.getty.edu/publications/digital/platforms-tools.html), an
-open-source multi-format publishing framework built on
-[Hugo](https://github.com/gohugoio/hugo). Quire consists of:
+This is a Quire project that is being customized to conform to the standard Corpus Vasorum Antiquorum (CVA) print publishing format that was established in 19__ by the ____. The following information details these CVA-specific customizations as they are in progress. Other information about Quire and its use can be found at https://gettypubs.github.io/quire/.
 
-- [quire-cli](https://github.com/gettypubs/quire-cli)
-- [quire-starter](https://github.com/gettypubs/quire-starter)
-- [quire-starter-theme](https://github.com/gettypubs/quire-starter-theme)
-- [quire-docs](https://github.com/gettypubs/quire-starter)
+## CVA Page
 
-## Getting Started
+The PDF will output at an oversize 9.625 x 11.875 inches, rather than the default 8.5 x 11 inches of other Quire publications. This size is as close as possible to the traditional CVA trim size, while still being printable by our print-on-demand vendor.
 
-### Quire-CLI
+## CVA Metadata
 
-There are two ways to get started using this template for your own projects. If
-you are using the [quire-cli](https://github.com/gettypubs/quire-cli), this
-template is what you will see after running the `quire new` command in a
-terminal session.
+A specialized block of metadata should be added to the project’s `publication.yml` file as in the following example.
 
-To start development on your own project, navigate into your project directory
-and run `quire preview` to see changes locally, and `quire build` output static
-files. The `quire pdf` and `quire epub` commands are also available if you are
-generating other formats for your publication.
+```yaml
+cva:
+  institution: J. Paul Getty Museum
+  location: Malibu
+  fasicule_no: 10
+  country: U.S.A.
+  country_fasicule_no: 40
+  plate_start: 518
+  country_plate_start: 2069
+```
 
-### Manual setup
+## Creating Traditional CVA Plates
 
-Alternatively, you can clone this repository and begin using it directly. In
-that case you will probably want to "flatten" the starter kit and it's
-accompanying theme into a single repository so you can keep track of your work
-in your own Git repository. You only need to follow these steps if you *are not*
-using the `quire` command-line tool (it will take care of that for you).
+The plate layout requires some CVA metadata to be present in the project’s `publication.yml` file. Specifically `institution`, `country`, `fasicule_no`, `plate_start` and `country_plate_start`. See above.
 
-1. Clone the kit and its theme submodule: 
-   `git clone --recursive https://github.com/gettypubs/quire-starter.git`
-2. Change into the kit directory and remove the submodule from the repo's tree: 
-   `git rm --cached themes/quire-starter-theme`
-3. Remove the `.gitmodules` file: `rm .gitmodules`
-4. Add the contents of the theme directory to the repo and commit them: 
-   `git add themes/quire-starter-theme`
-5. Make sure you have a new remote set up to push changes to as you make them.
+Plate numbers are derived from the file names. So file `518.md` would be plate 518. For each plate, create a Markdown file with the appropriate filename and include a block of YAML as in the sample below. No other content is necessary, nor will any display.
 
-Quire is built on top of Hugo, so even without the Quire CLI tool you can still
-preview or build your project the same as you would in any other Hugo website
-(`hugo server`, etc.). In order to see any changes you've made to the theme
-files however, you will also need to run Webpack in the
-`themes/quire-starter-theme` subfolder (make sure to install the necessary
-dependencies there first!). To simulate the `quire preview` experience you will
-need to run `hugo server` in the project root and 
-`./node_modules/.bin/webpack --watch` in the `themes/quire-starter-theme`
-subfolder.
+```yaml
+---
+type: plate
+online: false # hides the plate in the TOC and menus, but can still be linked to
+cva_figure_groups:
+  - accession_no: 86.AE.211.1–2 # displayed under the images in the group
+    figures:
+      - id: 86AE2111-2-front # id must match one in the figures.yml file
+        caption: Front view # optional caption, centered under figure
+      - id: 86AE2111-2-back
+        caption: Back view
+  - accession_no: 86.AE.207
+    figures:
+      - id: 86AE207-front
+      - id: 86AE207-back
+cva_plate_layout:
+  style: column # see below for options
+  rows: 2 # how many rows the images should take up on the plate
+cva_typology: Volute Krater # optional, displayed in lower corner of plate
+---
+```
 
-## Deployment
+For the style under `cva_plate_layout`, there are several pre-defined options:
 
-At some point you will probably want to publish what you have built so that it
-can be shared with the wider world. Quire currently supports two methods of
-deployment: Netlify and Github Pages. Both of these services are fast, free, and
-fairly easy to setup. 
+  - `flow` (default): Lets images fit as they can, side-by-side or singularly, and forces images to consistent height
+  - `column`: Puts images in single column, images forced to consistent height
+  - `grid`: Displays images in a two-column grid, images forced to consistent width
+  - `details-top`, `details-middle`, `details-bottom`: Given a set of four images on the page, will make the first two, the middle two, or the bottom two smaller.
 
-### Deploying to Netlify
+For more precise layouts, or for overrides to the default output, custom CSS must be utilized. Each plate and figure can be individually targeted in CSS with a standard format id: `plate-###` and `fig-#`.
 
-Assuming you have created a repository for this project on GitHub, sign up or
-log in to [Netlify](https://www.netlify.com/) using your GitHub account.
+```css
+#plate-518 {
 
-1. Click the big button labeled *new site from Git*
-2. Select your repository
-3. Configure the basic build settings: choose appropriate branch (`master` by
-   default)
-4. You can set the default build command to `hugo` and the publish directory to
-   `public/`, but this is not necessare since the `netlify.toml` file has all the
-   information pre-configured.
-5. Netlify will auto-generate a site URL for you, or you can set it yourself.
-   The default example uses `http://quire-demo.netlify.com`. Set this as your
-   `baseURL` in `config.build.yml`, and set `relativeURLs: true`
-6. Now, every time you push up a commit to `master` on GitHub, Netlify will
-   automatically rebuild your site using the settings in `netlify.toml`.
-   Pretty cool!
+}
+```
 
-### Deploying to GitHub Pages
+```css
+#plate-518 #fig-2 {
 
-If you don't need all the features of Netlify, Quire has limited support for
-GitHub pages as well, but there are a few caveats. Unlike Netlify, GitHub Pages
-does not support continuous deployment for Hugo/Quire websites. This means you
-will need to manually deploy the site by running a script provided in
-`bin/deploy.sh` in the project folder.
-
-In `config.build.yml`, comment out the Netlify lines and uncomment the GH Pages
-settings. Your `baseURL` will need to be in the format that GitHub Pages expects
-(https://yourusername.github.io/projectname for most sites). Setting 
-`canonifyURLs: true` will help to avoid broken links.
-
-Finally, you will need to remove the `public/` directory from your `.gitignore`
-file so that you can check built files into version control.
-
-At this point you can run `bin/deploy.sh` and everything will be pushed up to
-GitHub on the `gh-pages` branch. It may take a few moments for everything to
-become visible online.
-
-If you get git errors when deploying because of upstream changes, you can always
-delete the `gh-pages` branch on GitHub and re-run the deploy script.
-
-### Deploying Elsewhere
-
-Any web server capable of hosting static files will work (S3, FTP server, etc.),
-but you will likely need to customize the values in `config.build.yml` to suit
-your needs.
-
-
+}
+```

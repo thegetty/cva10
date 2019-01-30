@@ -166,7 +166,7 @@ figure_list:
 
   - id: "77AE11-detail-b"
     src: objects/008713D39V1.jpg
-    id: "A detail of the neck, showing people in battle & large areas of damage"
+    alt: "A detail of the neck, showing people in battle & large areas of damage"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
   - id: "77AE11-detail-c"
@@ -720,12 +720,12 @@ figure_list:
     description: 78.AE.380.1
 
   - id: "78AE3801-detail-c"
-    src: objects/###.jpg
+    src: objects/gm_11433601.jpg
     alt: "Front view of fragments associated with 78.AE.380.1"
     description: 78.AE.380.1
 
   - id: "78AE3801-detail-d"
-    src: objects/###.jpg
+    src: objects/gm_114336F1V1.jpg
     alt: "Back view of fragments associated with 78.AE.380.1"
     description: 78.AE.380.1
 
@@ -885,16 +885,16 @@ figure_list:
     description: 86.AE.206
 
   - id: "87AE93-detail-s"
-    src: objects/###.jpg
+    src: objects/gml_014998D13V1.jpg
     alt: "Another detail of the top of the foot, showing a hare running away from a dog and a man"
     description: 87.AE.93
 
   - id: "87AE93-detail-u"
-    src: objects/###.jpg
+    src: objects/gml_014998D23V1.jpg
     alt: "Another detail of the top of the foot, showing a person slaying a deer"
     description: 87.AE.93
 
   - id: "87AE93-detail-w"
-    src: objects/###.jpg
+    src: objects/gml_014998D24V1.jpg
     alt: "Another detail of the top of the foot, showing a person subduing a bull"
     description: 87.AE.93

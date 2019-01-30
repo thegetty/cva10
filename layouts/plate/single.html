@@ -1,0 +1,356 @@
+{{/*
+  A specialized layout for Corpus Vasorum Antiquorum (CVA) Plates. This is a
+  complete HTML document and does not rely on the `default/baseof.html`
+  template that all other pages in the typical Quire project rely on. In this
+  way, all the standard Quire navigation and interactions have been stripped
+  away, leaving a very basic page meant primarily for print output.
+
+  Notes:
+
+  - The online view includes some Next/Prev navigation primarily
+    to aid in development of these plates
+  - All the CSS is currently self-contained in this document
+
+*/}}
+
+<!DOCTYPE html>
+<html lang="{{ .Site.Data.publication.language }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    {{- if eq .Params.online false -}}
+    <meta name="robots" content="noindex">
+    {{- end }}
+    <title>Plate {{ .File.BaseFileName }} | {{ .Site.Data.publication.title }}</title>
+    {{ partial "metadata.html" . }}
+
+    {{ partial "analytics.html" . }}
+
+  </head>
+  <style>
+
+      {{ $width := 9.625 }}
+      {{ $height := 11.875 }}
+      {{ $columnWidth := div (sub $width 1.5) 2 }}
+
+      @page {
+        size: {{ $width }}in {{ $height }}in;
+        margin: 0;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background: #777;
+        text-transform: uppercase;
+      }
+      .page {
+        margin: 0 auto;
+        max-width: {{ $width }}in;
+        height: {{ $height }}in;
+        background: #fff;
+      }
+      .margin {
+        max-width: {{ sub $width .5 }}in;
+        height: .25in;
+        padding: .25in .25in 0;
+        letter-spacing: 1px;
+        font-size: .9rem;
+      }
+      .margin span:first-child {
+        float: left;
+      }
+      .margin span:last-child {
+        float: right;
+        text-align: right;
+      }
+      .plate-number {
+        text-transform: none;
+        font-size: 1.5rem;
+        letter-spacing: 0;
+        margin-top: -.25rem;
+      }
+      .plates-wrapper {
+        display: flex;
+        align-items: center;
+        height: {{ sub $height 1.25 }}in;
+        width: {{ sub $width .5 }}in;
+        margin: 0 .25in;
+      }
+      .plates-area {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+      }
+      .group-wrapper {
+        display: inherit;
+        flex-wrap: inherit;
+        justify-content: inherit;
+        flex-direction: inherit;
+        align-items: inherit;
+      }
+      .figure-wrapper {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+      }
+      .plates-area.column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .plates-area.grid {
+        display: inline-block;
+      }
+      .plates-area.grid figure,
+      .plates-area.grid img {
+        width: {{ $columnWidth }}in;
+      }
+      .plates-area.grid figure {
+        float: left;
+      }
+      .plates-area.grid figure {
+        float: left;
+      }
+      .plates-area.grid figure:last-of-type:nth-of-type(odd) {
+        margin-left: {{ add (div (add $columnWidth .5) 2) .25 }}in;
+        margin-right: {{ add (div (add $columnWidth .5) 2) .25 }}in;
+      }
+      .plates-area p {
+        text-align: center;
+        width: 100%;
+        clear: both;
+      }
+      figure {
+        margin: .25in .25in 0;
+      }
+      p,
+      figcaption {
+        margin: 0;
+        height: .25in;
+        text-align: center;
+      }
+      figcaption .label {
+        float: left;
+      }
+      figcaption .caption {
+        text-transform: none;
+      }
+      img {
+        max-width: {{ sub $width 1 }}in;
+      }
+      a.simple-nav {
+        position: fixed;
+        top: 40vh;
+        font-size: 2rem;
+        line-height: 1.6;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        background: #777;
+        text-align: center;
+        height: 3rem;
+        width: 3rem;
+        border-radius: .25rem;
+        font-family: sans-serif;
+      }
+      a.simple-nav.previous {
+        left: 1vw;
+      }
+      a.simple-nav.next {
+        right: 1vw;
+      }
+      @media print {
+        a.simple-nav {
+          display: none;
+        }
+      }
+
+      // CUSTOM LAYOUTS FOR PLATES 523, 533, 536, and 268
+
+      #plate-523 #fig-1 {
+        flex-basis: 100%;
+        margin-left: 2.875in;
+      }
+      #plate-523 #fig-3 {
+        height: 2.5in;
+      }
+      #plate-523 #fig-3 img {
+        height: 2.25in;
+      }
+
+      #plate-533 #group-83AE284201 figure {
+        width: {{ $columnWidth }}in;
+        display: inline-block;
+      }
+      #plate-533 #group-83AE284201 figure img {
+        width: 100%;
+      }
+      #plate-533 #group-83AE255 {
+        height: 6.875in;
+        width: 7in;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+      }
+      #plate-533 #fig-1 {
+        width: 3.5in;
+      }
+      #plate-533 #fig-2 {
+        width: 2in;
+      }
+      #plate-533 #fig-3 {
+        width: 2.5in;
+        align-self: flex-start;
+      }
+      #plate-533 img {
+        width: 100%;
+      }
+      #plate-533 #group-83AE255 p {
+        position: absolute;
+        top: 7.325in;
+        left: 0;
+      }
+
+      #plate-536 #fig-2 {
+        height: 3in;
+        margin-top: 2.1875in;
+      }
+      #plate-536 #fig-2 img {
+        height: 2.75in;
+      }
+
+      #plate-540 #fig-3,
+      #plate-540 #fig-4 {
+        width: {{ $columnWidth }}in;
+      }
+      #plate-540 #fig-3 img,
+      #plate-540 #fig-4 img {
+        width: 100%;
+      }
+
+      #plate-543 #fig-2 {
+        height: 1.375in;
+      }
+      #plate-543 #fig-2 img {
+        height: 1.125in;
+      }
+
+      #plate-568 #fig-1 {
+        flex-basis: 100%;
+        margin-left: 1in;
+      }
+
+
+    </style>
+  <body>
+
+    <div class="page" id="plate-{{ .File.BaseFileName }}">
+
+        <div class="margin">
+          <span class="fasicule">{{ .Site.Data.publication.cva.institution }} ({{ .Site.Data.publication.cva.fasicule_no }})</span>
+          <span class="plate-number">Plate {{ .File.BaseFileName }}</span>
+        </div>
+
+        <div class="plates-wrapper">
+          <div class="plates-area{{ with .Page.Params.cva_plate_layout.style }} {{ . }}{{ end }}">
+          {{ $len := len .Page.Params.cva_figure_groups }}
+          {{ $rows := .Page.Params.cva_plate_layout.rows }}
+
+          {{ $margins := mul .75 2 }}
+          {{ $labels := mul $rows .25 }}
+          {{ $accessionNumbers := mul $len .25 }}
+          {{ $rowPadding := sub $rows 1 | mul .25 }}
+
+          {{ $height := div (sub $height (add $margins (add $labels (add $accessionNumbers $rowPadding)))) $rows }}
+
+          {{ .Scratch.Add "index" 1 }}
+
+          {{ if in .Page.Params.cva_plate_layout.style "details" }}
+
+            {{ if in .Page.Params.cva_plate_layout.style "top" }}
+              {{ .Scratch.Add "details" (slice "1" "2") }}
+            {{ else if in .Page.Params.cva_plate_layout.style "middle" }}
+              {{ .Scratch.Add "details" (slice "2" "3") }}
+            {{ else }}
+              {{ .Scratch.Add "details" (slice "3" "4") }}
+            {{ end }}
+
+            {{ range .Page.Params.cva_figure_groups }}
+              {{ range .figures }}
+                {{ $i := $.Scratch.Get "index" }}
+                {{ if in ($.Scratch.Get "details") (string $i) }}
+                  <figure id="fig-{{ $i }}" style="max-height: {{ sub (add $height .25) 1 }}in;">
+                {{ else }}
+                  <div class="figure-wrapper">
+                    <figure id="fig-{{ $i }}" style="max-height: {{ add (add $height .25) .5 }}in;">
+                {{ end }}
+                    <img src="/img/{{ range where $.Site.Data.figures.figure_list "id" "==" .id }}{{ .src }}{{ end }}" style="{{ if in ($.Scratch.Get "details") (string $i) }}max-height: {{ sub $height 1 }}in;{{ else }}max-height: {{ add $height .5 }}in;{{ end }}" />
+                    <figcaption><span class="label">{{ ($.Scratch.Get "index") }}</span><span class="caption">{{ .caption }}</span></figcaption>
+                {{ if in ($.Scratch.Get "details") (string $i) }}
+                  </figure>
+                {{ else }}
+                    </figure>
+                  </div>
+                {{ end }}
+                {{ $.Scratch.Add "index" 1 }}
+              {{ end }}
+              <p>{{ .accession_no }}</p>
+            {{ end }}
+
+          {{ else if eq .Page.Params.cva_plate_layout.style "custom" }}
+
+            {{ range .Page.Params.cva_figure_groups }}
+              <div class="group-wrapper" id="group-{{ replaceRE "\\.|\\s" "" .accession_no }}">
+              {{ range .figures }}
+                <figure id="fig-{{ ($.Scratch.Get "index") }}">
+                  <img src="/img/{{ range where $.Site.Data.figures.figure_list "id" "==" .id }}{{ .src }}{{ end }}" />
+                  <figcaption><span class="label">{{ ($.Scratch.Get "index") }}</span><span class="caption">{{ .caption }}</span></figcaption>
+                </figure>
+                {{ $.Scratch.Add "index" 1 }}
+              {{ end }}
+              <p>{{ .accession_no }}</p>
+              </div>
+            {{ end }}
+
+          {{ else }}
+
+            {{ range .Page.Params.cva_figure_groups }}
+              <div class="group-wrapper" id="group-{{ replaceRE "\\.|\\s" "" .accession_no }}">
+              {{ range .figures }}
+                <figure id="fig-{{ ($.Scratch.Get "index") }}" style="max-height: {{ add $height .25 }}in;">
+                  <img src="/img/{{ range where $.Site.Data.figures.figure_list "id" "==" .id }}{{ .src }}{{ end }}" style="max-height: {{ $height }}in;" />
+                  <figcaption><span class="label">{{ ($.Scratch.Get "index") }}</span><span class="caption">{{ .caption }}</span></figcaption>
+                </figure>
+                {{ $.Scratch.Add "index" 1 }}
+              {{ end }}
+              <p>{{ .accession_no }}</p>
+              </div>
+            {{ end }}
+
+          {{ end }}
+
+          {{ .Scratch.Delete "index" }}
+          </div>
+        </div>
+
+        <div class="margin">
+
+          {{ $countryPlateNumber := add (sub .Site.Data.publication.cva.country_plate_start .Site.Data.publication.cva.plate_start) (int .File.BaseFileName) }}
+
+          <span>{{ .Site.Data.publication.cva.country }} {{ $countryPlateNumber }}</span>
+          <span>{{ .Page.Params.cva_typology }}</span>
+        </div>
+
+        {{ if eq .Prev.Section .Section }}
+        <a href="{{ .Prev.Permalink }}" rel="prev" class="simple-nav previous">◀</a>
+        {{ end }}
+        {{ if eq .Next.Section .Section }}
+        <a href="{{ .Next.Permalink }}" rel="next" class="simple-nav next">▶</a>
+        {{ end }}
+
+    </div>
+  </body>
+</html>
