@@ -1,0 +1,8 @@
+{{ range .Site.Data.publication.revision_history }}
+  <h3>{{ dateFormat "January 2, 2006" .date }}</h3>
+  <ul>
+    {{ range .summary }}
+    <li>{{ . }}</li>
+    {{ end }}
+  </ul>
+{{ end }}
