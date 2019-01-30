@@ -720,12 +720,12 @@ figure_list:
     description: 78.AE.380.1
 
   - id: "78AE3801-detail-c"
-    src: objects/###.jpg
+    src: objects/gm_11433601.jpg
     alt: "Front view of fragments associated with 78.AE.380.1"
     description: 78.AE.380.1
 
   - id: "78AE3801-detail-d"
-    src: objects/###.jpg
+    src: objects/gm_114336F1V1.jpg
     alt: "Back view of fragments associated with 78.AE.380.1"
     description: 78.AE.380.1
 
