@@ -33,21 +33,18 @@ blackfriday:
 params:
   searchEnabled: true
   licenseIcons: true
+  pageLabelDivider: ". "
   citationPageLocationDivider: ", "
-  figureLabels: false
-  figureLabelsTextBefore: "Figure "
-  figureLabelsTextAfter: ". "
-  videoFigureFallbackText: true
-  videoFigureFallbackTextBefore: "Watch the video at "
-  videoFigureFallbackTextAfter: ". "
-  websiteFigureFallbackText: true
-  websiteFigureFallbackTextBefore: "Visit the site at "
-  websiteFigureFallbackTextAfter: ". "
   displayBiblioShort: true
   imageDir: "img"
   tocType: full
   menuType: full
-  objectLinkText: "View in Collection"
+  entryPageSideBySideLayout: true
+  entryPageObjectLinkText: "View in Collection"
+  figureLabelLocation: below # below | on-top
+  figureModal: true
+  figureModalIcons: true
+  figureZoom: true
   frontmatterPageStart: 0
-  bodyPageStart: 100
-  backmatterPageStart: 1000
+  bodyPageStart: 30
+  backmatterPageStart: 200
