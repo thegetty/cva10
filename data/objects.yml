@@ -111,7 +111,7 @@ object_list:
     attribution: Pan Painter
     attributor: J. Frel
     date: -480 to -470
-    subject: altar, blood, dinos, *epipyron*, fire/flames, herm, himation, *kanoun*, kylix, offerings, pillar, staff
+    subject: altar, blood, dinos, *epipyron*, fire/flames, herm, himation, ithyphallic herm, *kanoun*, kylix, offerings, pillar, staff
     figure:
       - id: 83AE252-front
       - id: 83AE252-back
@@ -134,7 +134,7 @@ object_list:
     attribution: Geras Painter
     attributor: J. M. Padgett
     date: -480 to -470
-    subject: chiton, herm, himation, *kanoun*, *sakkos*
+    subject: chiton, herm, himation, ithyphallic herm, *kanoun*, *sakkos*
     figure:
       - id: 83AE255-front
       - id: 83AE255-back
@@ -172,7 +172,7 @@ object_list:
     attribution: Harrow Painter
     attributor: J. D. Beazley
     date: -480
-    subject: altar, fillet, herm, himation, mantle, stick
+    subject: altar, fillet, herm, himation, ithyphallic herm, mantle, stick
     figure:
       - id: 81AE37-front
       - id: 81AE37-back
