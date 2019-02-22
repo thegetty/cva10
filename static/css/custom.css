@@ -125,6 +125,21 @@
   margin-bottom: .15em;
 }
 
+/* Adjust style for bylines on Foreword and Preface  */
+.quire-page__content .container .content .byline {
+  margin: 2rem 0;
+  width: 100%;
+}
+.quire-page__content .container .content .byline p {
+  text-align: right;
+  margin-bottom: 0;
+  margin-left: 25%;
+  font-style: italic;
+}
+.quire-page__content .container .content .byline p:first-child {
+  font-style: normal;
+}
+
 /* Adjust entry page headigns */
 .quire-entry .quire-page__header__title {
   text-align: left;
@@ -159,4 +174,8 @@
 .quire-citation:hover {
   color: Tomato;
   border-bottom: 1px solid Tomato;
+}
+.quire-citation__content {
+  background-color: #fcfbeb; /* CVA cream */
+  font-size: .857rem;
 }

@@ -2,11 +2,6 @@
 title: Foreword
 type: page
 weight: 4
-contributor:
-  - first_name: Timothy
-    last_name: Potts
-    title: Director
-    affiliation: The J. Paul Getty Museum
 ---
 
 The J. Paul Getty Museum’s extensive collection of Greek painted pottery is especially rich in Athenian black- and red-figure vases of the sixth and fifth centuries B.C. Examples of two of the most distinctive and popular shapes of that period, column-kraters and volute-kraters, are gathered in this fascicule of the *Corpus Vasorum Antiquorum*, the tenth of the series devoted to the holdings of the J. Paul Getty Museum. These are large vessels, made for mixing wine and water at the symposium. The column-krater—called the “Corinthian krater” in antiquity—takes its modern name from the columnar supports at the rim. It was developed in Corinth by the end of the seventh century B.C. and soon adopted also by potters in Athens, where the shape is one of the most enduring. Volute-kraters are, in the words of Sir John Beazley, “the vase-shape which has more of the temple in it than any other.” Typically large, with high curling handles, these vases are often finely potted and present expansive fields for decoration. As with many pottery vessel shapes, the form also occurs in metal, and the Getty’s dinoid krater ([87.AE.93](http://www.getty.edu/art/collection/objects/12887/attributed-to-the-meleager-painter-attic-red-figure-dinoid-volute-krater-and-stand-greek-attic-390-380-bc/?dz=#6da56a1036ead85f4bcb603716745032e109ce6f); [entry no. 24](/catalogue/24/)) offers a striking example of ceramicists emulating and elaborating upon that costlier medium.
@@ -17,4 +12,12 @@ This catalogue marks a renewed commitment to publishing the Getty’s vase colle
 
 The volume has been many years in the making, and I congratulate its author, Despoina Tsiafakis, for bringing it to fruition. The project has had the ongoing support of the Getty’s Department of Antiquities, beginning with Marion True’s invitation and thereafter shepherded by David Saunders, Jens Daehner, and Kenneth Lapatin. The Department of Antiquities Conservation, particularly Jeffrey Maish, provided essential documentation, analysis, and conservation work. The vases have been newly photographed by Tahnee Cracchiola and Rebecca Truszkowski, and Toby Schreiber prepared the profile drawings. Greg Albers, Rachel Barth, Michelle Woo Deemer, Kara Kirk, Ruth Evans Lane, Karen Levine, and Laura diZerega have been instrumental in developing the publication.
 
-{{< q-contributors type="name-plus" range="page" >}}
+{{< q-class "byline" >}}
+
+Timothy Potts
+
+Director
+
+The J. Paul Getty Museum
+
+{{< /q-class >}}

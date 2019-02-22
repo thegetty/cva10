@@ -14,9 +14,17 @@ During the long process of this *CVA* I was assisted also by many friends and co
 
 And finally, I would like to thank my son Dimitris for his patience and support; this volume is dedicated to him.
 
+{{< q-class "byline" >}}
+
 Despoina Tsiafakis
 
-Director of Research at the “Athena” Research & Innovation Center in Information, Communication & Knowledge Technologies, Xanthi Department, Greece
+Director of Research
+
+The “Athena” Research & Innovation Center in Information, Communication & Knowledge Technologies,<br /> Xanthi Department, Greece
+
+{{< /q-class >}}
+
+---
 
 [^1]: {{< q-abbr "*BAPD*" >}} 16201; “Acquisitions/1984,” {{< q-abbr "*GettyMusJ*" >}} 13 (1985): 170, no. 24; J. V. Noble, *The Techniques of Painted Attic Pottery*, 2nd ed. (New York, 1988), pl. 7; M. Pipili, in {{< q-abbr "*LIMC*" >}}, vol. 5 (1990), pt. 1, p. 692, s.v. “Iolaos”; {{< q-abbr "Schleiffenbaum, *Volutenkrater*" >}}, p. 368, no. V289; H. Froning, “La forma rappresentativa ciclica nell’arte classica,” in *Coloquio sobre Teseo y la Copa de Aison*, ed. R. Olmos (Madrid, 1992), pp. 139–41, figs. 10–12; A. Shapiro, *Personifications in Greek Art:* *The Representation of Abstract Concepts, 600–400 B.C.* (Zurich, 1993), pp. 150–51, fig. 109 and p. 254, no. 104 *bis*; *The J. Paul Getty Museum: Handbook of the Antiquities Collection* (Los Angeles, 2002; rev. ed. 2010), p. 73; {{< q-abbr "Gaunt, “Attic Volute Krater”" >}}, p. 531, cat. no. 52; {{< q-abbr "*Colors of Clay*" >}}, pp. 66–68, cat. no. 13, figs. 13.1–13.3; I. Kader, “Und es losten die Glieder . . . Hypnos, Thanatos, Eros,” in *Süßer Schlummer: Der Schlaf in der Kunst; Residenzgalerie Salzburg, 15.7.–1.11.2006*, ed. E. Oehring (Salzburg, 2006), p. 16, fig. 2; {{< q-abbr "*Special Techniques in Athenian Vases*" >}}, p. xiii; B. Sparkes, “Why Special Techniques?,” in {{< q-abbr "*Special Techniques in Athenian Vases*" >}}, p. 25; M. S. Walton et al., “A Preliminary Investigation of Coral-red Glosses Found on Attic Greek Pottery,” in {{< q-abbr "*Special Techniques in Athenian Vases*" >}}, p. 97, table 1 (incorrectly cited as 89.AE.974); M. S. Walton et al., “Characterization of Coral Red Slips on Greek Attic Pottery,” *Archaeometry* 51, no. 3 (2009): 383–96; A. Cohen, *Art in the Era of Alexander the Great: Paradigms of Manhood and Their Cultural Traditions* (New York, 2010), pp. 35, 37, 107, pls. 5, 7, 47; J. H. Oakley, *The Greek Vase: Art of the Storyteller* (Los Angeles, 2013), pp. 66–67, figs. 2–4; J. M. Padgett, “The Serpent in the Garden: Herakles, Ladon, and the Hydra,” in *Approaching the Ancient Artifact: Representation, Narrative, and Function; A Festschrift in Honor of H. Alan Shapiro*, ed. A. Avramidou and D. Demetriou (Berlin and Boston, 2014), pp. 49–50, note 19; C. C. Mattusch, *Enduring Bronze: Ancient Art, Modern Views* (Los Angeles, 2014), pp. 76–77, fig. 56.
 
