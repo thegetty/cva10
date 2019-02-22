@@ -15,6 +15,14 @@
 #contents .quire-contents-list li.section-item li:nth-child(1), 
 #contents .quire-contents-list li.section-item li:nth-child(18) {
   display: list-item;
+  margin-bottom: 1.5rem;
+}
+#contents .quire-contents-list li.section-item li:nth-child(1) a, 
+#contents .quire-contents-list li.section-item li:nth-child(18) a {
+  border-width: 0;
+}
+#contents .quire-contents-list li.section-item li:nth-child(18) {
+  margin-bottom: 1rem;
 }
 .quire-menu__list li.section-item li {
   display: none;
@@ -26,6 +34,38 @@
 #catalogue-catalogue .quire-contents-list li:nth-child(1),
 #catalogue-catalogue .quire-contents-list li:nth-child(18) {
   display: none;
+}
+
+/* Style contents pages and menu */
+.arrow {
+  display: none;
+}
+.quire-contents-list .menu-list .section-item ul {
+  font-size: 1rem;
+}
+.quire-menu .menu-list {
+  line-height: 1.2;
+}
+.quire-menu .section-item ul {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+.quire-menu__header__title span {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: .5rem;
+}
+.quire-menu__header__title span.cva-subtitle-menu {
+  text-transform: none;
+  font-style: italic;
+  letter-spacing: 0;
+}
+.quire-menu__header__contributors {
+  font-size: 1.25rem;
+  font-style: normal;
 }
 
 /* Style cover and headings */
@@ -65,7 +105,13 @@
 .quire h1,
 .quire-page h1, 
 .quire-page__header__title {
-  margin: 4rem 0 0;
+  margin: 4rem auto 0;
+  max-width: 800px;
+  line-height: 1.4;
+}
+.quire-cover__more .hero-more {
+  background: #333;
+  color: #fcfbeb; /* CVA cream */
 }
 
 /* Change navbar font and adjust icons to match*/
