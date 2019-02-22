@@ -1,5 +1,5 @@
 ---
 title: Column-Kraters
-weight: 100.5
+weight: 100
 type: splash
 ---
