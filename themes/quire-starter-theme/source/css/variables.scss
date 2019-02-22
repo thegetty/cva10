@@ -6,12 +6,14 @@
 // To avoid errors, variables names should not be changed or deleted, and be
 // sure to leave the colons (:) and semi-colons (;) in place.
 
-$accent-color: null;
-$content-background-color: null; // main text area background color
+$cva-cream: #fcfbeb;
+
+$accent-color: Tomato;
+$content-background-color: $cva-cream; // main text area background color
 $secondary-background-color: null; // only for modern theme
 
 // Declare the theme: modern/classic
-$theme: modern;
+$theme: classic;
 
 // Declare the navbar color style: normal/accent
 $navbar: normal;
@@ -53,17 +55,17 @@ $quire-hover-color: $light-yellow;
 
 // Print/PDF stylesheet
 // -----------------------------------------------------------------------------
-$print-width: 8.5in;
-$print-height: 11in;
+$print-width: 9.625in;
+$print-height: 11.875in;
 $print-bleed: .125in;
 
 $quire-print-base-font-size: 8.5pt;
 $quire-print-text-color: $black;
 
-$print-splash-color: $off-white;
+$print-splash-color: $cva-cream;
 
 $print-entry-image-color: $rich-black;
-$print-entry-image-display: all; // first | all
+$print-entry-image-display: first; // first | all
 
 // Themes
 // -----------------------------------------------------------------------------
@@ -96,9 +98,9 @@ $quire-navigation-font: null; // navbar and next/prev buttons
 // Navbar
 // -----------------------------------------------------------------------------
 // Declare navbar colors
-$quire-navbar-color: null;
+$quire-navbar-color: $cva-cream;
 $quire-navbar-hover-color: null;
-$quire-navbar-text-color: null;
+$quire-navbar-text-color: $off-black;
 
 @if $navbar == accent {
   // Accent Navbar
@@ -119,8 +121,8 @@ $quire-navbar-text-color: null;
 // Cover colors
 // -----------------------------------------------------------------------------
 // Declare cover gradient colors (make them the same for a solid background)
-$quire-cover-color-1: null;
-$quire-cover-color-2: null;
+$quire-cover-color-1: $cva-cream;
+$quire-cover-color-2: $cva-cream;
 
 @if $theme == classic {
   $quire-cover-color-1: $accent-color !default;
