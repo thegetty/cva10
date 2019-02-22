@@ -33,12 +33,7 @@
       {{ $width := 9.625 }}
       {{ $height := 11.875 }}
       {{ $columnWidth := div (sub $width 1.5) 2 }}
-
-      @page {
-        size: {{ $width }}in {{ $height }}in;
-        margin: 0;
-      }
-
+      
       body {
         margin: 0;
         padding: 0;
@@ -242,6 +237,90 @@
         flex-basis: 100%;
         margin-left: 1in;
       }
+      
+      @media print {
+        @page {
+          size: {{ $width }}in {{ $height }}in;
+          prince-bleed: .125in;
+          bleed: .125in;
+          prince-trim: .25in;
+          marks: crop;
+          margin-top: .5in;
+          margin-bottom: .75in;
+          margin-left: .25in;
+          margin-right: .25in;
+          text-transform: uppercase;
+          letter-spacing: 1pt;
+          font-size: 9pt;
+        }
+        body {
+          background: #fff;
+        }
+        .page,
+        .plates-wrapper {
+          height: 10.625in;
+          width: 100%;
+          margin: 0 auto;
+        }
+        .margin {
+          display: none;
+        }
+        @page:right {
+          @top-left {
+            content: string(fascicule);
+            margin-left: .25in;
+          }
+          @top-right {
+            content: string(platenumber);
+            text-transform: none;
+            letter-spacing: 0;
+            font-size: 1.5em;
+            margin-right: .25in;
+          }
+          @bottom-left {
+            content: string(country);
+            margin-left: .25in;
+          }
+          @bottom-right {
+            content: string(typology);
+            margin-right: .25in;
+          }    
+        }
+        @page:left {
+          @top-left {
+            content: string(platenumber);
+            text-transform: none;
+            letter-spacing: 0;
+            font-size: 1.5em;
+            margin-left: .25in;
+          }
+          @top-right {
+            content: string(fascicule);
+            margin-right: .25in;
+          }
+          @bottom-left {
+            content: string(typology);
+            margin-left: .25in;
+          }
+          @bottom-right {
+            content: string(country);
+            margin-right: .25in;
+          }    
+        }
+        
+        .plate-number {
+          string-set: platenumber content();
+        }
+        .fascicule {
+          string-set: fascicule content();
+        }
+        .country {
+          string-set: country content();
+        }
+        .typology {
+          string-set: typology content();
+        }
+      }
 
 
     </style>
@@ -250,7 +329,7 @@
     <div class="page" id="plate-{{ .File.BaseFileName }}">
 
         <div class="margin">
-          <span class="fasicule">{{ .Site.Data.publication.cva.institution }} ({{ .Site.Data.publication.cva.fasicule_no }})</span>
+          <span class="fascicule">{{ .Site.Data.publication.cva.institution }} ({{ .Site.Data.publication.cva.fascicule_no }})</span>
           <span class="plate-number">Plate {{ .File.BaseFileName }}</span>
         </div>
 
@@ -340,8 +419,8 @@
 
           {{ $countryPlateNumber := add (sub .Site.Data.publication.cva.country_plate_start .Site.Data.publication.cva.plate_start) (int .File.BaseFileName) }}
 
-          <span>{{ .Site.Data.publication.cva.country }} {{ $countryPlateNumber }}</span>
-          <span>{{ .Page.Params.cva_typology }}</span>
+          <span class="country">{{ .Site.Data.publication.cva.country }} {{ $countryPlateNumber }}</span>
+          <span class="typology">{{ .Page.Params.cva_typology }}</span>
         </div>
 
         {{ if eq .Prev.Section .Section }}

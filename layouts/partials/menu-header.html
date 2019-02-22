@@ -9,7 +9,7 @@
     <span class="visually-hidden">Site Title: </span>
     {{- if .Site.Data.publication.cva -}}
       <span class="cva-title-menu">Corpus Vasorum Antiquorum</span>
-      <span class="fascicule-menu">Fascicule {{ .Site.Data.publication.cva.fasicule_no }}</span>
+      <span class="fascicule-menu">Fascicule {{ .Site.Data.publication.cva.fascicule_no }}</span>
       <span class="cva-subtitle-menu">{{ .Site.Data.publication.subtitle }}</span>
     {{- else -}}
       {{- partial "site-title.html" . | markdownify -}}
