@@ -6,6 +6,28 @@
   line-height: 1.6;
 }
 
+/*  Hide cat entries in TOC and menu, and splash pages in catalogue grid.
+    The starter theme is not currently handling
+    toc: false and menu: false the way we need it to here. */
+#contents .quire-contents-list li.section-item li {
+  display: none;
+}
+#contents .quire-contents-list li.section-item li:nth-child(1), 
+#contents .quire-contents-list li.section-item li:nth-child(18) {
+  display: list-item;
+}
+.quire-menu__list li.section-item li {
+  display: none;
+}
+.quire-menu__list li.section-item li:nth-child(1), 
+.quire-menu__list li.section-item li:nth-child(18) {
+  display: list-item;
+}
+#catalogue-catalogue .quire-contents-list li:nth-child(1),
+#catalogue-catalogue .quire-contents-list li:nth-child(18) {
+  display: none;
+}
+
 /* Style cover and headings */
 .quire h1,
 .quire-page h1, .quire-page__header__title,
