@@ -1,4 +1,9 @@
 .quire-citation {
   display: inline;
-  border-bottom: 1px dotted #4a4a4a;
+  border-bottom: 1px dotted #333;
+  cursor: pointer;
+}
+.quire-citation:hover {
+  color: Tomato;
+  border-bottom: 1px solid Tomato;
 }
