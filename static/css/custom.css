@@ -116,13 +116,13 @@
 
 /* Change navbar font and adjust icons to match*/
 .quire-navbar {
-  font-size: 1rem;
+  font-size: .875rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 .quire-navbar-page-controls__item.quire-next-page svg,
 .quire-navbar-page-controls__item.quire-previous-page svg {
-  margin-bottom: .15em;
+  margin-bottom: .05em;
 }
 
 /* Adjust style for bylines on Foreword and Preface  */
@@ -178,4 +178,12 @@
 .quire-citation__content {
   background-color: #fcfbeb; /* CVA cream */
   font-size: .857rem;
+}
+
+/* Change caption display for profiles page */
+#profiles .content figure .quire-figure__caption {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 1rem 0 2rem;
 }
