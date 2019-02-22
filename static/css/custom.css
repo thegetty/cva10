@@ -109,6 +109,25 @@
   max-width: 800px;
   line-height: 1.4;
 }
+@media print {
+  .quire-entry__header {
+    margin-bottom: .25in;
+  }
+  .quire h1,
+  .quire-page h1, 
+  .quire-page__header__title {
+    max-width: none;
+  }
+  .quire-splash .quire h1,
+  .quire-splash .quire-page h1, 
+  .quire-splash .quire-page__header__title {
+    margin-top: 3in;
+  }
+  .quire-entry__tombstone {
+    max-width: none;
+    margin-left: .5in;
+  }
+}
 .quire-cover__more .hero-more {
   background: #333;
   color: #fcfbeb; /* CVA cream */
