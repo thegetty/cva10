@@ -29,6 +29,32 @@ Cover page layout. This controls the home page of the publication.
     <section class="quire-cover__hero hero is-fullheight">
       <div class="quire-cover__overlay"></div>
   {{- end -}}
+  
+  {{ if .Site.Data.publication.cva }}
+  
+    <div class="quire-cover__hero-body cva-cover hero-body">
+      <div>
+        <p class="academique">Union Académique Internationale<p>
+        <p class="cva-title">Corpus Vasorum Antiquorum</p>
+        <p class="institution">{{ .Site.Data.publication.cva.institution }} • {{ .Site.Data.publication.cva.location }}</p>
+        <p class="cva-subtitle">{{ .Site.Data.publication.subtitle }}</p>
+        <div class="cva-contributor">
+        {{- if .Site.Data.publication.contributor_as_it_appears -}}
+        {{ .Site.Data.publication.contributor_as_it_appears }}
+        {{ else }}
+        <span class="visually-hidden">Contributors: </span>
+          {{ partial "contributor-list.html" (dict "range" .Site.Data.publication.contributor "contributorType" "primary" "listType" "string" "Site" $.Site) }}
+        {{- end -}}
+        </div>
+        <p class="publisher">{{ .Site.Data.publication.cva.institution }}</p>
+        <p class="fascicule">Fascicule {{ .Site.Data.publication.cva.fasicule_no }} • [{{ .Site.Data.publication.cva.country }} Fascicule {{ .Site.Data.publication.cva.country_fasicule_no }}]</p>
+        <p class="pub-year">{{ .Site.Data.publication.pub_date | dateFormat "2006" }}</p>
+    
+      </div>
+    </div>
+  
+  {{ else }}
+    
     <div class="quire-cover__hero-body hero-body">
       <div class="container is-fluid">
         {{/* Use .Site.Data.publication info if available */}}
@@ -62,6 +88,7 @@ Cover page layout. This controls the home page of the publication.
         {{ end }}
       </div>
     </div>
+    {{ end }}
   </section>
     
   <section class="quire-cover__more" >

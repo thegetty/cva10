@@ -1,3 +1,88 @@
+/* Adjust body font size and line-height */
+.quire-page__content {
+  font-size: 1.2em;
+}
+.quire-page__content .container .content * {
+  line-height: 1.6;
+}
+
+/* Style cover and headings */
+.quire h1,
+.quire-page h1, .quire-page__header__title,
+.quire-cover__hero-body.hero-body.cva-cover {
+  font-family: 'Cardo', serif;
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.cva-title {
+  font-size: 3rem;
+  padding: 2.5rem 0;
+}
+.quire h1,
+.quire-page h1, 
+.quire-page__header__title,
+.academique,
+.institution,
+.cva-subtitle,
+.cva-contributor,
+.publisher {
+  font-size: 1.5rem;
+}
+.cva-subtitle {
+  padding: 4.5rem 0 1rem;
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.cva-contributor {
+  padding-bottom: 4.5rem;
+}
+.quire h1,
+.quire-page h1, 
+.quire-page__header__title {
+  margin: 4rem 0 0;
+}
+
+/* Change navbar font and adjust icons to match*/
+.quire-navbar {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.quire-navbar-page-controls__item.quire-next-page svg,
+.quire-navbar-page-controls__item.quire-previous-page svg {
+  margin-bottom: .15em;
+}
+
+/* Adjust entry page headigns */
+.quire-entry .quire-page__header__title {
+  text-align: left;
+}
+.quire-entry .quire-page__content h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  float: left;
+  margin: .15rem 1rem 0 0;
+}
+.quire-entry .quire-page__content .container .content > h2:first-child {
+  margin-top: .15rem;
+}
+
+/* Style override tombstone that's no longer a table*/
+.quire-entry__tombstone .container {
+  padding: 0 2rem;
+  color: #000;
+}
+.quire-entry__tombstone .container p:first-child {
+  font-size: 1.5rem;
+}
+
+/* Add link styles to abbreviation pop-ups */
 .quire-citation {
   display: inline;
   border-bottom: 1px dotted #333;
