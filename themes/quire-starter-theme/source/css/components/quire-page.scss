@@ -708,7 +708,7 @@ html {
       }
     }
 
-    figure a {
+    figure > a {
       &:hover {
         border-bottom-width: 0 !important;
       }
