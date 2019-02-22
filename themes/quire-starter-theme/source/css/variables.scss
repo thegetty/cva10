@@ -6,7 +6,54 @@
 // To avoid errors, variables names should not be changed or deleted, and be
 // sure to leave the colons (:) and semi-colons (;) in place.
 
+
+////
+// Cardo
+// https://fonts.google.com/specimen/Cardo
+// http://scholarsfonts.net/cardofnt.html
+// Open Font License 1.1 (https://scripts.sil.org/OFL)
+//
+// Cardo Regular
+@font-face {
+  font-family: "Cardo";
+  src: url("../fonts/cardo/cardo-regular.eot");
+  src: url("../fonts/cardo/cardo-regular.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/cardo/cardo-regular.woff2") format("woff2"),
+       url("../fonts/cardo/cardo-regular.woff") format("woff"),
+       url("../fonts/cardo/cardo-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Cardo Italic
+@font-face {
+  font-family: "Cardo";
+  src: url("../fonts/cardo/cardo-italic.eot");
+  src: url("../fonts/cardo/cardo-italic.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/cardo/cardo-italic.woff2") format("woff2"),
+       url("../fonts/cardo/cardo-italic.woff") format("woff"),
+       url("../fonts/cardo/cardo-italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+// Cardo Bold
+@font-face {
+  font-family: "Cardo";
+  src: url("../fonts/cardo/cardo-bold.eot");
+  src: url("../fonts/cardo/cardo-bold.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/cardo/cardo-bold.woff2") format("woff2"),
+       url("../fonts/cardo/cardo-bold.woff") format("woff"),
+       url("../fonts/cardo/cardo-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+// CVA Variables
+// -----------------------------------------------------------------------------
 $cva-cream: #fcfbeb;
+$cardo: 'Cardo', serif;
+
 
 $accent-color: Tomato;
 $content-background-color: $cva-cream; // main text area background color
@@ -70,10 +117,10 @@ $print-entry-image-display: first; // first | all
 // Themes
 // -----------------------------------------------------------------------------
 // Declare theme variables
-$quire-primary-font: null; // body and menu text
-$quire-headings-font: null; // headings
-$quire-footnotes-font: null; // footnotes and page backmatter
-$quire-navigation-font: null; // navbar and next/prev buttons
+$quire-primary-font: $cardo; // body and menu text
+$quire-headings-font: $cardo; // headings
+$quire-footnotes-font: $cardo; // footnotes and page backmatter
+$quire-navigation-font: $cardo; // navbar and next/prev buttons
 
 @if $theme == classic {
   // Classic Theme
