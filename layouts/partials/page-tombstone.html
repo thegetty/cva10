@@ -18,7 +18,12 @@
       {{ if .id }}
         {{ range where $.Site.Data.objects.object_list "id" "eq" .id }}
           {{ if .link }}
-          <p class="is-screen-only"><a href="{{ .link }}" target="_blank">{{ $.Site.Params.entryPageObjectLinkText }}</a></p>
+          <p class="collection-link is-screen-only"><a href="{{ .link }}" target="_blank">{{ $.Site.Params.entryPageObjectLinkText }}</a></p>
+          {{ end }}
+          {{ if .plate_list }}
+            {{- $institution := urlize (replace $.Site.Data.publication.cva.institution "." "") -}}
+            {{- $fascicule := $.Site.Data.publication.cva.fascicule_no -}}
+            <p class="entry-download is-screen-only"><a href="/downloads/{{ $institution }}__cva-{{ $fascicule }}__{{ .id }}.pdf" target="_blank">Download PDF</a></p>
           {{ end }}
         {{ end }}
       {{ else }}

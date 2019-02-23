@@ -69,3 +69,12 @@ For more precise layouts, or for overrides to the default output, custom CSS mus
 
 }
 ```
+
+## Creating Entry/Plates PDFs
+
+This project includes a simple shell script and the associated files it needs to create PDFs for individual CVA entires that include the entry text and the associated plates. These are then downloadable from each entry page. To run the script:
+
+```
+quire preview
+bin/page-pdfs.sh
+```

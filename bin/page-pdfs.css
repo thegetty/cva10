@@ -1,0 +1,73 @@
+/*  This is a special css file that overrides some of the base page settings of 
+    the entry essays and the plates for a better output for downloading individual entries.
+    
+    All the !important calls seem to be necessary.
+ */
+@page {
+  size: 9.625in 11.875in;
+  prince-bleed: 0 !important;
+  bleed: 0 !important;
+  prince-trim: 0 !important;
+  marks: none !important;
+  margin-left: .875in !important;
+  margin-right: .875in !important;
+  color: #ccc !important;
+}
+@page:right {
+  @bottom-right {
+    content: none !important;
+  }
+  @top-right {
+    content: none !important;
+  }
+}
+@page:left {
+  @bottom-left {
+    content: none !important;
+  }
+}
+
+@page plate {
+  margin-left: .25in !important;
+  margin-right: .25in !important;
+}
+@page plate:right {
+  @top-left {
+    content: string(fascicule) !important;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    font-size: 1em;
+  }
+  @top-right {
+    content: string(platenumber) !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+    font-size: 1.5em !important;
+  }
+  @bottom-left {
+    content: string(country) !important;
+  }
+  @bottom-right {
+    content: string(typology) !important;
+  }  
+}
+@page plate:left {
+  @top-left {
+    content: string(fascicule) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1pt !important;
+    font-size: 1em !important;
+  }
+  @top-right {
+    content: string(platenumber) !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+    font-size: 1.5em !important;
+  }
+  @bottom-left {
+    content: string(country) !important;
+  }
+  @bottom-right {
+    content: string(typology) !important;
+  }  
+}
