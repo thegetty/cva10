@@ -125,15 +125,10 @@
   .quire-splash .quire-page h1, 
   .quire-splash .quire-page__header__title {
     margin-top: 3in;
-  }
-  .quire-entry__tombstone {
-    /* max-width: none;
-    margin-left: .5in; */
-  }  
+  } 
   .quire-entry__image figure:first-of-type {
     display: none;
   }
-  
 }
 .quire-cover__more .hero-more {
   background: #333;
@@ -189,6 +184,11 @@
 }
 .quire-entry__tombstone .container p:first-child {
   font-size: 1.5rem;
+}
+.collection-link,
+.entry-download {
+  display: inline-block;
+  margin-right: .5rem;
 }
 
 /* Add link styles to abbreviation pop-ups */
