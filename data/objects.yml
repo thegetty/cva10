@@ -3,9 +3,10 @@ object_display_order:
   - accession_number
 object_list:
   - id: 1
-    plates: 518–20
+    plates: "518–20"
     plate_list: 518, 519, 520
     accession_number: 86.AE.205
+    link: http://www.getty.edu/art/collection/objects/11968/
     bareiss_number: 342
     fabric: Athenian
     technique: Red-figure
@@ -13,7 +14,7 @@ object_list:
     attribution: Myson
     attributor: J. D. Beazley
     date: -490 to -480
-    subject: akontist, athlete, bridle, deer, dog, goat, *halteres*, himation, horse, javelin, jumper, *kentron*, panther, pick, sponge, staff, stick, strigil, trainer
+    subject: akontist, athlete, bridle, deer, dog, goat, *haltēres*, himation, horse, javelin, jumper, *kentron*, *paedotribēs*, palmette (*anthemion*), panther, pick, sponge, staff, stick, strigil, trainer
     figure:
       - id: 86AE205-front
       - id: 86AE205-back
@@ -26,9 +27,10 @@ object_list:
       - id: 86AE205-detail-d
 
   - id: 2
-    plates: 521–23
+    plates: "521–23"
     plate_list: 521, 522, 523
     accession_number: 73.AE.135
+    link: http://www.getty.edu/art/collection/objects/7125/
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
@@ -48,14 +50,15 @@ object_list:
       - id: 73AE135-detail-c
 
   - id: 3
-    plates: 524, 1–2
+    plates: "524, 1–2"
     plate_list: 524
     accession_number: 86.AE.211.1 and 86.AE.211.2
+    link: http://www.getty.edu/art/collection/objects/11977/
     bareiss_number: 307 a and 307 b
     fabric: Athenian
     technique: Red-figure
     shape_name: Krater, Column-
-    attribution: Near the Eucharides Painter
+    attribution: Eucharides Painter, Near the
     attributor: J. R. Guy
     date: -480
     subject: breast bands (on horses), chariot, charioteer, chiton, Dionysos, feline (unspecified), himation, horse, *kentron*, *quadriga*
@@ -64,9 +67,10 @@ object_list:
       - id: 83AE2111-back
 
   - id: 4
-    plates: 524, 3–4
+    plates: "524, 3–4"
     plate_list: 524
     accession_number: 86.AE.207
+    link: http://www.getty.edu/art/collection/objects/11970/
     bareiss_number: 253
     fabric: Athenian
     technique: Red-figure
@@ -80,9 +84,10 @@ object_list:
       - id: 86AE207-back
 
   - id: 5
-    plates: 525–27
+    plates: "525–27"
     plate_list: 525, 526, 527
     accession_number: 86.AE.206
+    link: http://www.getty.edu/art/collection/objects/11969/
     bareiss_number: 31
     fabric: Athenian
     technique: Red-figure
@@ -90,7 +95,7 @@ object_list:
     attribution: Tyszkiewicz Painter
     attributor: J. D. Beazley
     date: -480
-    subject: animal skin, chiton, fillet, himation, *krobylos*, maenad, satyr, scepter, thyrsos, wreath, Zeus
+    subject: animal skin, chiton, fillet, himation, *krobylos*, leopard skin, maenad, palmette (*anthemion*), satyr, scepter, staff, thyrsos, wreath, Zeus
     figure:
       - id: 86AE206-front
       - id: 86AE206-back
@@ -101,9 +106,10 @@ object_list:
       - id: 86AE206-detail-b
 
   - id: 6
-    plates: 528–30
+    plates: "528–30"
     plate_list: 528, 529, 530
     accession_number: 83.AE.252
+    link: http://www.getty.edu/art/collection/objects/10463/
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
@@ -111,7 +117,7 @@ object_list:
     attribution: Pan Painter
     attributor: J. Frel
     date: -480 to -470
-    subject: altar, blood, dinos, *epipyron*, fire/flames, herm, himation, *kanoun*, kylix, offerings, pillar, staff
+    subject: altar, blood, dinos, *epipyron*, fire/flames, herm, himation, ithyphallic herm, *kanoun*, kylix, offerings, pillar, staff, volute
     figure:
       - id: 83AE252-front
       - id: 83AE252-back
@@ -124,9 +130,10 @@ object_list:
       - id: 83AE252-detail-d
 
   - id: 7
-    plates: 531–32, 533, 1–3
+    plates: "531–32, 533, 1–3"
     plate_list: 531, 532, 533
     accession_number: 83.AE.255
+    link: http://www.getty.edu/art/collection/objects/10466/
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
@@ -134,7 +141,7 @@ object_list:
     attribution: Geras Painter
     attributor: J. M. Padgett
     date: -480 to -470
-    subject: chiton, herm, himation, *kanoun*, *sakkos*
+    subject: chiton, herm, himation, ithyphallic herm, *kanoun*, *sakkos*
     figure:
       - id: 83AE255-front
       - id: 83AE255-back
@@ -146,9 +153,10 @@ object_list:
       - id: 83AE255-detail-c
 
   - id: 8
-    plates: 533, 4–5
+    plates: "533, 4–5"
     plate_list: 533
     accession_number: 83.AE.284.201
+    link: http://www.getty.edu/art/collection/objects/27722/
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
@@ -162,9 +170,10 @@ object_list:
       - id: 83AE284201-back
 
   - id: 9
-    plates: 534–36
+    plates: "534–36"
     plate_list: 534, 535, 536
     accession_number: 81.AE.37
+    link: http://www.getty.edu/art/collection/objects/9407/
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
@@ -172,7 +181,7 @@ object_list:
     attribution: Harrow Painter
     attributor: J. D. Beazley
     date: -480
-    subject: altar, fillet, herm, himation, mantle, stick
+    subject: altar, fillet, herm, himation, ithyphallic herm, mantle, stick, volute
     figure:
       - id: 81AE37-front
       - id: 81AE37-back
@@ -184,25 +193,27 @@ object_list:
       - id: 81AE37-detail-c
 
   - id: 10
-    plates: 537
+    plates: "537"
     plate_list: 537
     accession_number: 86.AE.208 and 86.AE.210
+    link: http://www.getty.edu/art/collection/objects/11971/
     bareiss_number: 379
     fabric: Athenian
     technique: Red-figure
     shape_name: Krater, Column-
-    attribution: Group of Undetermined Mannerists
+    attribution: Undetermined Mannerists, Group of
     attributor: D. von Bothmer
     date: -480
-    subject: chiton, Dionysos, flower, grapes, maenad, necklace, offerings, *popana*, table
+    subject: chiton, Dionysos, flower, grapes, maenad, necklace, offerings, palmette (*anthemion*), *popana*, table, *xoanon*
     figure:
       - id: 86AE208-front
       - id: 86AE208-back
 
   - id: 11
-    plates: 538–40
+    plates: "538–40"
     plate_list: 538, 539, 540
     accession_number: 78.AE.380.1, 78.AE.380.25, 78.AE.380.36, 78.AE.380.58, 78.AE.380.62, and 78.AE.380.67
+    link: http://www.getty.edu/art/collection/objects/106888/
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
@@ -210,7 +221,7 @@ object_list:
     attribution: Agrigento Painter
     attributor: J. R. Guy
     date: -460
-    subject: fillet, flower, inscription, mantle, staff, stick, torch, wreath
+    subject: fillet, flower, inscription, mantle, palmette (*anthemion*), staff, stick, torch, wreath
     figure:
       - id: 78AE3801-front
       - id: 78AE3801-back
@@ -223,9 +234,10 @@ object_list:
       - id: 78AE3801-detail-d
 
   - id: 12
-    plates: 541–43
+    plates: "541–43"
     plate_list: 541, 542, 543
     accession_number: 81.AE.161
+    link: http://www.getty.edu/art/collection/objects/9824/
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
@@ -246,17 +258,18 @@ object_list:
       - id: 81AE161-detail-d
 
   - id: 13
-    plates: 544–46
+    plates: "544–46"
     plate_list: 544, 545, 546
     accession_number: 82.AE.143
+    link: http://www.getty.edu/art/collection/objects/10360/
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
     shape_name: Krater, Column-
-    attribution: Painter of London E 489
+    attribution: London E 489, Painter of
     attributor: J. R. Guy
     date: -460 to -450
-    subject: cloak, column (Ionic), fillet, himation, Oidipous, *petasos*, *sakkos*, spear, Sphinx, staff, stick
+    subject: cloak, column (Ionic), fillet, himation, Oidipous, palmette (*anthemion*), *petasos*, *sakkos*, spear, Sphinx, staff, stick
     figure:
       - id: 82AE143-front
       - id: 82AE143-back
@@ -267,9 +280,10 @@ object_list:
       - id: 82AE143-detail-b
 
   - id: 14
-    plates: 547, 1–2
+    plates: "547, 1–2"
     plate_list: 547
     accession_number: 86.AE.204
+    link: http://www.getty.edu/art/collection/objects/11967/
     bareiss_number: 312
     fabric: Athenian
     technique: Red-figure
@@ -283,9 +297,10 @@ object_list:
       - id: 86AE204-back
 
   - id: 15
-    plates: 547, 3–4
+    plates: "547, 3–4"
     plate_list: 547
     accession_number: 86.AE.209.1 and 86.AE.209.2
+    link: http://www.getty.edu/art/collection/objects/11973/
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
@@ -300,9 +315,10 @@ object_list:
 
 
   - id: 16
-    plates: 547, 5–6
+    plates: "547, 5–6"
     plate_list: 547
     accession_number: 79.AE.95.12 and 79.AE.95.13
+    link: http://www.getty.edu/art/collection/objects/20062/
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
@@ -316,25 +332,28 @@ object_list:
       - id: 79AE9512-back
 
   - id: 17
-    plates: 548, 1–2
+    plates: "548, 1–2"
     plate_list: 548
     accession_number: 81.AE.188.7
+    link: http://www.getty.edu/art/collection/objects/21757/
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
     shape_name: Krater, Volute-
-    attribution: Euthymides or early Kleophrades Painter
+    attribution: Euthymides; Kleophrades Painter
+    attribution_uncertain: true
     attributor: J. R. Guy and J. Gaunt
     date: -520 to -510
-    subject: drinking horn, *krotalon*, maenad, satyr, wreath
+    subject: drinking horn, *krotalon*, maenad, palmette (*anthemion*), satyr, wreath
     figure:
       - id: 81AE1887-front
       - id: 81AE1887-back
 
   - id: 18
-    plates: 548, 3–4
+    plates: "548, 3–4"
     plate_list: 548
     accession_number: 80.AE.138.13
+    link: http://www.getty.edu/art/collection/objects/14877/
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
@@ -348,9 +367,10 @@ object_list:
       - id: 80AE13813-back
 
   - id: 19
-    plates: 549–57
+    plates: "549–57"
     plate_list: 549, 550, 551, 552, 553, 554, 555, 556, 557
     accession_number: 77.AE.11, 86.AE.587, 97.AE.58.2, and 98.AE.82.1–12
+    link: http://www.getty.edu/art/collection/objects/7598/
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
@@ -358,7 +378,7 @@ object_list:
     attribution: Kleophrades Painter
     attributor: J. D. Beazley
     date: -490 to -480
-    subject: Ajax (Telamonian), Amazons, animal skin, apples of the Hesperides, archer, arrow, Athena, Atlas, blood, bow, branch, bull (shield device), centaur (shield device), Cheiron, chiton, *chitoniskos*, club, corselet, Doris, Eurytion, fillet, fish, Geryon, *gorytus*, greaves, helmet, Herakles, himation, hoplite, horse, Hydra (Lernean), inscription, Iolaos, *kodon*, *krobylos*, Ladon, lion (shield device), Nereid, Nereus, Orthros, Pegasos (shield device), Peleus, *pelta*, quiver, *salpinx*, shield, snake, spear, staff, sword, *thakos*, Thetis, torch, tree, *triskeles* (shield device), trumpeter, warrior
+    subject: Ajax (Telamonian), Amazons, animal skin, apples of the Hesperides, archer, arrow, Athena, Atlas, blood, bow, branch, bull (shield device), centaur (shield device), Cheiron, chiton, *chitoniskos*, club, corselet, Doris, Eurytion, fillet, fish, Geryon, *gorytos*, greaves, helmet, Herakles, himation, hoplite, horse, Hydra (Lernean), inscription, Iolaos, *kodon*, *krobylos*, Ladon, lion (shield device), Nereid, Nereus, Orthros, palmette (*anthemion*), Pegasos (shield device), Peleus, *pelta*, quiver, *salpinx*, shield, Skythian, snake, spear, staff, sword, *thakos*, Thetis, torch, tree, *triskeles* (shield device), trumpeter, warrior
     figure:
       - id: 77AE11-front
       - id: 77AE11-back
@@ -384,9 +404,10 @@ object_list:
       - id: 98AE821-back
 
   - id: 20
-    plates: 558, 1–2
+    plates: "558, 1–2"
     plate_list: 558
     accession_number: 86.AE.202
+    link: http://www.getty.edu/art/collection/objects/11965/
     bareiss_number: 91
     fabric: Athenian
     technique: Red-figure
@@ -400,9 +421,10 @@ object_list:
       - id: 86AE202-back
 
   - id: 21
-    plates: 558, 3–4
+    plates: "558, 3–4"
     plate_list: 558
     accession_number: 86.AE.203
+    link: http://www.getty.edu/art/collection/objects/11966/
     bareiss_number: 329
     fabric: Athenian
     technique: Red-figure
@@ -416,9 +438,10 @@ object_list:
       - id: 86AE203-back
 
   - id: 22
-    plates: 558, 5–6
+    plates: "558, 5–6"
     plate_list: 558
     accession_number: 76.AE.131.10
+    link: http://www.getty.edu/art/collection/objects/7556/
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
@@ -432,9 +455,10 @@ object_list:
       - id: 76AE13110-back
 
   - id: 23
-    plates: 559–63
+    plates: "559–63"
     plate_list: 559, 560, 561, 562, 563
     accession_number: 79.AE.198
+    link: http://www.getty.edu/art/collection/objects/9045/
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
@@ -442,7 +466,7 @@ object_list:
     attribution: Polygnotos
     attributor: J. R. Guy
     date: -440 to -435
-    subject: Ajax (Locrian), amphora, animal skin, Athena, attendant (female), belt, chest, chiton, diadem, earring, feline (unspecified), fillet, headband, helmet, himation, Ilioupersis, inscription, kantharos, Kassandra, *krobylos*, maenad, Menelaos, Palladion, peplos, priestess, satyr, shield, spear, star (shield device), statue, stick, thiasos, thyrsos, torch, wineskin
+    subject: Ajax (Locrian), amphora, animal skin, Athena, attendant (female), belt, chest, chiton, diadem, earring, feline (unspecified), fillet, headband, helmet, himation, Ilioupersis, inscription, kantharos, Kassandra, *krobylos*, leopard skin, maenad, Menelaos, Palladion, palmette (*anthemion*), peplos, priestess, satyr, shield, spear, star (shield device), statue, stick, thiasos, thyrsos, torch, wineskin
     figure:
       - id: 79AE198-front
       - id: 79AE198-back
@@ -463,9 +487,10 @@ object_list:
       - id: 79AE198-detail-m
 
   - id: 24
-    plates: 564–73
+    plates: "564–73"
     plate_list: 564, 565, 567, 568, 569, 570, 571, 572, 573
     accession_number: 87.AE.93
+    link: http://www.getty.edu/art/collection/objects/12887/
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
@@ -473,7 +498,7 @@ object_list:
     attribution: M1 and M2 (formerly known as the Meleager Painter)
     attributor: K. Kathariou
     date: -400 to -390
-    subject: Adonis, animal skin, Aphrodite, Arimasp, attendant (female), aulos, baldric, banqueter, bed/couch/*kline*, blanket, bracelet, bull, chest, chignon, chiton, chlamys, club, cushion, deer, diadem, Dionysos, dog, earring, *ependytes*, Eros, fillet, food, footstool, fruit, grapevine, griffin, headband, hare, himation, kantharos, *keras*, komast/reveler, *kottabos*, *lagobolon*, lyre, maenad, mantle, mirror, necklace, peplos, Persephone, *pilos* (conical hat), plate, satyr, shield, Silenos, spear, stemless drinking cup, string of beads, sword, symposion, table, Theseus, thyrsos, torch, tree, *tympanon*
+    subject: Adonis, animal skin, Aphrodite, Arimasp, attendant (female), aulos, baldric, banqueter, bed/couch/*klinē*, blanket, bracelet, bull, chest, chignon, chiton, chlamys, club, cushion, deer, diadem, Dionysos, dog, earring, *ependytēs*, Eros, fillet, food, footstool, fruit, grapevine, griffin, headband, hare, himation, kantharos, *keras*, komast/reveler, *kottabos*, *lagobolon*, lyre, maenad, mantle, mirror, necklace, palmette (*anthemion*), peplos, Persephone, *pilos* (conical hat), plate, satyr, shield, Silenos, spear, stemless drinking cup, string of beads, sword, symposion, table, Theseus, thyrsos, torch, tree, *tympanon*
     figure:
       - id: 87AE93-front
       - id: 87AE93-back

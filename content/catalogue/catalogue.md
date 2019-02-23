@@ -1,7 +1,8 @@
 ---
 title: Catalogue
-weight: 100
+weight: 99
 type: contents
 class: grid
 slug: .
+pdf: false
 ---

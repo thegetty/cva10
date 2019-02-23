@@ -19,13 +19,27 @@
 
 {{- range $index, $element := $.Site.Data.objects.object_list -}}
 
-  {{- $d := dict "attribution" .attribution "id" .id "plates" .plates "accession_number" .accession_number -}}
+  {{ $.Scratch.Add "index" $index }}
+  {{ $.Scratch.Add "id" .id }}
+  {{ $.Scratch.Add "plates" .plates }}
+  {{ $.Scratch.Add "accession_number" .accession_number }}
 
-  {{- $name := lower (replaceRE ",|\\(|\\)|\\s" "" .attribution) -}}
-  {{- $val := printf "%s-%s" $name (string (add $index 1)) -}}
+  {{ range (split .attribution "; ") }}
+
+  {{- $d := dict "attribution" . "id" ($.Scratch.Get "id") "plates" ($.Scratch.Get "plates") "accession_number" ($.Scratch.Get "accession_number") -}}
+
+  {{- $name := lower (replaceRE ",|\\(|\\)|\\s" "" .) -}}
+  {{- $val := printf "%s-%s" $name (string (add (int ($.Scratch.Get "index")) 1)) -}}
   {{- $.Page.Scratch.SetInMap "attributions" $val $d -}}
 
   {{- $.Page.Scratch.Add $name 1 -}}
+
+  {{ end }}
+
+  {{ $.Scratch.Delete "index" }}
+  {{ $.Scratch.Delete "id" }}
+  {{ $.Scratch.Delete "plates" }}
+  {{ $.Scratch.Delete "accession_number" }}
 
 {{- end -}}
 
@@ -52,7 +66,7 @@
               {{- else -}}
               <td rowspan="{{ $.Page.Scratch.Get $name }}">{{ .attribution }}</td>
               {{- end }}
-              <td><a href="../catalogue/{{ .id }}">{{ .id }}</a></td>
+              <td><a href="../catalogue/{{ .id }}">{{ .id }}</a>{{ range where $.Site.Data.objects.object_list "id" .id }}{{ if eq .attribution_uncertain true }} *{{ $.Scratch.Add "uncertainty" 1 }}{{ end }}{{ end }}</td>
               <td>{{ .plates }}</td>
               <td>{{ .accession_number }}</td>
             </tr>
@@ -60,6 +74,9 @@
             {{- end -}}
           </tbody>
         </table>
+        {{ if gt ($.Scratch.Get "uncertainty") 0 }}
+        <p><em>* Uncertain or shared attribution</em></p>
+        {{ end }}
       </div>
     </div>
   </section>

@@ -12,8 +12,12 @@ This catalogue marks a renewed commitment to publishing the Getty’s vase colle
 
 The volume has been many years in the making, and I congratulate its author, Despoina Tsiafakis, for bringing it to fruition. The project has had the ongoing support of the Getty’s Department of Antiquities, beginning with Marion True’s invitation and thereafter shepherded by David Saunders, Jens Daehner, and Kenneth Lapatin. The Department of Antiquities Conservation, particularly Jeffrey Maish, provided essential documentation, analysis, and conservation work. The vases have been newly photographed by Tahnee Cracchiola and Rebecca Truszkowski, and Toby Schreiber prepared the profile drawings. Greg Albers, Rachel Barth, Michelle Woo Deemer, Kara Kirk, Ruth Evans Lane, Karen Levine, and Laura diZerega have been instrumental in developing the publication.
 
+{{< q-class "byline" >}}
+
 Timothy Potts
 
 Director
 
-*The J. Paul Getty Museum*
+The J. Paul Getty Museum
+
+{{< /q-class >}}
