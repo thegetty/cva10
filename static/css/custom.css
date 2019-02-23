@@ -6,6 +6,20 @@
   line-height: 1.6;
 }
 
+/* Implement open type features */
+.cva-title,
+.cva-title-menu {
+  /* The included version of the Cardo Regular font has been customized to add 
+    an open type stylistic set ("ss16") that displays a U as a V. */
+  font-feature-settings: "ss16";
+}
+.quire-page__content,
+.quire-entry__tombstone,
+.quire-entry__header {
+  font-variant-numeric: oldstyle-nums;
+  font-feature-settings: "onum";
+}
+
 /*  Hide cat entries in TOC and menu, and splash pages in catalogue grid.
     The starter theme is not currently handling
     toc: false and menu: false the way we need it to here. */
@@ -69,6 +83,9 @@
 }
 
 /* Style cover and headings */
+.quire-cover__overlay {
+  display: none;
+}
 .quire h1,
 .quire-page h1, .quire-page__header__title,
 .quire-cover__hero-body.hero-body.cva-cover {
