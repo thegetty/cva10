@@ -18,7 +18,7 @@
       {{ if .id }}
         {{ range where $.Site.Data.objects.object_list "id" "eq" .id }}
           {{ if .link }}
-          <p><a href="{{ .link }}" target="_blank">{{ $.Site.Params.entryPageObjectLinkText }}</a></p>
+          <p class="is-screen-only"><a href="{{ .link }}" target="_blank">{{ $.Site.Params.entryPageObjectLinkText }}</a></p>
           {{ end }}
         {{ end }}
       {{ else }}

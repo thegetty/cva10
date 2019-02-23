@@ -110,8 +110,11 @@
   line-height: 1.4;
 }
 @media print {
-  .quire-entry__header {
+  .quire-entry__header,
+  .quire-entry__tombstone {
     margin-bottom: .25in;
+    margin-left: 0;
+    max-width: none;
   }
   .quire h1,
   .quire-page h1, 
@@ -124,9 +127,13 @@
     margin-top: 3in;
   }
   .quire-entry__tombstone {
-    max-width: none;
-    margin-left: .5in;
+    /* max-width: none;
+    margin-left: .5in; */
+  }  
+  .quire-entry__image figure:first-of-type {
+    display: none;
   }
+  
 }
 .quire-cover__more .hero-more {
   background: #333;
