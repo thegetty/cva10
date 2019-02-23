@@ -42,7 +42,7 @@ params:
   entryPageSideBySideLayout: true
   entryPageObjectLinkText: "View in Collection"
   figureLabelLocation: below # below | on-top
-  figureModal: true
+  figureModal: false
   figureModalIcons: true
   figureZoom: true
   frontmatterPageStart: 0

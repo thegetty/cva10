@@ -1,0 +1,6 @@
+{{- $institution := urlize (replace $.Site.Data.publication.cva.institution "." "") -}}
+{{- $fascicule := $.Site.Data.publication.cva.fascicule_no -}}
+{{- $filePath := "static/downloads/" -}}
+{{- range $.Site.Data.objects.object_list -}}
+http://localhost:1313/catalogue/{{ .id }}/ {{ range (split .plate_list ", ") }}http://localhost:1313/plates/{{ . }}/ {{ end }}-o {{ $filePath }}{{ $institution }}__cva-{{ $fascicule }}__{{ .id }}.pdf
+{{ end -}}

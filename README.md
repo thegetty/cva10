@@ -14,16 +14,16 @@ A specialized block of metadata should be added to the project’s `publication.
 cva:
   institution: J. Paul Getty Museum
   location: Malibu
-  fasicule_no: 10
+  fascicule_no: 10
   country: U.S.A.
-  country_fasicule_no: 40
+  country_fascicule_no: 40
   plate_start: 518
   country_plate_start: 2069
 ```
 
 ## Creating Traditional CVA Plates
 
-The plate layout requires some CVA metadata to be present in the project’s `publication.yml` file. Specifically `institution`, `country`, `fasicule_no`, `plate_start` and `country_plate_start`. See above.
+The plate layout requires some CVA metadata to be present in the project’s `publication.yml` file. Specifically `institution`, `country`, `fascicule_no`, `plate_start` and `country_plate_start`. See above.
 
 Plate numbers are derived from the file names. So file `518.md` would be plate 518. For each plate, create a Markdown file with the appropriate filename and include a block of YAML as in the sample below. No other content is necessary, nor will any display.
 
@@ -68,4 +68,13 @@ For more precise layouts, or for overrides to the default output, custom CSS mus
 #plate-518 #fig-2 {
 
 }
+```
+
+## Creating Entry/Plates PDFs
+
+This project includes a simple shell script and the associated files it needs to create PDFs for individual CVA entires that include the entry text and the associated plates. These are then downloadable from each entry page. To run the script:
+
+```
+quire preview
+bin/page-pdfs.sh
 ```
