@@ -35,7 +35,11 @@ Cover page layout. This controls the home page of the publication.
     <div class="quire-cover__hero-body cva-cover hero-body">
       <div>
         <p class="academique">Union Académique Internationale<p>
+        {{- if eq .Site.Params.pdf true -}}
+        <p class="cva-title">Corpvs Vasorvm Antiqvorvm</p>
+        {{- else -}}
         <p class="cva-title">Corpus Vasorum Antiquorum</p>
+        {{- end -}}
         <p class="institution">{{ .Site.Data.publication.cva.institution }} • {{ .Site.Data.publication.cva.location }}</p>
         <p class="cva-subtitle">{{ .Site.Data.publication.subtitle }}</p>
         <div class="cva-contributor">
@@ -46,7 +50,7 @@ Cover page layout. This controls the home page of the publication.
           {{ partial "contributor-list.html" (dict "range" .Site.Data.publication.contributor "contributorType" "primary" "listType" "string" "Site" $.Site) }}
         {{- end -}}
         </div>
-        <p class="publisher">{{ .Site.Data.publication.cva.institution }}</p>
+        <p class="cva-publisher">{{ .Site.Data.publication.cva.institution }}</p>
         <p class="fascicule">Fascicule {{ .Site.Data.publication.cva.fascicule_no }} • [{{ .Site.Data.publication.cva.country }} Fascicule {{ .Site.Data.publication.cva.country_fascicule_no }}]</p>
         <p class="pub-year">{{ .Site.Data.publication.pub_date | dateFormat "2006" }}</p>
     

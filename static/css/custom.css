@@ -107,7 +107,7 @@
 .institution,
 .cva-subtitle,
 .cva-contributor,
-.publisher {
+.cva-publisher {
   font-size: 1.5rem;
 }
 .cva-subtitle {
@@ -287,5 +287,33 @@
   }
   #copyright hr {
     width: 70%;
+  }
+}
+
+/* Style half-title and title page for PDF/Print output */
+@media print {
+  .half-title-page {
+    margin: 0 auto;
+    text-align: justify;
+    text-align-last: justify;
+    text-transform: uppercase;
+    color: #000000;
+    line-height: 2;
+    width: 2.875in;
+  }
+  .half-title-page .cva-title {
+    padding: 0;
+    font-size: 1.35rem;
+    letter-spacing: .25pt;
+  }
+  .half-title-page .cva-country {
+    font-size: 1rem;
+  }
+  .half-title-page .institution {
+    text-transform: none;
+    font-size: 1.25rem;
+  }
+  .title-page {
+    margin: 0 auto;
   }
 }
