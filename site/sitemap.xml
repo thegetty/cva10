@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://thegetty.github.io/cva10/copyright/</loc>
+  </url>
+  
+  <url>
     <loc>https://thegetty.github.io/cva10/</loc>
   </url>
   
@@ -152,6 +156,14 @@
   
   <url>
     <loc>https://thegetty.github.io/cva10/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://thegetty.github.io/cva10/plates/</loc>
+  </url>
+  
+  <url>
+    <loc>https://thegetty.github.io/cva10/pdf-script.txt</loc>
   </url>
   
   <url>
