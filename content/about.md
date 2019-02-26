@@ -92,7 +92,7 @@ Attic black-figured amphorae, neck-amphorae, kraters,
 stamnos, hydriai, and fragments of undetermined
 closed shapes.
 
-1.	Vases, Greek—Catalogs.  2. Bareiss, Molly—Art
+    1.  Vases, Greek—Catalogs.  2. Bareiss, Molly—Art
 collections—Catalogs.  3. Bareiss, Walter—Art 
 collections—Catalogs.  4. Vases—Private collections—
 California—Malibu—Catalogs.  5. Vases—California—
