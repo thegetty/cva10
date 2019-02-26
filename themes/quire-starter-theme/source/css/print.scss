@@ -12,7 +12,7 @@ $print-base-text-column-width: 4.75in;
 
 $print-bottom-margin: 0.875in;
 $print-top-margin: 0.75in;
-$print-outer-margin: 0.75in;
+$print-outer-margin: 1.5in;
 $print-inner-margin: 1in;
 
 @if $print-width <= 7 {
@@ -44,80 +44,59 @@ $print-trim: $print-bleed * 2;
     font-family: $print-footer-font;
     font-size: $print-footer-font-size;
     color: $quire-print-text-color;
+    @bottom-center {
+      content: counter(page);
+    }
   }
 
   @page:left {
     margin-left: $print-outer-margin;
     margin-right: $print-inner-margin;
-
-    @bottom-right {
-      content: string(sectiontitle);
-      text-transform: uppercase;
-      letter-spacing: 1pt;
-      font-size: 7.5pt;
-    }
-
-    @bottom-left {
-      content: counter(page);
-    }
   }
 
-  @page:left:first {
-    @bottom-right {
-      content: none;
-    }
-  }
+  // @page:left:first {
+  //   @bottom-center {
+  //     content: none;
+  //   }
+  // }
 
   @page:right {
     margin-left: $print-inner-margin;
     margin-right: $print-outer-margin;
-
-    @bottom-left {
-      content: string(pagetitle);
-    }
-
-    @bottom-right {
-      text-align: right;
-      content: counter(page);
-    }
   }
 
-  @page:right:first {
-    @bottom-left {
-      content: none;
-    }
-  }
+  // @page:right:first {
+  //   @bottom-center {
+  //     content: none;
+  //   }
+  // }
 
-  @page frontmatter:left {
-    @bottom-left {
+  @page frontmatter, frontmatter-splash {
+    @bottom-center {
       content: counter(page, lower-roman);
     }
   }
   
-  @page frontmatter:right {
-    @bottom-right {
-      text-align: right;
-      content: counter(page, lower-roman);
-    }
-  }
-  
-  @page frontmatter-splash:left {
-    background-color: $print-splash-color;
-    @bottom-left {
-      content: counter(page, lower-roman);
-    }
-  }
-  
-  @page frontmatter-splash:right {
-    background-color: $print-splash-color;
-    @bottom-right {
-      text-align: right;
-      content: counter(page, lower-roman);
-    }
-  }
+  // @page frontmatter-splash:left {
+  //   background-color: $print-splash-color;
+  //   @bottom-left {
+  //     content: counter(page, lower-roman);
+  //   }
+  // }
+  // 
+  // @page frontmatter-splash:right {
+  //   background-color: $print-splash-color;
+  //   @bottom-right {
+  //     text-align: right;
+  //     content: counter(page, lower-roman);
+  //   }
+  // }
   
   @page splash {
     background-color: $print-splash-color;
+    @bottom-center {
+      content: none;
+    }
   }
   
   @page entry-image {
@@ -132,29 +111,25 @@ $print-trim: $print-bleed * 2;
   }
 
   @page no-footer, entry-image, splash-image {
-    @bottom-right {
-      content: none;
-    }
-  
-    @bottom-left {
+    @bottom-center {
       content: none;
     }
   }
   
-  @page page-one:first {
-    @bottom-left {
-      content: none;
-    }
-  }
-  
-  @page :blank {
-    @bottom-left {
-      content: none;
-    }
-    @bottom-right {
-      content: none;
-    }
-  }
+  // @page page-one:first {
+  //   @bottom-left {
+  //     content: none;
+  //   }
+  // }
+  // 
+  // @page :blank {
+  //   @bottom-left {
+  //     content: none;
+  //   }
+  //   @bottom-right {
+  //     content: none;
+  //   }
+  // }
 
   h1 {
     prince-bookmark-level: 1;
