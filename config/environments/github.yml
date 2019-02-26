@@ -11,6 +11,5 @@
 
 # Use these settings for GH Pages
 
-baseURL: "https://thegetty.github.io/cva10"
-canonifyURLs: true
-relativeURLs: false
+baseURL: "https://thegetty.github.io/cva10/"
+canonifyURLs: false
