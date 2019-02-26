@@ -79,12 +79,12 @@ license:
 
 resource_link:
   - type: other-format
-    name: PDF
+    name: PDF (9.5 MB)
     media_type: application/pdf
     link_relation: alternate
     url: /downloads/output.pdf
   - type: other-format
-    name: EPUB
+    name: EPUB (36.6 MB)
     media_type: application/epub+zip
     link_relation: alternate
     url: /downloads/output.epub
