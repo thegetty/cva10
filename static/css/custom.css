@@ -249,6 +249,9 @@
 #dedication .quire-page--frontmatter {
   page: no-footer;
 }
+#dedication .quire-page__header__title {
+  display: none;
+}
 
 /* Adjust entry page headigns */
 .quire-entry .quire-page__header__title {

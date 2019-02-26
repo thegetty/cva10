@@ -1,4 +1,5 @@
 ---
+title: Dedication
 type: page
 weight: 3
 search: false
