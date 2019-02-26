@@ -279,7 +279,7 @@
             margin-right: .25in;
           }
           @bottom-left {
-            content: string(country);
+            content: string(country-fascicule);
             margin-left: .25in;
           }
           @bottom-right {
@@ -304,7 +304,7 @@
             margin-left: .25in;
           }
           @bottom-right {
-            content: string(country);
+            content: string(country-fascicule);
             margin-right: .25in;
           }    
         }
@@ -315,8 +315,8 @@
         .fascicule {
           string-set: fascicule content();
         }
-        .country {
-          string-set: country content();
+        .country-fascicule {
+          string-set: country-fascicule content();
         }
         .typology {
           string-set: typology content();
@@ -328,7 +328,13 @@
   <body>
 
     <div class="page" id="plate-{{ .File.BaseFileName }}">
-
+      
+      {{/* Prince wasn't picking up .country down below for some reason
+        for use in the @bottom page area. So this bit is duplicative for that.
+      */}}
+      {{ $countryPlateNumber := add (sub .Site.Data.publication.cva.country_plate_start .Site.Data.publication.cva.plate_start) (int .File.BaseFileName) }}
+      <span class="country-fascicule" style="display: none;">{{ .Site.Data.publication.cva.country }} {{ $countryPlateNumber }}</span>
+      
         <div class="margin">
           <span class="fascicule">{{ .Site.Data.publication.cva.institution }} ({{ .Site.Data.publication.cva.fascicule_no }})</span>
           <span class="plate-number">Plate {{ .File.BaseFileName }}</span>
