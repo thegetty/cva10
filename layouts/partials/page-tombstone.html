@@ -7,9 +7,14 @@
           {{ range $.Site.Data.objects.object_display_order }}
             {{ $.Scratch.Set "key" . }}
             {{ range where $.Site.Data.objects.object_list "id" "eq" ($.Scratch.Get "id") }}
+              {{ $.Scratch.Set "plateLength" (len (split .plate_list ",")) }}
               {{ range $key, $value := . }}
               {{ if and (eq $key ($.Scratch.Get "key")) (ne $value nil) }}
+                {{ if and (eq $key "plates") (eq ($.Scratch.Get "plateLength") 1) }}  
+                <p>Plate {{ markdownify $value }}</p>
+                {{ else }}
                 <p>{{ $key | humanize | title }} {{ markdownify $value }}</p>
+                {{ end }}
               {{ end }}
               {{ end }}
             {{ end }}

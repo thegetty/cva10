@@ -9,20 +9,10 @@
   bleed: 0 !important;
   prince-trim: 0 !important;
   marks: none !important;
-  margin-left: .875in !important;
-  margin-right: .875in !important;
-  color: #ccc !important;
-}
-@page:right {
-  @bottom-right {
-    content: none !important;
-  }
-  @top-right {
-    content: none !important;
-  }
-}
-@page:left {
-  @bottom-left {
+  margin-left: 1.25in !important;
+  margin-right: 1.25in !important;
+  color: #000 !important;
+  @bottom-center {
     content: none !important;
   }
 }
@@ -45,7 +35,7 @@
     font-size: 1.5em !important;
   }
   @bottom-left {
-    content: string(country) !important;
+    content: string(country-fascicule) !important;
   }
   @bottom-right {
     content: string(typology) !important;
@@ -65,7 +55,7 @@
     font-size: 1.5em !important;
   }
   @bottom-left {
-    content: string(country) !important;
+    content: string(country-fascicule) !important;
   }
   @bottom-right {
     content: string(typology) !important;
