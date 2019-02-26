@@ -303,6 +303,11 @@
   background-color: #fcfbeb; /* CVA cream */
   font-size: .857rem;
 }
+@media print {
+  .quire-citation {
+    border-bottom-width: 0;
+  }
+}
 
 /* Change caption display for profiles page */
 #profiles .content figure .quire-figure__caption {
