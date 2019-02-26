@@ -1,4 +1,215 @@
+/* Adjust body font size and line-height */
+.quire-page__content {
+  font-size: 1.2em;
+}
+.quire-page__content .container .content * {
+  line-height: 1.6;
+}
+
+/*  Hide cat entries in TOC and menu, and splash pages in catalogue grid.
+    The starter theme is not currently handling
+    toc: false and menu: false the way we need it to here. */
+#contents .quire-contents-list li.section-item li {
+  display: none;
+}
+#contents .quire-contents-list li.section-item li:nth-child(1), 
+#contents .quire-contents-list li.section-item li:nth-child(18) {
+  display: list-item;
+  margin-bottom: 1.5rem;
+}
+#contents .quire-contents-list li.section-item li:nth-child(1) a, 
+#contents .quire-contents-list li.section-item li:nth-child(18) a {
+  border-width: 0;
+}
+#contents .quire-contents-list li.section-item li:nth-child(18) {
+  margin-bottom: 1rem;
+}
+.quire-menu__list li.section-item li {
+  display: none;
+}
+.quire-menu__list li.section-item li:nth-child(1), 
+.quire-menu__list li.section-item li:nth-child(18) {
+  display: list-item;
+}
+#catalogue-catalogue .quire-contents-list li:nth-child(1),
+#catalogue-catalogue .quire-contents-list li:nth-child(18) {
+  display: none;
+}
+
+/* Style contents pages and menu */
+.arrow {
+  display: none;
+}
+.quire-contents-list .menu-list .section-item ul {
+  font-size: 1rem;
+}
+.quire-menu .menu-list {
+  line-height: 1.2;
+}
+.quire-menu .section-item ul {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+.quire-menu__header__title span {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: .5rem;
+}
+.quire-menu__header__title span.cva-subtitle-menu {
+  text-transform: none;
+  font-style: italic;
+  letter-spacing: 0;
+}
+.quire-menu__header__contributors {
+  font-size: 1.25rem;
+  font-style: normal;
+}
+
+/* Style cover and headings */
+.quire h1,
+.quire-page h1, .quire-page__header__title,
+.quire-cover__hero-body.hero-body.cva-cover {
+  font-family: 'Cardo', serif;
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.cva-title {
+  font-size: 3rem;
+  padding: 2.5rem 0;
+}
+.quire h1,
+.quire-page h1, 
+.quire-page__header__title,
+.academique,
+.institution,
+.cva-subtitle,
+.cva-contributor,
+.publisher {
+  font-size: 1.5rem;
+}
+.cva-subtitle {
+  padding: 4.5rem 0 1rem;
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.cva-contributor {
+  padding-bottom: 4.5rem;
+}
+.quire h1,
+.quire-page h1, 
+.quire-page__header__title {
+  margin: 4rem auto 0;
+  max-width: 800px;
+  line-height: 1.4;
+}
+@media print {
+  .quire-entry__header,
+  .quire-entry__tombstone {
+    margin-bottom: .25in;
+    margin-left: 0;
+    max-width: none;
+  }
+  .quire h1,
+  .quire-page h1, 
+  .quire-page__header__title {
+    max-width: none;
+  }
+  .quire-splash .quire h1,
+  .quire-splash .quire-page h1, 
+  .quire-splash .quire-page__header__title {
+    margin-top: 3in;
+  } 
+  .quire-entry__image figure:first-of-type {
+    display: none;
+  }
+}
+.quire-cover__more .hero-more {
+  background: #333;
+  color: #fcfbeb; /* CVA cream */
+}
+
+/* Change navbar font and adjust icons to match*/
+.quire-navbar {
+  font-size: .875rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.quire-navbar-page-controls__item.quire-next-page svg,
+.quire-navbar-page-controls__item.quire-previous-page svg {
+  margin-bottom: .05em;
+}
+
+/* Adjust style for bylines on Foreword and Preface  */
+.quire-page__content .container .content .byline {
+  margin: 2rem 0;
+  width: 100%;
+}
+.quire-page__content .container .content .byline p {
+  text-align: right;
+  margin-bottom: 0;
+  margin-left: 25%;
+  font-style: italic;
+}
+.quire-page__content .container .content .byline p:first-child {
+  font-style: normal;
+}
+
+/* Adjust entry page headigns */
+.quire-entry .quire-page__header__title {
+  text-align: left;
+}
+.quire-entry .quire-page__content h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  float: left;
+  margin: .15rem 1rem 0 0;
+}
+.quire-entry .quire-page__content .container .content > h2:first-child {
+  margin-top: .15rem;
+}
+
+/* Style override tombstone that's no longer a table*/
+.quire-entry__tombstone .container {
+  padding: 0 2rem;
+  color: #000;
+}
+.quire-entry__tombstone .container p:first-child {
+  font-size: 1.5rem;
+}
+.collection-link,
+.entry-download {
+  display: inline-block;
+  margin-right: .5rem;
+}
+
+/* Add link styles to abbreviation pop-ups */
 .quire-citation {
   display: inline;
-  border-bottom: 1px dotted #4a4a4a;
+  border-bottom: 1px dotted #333;
+  cursor: pointer;
+}
+.quire-citation:hover {
+  color: Tomato;
+  border-bottom: 1px solid Tomato;
+}
+.quire-citation__content {
+  background-color: #fcfbeb; /* CVA cream */
+  font-size: .857rem;
+}
+
+/* Change caption display for profiles page */
+#profiles .content figure .quire-figure__caption {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 1rem 0 2rem;
 }
