@@ -29,12 +29,14 @@
   /* The included version of the Cardo Regular font has been customized to add 
     an open type stylistic set ("ss16") that displays a U as a V. */
   font-feature-settings: "ss16";
+  font-variant: prince-opentype(ss16);
 }
 .quire-page__content,
 .quire-entry__tombstone,
 .quire-entry__header {
   font-variant-numeric: oldstyle-nums;
   font-feature-settings: "onum";
+  font-variant: prince-opentype(onum);
 }
 
 /*  Hide cat entries in TOC and menu, and splash pages in catalogue grid.
@@ -331,7 +333,7 @@
 .cip-data pre code {
   font-family: "Cardo", serif;
   font-size: 1rem;
-  color: #000;
+  line-height: 1.6 !important;
 }
 @media print {
   .cip-data pre code {
