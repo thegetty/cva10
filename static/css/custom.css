@@ -3,7 +3,40 @@
   font-size: 1.2em;
 }
 .quire-page__content .container .content * {
-  line-height: 1.6;
+  line-height: 1.5;
+}
+.quire-entry .quire-page__content .container .content * {
+  line-height: 1.5;
+}
+@media print {
+  .quire-page__content {
+    text-align: justify;
+  }
+  .quire-page__content .container .content * {
+    line-height: 1.25 !important;
+  }
+  .quire-entry .quire-page__content .container .content * {
+    line-height: 1.25 !important;
+  }
+  .quire-page__content .container .content .backmatter p {
+    line-height: 1.25 !important;
+  }
+}
+
+/* Implement open type features */
+.cva-title,
+.cva-title-menu {
+  /* The included version of the Cardo Regular font has been customized to add 
+    an open type stylistic set ("ss16") that displays a U as a V. */
+  font-feature-settings: "ss16";
+  font-variant: prince-opentype(ss16);
+}
+.quire-page__content,
+.quire-entry__tombstone,
+.quire-entry__header {
+  font-variant-numeric: oldstyle-nums;
+  font-feature-settings: "onum";
+  font-variant: prince-opentype(onum);
 }
 
 /*  Hide cat entries in TOC and menu, and splash pages in catalogue grid.
@@ -36,12 +69,25 @@
   display: none;
 }
 
+@media print {
+  #contents .menu-list ul > li:first-child,
+  #contents .menu-list ul > li:last-child {
+    display: none;
+  }
+  /* #contents .menu-list ul > li:nth-last-child(2) {
+    display: none;
+  } */
+}
+
 /* Style contents pages and menu */
 .arrow {
   display: none;
 }
 .quire-contents-list .menu-list .section-item ul {
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+.quire-contents-list .menu-list a {
+  font-size: 1.2rem;
 }
 .quire-menu .menu-list {
   line-height: 1.2;
@@ -69,6 +115,9 @@
 }
 
 /* Style cover and headings */
+.quire-cover__overlay {
+  display: none;
+}
 .quire h1,
 .quire-page h1, .quire-page__header__title,
 .quire-cover__hero-body.hero-body.cva-cover {
@@ -90,7 +139,7 @@
 .institution,
 .cva-subtitle,
 .cva-contributor,
-.publisher {
+.cva-publisher {
   font-size: 1.5rem;
 }
 .cva-subtitle {
@@ -108,6 +157,32 @@
   margin: 4rem auto 0;
   max-width: 800px;
   line-height: 1.4;
+}
+@media print {
+  .quire-cover__hero-body.hero-body.cva-cover > div {
+    width: 6in;
+  }
+  .academique {
+    font-size: 1.7rem;
+  }
+  .cva-title {
+    font-size: 3.5rem;
+    padding: 6rem 0;
+  }
+  .cva-subtitle {
+    padding: 8rem 0 3rem;
+  }
+  .cva-contributor {
+    padding-bottom: 20rem;
+  }
+  .fascicule,
+  .pub-year {
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+  .cva-publisher {
+    padding-bottom: 1.5rem;
+  }
 }
 @media print {
   .quire-entry__header,
@@ -132,6 +207,8 @@
 }
 .quire-cover__more .hero-more {
   background: #333;
+}
+.quire-cover__more .hero-more svg {
   color: #fcfbeb; /* CVA cream */
 }
 
@@ -161,6 +238,21 @@
   font-style: normal;
 }
 
+/* Adjust headings of catalogue splash pages with no content
+  And similarly, the content area of the dedication page */
+#catalogue-volute .quire-page__header.hero,
+#catalogue-column .quire-page__header.hero,
+#dedication .section.quire-page__content {
+  height: 50vh;
+  text-align: center;
+}
+#dedication .quire-page--frontmatter {
+  page: no-footer;
+}
+#dedication .quire-page__header__title {
+  display: none;
+}
+
 /* Adjust entry page headigns */
 .quire-entry .quire-page__header__title {
   text-align: left;
@@ -175,6 +267,15 @@
 }
 .quire-entry .quire-page__content .container .content > h2:first-child {
   margin-top: .15rem;
+}
+@media print {
+  .quire-entry .quire-page__content h2 {
+    font-size: .875rem;
+    margin: .275rem 1rem 0 0;
+  }
+  .quire-entry .quire-page__content .container .content > h2:first-child {
+    margin-top: .275rem;
+  }
 }
 
 /* Style override tombstone that's no longer a table*/
@@ -205,6 +306,11 @@
   background-color: #fcfbeb; /* CVA cream */
   font-size: .857rem;
 }
+@media print {
+  .quire-citation {
+    border-bottom-width: 0;
+  }
+}
 
 /* Change caption display for profiles page */
 #profiles .content figure .quire-figure__caption {
@@ -212,4 +318,106 @@
   text-transform: uppercase;
   font-size: 1rem;
   margin: 1rem 0 2rem;
+}
+
+/* adjust alignment of custom bullets on lists */
+.quire-page__content .container .content ul li:before {
+  margin-top: .2em;
+}
+
+
+/* Use pre and code to maintain strict LOC Cataloguing in Publication format */
+.cip-data {
+  column-break-before: always;
+}
+.cip-data p {
+  margin-bottom: 0 !important;
+}
+.cip-data pre {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.cip-data pre code {
+  font-family: "Cardo", serif;
+  font-size: 1rem;
+  line-height: 1.6 !important;
+}
+@media print {
+  .cip-data pre code {
+    font-size: 1rem;
+  }
+}
+
+/* Style copyright for PDF/Print output */
+@media print {
+  #copyright .quire-page.quire-page--frontmatter {
+    page: no-footer;
+  }
+  #copyright .quire-page__header {
+    display: none;
+  }
+  #copyright .quire-page__content {
+    column-count: 2;
+    column-fill: balance;
+    column-gap: .1875in;
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    text-align: left;
+  }
+  #copyright .quire-page__content .container .content {
+    /* display: flex;
+    justify-content: space-between; */
+  }
+  #copyright .backmatter {
+    /* width: 5in; */
+  }
+  #copyright .backmatter.cip-data {
+    /* leaves .1875in between blocks to match grid gap */
+    /* width: 2.6875in; */
+    column-break-before: always;
+  }
+  #copyright img {
+    height: .25in;
+  }
+  #copyright .backmatter p:nth-child(3) {
+    margin-bottom: 0;
+  }
+  #copyright hr {
+    width: 70%;
+  }
+  #copyright .content ul {
+    margin-left: .5rem;
+  }
+}
+
+/* Style half-title and title page for PDF/Print output */
+@media print {
+  .half-title-page {
+    margin: 0 auto;
+    text-align: justify;
+    text-align-last: justify;
+    text-transform: uppercase;
+    color: #000000;
+    line-height: 2;
+    width: 4.25in;
+    padding-top: 2.5in;
+  }
+  .half-title-page .cva-title {
+    padding: 0;
+    font-size: 1.7rem;
+    letter-spacing: 1.1pt;
+  }
+  .half-title-page .cva-country {
+    font-size: 1.45rem;
+  }
+  .half-title-page .institution {
+    text-transform: none;
+    font-size: 1.8rem;
+  }
+  .title-page {
+    margin: 0 1.5in 0 1in;
+    padding-top: 1in;
+  }
 }

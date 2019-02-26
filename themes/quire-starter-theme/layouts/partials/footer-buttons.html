@@ -1,28 +1,21 @@
 <div class="{{ if eq $.Site.Params.pdf true }} visually-hidden {{ end }} quire-contents-buttons remove-from-epub">
   <ul>
-    {{ $len := len .Site.Pages }}
-    {{ range $index, $element := .Site.Pages }}
-      {{ if eq . $.Page }}
-        {{ $in := add $index 1 }}
-        {{ $ln := sub $len 1 }}
-        {{ if ne $in 1 }}
-        <li class="quire-nav-button prev">
-          {{ with .Prev }}
-            <a href="{{ .Permalink }}">{{- template "image-control-icon" (dict "type" "left-arrow" "description" "Go back a page" "imageDir" ($.Scratch.Get "imageDir") ) -}} <span class="nav-title">Back</span></a>
-            <span class="visually-hidden">Previous Page (left keyboard arrow or swipe)</span>
-          {{ end }}
-        </li>
-        {{ end }}
-        {{ if ne $in $ln }}
-        <li class="quire-nav-button next">
-          {{ with .Next }}
-            <a href="{{ .Permalink }}"><span class="nav-title">Next</span> {{- template "image-control-icon" (dict "type" "right-arrow" "description" "Go to next page" "imageDir" ($.Scratch.Get "imageDir") ) -}}</a>
-            <span class="visually-hidden">Next Page (right keyboard arrow or swipe)</span>
-          {{ end }}
-        </li>
-        {{ end }}
+      {{ with .Prev }}
+      {{- if and (ne .Params.online false) (ne .Type "data") -}}
+      <li class="quire-nav-button prev">
+          <a href="{{ .Permalink }}">{{- template "image-control-icon" (dict "type" "left-arrow" "description" "Go back a page" "imageDir" ($.Scratch.Get "imageDir") ) -}} <span class="nav-title">Back</span></a>
+          <span class="visually-hidden">Previous Page (left keyboard arrow or swipe)</span>
+      </li>
       {{ end }}
-    {{ end }}
+      {{ end }}
+      {{ with .Next }}
+      {{- if and (ne .Params.online false) (ne .Type "data") -}}
+      <li class="quire-nav-button next">
+          <a href="{{ .Permalink }}"><span class="nav-title">Next</span> {{- template "image-control-icon" (dict "type" "right-arrow" "description" "Go to next page" "imageDir" ($.Scratch.Get "imageDir") ) -}}</a>
+          <span class="visually-hidden">Next Page (right keyboard arrow or swipe)</span>
+      </li>
+      {{ end }}
+      {{ end }}
   </ul>
 </div>
 

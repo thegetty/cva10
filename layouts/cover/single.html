@@ -46,7 +46,7 @@ Cover page layout. This controls the home page of the publication.
           {{ partial "contributor-list.html" (dict "range" .Site.Data.publication.contributor "contributorType" "primary" "listType" "string" "Site" $.Site) }}
         {{- end -}}
         </div>
-        <p class="publisher">{{ .Site.Data.publication.cva.institution }}</p>
+        <p class="cva-publisher">{{ .Site.Data.publication.cva.institution }}</p>
         <p class="fascicule">Fascicule {{ .Site.Data.publication.cva.fascicule_no }} • [{{ .Site.Data.publication.cva.country }} Fascicule {{ .Site.Data.publication.cva.country_fascicule_no }}]</p>
         <p class="pub-year">{{ .Site.Data.publication.pub_date | dateFormat "2006" }}</p>
     

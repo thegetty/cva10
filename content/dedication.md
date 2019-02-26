@@ -3,10 +3,8 @@ title: Dedication
 type: page
 weight: 3
 search: false
+toc: false
+menu: false
 ---
 
-{{< q-class "dedication" >}}
-
-To Dimitris, my son
-
-{{< /q-class >}}
+*To Dimitris, my son*
