@@ -1,0 +1,4 @@
+URI,Vase Number,Fabric,Technique,Sub Technique,Shape Name,Provenance,Date,Inscriptions, Attributed To, Decoration, Collection Record, Publication Record, Inscriptions II,Measurements,Volume,Weight,Restorations,Ornament, Technical Observations,Pleiades URI,Latitude,Longitude
+{{ range .Site.Data.objects.object_list -}}
+,,"{{ .fabric | upper }}","{{ .technique | upper }}",,"{{ .shape_name | upper }}",,"{{ .date }}",,"{{ .attribution | upper }}{{ with .attributor }} by {{ . | upper }}{{ end }}",,"Malibu (CA), The J. Paul Getty Museum: {{ .accession_number }}","PUBRECORD",,,,,,,,,,
+{{ end }}
