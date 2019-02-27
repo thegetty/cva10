@@ -39,6 +39,8 @@ params:
   imageDir: "img"
   tocType: full
   menuType: full
+  prevPageButtonText: "Back"
+  nextPageButtonText: "Next"
   entryPageSideBySideLayout: true
   entryPageObjectLinkText: "View in Collection"
   figureLabelLocation: below # below | on-top
