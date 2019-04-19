@@ -498,7 +498,7 @@ object_list:
     attribution: M1 and M2 (formerly known as the Meleager Painter)
     attributor: K. Kathariou
     date: -400 to -390
-    subject: Adonis, animal skin, Aphrodite, Arimasp, attendant (female), aulos, baldric, banqueter, bed/couch/*klinē*, blanket, bracelet, bull, chest, chignon, chiton, chlamys, club, cushion, deer, diadem, Dionysos, dog, earring, *ependytēs*, Eros, fillet, food, footstool, fruit, grapevine, griffin, headband, hare, himation, kantharos, *keras*, komast/reveler, *kottabos*, *lagobolon*, lyre, maenad, mantle, mirror, necklace, palmette (*anthemion*), peplos, Persephone, *pilos* (conical hat), plate, satyr, shield, Silenos, spear, stemless drinking cup, string of beads, sword, symposion, table, Theseus, thyrsos, torch, tree, *tympanon*
+    subject: Adonis, animal skin, Aphrodite, Arimasp, attendant (female), aulos, baldric, banqueter, bed/couch/*klinē*, blanket, bracelet, bull, chest, chignon, chiton, chlamys, club, cushion, deer, diadem, Dionysos, dog, earring, *ependytēs*, Eros, fillet, food, footstool, fruit, grapevine, griffin, headband, hare, himation, kantharos, *keras*, *komast*/reveler, *kottabos*, *lagobolon*, lyre, maenad, mantle, mirror, necklace, palmette (*anthemion*), peplos, Persephone, *pilos* (conical hat), plate, satyr, shield, Silenos, spear, stemless drinking cup, string of beads, sword, symposion, table, Theseus, thyrsos, torch, tree, *tympanon*
     figure:
       - id: 87AE93-front
       - id: 87AE93-back
