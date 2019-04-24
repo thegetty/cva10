@@ -14,7 +14,7 @@ object_list:
     attribution: Myson
     attributor: J. D. Beazley
     date: -490 to -480
-    subject: akontist, athlete, bridle, deer, dog, goat, *haltēres*, himation, horse, javelin, jumper, *kentron*, *paedotribēs*, palmette (*anthemion*), panther, pick, sponge, staff, stick, strigil, trainer
+    subject: akontist, athlete, bridle, deer, dog, goat, *haltēres*, himation, horse, javelin, jumper, *kentron*, *paedotribēs*, panther, pick, sponge, staff, stick, strigil, trainer
     figure:
       - id: 86AE205-front
       - id: 86AE205-back
@@ -61,7 +61,7 @@ object_list:
     attribution: Eucharides Painter, Near the
     attributor: J. R. Guy
     date: -480
-    subject: breast bands (on horses), chariot, charioteer, chiton, Dionysos, feline (unspecified), himation, horse, *kentron*, quadriga
+    subject: breast bands (on horses), chariot, charioteer, chiton, Dionysos, feline (unspecified), himation, horse, *kentron*, quadriga, reins
     figure:
       - id: 83AE2111-front
       - id: 83AE2111-back
@@ -117,7 +117,7 @@ object_list:
     attribution: Pan Painter
     attributor: J. Frel
     date: -480 to -470
-    subject: altar, blood, dinos, *epipyron*, fire/flames, herm, himation, ithyphallic herm, *kanoun*, kylix, offerings, pillar, staff, volute
+    subject: altar, blood, dinos, *epipyron*, fire/flames, herm, himation, ithyphallic herm, *kanoun*, kylix, offerings, pillar, staff, volute (on altar)
     figure:
       - id: 83AE252-front
       - id: 83AE252-back
@@ -181,7 +181,7 @@ object_list:
     attribution: Harrow Painter
     attributor: J. D. Beazley
     date: -480
-    subject: altar, fillet, herm, himation, ithyphallic herm, mantle, stick, volute
+    subject: altar, fillet, herm, himation, ithyphallic herm, mantle, stick, volute (on altar)
     figure:
       - id: 81AE37-front
       - id: 81AE37-back
@@ -204,7 +204,7 @@ object_list:
     attribution: Undetermined Mannerists, Group of
     attributor: D. von Bothmer
     date: -480
-    subject: chiton, Dionysos, flower, grapes, maenad, necklace, offerings, palmette (*anthemion*), *popana*, table, *xoanon*
+    subject: chiton, Dionysos, flower, grapes, maenad, necklace, offerings, *popana*, table, *xoanon*
     figure:
       - id: 86AE208-front
       - id: 86AE208-back
@@ -221,7 +221,7 @@ object_list:
     attribution: Agrigento Painter
     attributor: J. R. Guy
     date: -460
-    subject: fillet, flower, inscription, mantle, palmette (*anthemion*), staff, stick, torch, wreath
+    subject: fillet, flower, inscription, mantle, staff, stick, torch, wreath
     figure:
       - id: 78AE3801-front
       - id: 78AE3801-back
@@ -269,7 +269,7 @@ object_list:
     attribution: London E 489, Painter of
     attributor: J. R. Guy
     date: -460 to -450
-    subject: cloak, column (Ionic), fillet, himation, Oedipus, palmette (*anthemion*), *petasos*, *sakkos*, spear, Sphinx, staff, stick
+    subject: cloak, column (Ionic), fillet, himation, Oedipus, *petasos*, *sakkos*, spear, Sphinx, staff, stick
     figure:
       - id: 82AE143-front
       - id: 82AE143-back
@@ -344,7 +344,7 @@ object_list:
     attribution_uncertain: true
     attributor: J. R. Guy and J. Gaunt
     date: -520 to -510
-    subject: drinking horn, *krotalon*, maenad, palmette (*anthemion*), satyr, wreath
+    subject: drinking horn (*keras*), *krotalon*, maenad, satyr, wreath
     figure:
       - id: 81AE1887-front
       - id: 81AE1887-back
@@ -378,7 +378,7 @@ object_list:
     attribution: Kleophrades Painter
     attributor: J. D. Beazley
     date: -490 to -480
-    subject: Ajax (Telamonian), Amazons, animal skin, apples of the Hesperides, archer, arrow, Athena, Atlas, blood, bow, branch, bull (shield device), centaur (shield device), Cheiron, chiton, *chitoniskos*, club, corselet, Doris, Eurytion, fillet, fish, Geryon, *gorytos*, greaves, helmet, Herakles, himation, hoplite, horse, Hydra (Lernean), inscription, Iolaos, *kodon*, *krobylos*, Ladon, lion (shield device), Nereid, Nereus, Orthros, palmette (*anthemion*), Pegasos (shield device), Peleus, *pelta*, quiver, *salpinx*, shield, Skythian, snake, spear, staff, sword, *thakos*, Thetis, torch, tree, *triskeles* (shield device), trumpeter, warrior
+    subject: Ajax (Telamonian), Amazons, animal skin, apples of the Hesperides, archer, arrow, Athena, Atlas, blood, bow, branch, bull (shield device), centaur (shield device), Cheiron, chiton, *chitoniskos*, club, corselet, Doris, Eurytion, fillet, fish, Geryon, *gorytos*, greaves, helmet, Herakles, himation, hoplite, horse, Hydra (Lernean), inscription, Iolaos, *kodon*, *krobylos*, Ladon, lion (shield device), Nereid, Nereus, Orthros, Pegasos (shield device), Peleus, *pelta*, quiver, *salpinx*, shield, Skythian, snake, spear, staff, sword, *thakos*, Thetis, torch, tree, *triskeles* (shield device), trumpeter, warrior
     figure:
       - id: 77AE11-front
       - id: 77AE11-back
@@ -466,7 +466,7 @@ object_list:
     attribution: Polygnotos
     attributor: J. R. Guy
     date: -440 to -435
-    subject: Ajax (Locrian), amphora, animal skin, Athena, attendant (female), belt, chest, chiton, diadem, earring, feline (unspecified), fillet, headband, helmet, himation, Ilioupersis, inscription, kantharos, Kassandra, *krobylos*, leopard skin, maenad, Menelaos, Palladion, palmette (*anthemion*), peplos, priestess, satyr, shield, spear, star (shield device), statue, stick, thiasos, thyrsos, torch, wineskin
+    subject: Ajax (Lokrian), amphora, animal skin, Athena, attendant (female), belt, chest, chiton, diadem, earring, feline (unspecified), fillet, headband, helmet, himation, Ilioupersis, inscription, kantharos, Kassandra, *krobylos*, leopard skin, maenad, Menelaos, Palladion, peplos, priestess, satyr, shield, spear, star (shield device), statue, stick, thiasos, thyrsos, torch, wineskin
     figure:
       - id: 79AE198-front
       - id: 79AE198-back
@@ -498,7 +498,7 @@ object_list:
     attribution: M1 and M2 (formerly known as the Meleager Painter)
     attributor: K. Kathariou
     date: -400 to -390
-    subject: Adonis, animal skin, Aphrodite, Arimasp, attendant (female), aulos, baldric, banqueter, bed/couch/*klinē*, blanket, bracelet, bull, chest, chignon, chiton, chlamys, club, cushion, deer, diadem, Dionysos, dog, earring, *ependytēs*, Eros, fillet, food, footstool, fruit, grapevine, griffin, headband, hare, himation, kantharos, *keras*, *komast*/reveler, *kottabos*, *lagobolon*, lyre, maenad, mantle, mirror, necklace, palmette (*anthemion*), peplos, Persephone, *pilos* (conical hat), plate, satyr, shield, Silenos, spear, stemless drinking cup, string of beads, sword, symposion, table, Theseus, thyrsos, torch, tree, *tympanon*
+    subject: Adonis, animal skin, Aphrodite, Arimasp, attendant (female), aulos, baldric, banqueter, bed/couch/*klinē*, blanket, bracelet, bull, chest, chignon, chiton, chlamys, club, cushion, deer, diadem, Dionysos, dog, drinking horn (*keras*), earring, *ependytēs*, Eros, fillet, food, footstool, fruit, grapevine, griffin, headband, hare, himation, kantharos, *komast*/reveler, *kottabos*, *lagobolon*, lyre, maenad, mantle, mirror, necklace, peplos, Persephone, *pilos* (conical hat), plate, satyr, shield, Silenos, spear, cup (stemless), string of beads, sword, symposion, table, Theseus, thyrsos, torch, tree, *tympanon*
     figure:
       - id: 87AE93-front
       - id: 87AE93-back
