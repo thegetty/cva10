@@ -35,7 +35,7 @@ description:
 # Publication Details
 # ------------------------------------------------------------------------------
 
-pub_date: 2018-08-01
+pub_date: 2019-08-01
 language: en
 pub_type: book # book | journal-periodical | other
 
@@ -65,7 +65,7 @@ contributor:
 # Copright & License
 # ------------------------------------------------------------------------------
 
-copyright: © 2018 J. Paul Getty Trust
+copyright: © 2019 J. Paul Getty Trust
 
 license:
   name: Creative Commons Attribution 4.0 International License
@@ -115,7 +115,7 @@ subject:
 # ------------------------------------------------------------------------------
 
 revision_history:
-  - date: 2018-07-01
+  - date: 2019-08-01
     summary:
       - First edition
 
