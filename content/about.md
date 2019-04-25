@@ -38,9 +38,8 @@ Any revisions or corrections made to this publication after the first edition da
 
 ## Other Formats
 
-  - [PDF](/downloads/output.pdf)
-  - [EPUB](/downloads/output.epub)
-  - [MOBI](/downloads/output.mobi)
+  - [PDF (9.5 MB)](/downloads/output.pdf)
+  - [EPUB (36.6 MB)](/downloads/output.epub)
 
 ## Copyright
 

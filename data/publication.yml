@@ -95,11 +95,11 @@ resource_link:
   - type: footer-link
     name: Privacy Policy
     link_relation: privacy-policy
-    url:
+    url: http://www.getty.edu/legal/privacy.html
   - type: footer-link
     name: Terms of Use
     link_relation: terms-of-service
-    url:
+    url: http://www.getty.edu/legal/copyright.html
 
 # ------------------------------------------------------------------------------
 # Subjects
