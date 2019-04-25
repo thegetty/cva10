@@ -127,81 +127,97 @@ figure_list:
   - id: "77AE11-detail-g"
     src: objects/008713D32V1.jpg
     alt: "A detail of the neck, with people on horses carrying spears"
+    caption: "Detail from the upper zone of the neck of side B, 77.AE.11"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
   - id: "77AE11-back"
     src: objects/00871301.jpg
     alt: "Another view of a restored vase, with a black body and decoration around the neck"
+    caption: "Side B, 77.AE.11"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
   - id: "77AE11-detail-j"
     src: objects/008713D33V1.jpg
     alt: "A detail of the neck, showing several people and a lot of damage"
+    caption: "Detail from the lower zone of the neck of side B, 77.AE.11"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
   - id: "77AE11-detail-f"
     src: objects/008713D34V1.jpg
     alt: "A detail of the neck, with men with shields and spears and several people partially visible"
+    caption: "Detail from the upper zone of the neck of side B, 77.AE.11"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
   - id: "77AE11-detail-i"
     src: objects/008713D35V1.jpg
     alt: "A detail of the neck, showing three people on foot"
+    caption: "Detail from the lower zone of the neck of side B, 77.AE.11"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
   - id: "77AE11-detail-h"
     src: objects/008713D36V1.jpg
     alt: "A detail of the neck, with people and horses chasing/attacking one person"
+    caption: "Detail from the upper zone of the neck of side B, 77.AE.11"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
   - id: "77AE11-detail-k"
     src: objects/008713D37V1.jpg
     alt: "A detail of the neck, showing people approaching a sitting man"
+    caption: "Detail from the lower zone of the neck of side B, 77.AE.11"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
   - id: "77AE11-detail-a"
     src: objects/008713D38V1.jpg
     alt: "A detail of the neck, mostly showing missing decoration"
+    caption: "Detail of the upper zone of the neck of side A, 77.AE.11"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
   - id: "77AE11-detail-b"
     src: objects/008713D39V1.jpg
     alt: "A detail of the neck, showing people in battle & large areas of damage"
+    caption: "Detail of the upper zone of the neck of side A, 77.AE.11"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
   - id: "77AE11-detail-c"
     src: objects/008713D40V1.jpg
     alt: "A detail of the neck, showing a lot of people in battle"
+    caption: "Detail of the upper zone of the neck of side A, 77.AE.11"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
   - id: "77AE11-detail-d"
     src: objects/008713D41V1.jpg
     alt: "A detail of the neck, which includes a multi-headed serpent and a lot of missing decoration"
+    caption: "Detail of lower zone of the neck of side A, 77.AE.11"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
   - id: "77AE11-detail-e"
     src: objects/008713D42V1.jpg
     alt: "A detail of the neck, showing lots of damage and a small portion of another multi-headed serpent"
+    caption: "Detail of lower zone of the neck of side A, 77.AE.11"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
   - id: "77AE11-front"
     src: objects/008713F11V1.jpg
     alt: "View of the pre-conservation vase with a black body and some decoration around the neck"
+    caption: "Side A, 77.AE.11"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
   - id: "77AE11-side-a"
     src: objects/008713F12V1.jpg
     alt: "One side of the restored vase"
+    caption: "Side View, 77.AE.11"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
   - id: "77AE11-side-b"
     src: objects/008713F13V1.jpg
     alt: "The other side of the restored vase"
+    caption: "Side view, 77.AE.11"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
   - id: "77AE11-top"
     src: objects/008713F14V1.jpg
     alt: "View from the top, with clearly visible damage"
+    caption: "View of top, 77.AE.11"
     description: "Red-Figure Volute Krater; Attributed to Kleophrades Painter (Greek (Attic), active 505–475 B.C.); Athens, Greece; 500–480 B.C.; Terracotta; 56.9 × 46.9 cm (22 3/8 × 18 7/16 in.); 77.AE.11"
 
   - id: "78AE3801-front"
@@ -557,11 +573,13 @@ figure_list:
   - id: "86AE587-front"
     src: objects/01494001.jpg
     alt: "A pottery fragment showing two feet, one planted and underneath a flowing garment, the other poised above"
+    caption: "Fragment from the lower zone of the neck on side B, 86.AE.587"
     description: 86.AE.587
 
   - id: "86AE587-back"
     src: objects/014940F1V1.jpg
     alt: "The back of the pottery fragment, partially black"
+    caption: "Fragment from the lower zone of the neck on side B, 86.AE.587"
     description: 86.AE.587
 
   - id: "87AE93-front"
@@ -692,21 +710,25 @@ figure_list:
   - id: "97AE582-front"
     src: objects/03815701.jpg
     alt: "A pottery fragment showing two heads of people who may be playing musical instruments"
+    caption: "Fragment from the left side of the upper zone of the neck on side A, 97.AE.58.2"
     description: 97.AE.58.2
 
   - id: "97AE582-back"
     src: objects/038157F1V1.jpg
     alt: "The back of the pottery fragment, all black"
+    caption: "Fragment from the left side of the upper zone of the neck on side A, 97.AE.58.2"
     description: 97.AE.58.2
 
   - id: "98AE821-front"
     src: objects/13264101.jpg
     alt: "Twelve tiny pottery fragments"
+    caption: "A group of twelve small fragments belonging to the neck of the vessel, 98.AE.82.1–12"
     description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
 
   - id: "98AE821-back"
     src: objects/132641F4V1.jpg
     alt: "The backs of the twelve tiny pottery fragments"
+    caption: "A group of twelve small fragments belonging to the neck of the vessel, 98.AE.82.1–12"
     description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
 
   - id: "78AE3801-detail-a"
