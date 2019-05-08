@@ -161,6 +161,7 @@
 @media print {
   .quire-cover__hero-body.hero-body.cva-cover > div {
     width: 6in;
+    margin: 0 auto;
   }
   .academique {
     font-size: 1.7rem;
@@ -414,10 +415,10 @@
   }
   .half-title-page .institution {
     text-transform: none;
-    font-size: 1.8rem;
+    font-size: 1.66rem;
   }
   .title-page {
-    margin: 0 1.5in 0 1in;
+    margin: 0 auto;
     padding-top: 1in;
   }
 }

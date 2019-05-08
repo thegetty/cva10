@@ -7,7 +7,7 @@
 <div class="half-title-page">
   <p class="cva-title">Corpus Vasorum Antiquorum</p>
   <p class="cva-country">United States of America • Fascicule {{ .site.Data.publication.cva.country_fascicule_no }}</p>
-  <p class="institution">{{ .site.Data.publication.cva.institution }}, {{ .site.Data.publication.cva.location }}, Fascicule {{ .site.Data.publication.cva.fascicule_no }}</p>
+  <p class="institution">The {{ .site.Data.publication.cva.institution }}, {{ .site.Data.publication.cva.location }}, Fascicule {{ .site.Data.publication.cva.fascicule_no }}</p>
 </div>
 <div class="fullPageBreak"></div>
 <div class="title-page">
@@ -15,7 +15,7 @@
     <div>
       <p class="academique">Union Académique Internationale<p>
       <p class="cva-title">Corpus Vasorum Antiquorum</p>
-      <p class="institution">{{ .site.Data.publication.cva.institution }} • {{ .site.Data.publication.cva.location }}</p>
+      <p class="institution">The {{ .site.Data.publication.cva.institution }} • {{ .site.Data.publication.cva.location }}</p>
       <p class="cva-subtitle">{{ .site.Data.publication.subtitle }}</p>
       <div class="cva-contributor">
       {{- if .site.Data.publication.contributor_as_it_appears -}}
@@ -25,7 +25,7 @@
         {{ partial "contributor-list.html" (dict "range" .site.Data.publication.contributor "contributorType" "primary" "listType" "string" "Site" $.site) }}
       {{- end -}}
       </div>
-      <p class="cva-publisher">{{ .site.Data.publication.cva.institution }}</p>
+      <p class="cva-publisher">The {{ .site.Data.publication.cva.institution }}</p>
       <p class="fascicule">Fascicule {{ .site.Data.publication.cva.fascicule_no }} • [{{ .site.Data.publication.cva.country }} Fascicule {{ .site.Data.publication.cva.country_fascicule_no }}]</p>
       <p class="pub-year">{{ .site.Data.publication.pub_date | dateFormat "2006" }}</p>  
     </div>
