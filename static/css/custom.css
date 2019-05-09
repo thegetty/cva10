@@ -455,3 +455,9 @@
     column-fill: auto;
   }
 }
+
+/* Custom class for dedication in preface.md */
+.dedication {
+  text-align: center;
+  margin-bottom: 4rem;
+}
