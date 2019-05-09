@@ -496,12 +496,12 @@ figure_list:
     description: 86.AE.205
 
   - id: "86AE205-detail-c"
-    src: objects/FPO--86AE205-detail-c.jpg
+    src: objects/86AE205-detail-c.jpg
     alt: "B/w detail of a horse"
     description: 86.AE.205
 
   - id: "86AE205-detail-d"
-    src: objects/FPO--86AE205-detail-d.jpg
+    src: objects/86AE205-detail-d.jpg
     alt: "B/w detail of one of the men"
     description: 86.AE.205
 
