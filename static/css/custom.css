@@ -478,3 +478,10 @@
 .quire-menu .section-item a.active strong {
   color: Tomato;
 }
+
+/* Link from entry pages to profile page */
+.profiles-link {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  text-align: right;
+}
