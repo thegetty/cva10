@@ -8,6 +8,7 @@ object_list:
     plate_list: 518, 519, 520
     accession_number: 86.AE.205
     link: http://www.getty.edu/art/collection/objects/11968/
+    bapd: http://www.beazley.ox.ac.uk/record/79981DC1-6C46-4A91-8CBF-AA7016BCAE93
     bareiss_number: 342
     fabric: Athenian
     technique: Red-figure
@@ -32,6 +33,7 @@ object_list:
     plate_list: 521, 522, 523
     accession_number: 73.AE.135
     link: http://www.getty.edu/art/collection/objects/7125/
+    bapd: http://www.beazley.ox.ac.uk/record/323573DB-8BCF-48B9-AD07-985A4F6107E3
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
@@ -89,6 +91,7 @@ object_list:
     plate_list: 525, 526, 527
     accession_number: 86.AE.206
     link: http://www.getty.edu/art/collection/objects/11969/
+    bapd: http://www.beazley.ox.ac.uk/record/1150BA77-AC9B-4958-83FE-3F25E781E54A
     bareiss_number: 31
     fabric: Athenian
     technique: Red-figure
@@ -111,6 +114,7 @@ object_list:
     plate_list: 528, 529, 530
     accession_number: 83.AE.252
     link: http://www.getty.edu/art/collection/objects/10463/
+    bapd: http://www.beazley.ox.ac.uk/record/76AF452E-A0AA-4259-95EC-A76286687389
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
@@ -135,6 +139,7 @@ object_list:
     plate_list: 531, 532, 533
     accession_number: 83.AE.255
     link: http://www.getty.edu/art/collection/objects/10466/
+    bapd: http://www.beazley.ox.ac.uk/record/EF36CB65-8754-45AC-870E-8F9B055DBDCB
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
@@ -175,6 +180,7 @@ object_list:
     plate_list: 534, 535, 536
     accession_number: 81.AE.37
     link: http://www.getty.edu/art/collection/objects/9407/
+    bapd: http://www.beazley.ox.ac.uk/record/1B2592D0-F5D9-4A9B-8EEE-CDAA83C76C72
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
@@ -215,6 +221,7 @@ object_list:
     plate_list: 538, 539, 540
     accession_numbers: 78.AE.380.1, 78.AE.380.36, 78.AE.380.58, 78.AE.380.62, and 78.AE.380.67
     link: http://www.getty.edu/art/collection/objects/106888/
+    bapd: http://www.beazley.ox.ac.uk/record/5914F334-4170-421B-AF85-F3694F7E2AEC
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
@@ -263,6 +270,7 @@ object_list:
     plate_list: 544, 545, 546
     accession_number: 82.AE.143
     link: http://www.getty.edu/art/collection/objects/10360/
+    bapd: http://www.beazley.ox.ac.uk/record/720A273D-7958-4A55-98A8-0E1137725CD3
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
@@ -372,6 +380,7 @@ object_list:
     plate_list: 549, 550, 551, 552, 553, 554, 555, 556, 557
     accession_numbers: 77.AE.11, 86.AE.587, 97.AE.58.2, and 98.AE.82.1–12
     link: http://www.getty.edu/art/collection/objects/7598/
+    bapd: http://www.beazley.ox.ac.uk/record/B3144E56-9F42-4BAA-B85E-C4DFD541ED09
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
@@ -460,6 +469,7 @@ object_list:
     plate_list: 559, 560, 561, 562, 563
     accession_number: 79.AE.198
     link: http://www.getty.edu/art/collection/objects/9045/
+    bapd: http://www.beazley.ox.ac.uk/record/1F78F948-CEA2-4E28-955D-BEF9A916C3E9
     bareiss_number:
     fabric: Athenian
     technique: Red-figure
@@ -492,6 +502,7 @@ object_list:
     plate_list: 564, 565, 567, 568, 569, 570, 571, 572, 573
     accession_number: 87.AE.93
     link: http://www.getty.edu/art/collection/objects/12887/
+    bapd: http://www.beazley.ox.ac.uk/record/1565B02A-4A59-4267-9ABB-455D472FB438
     bareiss_number:
     fabric: Athenian
     technique: Red-figure

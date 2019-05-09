@@ -288,6 +288,7 @@
   font-size: 1.5rem;
 }
 .collection-link,
+.bapd-link,
 .entry-download {
   display: inline-block;
   margin-right: .5rem;
