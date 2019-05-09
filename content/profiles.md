@@ -1,5 +1,5 @@
 ---
-title: Profiles
+title: Profile Drawings
 type: page
 weight: 300
 ---
