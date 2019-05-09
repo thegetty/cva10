@@ -159,7 +159,7 @@ $print-trim: $print-bleed * 2;
       }
       a.frontmatter-page::after {
         content: leader(dotted) ' 'target-counter(attr(href, url), page, lower-roman);
-        font-style: italic;
+        // font-style: italic;
         margin-left: 6pt; 
         // This border is a hack for PrinceXML which doesn't
         // otherwise recognize the box sizing for some reason

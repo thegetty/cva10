@@ -448,3 +448,10 @@
   padding-right: 1.5rem;
   text-align: right;
 }
+
+/* Fill only one column on trailing page with very little text */
+@media print {
+  #catalogue-3 .quire-entry .quire-page__content {
+    column-fill: auto;
+  }
+}

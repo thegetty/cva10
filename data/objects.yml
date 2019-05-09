@@ -24,7 +24,7 @@ object_list:
       - id: 86AE205-top
       - id: 86AE205-detail-a
       - id: 86AE205-detail-b
-      - id: 86AE205-detail-c
+      - id: c
       - id: 86AE205-detail-d
 
   - id: 2
@@ -53,7 +53,7 @@ object_list:
   - id: 3
     plates: "524, 1–2"
     plate_list: 524
-    accession_numbers: 86.AE.211.1–86.AE.211.2
+    accession_numbers: 86.AE.211.1 and 86.AE.211.2
     link: http://www.getty.edu/art/collection/objects/11977/
     bareiss_number: 307 a and 307 b
     fabric: Athenian
