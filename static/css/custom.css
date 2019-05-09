@@ -461,3 +461,19 @@
   text-align: center;
   margin-bottom: 4rem;
 }
+
+/* Hack to hide cat. nos. on section break pages */
+.quire-page__header__title strong {
+  display: none;
+}
+.quire-navbar strong,
+.page-item strong {
+  font-weight: 400;
+}
+.quire-navbar a:hover strong {
+  color: #fff;
+}
+.quire-menu .page-item a.active strong, 
+.quire-menu .section-item a.active strong {
+  color: Tomato;
+}
