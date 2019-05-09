@@ -19,8 +19,8 @@ object_list:
     figure:
       - id: 86AE205-front
       - id: 86AE205-back
-      - id: 86AE205-side-a
       - id: 86AE205-side-b
+      - id: 86AE205-side-a    
       - id: 86AE205-top
       - id: 86AE205-detail-a
       - id: 86AE205-detail-b
@@ -43,8 +43,8 @@ object_list:
     figure:
       - id: 73AE135-front
       - id: 73AE135-back
-      - id: 73AE135-side-a
       - id: 73AE135-side-b
+      - id: 73AE135-side-a    
       - id: 73AE135-top
       - id: 73AE135-detail-a
       - id: 73AE135-detail-b
@@ -131,7 +131,7 @@ object_list:
       - id: 83AE252-detail-d
 
   - id: 7
-    plates: "531–32, 533, 1–3"
+    plates: "531–32; 533, 1–3"
     plate_list: 531, 532, 533
     accession_number: 83.AE.255
     link: http://www.getty.edu/art/collection/objects/10466/
@@ -226,8 +226,8 @@ object_list:
     figure:
       - id: 78AE3801-front
       - id: 78AE3801-back
-      - id: 78AE3801-side-a
       - id: 78AE3801-side-b
+      - id: 78AE3801-side-a
       - id: 78AE3801-top
       - id: 78AE3801-detail-a
       - id: 78AE3801-detail-b
@@ -274,8 +274,8 @@ object_list:
     figure:
       - id: 82AE143-front
       - id: 82AE143-back
-      - id: 82AE143-side-a
       - id: 82AE143-side-b
+      - id: 82AE143-side-a
       - id: 82AE143-top
       - id: 82AE143-detail-a
       - id: 82AE143-detail-b
@@ -471,8 +471,8 @@ object_list:
     figure:
       - id: 79AE198-front
       - id: 79AE198-back
-      - id: 79AE198-side-a
       - id: 79AE198-side-b
+      - id: 79AE198-side-a    
       - id: 79AE198-detail-a
       - id: 79AE198-detail-b
       - id: 79AE198-detail-c
@@ -503,29 +503,29 @@ object_list:
     figure:
       - id: 87AE93-front
       - id: 87AE93-back
-      - id: 87AE93-side-a
       - id: 87AE93-side-b
+      - id: 87AE93-side-a
       - id: 87AE93-detail-a
       - id: 87AE93-top
       - id: 87AE93-detail-b
-      - id: 87AE93-detail-c
       - id: 87AE93-detail-d
+      - id: 87AE93-detail-c      
       - id: 87AE93-detail-e
       - id: 87AE93-detail-f
       - id: 87AE93-detail-g
       - id: 87AE93-detail-h
       - id: 87AE93-detail-i
       - id: 87AE93-detail-j
-      - id: 87AE93-detail-k
-      - id: 87AE93-detail-l
-      - id: 87AE93-detail-m
-      - id: 87AE93-detail-n
-      - id: 87AE93-detail-o
-      - id: 87AE93-detail-p
-      - id: 87AE93-detail-q
-      - id: 87AE93-detail-r
-      - id: 87AE93-detail-s
-      - id: 87AE93-detail-t
+      - id: 87AE93-detail-k    
       - id: 87AE93-detail-u
       - id: 87AE93-detail-v
       - id: 87AE93-detail-w
+      - id: 87AE93-detail-s
+      - id: 87AE93-detail-t    
+      - id: 87AE93-detail-l
+      - id: 87AE93-detail-r
+      - id: 87AE93-detail-q
+      - id: 87AE93-detail-p
+      - id: 87AE93-detail-o
+      - id: 87AE93-detail-n
+      - id: 87AE93-detail-m
