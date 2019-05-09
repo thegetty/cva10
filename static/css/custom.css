@@ -440,3 +440,11 @@
     page-break-inside: avoid;
   }
 }
+
+/* Style table foot, for attributions table */
+.quire-page__content .container .content table tfoot td {
+  border-width: 0;
+  padding-top: 1.5rem;
+  padding-right: 1.5rem;
+  text-align: right;
+}
