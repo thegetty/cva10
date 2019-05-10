@@ -485,3 +485,14 @@
   font-size: 1rem;
   text-align: right;
 }
+
+/* Hide page numbering on blank PDF pages */
+@media print {
+  @page:blank {
+    @bottom-center {
+      content: none;
+      content: "";
+      color: #fff;
+    }
+  }
+}
