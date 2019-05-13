@@ -8,19 +8,20 @@
 .quire-entry .quire-page__content .container .content *:not(sup) {
   line-height: 1.5;
 }
-@media print {
+@media print {  
   .quire-page__content {
     text-align: justify;
+    font-size: 10.25pt;
   }
   .quire-page__content .container .content *:not(sup) {
-    line-height: 1.25 !important;
+    line-height: 14pt !important;
   }
   .quire-entry .quire-page__content .container .content *:not(sup) {
-    line-height: 1.25 !important;
+    line-height: 14pt !important;
   }
   .quire-page__content .container .content .backmatter p {
-    line-height: 1.25 !important;
-  }
+    line-height: 14pt !important;
+  }  
 }
 
 /* Implement open type features */
@@ -271,11 +272,12 @@
 }
 @media print {
   .quire-entry .quire-page__content h2 {
-    font-size: .875rem;
-    margin: .275rem 1rem 0 0;
+    font-size: .8125rem;
+    height: 0;
+    margin: .75pt 1rem 0 0;
   }
   .quire-entry .quire-page__content .container .content > h2:first-child {
-    margin-top: .275rem;
+    margin-top: .75pt;
   }
 }
 
