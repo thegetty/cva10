@@ -24,6 +24,33 @@
   }  
 }
 
+/* Adjust URL breaks in PDF */
+@media print {
+  /* PrinceXML doesn’t seem to support <wbr> embedded in the URLs as a
+  method for suggesting places to break words, instead we're using here
+  the prince-text-replace specialty attribute to insert zero-width-spaces */
+  a[target=_blank] {
+    prince-text-replace: "/" "\200B/"
+                          "%" "\200B%"
+                          "?" "\200B?"
+                          "=" "\200B="
+                          "+" "\200B+"
+                          "." "\200B."
+                          "\200B/\200B/" "//\200B";
+  }
+  /* These additional, specific URL instances also needed some letter space
+  adjustment in order to properly fill their lines of justified text */
+  #catalogue-1 a[href*="http://www.perseus.tufts.edu/hopper/artifact?name=Malibu+86.AE.205&object=Vase"] {
+    letter-spacing: .6pt;
+  }
+  #catalogue-2 a[href*="https://www.metmuseum.org/art/collection/search/251106"] {
+    letter-spacing: -.3pt;
+  }
+  #catalogue-19 a[href*="http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0013%3Asection%3D11"] {
+    letter-spacing: .58pt;
+  }
+}
+
 /* Implement open type features */
 .cva-title,
 .cva-title-menu {
