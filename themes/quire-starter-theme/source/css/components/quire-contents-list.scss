@@ -13,29 +13,17 @@
   @media print {
     background-color: transparent;
   }
-  .quire-page__abstract {
-    
-    @media screen {
-      margin-bottom: 0;
-      padding: 40px 0 !important;
-    }
-    .container {
-      padding: 0 2.5em;
-      @media print {
-        padding: 0;
-      }
-      background-color: transparent !important;
-    }
-    &:after {
-      background-color: transparent;
-    }
-  }
   .quire-page__content {
     .container {
       padding-right: 2.25em;
       padding-left: 2.25em;
       @media print {
         padding: 0;
+      }
+      .content {
+        background: transparent;
+        padding-left: 0;
+        padding-right: 0;
       }
     }
   }
@@ -46,47 +34,6 @@
 .quire-contents-list {
   box-shadow: none;
   background-color: transparent;
-
-  h1, h2, h3, h4, h5, h6 {
-    letter-spacing: -0.025em;
-    color: findColorInvert($content-background-color);
-  }
-
-  h1 {
-    font-size: 3em;
-    line-height: 1.04em;
-  }
-
-  h2 {
-    text-transform: uppercase;
-    font-size: 1.75em;
-    line-height: 1.15em;
-  }
-
-  h3 {
-    font-style: italic;
-    font-weight: 400;
-    font-size: 1.625em;
-  }
-
-  h4 {
-    font-size: 1.375em;
-    line-height: 1.2em;
-  }
-
-  h5 {
-    font-size: 1.125em;
-    line-height: 1.22em;
-  }
-
-  h6 {
-    text-transform: uppercase;
-    font-size: .66em;
-    font-weight: 700;
-    line-height: 1.28em;
-    padding-bottom: 0.25em;
-    border-bottom: 1px solid $off-black;
-  }
 
   svg {
     height: calc(#{$navbar-height} * .65);
@@ -116,7 +63,7 @@
       .abstract-text {
         font-size: $quire-base-font-size * 0.875;
         @media print {
-          font-size: $quire-print-base-font-size;
+          font-size: $print-base-font-size;
         }
       }
     }
@@ -168,7 +115,7 @@
       border-left-width: 0;
       font-size: .75em;
       .page-item {
-        margin-bottom: 2.5em;
+        margin-bottom: 2em;
         &:last-child {
           margin-bottom: 1.5em;
         }
@@ -190,6 +137,7 @@
         display: initial;
         padding: 0;
         padding-bottom: .1em;
+        line-height: 1.75;
         .arrow {
           display: none;
         }
@@ -206,8 +154,8 @@
         font-family: $quire-headings-font;
         color: background-color-text($secondary-background-color);
         @media print {
-          font-size: $quire-print-base-font-size;
-          color: $quire-print-text-color;
+          font-size: $print-base-font-size;
+          color: $print-text-color;
         }
       }
     }
@@ -219,8 +167,8 @@
       padding-right: 0;
       font-size: 1.375em;
       @media print {
-        font-size: $quire-print-base-font-size;
-        color: $quire-print-text-color;
+        font-size: $print-base-font-size;
+        color: $print-text-color;
       }
       -webkit-transition: all .25s ease;
       transition: all .25s ease;
@@ -299,14 +247,14 @@
     .abstract-text {
       font-size: 0.875em;
       @media print {
-        font-size: $quire-print-base-font-size;
+        font-size: $print-base-font-size;
       }
       line-height: 1.5em;
       margin-bottom: 1rem;
       line-height: 1.4;
       color: background-color-text($secondary-background-color);
       @media print {
-        color: $quire-print-text-color;
+        color: $print-text-color;
       }
       p {
         margin-bottom: .5em;
@@ -323,7 +271,7 @@
       .abstract-text {
         font-size: .875rem;
         @media print {
-          font-size: $quire-print-base-font-size;
+          font-size: $print-base-font-size;
         }
       }
     }
@@ -363,7 +311,7 @@
         color: $accent-color;
       }
       @media print {
-        color: $quire-print-text-color;
+        color: $print-text-color;
       }
     }
 
@@ -643,7 +591,7 @@
           text-align: center;
           color: background-color-text($secondary-background-color);
           @media print {
-            color: $quire-print-text-color;
+            color: $print-text-color;
             padding-top: 0;
           }
         }
@@ -656,7 +604,7 @@
         margin-bottom: 0;
         color: background-color-text($secondary-background-color);
         @media print {
-          color: $quire-print-text-color;
+          color: $print-text-color;
         }
         .card-content {
           padding-bottom: 0;
