@@ -4,6 +4,7 @@ type: page
 weight: 1.5
 online: false
 search: false
+toc: false
 ---
 
 {{< q-class "backmatter" >}}
@@ -69,7 +70,9 @@ ISBN 978-1-60606-603-4 (fasc. 10; online)
 ```
 {{< /q-class >}}
 
----
+{{< /q-class >}}
+
+{{< q-class "backmatter" >}}
 
 The J. Paul Getty Museum's prior *CVA* fascicules 1–9 are [available for free download in our Virtual Library](http://www.getty.edu/search/virtuallibrary/VirtualLibrary?title=&author=&keywords=&imprint=&type=&subject=&series=&series=cvsm&pg=1).
 

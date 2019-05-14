@@ -2,6 +2,7 @@
 title: Cover
 weight: 1
 menu: false
+toc: false
 search: false
 type: cover
 slug: .

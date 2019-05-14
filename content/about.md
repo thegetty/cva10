@@ -23,7 +23,7 @@ Tsiafakis, Despoina. *Corpus Vasorum Antiquorum 10: Athenian Red-Figure Column- 
 
 ### MLA
 
-Tsiafakis, Despoina. *Corpus Vasorum Antiquorum 10: Athenian Red-Figure Column- and Volute-Kraters*. J. Paul Getty Museum, 2019, **DD MMM. YYYY**, http://getty.edu/publications/cva10.
+Tsiafakis, Despoina. *Corpus Vasorum Antiquorum 10: Athenian Red-Figure Column- and Volute-Kraters*. J. Paul Getty Museum, 2019. http://getty.edu/publications/cva10. Accessed <span class="cite-current-date">Aug. 29, 2019</span>.
 
 ### Permanent URL
 
