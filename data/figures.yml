@@ -638,13 +638,13 @@ figure_list:
     alt: "Back of the two pottery fragments, one mostly black, the other mostly grey"
     description: "86.AE.209.1, 86.AE.209.2"
 
-  - id: "83AE2111-front"
+  - id: "86AE2111-front"
     src: objects/01405601.jpg
     caption: "86.AE.211.1–2, fragments from shoulder and body of vessel (at left: 86.AE.211.2; at right: 86.AE.211.1)"
     alt: "Two pottery fragments, both with a black background and red images, one showing a pattern of dots and a part of a body wearing material & the other showing the front torso of maybe two horses and then a cheetah head & neck"
     description: "86.AE.211.1, 86.AE.211.2"
 
-  - id: "83AE2111-back"
+  - id: "86AE2111-back"
     src: objects/014056F1V1.jpg
     caption: "86.AE.211.1–2, interior view of fragments from shoulder and body of vessel (at left: 86.AE.211.2; at right: 86.AE.211.1)  "
     alt: "The reverse side of the two pottery fragments in illustration #18 (entry 3, view 1) (mostly black with some wear)"

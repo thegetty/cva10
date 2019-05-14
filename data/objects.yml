@@ -66,8 +66,8 @@ object_list:
     date: -480
     subject: breast bands (on horses), chariot, charioteer, chiton, Dionysos, feline (unspecified), himation, horse, *kentron*, quadriga, reins
     figure:
-      - id: 83AE2111-front
-      - id: 83AE2111-back
+      - id: 86AE2111-front
+      - id: 86AE2111-back
 
   - id: 4
     plates: "524, 3–4"
