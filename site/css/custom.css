@@ -8,18 +8,46 @@
 .quire-entry .quire-page__content .container .content *:not(sup) {
   line-height: 1.5;
 }
-@media print {
+@media print {  
   .quire-page__content {
     text-align: justify;
+    font-size: 10.25pt;
   }
   .quire-page__content .container .content *:not(sup) {
-    line-height: 1.25 !important;
+    line-height: 14pt !important;
   }
   .quire-entry .quire-page__content .container .content *:not(sup) {
-    line-height: 1.25 !important;
+    line-height: 14pt !important;
   }
   .quire-page__content .container .content .backmatter p {
-    line-height: 1.25 !important;
+    line-height: 14pt !important;
+  }  
+}
+
+/* Adjust URL breaks in PDF */
+@media print {
+  /* PrinceXML doesn’t seem to support <wbr> embedded in the URLs as a
+  method for suggesting places to break words, instead we're using here
+  the prince-text-replace specialty attribute to insert zero-width-spaces */
+  a[target=_blank] {
+    prince-text-replace: "/" "\200B/"
+                          "%" "\200B%"
+                          "?" "\200B?"
+                          "=" "\200B="
+                          "+" "\200B+"
+                          "." "\200B."
+                          "\200B/\200B/" "//\200B";
+  }
+  /* These additional, specific URL instances also needed some letter space
+  adjustment in order to properly fill their lines of justified text */
+  #catalogue-1 a[href*="http://www.perseus.tufts.edu/hopper/artifact?name=Malibu+86.AE.205&object=Vase"] {
+    letter-spacing: .6pt;
+  }
+  #catalogue-2 a[href*="https://www.metmuseum.org/art/collection/search/251106"] {
+    letter-spacing: -.3pt;
+  }
+  #catalogue-19 a[href*="http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0013%3Asection%3D11"] {
+    letter-spacing: .58pt;
   }
 }
 
@@ -271,11 +299,12 @@
 }
 @media print {
   .quire-entry .quire-page__content h2 {
-    font-size: .875rem;
-    margin: .275rem 1rem 0 0;
+    font-size: .8125rem;
+    height: 0;
+    margin: .75pt 1rem 0 0;
   }
   .quire-entry .quire-page__content .container .content > h2:first-child {
-    margin-top: .275rem;
+    margin-top: .75pt;
   }
 }
 
@@ -288,6 +317,7 @@
   font-size: 1.5rem;
 }
 .collection-link,
+.bapd-link,
 .entry-download {
   display: inline-block;
   margin-right: .5rem;
@@ -447,4 +477,51 @@
   padding-top: 1.5rem;
   padding-right: 1.5rem;
   text-align: right;
+}
+
+/* Fill only one column on trailing page with very little text */
+@media print {
+  #catalogue-3 .quire-entry .quire-page__content {
+    column-fill: auto;
+  }
+}
+
+/* Custom class for dedication in preface.md */
+.dedication {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+/* Hack to hide cat. nos. on section break pages */
+.quire-page__header__title strong {
+  display: none;
+}
+.quire-navbar strong,
+.page-item strong {
+  font-weight: 400;
+}
+.quire-navbar a:hover strong {
+  color: #fff;
+}
+.quire-menu .page-item a.active strong, 
+.quire-menu .section-item a.active strong {
+  color: Tomato;
+}
+
+/* Link from entry pages to profile page */
+.profiles-link {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  text-align: right;
+}
+
+/* Hide page numbering on blank PDF pages */
+@media print {
+  @page:blank {
+    @bottom-center {
+      content: none;
+      content: "";
+      color: #fff;
+    }
+  }
 }
