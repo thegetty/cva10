@@ -1,0 +1,19 @@
+{
+  "name": "cva10-deploy",
+  "version": "1.0.0",
+  "description": "scripts to run webpack to build js & css",
+  "private": true,
+  "scripts": {
+    "build": "cd themes/quire-starter-theme && webpack --config webpack/webpack.config.prod.js --output-public-path site && cd ../../ && hugo --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thegetty/cva10.git"
+  },
+  "author": "Nick Hulea naeluh@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thegetty/cva10/issues"
+  },
+  "homepage": "https://github.com/thegetty/cva10#readme"
+}
