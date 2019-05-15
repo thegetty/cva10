@@ -79,15 +79,20 @@ license:
 
 resource_link:
   - type: other-format
-    name: PDF (9.5 MB)
+    name: PDF (9.6 MB)
     media_type: application/pdf
     link_relation: alternate
     url: /downloads/output.pdf
   - type: other-format
-    name: EPUB (36.6 MB)
+    name: EPUB (38.1 MB)
     media_type: application/epub+zip
     link_relation: alternate
     url: /downloads/output.epub
+  - type: other-format
+    name: MOBI/Kindle (90.9 MB)
+    media_type: application/mobi
+    link_relation: alternate
+    url: /downloads/output.mobi
   - type: footer-link
     name: About
     link_relation: about
