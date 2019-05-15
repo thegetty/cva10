@@ -4,11 +4,12 @@ type: page
 weight: 500
 pdf: false
 epub: false
+search: false
 ---
 
 Cataloging some hundred thousand examples of ancient Greek painted pottery held in collections around the world, the authoritative *Corpus Vasorum Antiquorum* (Corpus of Ancient Vases) is the oldest research project of the Union Académique Internationale. Nearly four hundred volumes have been published since the first fascicule appeared in 1922. 
 
-This new fascicule of the CVA—the tenth issued by the J. Paul Getty Museum and the first ever to be published open access—presents a selection of Attic red-figure column- and volute-kraters ranging from 520 to 510 B.C. through the early fourth century B.C. Among the works included are a significant dinoid volute-krater and a volute-krater with the Labors of Herakles that is attributed to the Kleophrades Painter.
+This new fascicule of the <em>CVA</em>—the tenth issued by the J. Paul Getty Museum and the first ever to be published open access—presents a selection of Attic red-figure column- and volute-kraters ranging from the late sixth centuries through the early fourth B.C. Among the works included are [a significant dinoid volute-krater](/catalogue/24/) and [a volute-krater with the Labors of Herakles that is attributed to the Kleophrades Painter](/catalogue/19/).
 
 Featuring zoomable images and multiple views of every krater, linked bibliographic references, and indices of attributions and subjects, this open-access, custom catalogue, along with its object data, is available for free online and in multiple formats for download, including PDF, MOBI/Kindle, and EPUB. A paperback reference edition is also available for purchase. 
 
@@ -18,11 +19,11 @@ Featuring zoomable images and multiple views of every krater, linked bibliograph
 
 ### Chicago
 
-Tsiafakis, Despoina. Corpus Vasorum Antiquorum 10: Athenian Red-Figure Column- and Volute-Kraters. Los Angeles: J. Paul Getty Museum, 2019. http://getty.edu/publications/cva10.
+Tsiafakis, Despoina. *Corpus Vasorum Antiquorum 10: Athenian Red-Figure Column- and Volute-Kraters*. Los Angeles: J. Paul Getty Museum, 2019. http://getty.edu/publications/cva10.
 
 ### MLA
 
-Tsiafakis, Despoina. Corpus Vasorum Antiquorum 10: Athenian Red-Figure Column- and Volute-Kraters. J. Paul Getty Museum, 2019, **DD MMM. YYYY**, http://getty.edu/publications/cva10.
+Tsiafakis, Despoina. *Corpus Vasorum Antiquorum 10: Athenian Red-Figure Column- and Volute-Kraters*. J. Paul Getty Museum, 2019. http://getty.edu/publications/cva10. Accessed <span class="cite-current-date">Aug. 29, 2019</span>.
 
 ### Permanent URL
 
@@ -32,15 +33,15 @@ http://getty.edu/publications/cva10
 
 Any revisions or corrections made to this publication after the first edition date will be listed here and in the project repository at https://github.com/thegetty/cva10, where a more detailed version history is available. The revisions branch of the project repository, when present, will also show any changes currently under consideration but not yet published here.
 
-### August, 29, 2019
+### August 29, 2019
   
   - First edition
 
 ## Other Formats
 
-  - [PDF](/downloads/output.pdf)
-  - [EPUB](/downloads/output.epub)
-  - [MOBI](/downloads/output.mobi)
+  - [PDF (9.6 MB)](/downloads/output.pdf)
+  - [EPUB (38.1 MB)](/downloads/output.epub)
+  - [MOBI/Kindle (90.9 MB)](/downloads/output.mobi)
 
 ## Copyright
 
@@ -60,7 +61,7 @@ Any revisions or corrections made to this publication after the first edition da
 </svg>
 {{< /q-class >}}
 
-Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International License.
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
 **Published by the J. Paul Getty Museum, Los Angeles**<br />
 Getty Publications<br />
@@ -74,6 +75,7 @@ Laura diZerega, *Editorial and Digital Assistant*<br />
 Sharon Herson, *Manuscript Editor*<br />
 Michelle Woo Deemer, *Production*<br />
 David Saunders, *Curatorial Liaison*<br />
+Tony Schreiber, *Profile Drawings*<br />
 
 {{< q-class "cip-data" >}}
 Library of Congress Cataloging-in-Publication Data
@@ -114,13 +116,13 @@ ISBN 978-1-60606-603-4 (fasc. 10; online)
 
 ---
 
-The J. Paul Getty Museum's prior CVA fascicules 1–9 are [available in our Virtual Library](http://www.getty.edu/search/virtuallibrary/VirtualLibrary?title=&author=&keywords=&imprint=&type=&subject=&series=&series=cvsm&pg=1).
+The J. Paul Getty Museum's prior *CVA* fascicules 1–9 are [available for free download in our Virtual Library](http://www.getty.edu/search/virtuallibrary/VirtualLibrary?title=&author=&keywords=&imprint=&type=&subject=&series=&series=cvsm&pg=1).
 
-Also from Getty Publications:
+Other open-access titles from Getty Publications:
 
-- [*Ancient Lamps in the J. Paul Getty Museum*](http://www.getty.edu/publications/ancientlamps/),<br />Jean Bussière and Birgitta Lindros Wohl
-- [*Ancient Terracottas from South Italy and Sicily in the J. Paul Getty Museum*](http://www.getty.edu/publications/terracottas/),<br />Maria Lucia Ferruzza
-- [*Roman Mosaics in the J. Paul Getty Museum*](http://www.getty.edu/publications/romanmosaics/),<br />Alexis Belis
+- [*Ancient Lamps in the J. Paul Getty Museum*](http://www.getty.edu/publications/ancientlamps/)<br />Jean Bussière and Birgitta Lindros Wohl
+- [*Ancient Terracottas from South Italy and Sicily in the J. Paul Getty Museum*](http://www.getty.edu/publications/terracottas/)<br />Maria Lucia Ferruzza
+- [*Roman Mosaics in the J. Paul Getty Museum*](http://www.getty.edu/publications/romanmosaics/)<br />Alexis Belis
 
 {{< /q-class >}}
 

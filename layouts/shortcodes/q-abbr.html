@@ -3,14 +3,26 @@
   This custom shortcode is based on the q-cite shortcode, but simply displays
   the text of abbreviated items on hover.
 
-  {{< q-abbr "*BAPD*" >}}
+  q-abbr "*BAPD*"
+  
+  The abbreviation given in the shortcode is matched to known abbreviations
+  that are listed in the abbreviations.yml file. However, the match is done
+  after removing all punctuation. In this way, a user can add punctuation into 
+  the abbreviation when needed in contect of the text, and this will not
+  effect the match. For example, {{< q-abbr "Gaunt, “Attic Volute Krater”" >}},
+  with a trailing comman can instead become {{< q-abbr "Gaunt, “Attic Volute
+  Krater,”" >}} with the comma inside the double quotes as would be called
+  for in some style guides.
 
 */}}
 
 {{- $abbr := .Get 0 -}}
 
 {{- range $.Site.Data.abbreviations.listing -}}
-    {{- if eq .abbreviation $abbr -}}
+    {{- $givenAbbr := replaceRE "[[:punct:]]" "" $abbr -}}
+    {{- $knownAbbr := replaceRE "[[:punct:]]" "" .abbreviation -}}
+
+    {{- if eq $givenAbbr $knownAbbr -}}
     {{- $.Scratch.Add "citation" .citation -}}
     {{- end -}}
 {{- end -}}

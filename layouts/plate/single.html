@@ -209,6 +209,11 @@
         top: 7.325in;
         left: 0;
       }
+      @media print {
+        #plate-533 #group-83AE255 p {
+          top: 6.875in;
+        }
+      }
 
       #plate-536 #fig-2 {
         height: 3in;
@@ -233,7 +238,17 @@
       #plate-543 #fig-2 img {
         height: 1.125in;
       }
-
+      
+      #plate-558 .group-wrapper {
+        display: flex;
+        justify-content: center;
+      }
+      #plate-558 .plates-area.grid figure,
+      #plate-558 .plates-area.grid img {
+        max-width: 4.0625in;
+        width: auto;
+      }
+      
       #plate-568 #fig-1 {
         flex-basis: 100%;
         margin-left: 1in;
@@ -277,6 +292,7 @@
             letter-spacing: 0;
             font-size: 1.5em;
             margin-right: .25in;
+            color: #000;
           }
           @bottom-left {
             content: string(country-fascicule);
@@ -298,6 +314,7 @@
           @top-right {
             content: string(fascicule);
             margin-right: .25in;
+            color: #000;
           }
           @bottom-left {
             content: string(typology);

@@ -11,12 +11,12 @@ const imageminJpegtran = require("imagemin-jpegtran");
 const imageminOptipng = require("imagemin-optipng");
 const imageminSvgo = require("imagemin-svgo");
 
-const ASSET_PATH = process.env.ASSET_PATH || '/';
-
 const PATHS = {
   source: path.join(__dirname, '../source'),
   build: path.join(__dirname, '../static')
 };
+
+const ASSET_PATH = process.env.ASSET_PATH || '/';
 
 // the path(s) that should be cleaned
 let pathsToClean = [

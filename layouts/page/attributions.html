@@ -56,7 +56,7 @@
         {{- end -}}
         <table>
           <thead>
-            <tr><th>Attribution</th><th>CVA Number</th><th>Plate Number</th><th>J. Paul Getty Museum Accession Number</th></tr>
+            <tr><th>Attribution</th><th><em>CVA</em> Number</th><th>Plate Number</th><th>J. Paul Getty Museum Accession Number</th></tr>
           </thead>
           <tbody>
             {{- range ($.Page.Scratch.Get "attributions") -}}
@@ -73,10 +73,12 @@
             {{- $.Page.Scratch.Add "names" (slice .attribution) -}}
             {{- end -}}
           </tbody>
+          {{ if gt ($.Scratch.Get "uncertainty") 0 }}
+          <tfoot>
+            <tr><td colspan="4"><em>* Uncertain or shared attribution</em></td></tr>
+          </tfoot>
+          {{ end }}
         </table>
-        {{ if gt ($.Scratch.Get "uncertainty") 0 }}
-        <p><em>* Uncertain or shared attribution</em></p>
-        {{ end }}
       </div>
     </div>
   </section>

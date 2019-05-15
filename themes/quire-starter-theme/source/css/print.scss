@@ -43,7 +43,7 @@ $print-trim: $print-bleed * 2;
     margin-bottom: $print-bottom-margin;
     font-family: $print-footer-font;
     font-size: $print-footer-font-size;
-    color: $quire-print-text-color;
+    color: $print-text-color;
     @bottom-center {
       content: counter(page);
     }
@@ -150,17 +150,20 @@ $print-trim: $print-bleed * 2;
 
   .quire-contents-list {
     .page-item {
+      max-width: 90%;
       a::after {
         content: leader(dotted) ' 'target-counter(attr(href, url), page);
         margin-left: 6pt; 
+        margin-right: -10%;
         // This border is a hack for PrinceXML which doesn't
         // otherwise recognize the box sizing for some reason
         border: 1pt solid transparent;
       }
       a.frontmatter-page::after {
         content: leader(dotted) ' 'target-counter(attr(href, url), page, lower-roman);
-        font-style: italic;
+        // font-style: italic;
         margin-left: 6pt; 
+        margin-right: -10%;
         // This border is a hack for PrinceXML which doesn't
         // otherwise recognize the box sizing for some reason
         border: 1pt solid transparent;
@@ -345,7 +348,7 @@ $print-trim: $print-bleed * 2;
     }
     .section-item {
       width: 100%;
-      border-bottom: 1px solid $quire-print-text-color;
+      border-bottom: 1px solid $print-text-color;
       margin-bottom: .25in;
     }
   }    

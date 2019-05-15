@@ -1,0 +1,29 @@
+@page :first {
+  @top-right {
+    content: string(pageurl);
+    color: Tomato;
+    text-align: right;
+    margin-right: 1in;
+  }
+}
+
+@page {
+  prince-bleed: 0 !important;
+  bleed: 0 !important;
+  prince-trim: 0 !important;
+  marks: none !important;
+  margin-right: .25in !important;
+  margin-left: .25in !important; 
+  @top-right {
+    color: #000;
+  }
+}
+
+.quire-entry {
+  margin-right: 1in;
+  margin-left:  1in; 
+}
+
+.pdf-page-url {
+  string-set: pageurl content();
+}

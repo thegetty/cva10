@@ -14,6 +14,8 @@ subtitle: Athenian Red-Figure Column- and Volute-Kraters
 reading_line:
 short_title: CVA 10
 
+url: http://www.getty.edu/publications/cva10
+
 cva:
   institution: J. Paul Getty Museum
   location: Malibu
@@ -35,7 +37,7 @@ description:
 # Publication Details
 # ------------------------------------------------------------------------------
 
-pub_date: 2018-08-01
+pub_date: 2019-08-01
 language: en
 pub_type: book # book | journal-periodical | other
 
@@ -65,7 +67,7 @@ contributor:
 # Copright & License
 # ------------------------------------------------------------------------------
 
-copyright: © 2018 J. Paul Getty Trust
+copyright: © 2019 J. Paul Getty Trust
 
 license:
   name: Creative Commons Attribution 4.0 International License
@@ -79,15 +81,20 @@ license:
 
 resource_link:
   - type: other-format
-    name: PDF (9.5 MB)
+    name: PDF (9.6 MB)
     media_type: application/pdf
     link_relation: alternate
     url: /downloads/output.pdf
   - type: other-format
-    name: EPUB (36.6 MB)
+    name: EPUB (38.1 MB)
     media_type: application/epub+zip
     link_relation: alternate
     url: /downloads/output.epub
+  - type: other-format
+    name: MOBI/Kindle (90.9 MB)
+    media_type: application/mobi
+    link_relation: alternate
+    url: /downloads/output.mobi
   - type: footer-link
     name: About
     link_relation: about
@@ -95,11 +102,11 @@ resource_link:
   - type: footer-link
     name: Privacy Policy
     link_relation: privacy-policy
-    url:
+    url: http://www.getty.edu/legal/privacy.html
   - type: footer-link
     name: Terms of Use
     link_relation: terms-of-service
-    url:
+    url: http://www.getty.edu/legal/copyright.html
 
 # ------------------------------------------------------------------------------
 # Subjects
@@ -115,7 +122,7 @@ subject:
 # ------------------------------------------------------------------------------
 
 revision_history:
-  - date: 2018-07-01
+  - date: 2019-08-01
     summary:
       - First edition
 

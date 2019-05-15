@@ -2,24 +2,52 @@
 .quire-page__content {
   font-size: 1.2em;
 }
-.quire-page__content .container .content * {
+.quire-page__content .container .content *:not(sup) {
   line-height: 1.5;
 }
-.quire-entry .quire-page__content .container .content * {
+.quire-entry .quire-page__content .container .content *:not(sup) {
   line-height: 1.5;
 }
-@media print {
+@media print {  
   .quire-page__content {
     text-align: justify;
+    font-size: 10.25pt;
   }
-  .quire-page__content .container .content * {
-    line-height: 1.25 !important;
+  .quire-page__content .container .content *:not(sup) {
+    line-height: 14pt !important;
   }
-  .quire-entry .quire-page__content .container .content * {
-    line-height: 1.25 !important;
+  .quire-entry .quire-page__content .container .content *:not(sup) {
+    line-height: 14pt !important;
   }
   .quire-page__content .container .content .backmatter p {
-    line-height: 1.25 !important;
+    line-height: 14pt !important;
+  }  
+}
+
+/* Adjust URL breaks in PDF */
+@media print {
+  /* PrinceXML doesn’t seem to support <wbr> embedded in the URLs as a
+  method for suggesting places to break words, instead we're using here
+  the prince-text-replace specialty attribute to insert zero-width-spaces */
+  a[target=_blank] {
+    prince-text-replace: "/" "\200B/"
+                          "%" "\200B%"
+                          "?" "\200B?"
+                          "=" "\200B="
+                          "+" "\200B+"
+                          "." "\200B."
+                          "\200B/\200B/" "//\200B";
+  }
+  /* These additional, specific URL instances also needed some letter space
+  adjustment in order to properly fill their lines of justified text */
+  #catalogue-1 a[href*="http://www.perseus.tufts.edu/hopper/artifact?name=Malibu+86.AE.205&object=Vase"] {
+    letter-spacing: .6pt;
+  }
+  #catalogue-2 a[href*="https://www.metmuseum.org/art/collection/search/251106"] {
+    letter-spacing: -.3pt;
+  }
+  #catalogue-19 a[href*="http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0013%3Asection%3D11"] {
+    letter-spacing: .58pt;
   }
 }
 
@@ -70,13 +98,12 @@
 }
 
 @media print {
-  #contents .menu-list ul > li:first-child,
   #contents .menu-list ul > li:last-child {
     display: none;
   }
-  /* #contents .menu-list ul > li:nth-last-child(2) {
-    display: none;
-  } */
+  .quire-contents-list .menu-list .section-item.no-landing .list-header {
+    font-size: 1.2rem;
+  }
 }
 
 /* Style contents pages and menu */
@@ -158,9 +185,14 @@
   max-width: 800px;
   line-height: 1.4;
 }
+.quire-entry__header .quire-page__header__title {
+  padding: 0;
+}
+
 @media print {
   .quire-cover__hero-body.hero-body.cva-cover > div {
     width: 6in;
+    margin: 0 auto;
   }
   .academique {
     font-size: 1.7rem;
@@ -270,11 +302,12 @@
 }
 @media print {
   .quire-entry .quire-page__content h2 {
-    font-size: .875rem;
-    margin: .275rem 1rem 0 0;
+    font-size: .8125rem;
+    height: 0;
+    margin: .75pt 1rem 0 0;
   }
   .quire-entry .quire-page__content .container .content > h2:first-child {
-    margin-top: .275rem;
+    margin-top: .75pt;
   }
 }
 
@@ -287,6 +320,7 @@
   font-size: 1.5rem;
 }
 .collection-link,
+.bapd-link,
 .entry-download {
   display: inline-block;
   margin-right: .5rem;
@@ -310,12 +344,14 @@
   .quire-citation {
     border-bottom-width: 0;
   }
+  .quire-citation__content {
+    display: none;
+  }
 }
 
 /* Change caption display for profiles page */
 #profiles .content figure .quire-figure__caption {
   text-align: center;
-  text-transform: uppercase;
   font-size: 1rem;
   margin: 1rem 0 2rem;
 }
@@ -327,9 +363,6 @@
 
 
 /* Use pre and code to maintain strict LOC Cataloguing in Publication format */
-.cip-data {
-  column-break-before: always;
-}
 .cip-data p {
   margin-bottom: 0 !important;
 }
@@ -337,10 +370,12 @@
   background: transparent;
   padding: 0;
   margin-bottom: 1rem;
+  font-size: 1em;
+  color: #000000;
 }
 .cip-data pre code {
   font-family: "Cardo", serif;
-  font-size: 1rem;
+  font-size: 1em;
   line-height: 1.6 !important;
 }
 @media print {
@@ -351,6 +386,10 @@
 
 /* Style copyright for PDF/Print output */
 @media print {
+  #copyright .backmatter * {
+    line-height: 12pt !important;
+    font-size: .875rem !important;
+  }
   #copyright .quire-page.quire-page--frontmatter {
     page: no-footer;
   }
@@ -358,25 +397,22 @@
     display: none;
   }
   #copyright .quire-page__content {
-    column-count: 2;
-    column-fill: balance;
-    column-gap: .1875in;
     max-width: 100%;
     height: 100%;
     margin: 0;
     text-align: left;
   }
-  #copyright .quire-page__content .container .content {
-    /* display: flex;
-    justify-content: space-between; */
+  #copyright .quire-page__content .backmatter:first-child {
+    width: 4.1875in;
+    float: left;
+    margin-right: .25in;
   }
-  #copyright .backmatter {
-    /* width: 5in; */
+  #copyright .quire-page__content .backmatter:last-child {
+    float: right;
   }
-  #copyright .backmatter.cip-data {
-    /* leaves .1875in between blocks to match grid gap */
-    /* width: 2.6875in; */
-    column-break-before: always;
+  #copyright .backmatter .cip-data pre {
+    color: #000000;
+    font-size: 1em;
   }
   #copyright img {
     height: .25in;
@@ -389,6 +425,9 @@
   }
   #copyright .content ul {
     margin-left: .5rem;
+  }
+  #copyright strong {
+    color: #000000;
   }
 }
 
@@ -414,10 +453,72 @@
   }
   .half-title-page .institution {
     text-transform: none;
-    font-size: 1.8rem;
+    font-size: 1.66rem;
   }
   .title-page {
-    margin: 0 1.5in 0 1in;
+    margin: 0 auto;
     padding-top: 1in;
+  }
+}
+
+/* Keep abbreviation table from breaking across entries */
+@media print {
+  #abbreviations .section.quire-page__content tr {
+    page-break-inside: avoid;
+  }
+}
+
+/* Style table foot, for attributions table */
+.quire-page__content .container .content table tfoot td {
+  border-width: 0;
+  padding-top: 1.5rem;
+  padding-right: 1.5rem;
+  text-align: right;
+}
+
+/* Fill only one column on trailing page with very little text */
+@media print {
+  #catalogue-3 .quire-entry .quire-page__content {
+    column-fill: auto;
+  }
+}
+
+/* Custom class for dedication in preface.md */
+.dedication {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+/* Hack to hide cat. nos. on section break pages */
+.quire-page__header__title strong {
+  display: none;
+}
+.quire-navbar strong,
+.page-item strong {
+  font-weight: 400;
+}
+.quire-navbar a:hover strong {
+  color: #fff;
+}
+.quire-menu .page-item a.active strong, 
+.quire-menu .section-item a.active strong {
+  color: Tomato;
+}
+
+/* Link from entry pages to profile page */
+.profiles-link {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  text-align: right;
+}
+
+/* Hide page numbering on blank PDF pages */
+@media print {
+  @page:blank {
+    @bottom-center {
+      content: none;
+      content: "";
+      color: #fff;
+    }
   }
 }

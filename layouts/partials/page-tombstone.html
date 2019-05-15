@@ -23,12 +23,16 @@
       {{ if .id }}
         {{ range where $.Site.Data.objects.object_list "id" "eq" .id }}
           {{ if .link }}
-          <p class="collection-link is-screen-only"><a href="{{ .link }}" target="_blank">{{ $.Site.Params.entryPageObjectLinkText }}</a></p>
+          <p class="collection-link is-screen-only"><a href="{{ .link }}" target="_blank" title="J. Paul Getty Museum">{{ $.Site.Params.entryPageObjectLinkText }}</a></p>
+          {{ end }}
+          {{ if .bapd }}
+          <p class="bapd-link is-screen-only"><a href="{{ .bapd }}" target="_blank" title="Beazley Archive Pottery Database">View in the BAPD</a></p>
           {{ end }}
           {{ if .plate_list }}
             {{- $institution := urlize (replace $.Site.Data.publication.cva.institution "." "") -}}
-            {{- $fascicule := $.Site.Data.publication.cva.fascicule_no -}}
-            <p class="entry-download is-screen-only"><a href="/downloads/{{ $institution }}__cva-{{ $fascicule }}__{{ .id }}.pdf" target="_blank">Download PDF</a></p>
+            {{- $fascicule := string $.Site.Data.publication.cva.fascicule_no -}}
+            {{- $downloadPath := printf "%s/%s__cva-%s__%s.pdf" "downloads" $institution $fascicule (string .id) -}}
+            <p class="entry-download is-screen-only test6"><a href="{{ $downloadPath | relURL }}" target="_blank" title="Full entry text and plates">Download PDF</a></p>
           {{ end }}
         {{ end }}
       {{ else }}
