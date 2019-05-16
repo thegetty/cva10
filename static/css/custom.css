@@ -310,11 +310,22 @@
     margin-top: .75pt;
   }
 }
+@media screen and (max-width: 1184px) {
+  .quire-entry__header .quire-page__header__title {
+    margin: .5rem 0;
+  }
+}
+
 
 /* Style override tombstone that's no longer a table*/
 .quire-entry__tombstone .container {
   padding: 0 2rem;
   color: #000;
+}
+@media screen and (max-width: 500px) {
+  .quire-entry__tombstone .container {
+    padding: 0 1.25rem;
+  }
 }
 .quire-entry__tombstone .container p:first-child {
   font-size: 1.5rem;
