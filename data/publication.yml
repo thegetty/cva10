@@ -113,9 +113,17 @@ resource_link:
 # ------------------------------------------------------------------------------
 
 subject:
-  - type:
-    name:
-    identifer:
+  - type: bisac
+    name: ANTIQUES & COLLECTIBLES / Pottery & Ceramics
+    identifer: ANT035000
+  - type: bisac
+    name: ART / History / Ancient & Classical
+    identifer: ART015060
+  - type: bisac
+    name: ART / Collections, Catalogs, Exhibitions / General
+    identifer: ART006000
+  - type: keyword
+    name: "Antiquities, Greece, Athens, painted pottery, ancient vases, Kleophrades Painer, Labors of Herakles, Union Acadèmique Internationale"
 
 # ------------------------------------------------------------------------------
 # Revision History
@@ -126,10 +134,10 @@ revision_history:
     summary:
       - First edition
 
-repository_url:
+repository_url: http://github.com/thegetty/cva
 
 # ------------------------------------------------------------------------------
 # Promo Image
 # ------------------------------------------------------------------------------
 
-promo_image:
+promo_image: cover.jpg
