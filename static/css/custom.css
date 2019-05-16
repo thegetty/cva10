@@ -185,9 +185,6 @@
   max-width: 800px;
   line-height: 1.4;
 }
-.quire-entry__header .quire-page__header__title {
-  padding: 0;
-}
 
 @media print {
   .quire-cover__hero-body.hero-body.cva-cover > div {
@@ -227,6 +224,9 @@
   .quire-page h1, 
   .quire-page__header__title {
     max-width: none;
+  }
+  .quire-entry__header .quire-page__header__title {
+    padding: 0;
   }
   .quire-splash .quire h1,
   .quire-splash .quire-page h1, 
@@ -336,9 +336,12 @@
   color: Tomato;
   border-bottom: 1px solid Tomato;
 }
-.quire-citation__content {
+.quire-citation .quire-citation__content {
   background-color: #fcfbeb; /* CVA cream */
   font-size: .857rem;
+}
+.quire-citation:hover .quire-citation__content {
+  visibility: visible;
 }
 @media print {
   .quire-citation {
