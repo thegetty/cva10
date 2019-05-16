@@ -157,18 +157,16 @@
   justify-content: center;
 
   &__item {
-    padding: 0 1rem;
+    padding: 0;
     max-height: $navbar-height;
     overflow: hidden;
-    display: none;
 
     a, svg {
       transition: all .25s ease;
     }
 
-    span.nav-label {
-      display: inline-block;
-      color: inherit;
+    &__text {
+      display: none;
     }
 
     .menu-button {
@@ -199,55 +197,15 @@
         margin-right: 0.5em;
       }
     }
-    @media screen and (max-width: $quire-menu-width) {
-      a {
-        padding: 0;
+    
+    @media screen and (min-width: $tablet) {
+      & {
+        padding: 0 1rem;
       }
     }
-
-    @media screen and (max-width: $desktop) {
-      &.quire-home-page {
-        display: block;
-        padding-left: 0;
-        padding-right: 0;
-      }
-      &.quire-next-page,
-      &.quire-previous-page {
-        display: block;
-      }
-      span.nav-label {
-        display: none;
-      }
-    }
-
-    @media screen and (min-width: 500px) {
-      &.quire-home-page {
-        display: block;
-      }
-    }
-
     @media screen and (min-width: $desktop) {
-      &.quire-current-page {
-        display: block;
-      }
-      &.quire-next-page,
-      &.quire-previous-page {
-        display: block;
-      }
-    }
-
-    @media screen and (min-width: 900px) {
-      &.quire-section-page {
-        display: block;
-      }
-    }
-  }
-
-  @media screen and (min-width: $desktop) {
-    .quire-navbar-button {
-      display: none;
-      &.home-button, &.play-button {
-        display: inline-block;
+      &__text {
+        display: inline;
       }
     }
   }
