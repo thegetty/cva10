@@ -188,7 +188,7 @@ object_list:
     attribution: Harrow Painter
     attributor: J. D. Beazley
     date: -480
-    subject: altar, fillet, herm, himation, ithyphallic herm, mantle, stick, volute (on altar)
+    subject: altar, fillet, herm, himation, ithyphallic herm, stick, volute (on altar)
     figure:
       - id: 81AE37-front
       - id: 81AE37-back
@@ -229,7 +229,7 @@ object_list:
     attribution: Agrigento Painter
     attributor: J. R. Guy
     date: -460
-    subject: fillet, flower, himation, inscription, mantle, staff, stick, torch, wreath
+    subject: fillet, flower, himation, inscription, staff, stick, torch, wreath
     figure:
       - id: 78AE3801-front
       - id: 78AE3801-back
@@ -253,7 +253,7 @@ object_list:
     attribution: Florence Painter or Workshop
     attributor: J. M. Padgett
     date: -450
-    subject: boar, chiton, himation, lion, maenad, mantle, satyr, strigil, thyrsos
+    subject: boar, chiton, himation, lion, maenad, satyr, strigil, thyrsos
     figure:
       - id: 81AE161-front
       - id: 81AE161-back
@@ -425,7 +425,7 @@ object_list:
     attribution: Kleophrades Painter
     attributor: D. Tsiafakis
     date: -490 to -480
-    subject: chiton, himation, Ilioupersis, mantle, tripod
+    subject: chiton, himation, Ilioupersis, tripod
     figure:
       - id: 86AE202-front
       - id: 86AE202-back
@@ -510,7 +510,7 @@ object_list:
     attribution: M1 and M2 (formerly known as the Meleager Painter)
     attributor: K. Kathariou
     date: -400 to -390
-    subject: Adonis, animal skin, Aphrodite, Arimasp, attendant (female), aulos, baldric, banqueter, bed/couch/*klinē*, blanket, bracelet, bull, chest, chignon, chiton, chlamys, club, cushion, deer, diadem, Dionysos, dog, drinking horn (*keras*), earring, *ependytēs*, Eros, fillet, food, footstool, fruit, grapevine, griffin, hare, himation, kantharos, *komast*/reveler, *kottabos*, *lagobolon*, lyre, maenad, mantle, mirror, necklace, peplos, Persephone, *pilos* (conical hat), plate, satyr, shield, Silenos, spear, cup (stemless), string of beads, sword, symposion, table, Theseus, thyrsos, torch, tree, *tympanon*
+    subject: Adonis, animal skin, Aphrodite, Arimasp, attendant (female), aulos, baldric, banqueter, bed/couch/*klinē*, blanket, bracelet, bull, chest, chignon, chiton, chlamys, club, cushion, deer, diadem, Dionysos, dog, drinking horn (*keras*), earring, *ependytēs*, Eros, fillet, food, footstool, fruit, grapevine, griffin, hare, himation, kantharos, *komast*/reveler, *kottabos*, *lagobolon*, lyre, maenad, mirror, necklace, peplos, Persephone, *pilos* (conical hat), plate, satyr, shield, Silenos, spear, cup (stemless), string of beads, sword, symposion, table, Theseus, thyrsos, torch, tree, *tympanon*
     figure:
       - id: 87AE93-front
       - id: 87AE93-back
