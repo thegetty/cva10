@@ -229,7 +229,7 @@ object_list:
     attribution: Agrigento Painter
     attributor: J. R. Guy
     date: -460
-    subject: fillet, flower, inscription, mantle, staff, stick, torch, wreath
+    subject: fillet, flower, himation, inscription, mantle, staff, stick, torch, wreath
     figure:
       - id: 78AE3801-front
       - id: 78AE3801-back
@@ -425,7 +425,7 @@ object_list:
     attribution: Kleophrades Painter
     attributor: D. Tsiafakis
     date: -490 to -480
-    subject: chiton, Ilioupersis, mantle, tripod
+    subject: chiton, himation, Ilioupersis, mantle, tripod
     figure:
       - id: 86AE202-front
       - id: 86AE202-back
