@@ -22,7 +22,11 @@
   {{ $.Scratch.Add "index" $index }}
   {{ $.Scratch.Add "id" .id }}
   {{ $.Scratch.Add "plates" .plates }}
-  {{ $.Scratch.Add "accession_number" .accession_number }}
+  {{ if .accession_numbers }}
+    {{ $.Scratch.Add "accession_number" .accession_numbers }}
+  {{ else }}
+    {{ $.Scratch.Add "accession_number" .accession_number }}
+  {{ end }}
 
   {{ range (split .attribution "; ") }}
 

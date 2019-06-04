@@ -21,9 +21,13 @@
             <tr><th>J. Paul Getty Museum Accession Number</th><th>Bareiss Collection Number</th><th><em>CVA</em> Number</th></tr>
           </thead>
           <tbody>
-        {{- range sort $.Site.Data.objects.object_list "accession_number" -}}
-          <tr><td>{{ .accession_number }}</td><td>{{ .bareiss_number }}</td><td><a href="../catalogue/{{ .id }}">{{ .id }}</a></td></tr>
-        {{ end }}
+        {{ range sort $.Site.Data.objects.object_list "sort" -}}
+          {{- if .accession_numbers -}}
+            <tr><td>{{ .accession_numbers }}</td><td>{{ .bareiss_number }}</td><td><a href="../catalogue/{{ .id }}">{{ .id }}</a></td></tr>
+          {{- else -}}
+            <tr><td>{{ .accession_number }}</td><td>{{ .bareiss_number }}</td><td><a href="../catalogue/{{ .id }}">{{ .id }}</a></td></tr>
+          {{- end -}}        
+        {{- end }}
           </tbody>
         </table>
       </div>
