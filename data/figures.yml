@@ -289,13 +289,7 @@ figure_list:
     caption: "79.AE.198, side A, detail showing inscription for Menelaos"
     alt: "A detail of the neck ring?, that includes a pattern, and a foot"
     description: "Attic Red-Figure Volute Krater; Attributed to Polygnotos (Greek (Attic), active 450–430 B.C.); Athens, Greece; about 445–430 B.C.; Terracotta; 28.8 × 47.7 cm (11 5/16 × 18 3/4 in.); 79.AE.198"
-
-  - id: "79AE198-detail-m"
-    src: objects/010324D5V1.jpg
-    caption: "79.AE.198, side B, detail showing [? TK]"
-    alt: "A small detail of the neck, that includes part of a person carrying a large stick and looking up"
-    description: "Attic Red-Figure Volute Krater; Attributed to Polygnotos (Greek (Attic), active 450–430 B.C.); Athens, Greece; about 445–430 B.C.; Terracotta; 28.8 × 47.7 cm (11 5/16 × 18 3/4 in.); 79.AE.198"
-
+    
   - id: "79AE198-back"
     src: objects/010324F2V1.jpg
     caption: "79.AE.198, side B"
