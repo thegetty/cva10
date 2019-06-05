@@ -9,7 +9,7 @@ search: false
 
 Cataloging some hundred thousand examples of ancient Greek painted pottery held in collections around the world, the authoritative *Corpus Vasorum Antiquorum* (Corpus of Ancient Vases) is the oldest research project of the Union Académique Internationale. Nearly four hundred volumes have been published since the first fascicule appeared in 1922. 
 
-This new fascicule of the <em>CVA</em>—the tenth issued by the J. Paul Getty Museum and the first ever to be published open access—presents a selection of Attic red-figure column- and volute-kraters ranging from the late sixth centuries through the early fourth B.C. Among the works included are [a significant dinoid volute-krater](/catalogue/24/) and [a volute-krater with the Labors of Herakles that is attributed to the Kleophrades Painter](/catalogue/19/).
+This new fascicule of the <em>CVA</em>—the tenth issued by the J. Paul Getty Museum and the first ever to be published open access—presents a selection of Attic red-figure column- and volute-kraters ranging from the late sixth centuries through the early fourth B.C. Among the works included are a significant [dinoid volute-krater](/catalogue/24/) and a [volute-krater with the Labors of Herakles](/catalogue/19/) that is attributed to the Kleophrades Painter.
 
 Featuring zoomable images and multiple views of every krater, linked bibliographic references, and indices of attributions and subjects, this open-access, custom catalogue, along with its object data, is available for free online and in multiple formats for download, including PDF, MOBI/Kindle, and EPUB. A paperback reference edition is also available for purchase. 
 
