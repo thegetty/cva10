@@ -118,6 +118,7 @@
         text-align: center;
         width: 100%;
         clear: both;
+        text-transform: none;
       }
       figure {
         margin: .25in .25in 0;
@@ -353,7 +354,7 @@
       <span class="country-fascicule" style="display: none;">{{ .Site.Data.publication.cva.country }} {{ $countryPlateNumber }}</span>
       
         <div class="margin">
-          <span class="fascicule">{{ .Site.Data.publication.cva.institution }} ({{ .Site.Data.publication.cva.fascicule_no }})</span>
+          <span class="fascicule">The {{ .Site.Data.publication.cva.institution }} ({{ .Site.Data.publication.cva.fascicule_no }})</span>
           <span class="plate-number">Plate {{ .File.BaseFileName }}</span>
         </div>
 
