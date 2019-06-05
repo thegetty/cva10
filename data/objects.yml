@@ -162,9 +162,9 @@ object_list:
       - id: 83AE255-side-b
       - id: 83AE255-top
       - id: 83AE255-detail-a
-      - id: 83AE255-detail-b
       - id: 83AE255-detail-c
-
+      - id: 83AE255-detail-b
+      
   - id: 8
     plates: "533, 4–5"
     plate_list: 533

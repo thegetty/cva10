@@ -31,7 +31,7 @@ figure_list:
 
   - id: "86AE208-profile"
     src: 86AE208-profile.png
-    caption: "[86.AE.208 (no. 10)](/catalogue/10/)"
+    caption: "[86.AE.208 and 86.AE.210 (no. 10)](/catalogue/10/)"
     alt: "Line drawing profile view of the krater"
 
   - id: "78AE380-profile"
@@ -388,7 +388,7 @@ figure_list:
 
   - id: "82AE143-back"
     src: objects/gml_012302F11V1.jpg
-    caption: "82.AE.143, side B82.AE.143, side view"
+    caption: "82.AE.143, side B"
     alt: "Another view of a vase, with the body decoration depicting three people in clothes"
     description: "Attic Red-Figure Column Krater; Attributed to the Painter of London E489; Athens, Greece, Europe; about 460 B.C.; Terracotta; 38.5 × 30.5 cm (15 3/16 × 12 in.); 82.AE.143"
 

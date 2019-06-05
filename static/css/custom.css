@@ -2,21 +2,24 @@
 .quire-page__content {
   font-size: 1.2em;
 }
-.quire-page__content .container .content *:not(sup) {
+.quire-page__content .container .content *:not(sup):not(sup a) {
   line-height: 1.5;
 }
-.quire-entry .quire-page__content .container .content *:not(sup) {
+.quire-entry .quire-page__content .container .content *:not(sup):not(sup a) {
   line-height: 1.5;
+}
+sup a {
+  line-height: 0;
 }
 @media print {  
   .quire-page__content {
     text-align: justify;
     font-size: 10.25pt;
   }
-  .quire-page__content .container .content *:not(sup) {
+  .quire-page__content .container .content *:not(sup):not(sup a) {
     line-height: 14pt !important;
   }
-  .quire-entry .quire-page__content .container .content *:not(sup) {
+  .quire-entry .quire-page__content .container .content *:not(sup):not(sup a) {
     line-height: 14pt !important;
   }
   .quire-page__content .container .content .backmatter p {
@@ -98,7 +101,19 @@
 }
 
 @media print {
+  /* Format page numbering for Plates section */
   #contents .menu-list ul > li:last-child {
+    max-width: 90%;
+  }
+  #contents .menu-list ul > li:last-child a::after {
+    content: leader(dotted) ' 'target-counter(attr(href, url), page);
+    margin-left: 6pt; 
+    margin-right: -10%;
+    // This border is a hack for PrinceXML which doesn't
+    // otherwise recognize the box sizing for some reason
+    border: 1pt solid transparent;
+  }
+  #contents .menu-list ul > li:last-child ul {
     display: none;
   }
   .quire-contents-list .menu-list .section-item.no-landing .list-header {
@@ -492,7 +507,9 @@
 
 /* Fill only one column on trailing page with very little text */
 @media print {
-  #catalogue-3 .quire-entry .quire-page__content {
+  #catalogue-3 .quire-entry .quire-page__content,
+  #catalogue-5 .quire-entry .quire-page__content,
+  #catalogue-17 .quire-entry .quire-page__content {
     column-fill: auto;
   }
 }
@@ -535,4 +552,17 @@
       color: #fff;
     }
   }
+}
+
+/* Shrink first image so that two profilesfit on the first page and all three 
+  profiles for cat 24 are on one page */
+@media print {
+  #profiles .quire-page__content figure:nth-child(1) img {
+    max-width: 4.5in;
+  }
+}
+
+/* Increase image viewer caption font size */
+.quire-entry__image .quire-image-control.quire-image-info > span.quire-image-info__wrap {
+  font-size: .875rem;
 }
