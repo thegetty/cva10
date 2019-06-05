@@ -26,7 +26,7 @@
           <p class="collection-link is-screen-only"><a href="{{ .link }}" target="_blank" title="J. Paul Getty Museum">{{ $.Site.Params.entryPageObjectLinkText }}</a></p>
           {{ end }}
           {{ if .bapd }}
-          <p class="bapd-link is-screen-only"><a href="{{ .bapd }}" target="_blank" title="Beazley Archive Pottery Database">View in the BAPD</a></p>
+          <p class="bapd-link is-screen-only"><a href="{{ .bapd }}" target="_blank" title="Beazley Archive Pottery Database">View in <em>BAPD</em></a></p>
           {{ end }}
           {{ if .plate_list }}
             {{- $institution := urlize (replace $.Site.Data.publication.cva.institution "." "") -}}
