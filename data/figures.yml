@@ -31,7 +31,7 @@ figure_list:
 
   - id: "86AE208-profile"
     src: 86AE208-profile.png
-    caption: "[86.AE.208 (no. 10)](/catalogue/10/)"
+    caption: "[86.AE.208 and 86.AE.210 (no. 10)](/catalogue/10/)"
     alt: "Line drawing profile view of the krater"
 
   - id: "78AE380-profile"
@@ -289,13 +289,7 @@ figure_list:
     caption: "79.AE.198, side A, detail showing inscription for Menelaos"
     alt: "A detail of the neck ring?, that includes a pattern, and a foot"
     description: "Attic Red-Figure Volute Krater; Attributed to Polygnotos (Greek (Attic), active 450–430 B.C.); Athens, Greece; about 445–430 B.C.; Terracotta; 28.8 × 47.7 cm (11 5/16 × 18 3/4 in.); 79.AE.198"
-
-  - id: "79AE198-detail-m"
-    src: objects/010324D5V1.jpg
-    caption: "79.AE.198, side B, detail showing [? TK]"
-    alt: "A small detail of the neck, that includes part of a person carrying a large stick and looking up"
-    description: "Attic Red-Figure Volute Krater; Attributed to Polygnotos (Greek (Attic), active 450–430 B.C.); Athens, Greece; about 445–430 B.C.; Terracotta; 28.8 × 47.7 cm (11 5/16 × 18 3/4 in.); 79.AE.198"
-
+    
   - id: "79AE198-back"
     src: objects/010324F2V1.jpg
     caption: "79.AE.198, side B"
@@ -394,7 +388,7 @@ figure_list:
 
   - id: "82AE143-back"
     src: objects/gml_012302F11V1.jpg
-    caption: "82.AE.143, side B82.AE.143, side view"
+    caption: "82.AE.143, side B"
     alt: "Another view of a vase, with the body decoration depicting three people in clothes"
     description: "Attic Red-Figure Column Krater; Attributed to the Painter of London E489; Athens, Greece, Europe; about 460 B.C.; Terracotta; 38.5 × 30.5 cm (15 3/16 × 12 in.); 82.AE.143"
 
@@ -616,25 +610,25 @@ figure_list:
 
   - id: "86AE208-front"
     src: objects/01405001.jpg
-    caption: "86.AE.208 and 86.AE.210, fragments from body of vessel (at left: 86.AE.210; at right: 86.AE.208)"
+    caption: "86.AE.208 and 86.AE.210, fragments from shoulder and body of vessel (at left: 86.AE.210; at right: 86.AE.208)"
     alt: "Two pottery fragments, one showing a person's head and some decoration, the other showing a person's body, some decoration, and another object"
     description: "86.AE.208, 86.AE.210"
 
   - id: "86AE208-back"
     src: objects/014050F1V1.jpg
-    caption: "86.AE.208 and 86.AE.210, interior view of fragments from body of vessel (at left: 86.AE.210; at right: 86.AE.208)"
+    caption: "86.AE.208 and 86.AE.210, interior view of fragments from shoulder and body of vessel (at left: 86.AE.210; at right: 86.AE.208)"
     alt: "The back side of the two pottery fragments"
     description: "86.AE.208, 86.AE.210"
 
   - id: "86AE2091-front"
     src: objects/01405201.jpg
-    caption: "86.AE.209.1 and 86.AE.209.2, fragments from body of vessel (at left: 86.AE.209.1; at right: 86.AE.209.2)"
+    caption: "86.AE.209.1 and 86.AE.209.2, fragments from body of vessel"
     alt: "Two pottery fragments, one mostly light brown, the other mostly black"
     description: "86.AE.209.1, 86.AE.209.2"
 
   - id: "86AE2091-back"
     src: objects/014052F1V1.jpg
-    caption: "86.AE.201.1 and 86.AE.209.2, interior view of fragments from body of vessel (at left: 86.AE.209.1; at right: 86.AE.209.2)"
+    caption: "86.AE.201.1 and 86.AE.209.2, interior view of fragments from body of vessel"
     alt: "Back of the two pottery fragments, one mostly black, the other mostly grey"
     description: "86.AE.209.1, 86.AE.209.2"
 
@@ -682,49 +676,49 @@ figure_list:
 
   - id: "87AE93-detail-a"
     src: objects/014998D27V1.jpg
-    caption: "87.AE.93, side A, detail of neck and volute"
+    caption: "87.AE.93, side A, detail of handle"
     alt: "A detail of one of the handles"
     description: 87.AE.93
 
   - id: "87AE93-detail-l"
     src: objects/014998D28V1.jpg
-    caption: "87.AE.93, detail around base"
+    caption: "87.AE.93, detail around base, Dionysos and Eros"
     alt: "Another detail of the foot of the vase, with some white showing and all the people in motion"
     description: 87.AE.93
 
   - id: "87AE93-detail-m"
     src: objects/014998D29V1.jpg
-    caption: "87.AE.93, detail around base"
+    caption: "87.AE.93, detail around base, two *komasts* approaching Dionysos"
     alt: "Smaller detail of the foot, with several people, the one in the middle draped in an animal skin and carrying a shield"
     description: 87.AE.93
 
   - id: "87AE93-detail-n"
     src: objects/014998D30V1.jpg
-    caption: "87.AE.93, detail around base"
+    caption: "87.AE.93, detail around base, dancing maenad and Silenos"
     alt: "Smaller detail of the foot, with several people, the one in the middle holding a staff upright"
     description: 87.AE.93
 
   - id: "87AE93-detail-o"
     src: objects/014998D31V1.jpg
-    caption: "87.AE.93, detail around base"
+    caption: "87.AE.93, detail around base, satyr and hare"
     alt: "Smaller detail of the foot, with several people and a hare on the right"
     description: 87.AE.93
 
   - id: "87AE93-detail-p"
     src: objects/014998D32V1.jpg
-    caption: "87.AE.93, detail around base"
+    caption: "87.AE.93, detail around base, satyr pursuing maenad"
     alt: "Smaller detail of the foot, with several people and a person chasing a hare in the middle"
     description: 87.AE.93
 
   - id: "87AE93-detail-q"
     src: objects/014998D33V1.jpg
-    caption: "87.AE.93, detail around base"
+    caption: "87.AE.93, detail around base, satyr with *keras*"
     alt: "Smaller detail of the foot, with several people and a person chasing a hare on the left"
     description: 87.AE.93
 
   - id: "87AE93-detail-r"
     src: objects/014998D34V1.jpg
-    caption: "87.AE.93, detail around base"
+    caption: "87.AE.93, detail around base, two dancing maenads and satyr"
     alt: "Smaller detail of the foot, with several people and a person reclining on the far right"
     description: 87.AE.93
 
@@ -778,37 +772,37 @@ figure_list:
 
   - id: "87AE93-detail-h"
     src: objects/014998F17V1.jpg
-    caption: "87.AE.93, base"
+    caption: "87.AE.93, side A, base"
     alt: "One detail of the foot of the vase, with some white showing and a seated person"
     description: 87.AE.93
 
   - id: "87AE93-detail-j"
     src: objects/014998F18V1.jpg
-    caption: "87.AE.93, base"
+    caption: "87.AE.93, side B, base"
     alt: "Another detail of the foot of the vase, with no white easily visible"
     description: 87.AE.93
 
   - id: "87AE93-detail-k"
     src: objects/014998F19V1.jpg
-    caption: "87.AE.93, base"
+    caption: "87.AE.93, side B/A, base"
     alt: "Another detail of the foot of the vase, with a little white showing on the right"
     description: 87.AE.93
 
   - id: "87AE93-detail-i"
     src: objects/014998F20V1.jpg
-    caption: "87.AE.93, base"
+    caption: "87.AE.93, side A/B, base"
     alt: "Another detail of the foot of the vase, with some white showing and all the people in motion"
     description: 87.AE.93
 
   - id: "87AE93-detail-t"
     src: objects/gml_014998D5V1.jpg
-    caption: "87.AE.93, detail of top of base"
+    caption: "87.AE.93, detail of top of base, griffin attacking Arimasp"
     alt: "Another detail of the top of the foot, showing what looks like a griffin with its head lunging toward a person on the ground"
     description: "Mixing Vessel with Adonis, Aphrodite, and Persephone; Attributed to the Meleager Painter (Greek (Attic), active 420–380 B.C.); Athens, Greece; 390–380 B.C.; Terracotta; 78.7 × 40.6 cm (31 × 16 in.); 87.AE.93"
 
   - id: "87AE93-detail-v"
     src: objects/014998D39V1.jpg
-    caption: "87.AE.93, detail of top of base"
+    caption: "87.AE.93, detail of top of base, youths and dog pursuing hare"
     alt: "A detail of the top of the foot, showing what looks like a griffin with its head pulled back, looking at a person on the ground"
     description: 87.AE.93
 
@@ -826,13 +820,13 @@ figure_list:
 
   - id: "98AE821-front"
     src: objects/13264101.jpg
-    caption: "98.AE.82.1–12, group of twelve small fragments belonging to neck of vessel"
+    caption: "98.AE.82.1–12, group of twelve small fragments belonging to vessel"
     alt: "Twelve tiny pottery fragments"
     description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
 
   - id: "98AE821-back"
     src: objects/132641F4V1.jpg
-    caption: "98.AE.82.1–12, interior view of group of twelve small fragments belonging to neck of vessel"
+    caption: "98.AE.82.1–12, interior view of group of twelve small fragments belonging to vessel"
     alt: "The backs of the twelve tiny pottery fragments"
     description: "98.AE.82.1, 98.AE.82.2, 98.AE.82.3, 98.AE.82.4, 98.AE.82.5, 98.AE.82.6, 98.AE.82.7, 98.AE.82.8, 98.AE.82.9, 98.AE.82.10, 98.AE.82.11, 98.AE.82.12"
 
@@ -916,13 +910,13 @@ figure_list:
 
   - id: "81AE161-detail-b"
     src: objects/gml_01153701-detail-b.jpg
-    caption: "81.AE.161, side A, detail of rim"
+    caption: "81.AE.161, side A, detail of neck"
     alt: "Detail of the vase's neck decoration that looks like heart-shaped leaves on a vine"
     description: 81.AE.161
 
   - id: "81AE161-detail-c"
     src: objects/gml_01153701-detail-c.jpg
-    caption: "81.AE.161, side A, detail of overhang of rim"
+    caption: "81.AE.161, side A, detail of rim"
     alt: "Detail of the vase's lip (?) showing wild animals"
     description: 81.AE.161
 
@@ -1048,18 +1042,18 @@ figure_list:
 
   - id: "87AE93-detail-s"
     src: objects/gml_014998D13V1.jpg
-    caption: "87.AE.93, detail of top of base"
+    caption: "87.AE.93, detail of top of base, youth attacking deer"
     alt: "Another detail of the top of the foot, showing a hare running away from a dog and a man"
     description: 87.AE.93
 
   - id: "87AE93-detail-u"
     src: objects/gml_014998D23V1.jpg
-    caption: "87.AE.93, detail of top of base"
+    caption: "87.AE.93, detail of top of base, youth wrestling bull"
     alt: "Another detail of the top of the foot, showing a person slaying a deer"
     description: 87.AE.93
 
   - id: "87AE93-detail-w"
     src: objects/gml_014998D24V1.jpg
-    caption: "87.AE.93, detail of top of base"
+    caption: "87.AE.93, detail of top of base, griffin attacking Arimasp"
     alt: "Another detail of the top of the foot, showing a person subduing a bull"
     description: 87.AE.93
