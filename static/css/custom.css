@@ -392,9 +392,6 @@ sup a {
 
 
 /* Use pre and code to maintain strict LOC Cataloguing in Publication format */
-.cip-data p {
-  margin-bottom: 0 !important;
-}
 .cip-data pre {
   background: transparent;
   padding: 0;
@@ -406,6 +403,11 @@ sup a {
   font-family: "Cardo", serif;
   font-size: 1em;
   line-height: 1.6 !important;
+}
+.cip-data pre,
+.cip-data code {
+  -webkit-font-smoothing: none;
+	-moz-osx-font-smoothing: none;
 }
 @media print {
   .cip-data pre code {
@@ -570,4 +572,9 @@ sup a {
 /* Narrower margin, noticed in list in cat. 19 */
 .quire-page__content .container .content ul {
   margin-left: 1rem;
+}
+
+/* Keep accession numbers from breaking across lines */
+.quire-page__content .content a[href*="getty.edu/art"]	{
+  white-space: nowrap;
 }
