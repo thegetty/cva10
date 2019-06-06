@@ -566,3 +566,8 @@ sup a {
 .quire-entry__image .quire-image-control.quire-image-info > span.quire-image-info__wrap {
   font-size: .875rem;
 }
+
+/* Narrower margin, noticed in list in cat. 19 */
+.quire-page__content .container .content ul {
+  margin-left: 1rem;
+}
