@@ -688,37 +688,37 @@ figure_list:
 
   - id: "87AE93-detail-m"
     src: objects/014998D29V1.jpg
-    caption: "87.AE.93, detail around base, two *komasts* approaching Dionysos"
+    caption: "87.AE.93, detail around base, two dancing maenads and satyr"
     alt: "Smaller detail of the foot, with several people, the one in the middle draped in an animal skin and carrying a shield"
     description: 87.AE.93
 
   - id: "87AE93-detail-n"
     src: objects/014998D30V1.jpg
-    caption: "87.AE.93, detail around base, dancing maenad and Silenos"
+    caption: "87.AE.93, detail around base, satyr with *keras*"
     alt: "Smaller detail of the foot, with several people, the one in the middle holding a staff upright"
     description: 87.AE.93
 
   - id: "87AE93-detail-o"
     src: objects/014998D31V1.jpg
-    caption: "87.AE.93, detail around base, satyr and hare"
+    caption: "87.AE.93, detail around base, satyr pursuing maenad"
     alt: "Smaller detail of the foot, with several people and a hare on the right"
     description: 87.AE.93
 
   - id: "87AE93-detail-p"
     src: objects/014998D32V1.jpg
-    caption: "87.AE.93, detail around base, satyr pursuing maenad"
+    caption: "87.AE.93, detail around base, satyr and hare"
     alt: "Smaller detail of the foot, with several people and a person chasing a hare in the middle"
     description: 87.AE.93
 
   - id: "87AE93-detail-q"
     src: objects/014998D33V1.jpg
-    caption: "87.AE.93, detail around base, satyr with *keras*"
+    caption: "87.AE.93, detail around base, dancing maenad and Silenos"
     alt: "Smaller detail of the foot, with several people and a person chasing a hare on the left"
     description: 87.AE.93
 
   - id: "87AE93-detail-r"
     src: objects/014998D34V1.jpg
-    caption: "87.AE.93, detail around base, two dancing maenads and satyr"
+    caption: "87.AE.93, detail around base, two *komasts* approaching Dionysos"
     alt: "Smaller detail of the foot, with several people and a person reclining on the far right"
     description: 87.AE.93
 
@@ -802,7 +802,7 @@ figure_list:
 
   - id: "87AE93-detail-v"
     src: objects/014998D39V1.jpg
-    caption: "87.AE.93, detail of top of base, youths and dog pursuing hare"
+    caption: "87.AE.93, detail of top of base, griffin attacking Arimasp"
     alt: "A detail of the top of the foot, showing what looks like a griffin with its head pulled back, looking at a person on the ground"
     description: 87.AE.93
 
@@ -1042,13 +1042,13 @@ figure_list:
 
   - id: "87AE93-detail-s"
     src: objects/gml_014998D13V1.jpg
-    caption: "87.AE.93, detail of top of base, youth attacking deer"
+    caption: "87.AE.93, detail of top of base, youths and dog pursuing hare"
     alt: "Another detail of the top of the foot, showing a hare running away from a dog and a man"
     description: 87.AE.93
 
   - id: "87AE93-detail-u"
     src: objects/gml_014998D23V1.jpg
-    caption: "87.AE.93, detail of top of base, youth wrestling bull"
+    caption: "87.AE.93, detail of top of base, youth attacking deer"
     alt: "Another detail of the top of the foot, showing a person slaying a deer"
     description: 87.AE.93
 
