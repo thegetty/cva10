@@ -511,7 +511,8 @@ sup a {
 @media print {
   #catalogue-3 .quire-entry .quire-page__content,
   #catalogue-5 .quire-entry .quire-page__content,
-  #catalogue-17 .quire-entry .quire-page__content {
+  #catalogue-17 .quire-entry .quire-page__content,
+  #catalogue-24 .quire-entry .quire-page__content {
     column-fill: auto;
   }
 }
@@ -577,4 +578,14 @@ sup a {
 /* Keep accession numbers from breaking across lines */
 .quire-page__content .content a[href*="getty.edu/art"]	{
   white-space: nowrap;
+}
+
+@media print {
+  .quire .quire__primary .section {
+    padding-bottom: 0;
+  }
+  p {
+    orphans: 3;
+    widows: 3;
+  }
 }
