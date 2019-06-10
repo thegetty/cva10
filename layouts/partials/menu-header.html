@@ -1,9 +1,20 @@
 {{/*
   Complete title block for publication.
 */}}
+
+{{- $pages := .Site.Pages -}}
+{{- $pages := where $pages "Params.online" "!=" "false" }}
+{{- $pages := where $pages ".Type" "!=" "data" -}}
+
+{{- range $index, $element := $pages -}}
+  {{- if eq $index  0 -}}
+    {{- $.Scratch.Set "homepage-link" .Permalink -}}
+  {{- end -}}     
+{{- end -}}
+
 <header class="quire-menu__header">
   {{ if ne .Kind "home" -}}
-  <a class="quire-menu__header__title-link" href="{{ .Site.BaseURL }}">
+  <a class="quire-menu__header__title-link" href='{{ $.Scratch.Get "homepage-link" }}' rel="home">
   {{- end }}
   <h4 class="quire-menu__header__title">
     <span class="visually-hidden">Site Title: </span>

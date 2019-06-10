@@ -542,11 +542,11 @@ object_list:
       - id: 87AE93-detail-a
       - id: 87AE93-top
       - id: 87AE93-detail-b
-      - id: 87AE93-detail-c
       - id: 87AE93-detail-d
+      - id: 87AE93-detail-c
       - id: 87AE93-detail-e
-      - id: 87AE93-detail-g
       - id: 87AE93-detail-f
+      - id: 87AE93-detail-g
       - id: 87AE93-detail-h
       - id: 87AE93-detail-i
       - id: 87AE93-detail-j

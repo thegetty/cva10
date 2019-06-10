@@ -392,9 +392,6 @@ sup a {
 
 
 /* Use pre and code to maintain strict LOC Cataloguing in Publication format */
-.cip-data p {
-  margin-bottom: 0 !important;
-}
 .cip-data pre {
   background: transparent;
   padding: 0;
@@ -406,6 +403,11 @@ sup a {
   font-family: "Cardo", serif;
   font-size: 1em;
   line-height: 1.6 !important;
+}
+.cip-data pre,
+.cip-data code {
+  -webkit-font-smoothing: none;
+	-moz-osx-font-smoothing: none;
 }
 @media print {
   .cip-data pre code {
@@ -509,7 +511,8 @@ sup a {
 @media print {
   #catalogue-3 .quire-entry .quire-page__content,
   #catalogue-5 .quire-entry .quire-page__content,
-  #catalogue-17 .quire-entry .quire-page__content {
+  #catalogue-17 .quire-entry .quire-page__content,
+  #catalogue-24 .quire-entry .quire-page__content {
     column-fill: auto;
   }
 }
@@ -565,4 +568,24 @@ sup a {
 /* Increase image viewer caption font size */
 .quire-entry__image .quire-image-control.quire-image-info > span.quire-image-info__wrap {
   font-size: .875rem;
+}
+
+/* Narrower margin, noticed in list in cat. 19 */
+.quire-page__content .container .content ul {
+  margin-left: 1rem;
+}
+
+/* Keep accession numbers from breaking across lines */
+.quire-page__content .content a[href*="getty.edu/art"]	{
+  white-space: nowrap;
+}
+
+@media print {
+  .quire .quire__primary .section {
+    padding-bottom: 0;
+  }
+  p {
+    orphans: 3;
+    widows: 3;
+  }
 }
