@@ -8,7 +8,7 @@ toc: false
 ---
 
 {{< q-class "backmatter" >}}
-The free online edition of this catalogue is available at http://www.getty.edu/publications/cva10. Also available are free PDF, EPUB, and MOBI downloads of the book, and CSV and JSON downloads of the object data from the catalogue.
+The free online edition of this catalogue is available at http://www.getty.edu/publications/cva10. Also available are free PDF, EPUB, and MOBI downloads of the book, CSV and JSON downloads of the object data, and JPG downloads of the catalogue images.
 
 © 2019 J. Paul Getty Trust
 
@@ -60,7 +60,7 @@ NK.4640.C6.U5 fasc. 23, etc.   738.3’82’0938074 s 88–12781
 [NK4624.B37]   	     [738.3’82’0938074019493]
 ISBN 0-89236-134-4 
 
-ISBN 978-1-60606-601-0 (fasc. 10; pbk.)
+ISBN 978-1-60606-601-0 (fasc. 10; hardcover)
 ISBN 978-1-60606-602-7 (fasc. 10; ebook)
 ISBN 978-1-60606-603-4 (fasc. 10; online)
 ```
@@ -70,7 +70,7 @@ ISBN 978-1-60606-603-4 (fasc. 10; online)
 
 {{< q-class "backmatter" >}}
 
-The J. Paul Getty Museum's prior *CVA* fascicules 1–9 are available for [free download](http://www.getty.edu/search/virtuallibrary/VirtualLibrary?title=&author=&keywords=&imprint=&type=&subject=&series=&series=cvsm&pg=1) in our Virtual Library.
+The J. Paul Getty Museum's prior *CVA* fascicules 1–9 are available for [free download](http://www.getty.edu/search/virtuallibrary/VirtualLibrary?title=&author=&keywords=&imprint=&type=&subject=&series=&series=cvsm&pg=1) in our Virtual Library at www.getty.edu/publications/virtuallibrary.
 
 Also from Getty Publications:
 
