@@ -268,7 +268,7 @@ figure_list:
 
   - id: "79AE198-detail-i"
     src: objects/010324D1V1.jpg
-    caption: "79.AE.198, side A, detail showing inscription for Ajax"
+    caption: "79.AE.198, side A, detail showing inscriptions for Ajax and Kassandra"
     alt: "A detail of the neck ring?, showing a pattern and a black area with a lot of damage"
     description: "Attic Red-Figure Volute Krater; Attributed to Polygnotos (Greek (Attic), active 450–430 B.C.); Athens, Greece; about 445–430 B.C.; Terracotta; 28.8 × 47.7 cm (11 5/16 × 18 3/4 in.); 79.AE.198"
 
@@ -280,7 +280,7 @@ figure_list:
 
   - id: "79AE198-detail-l"
     src: objects/010324D3V1.jpg
-    caption: "79.AE.198, side A, neck, detail showing three letters between satry and maenad"
+    caption: "79.AE.198, side A, neck, detail showing three letters between satyr and maenad"
     alt: "A small detail from the neck, that includes a ring with dots"
     description: "Attic Red-Figure Volute Krater; Attributed to Polygnotos (Greek (Attic), active 450–430 B.C.); Athens, Greece; about 445–430 B.C.; Terracotta; 28.8 × 47.7 cm (11 5/16 × 18 3/4 in.); 79.AE.198"
 
@@ -1054,6 +1054,6 @@ figure_list:
 
   - id: "87AE93-detail-w"
     src: objects/gml_014998D24V1.jpg
-    caption: "87.AE.93, detail of top of base, griffin attacking Arimasp"
+    caption: "87.AE.93, detail of top of base, youth wrestling bull"
     alt: "Another detail of the top of the foot, showing a person subduing a bull"
     description: 87.AE.93

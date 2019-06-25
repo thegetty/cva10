@@ -26,7 +26,7 @@ object_list:
       - id: 86AE205-top
       - id: 86AE205-detail-a
       - id: 86AE205-detail-b
-      - id: c
+      - id: 86AE205-detail-c
       - id: 86AE205-detail-d
 
   - id: 2
