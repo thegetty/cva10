@@ -180,6 +180,7 @@ window.slideImage = direction => {
             prevImage.removeClass('visually-hidden');
         }
     }
+    return false;
 };
 
 /**

@@ -581,7 +581,7 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
 
             .quire-image-info {
               @media screen and (min-width: $widescreen) {
-                bottom: 53px;
+                // bottom: 53px;
               }
             }
           }
