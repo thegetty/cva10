@@ -586,6 +586,14 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
             }
           }
         }
+
+        &.fullscreen {
+          .quire-entry__image__group-container {
+            figure {
+              height: 100vh;
+            }
+          }
+        }
       }
     }
 

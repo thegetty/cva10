@@ -17,6 +17,7 @@ import quicklink from 'quicklink';
 import $ from 'jquery';
 import 'velocity-animate';
 import './soundcloud-api';
+import fullscreen from './fullscreen'
 
 // Modules (feel free to define your own and import here)
 import {
@@ -31,6 +32,8 @@ import Navigation from './navigation';
 import Popup from './popup';
 import DeepZoom from './deepzoom';
 import Map from './map';
+
+const mapArr = [];
 
 /**
  * toggleMenu
@@ -139,49 +142,9 @@ function sliderSetup() {
         });
     preloadImages(images, () => {
         mapSetup('.quire-map-entry');
-        deepZoomSetup('.quire-deepzoom-entry');
+        deepZoomSetup('.quire-deepzoom-entry', mapArr);
     });
 }
-
-/**
- * slideImage
- * @description Slide to previous or next catalogue object image in a loop.
- * Supports any number of figures per object, and any number of objects
- * per page.
- */
-window.slideImage = direction => {
-    let slider = $('.quire-entry__image__group-container');
-    let firstImage = slider.children('.first-image');
-    let lastImage = slider.children('.last-image');
-    let currentImage = slider.children('.current-image');
-    let nextImage = currentImage.next('figure');
-    let prevImage = currentImage.prev('figure');
-    stopVideo(document.querySelector('.current-image'));
-    currentImage.hide();
-    currentImage.removeClass('current-image');
-    if (direction == 'next') {
-        if (currentImage.hasClass('last-image')) {
-            firstImage.addClass('current-image');
-            firstImage.css('display', 'flex');
-            firstImage.removeClass('visually-hidden');
-        } else {
-            nextImage.addClass('current-image');
-            nextImage.css('display', 'flex');
-            nextImage.removeClass('visually-hidden');
-        }
-    } else if (direction == 'prev') {
-        if (currentImage.hasClass('first-image')) {
-            lastImage.addClass('current-image');
-            lastImage.css('display', 'flex');
-            lastImage.removeClass('visually-hidden');
-        } else {
-            prevImage.addClass('current-image');
-            prevImage.css('display', 'flex');
-            prevImage.removeClass('visually-hidden');
-        }
-    }
-    return false;
-};
 
 /**
  * search
@@ -314,7 +277,7 @@ function popupSetup(figureModal) {
         Popup('.q-figure__wrapper');
     } else {
         mapSetup('.quire-map');
-        deepZoomSetup('.quire-deepzoom');
+        deepZoomSetup('.quire-deepzoom', mapArr);
     }
 }
 
@@ -333,10 +296,10 @@ function mapSetup(ele) {
  * @description
  * Render deepzoom or iiif if Popup @false
  */
-function deepZoomSetup(ele) {
+function deepZoomSetup(ele, mapArr) {
     return [...document.querySelectorAll(ele)].forEach(v => {
         let id = v.getAttribute('id');
-        new DeepZoom(id);
+        new DeepZoom(id, mapArr);
     });
 }
 
@@ -392,6 +355,90 @@ function setDate() {
     $date.text(formattedDate);
 }
 
+  /**
+   * validateSize
+   * @description
+   * invalidateSize map as a promise
+   * @param {object} map must be an integer
+  */
+function validateSize(map) {
+    return new Promise((resolve, reject) => {
+      if (!map) reject(new Error('No map!'))
+      setTimeout(() => {
+        resolve(map.invalidateSize());
+      }, 250);
+    });
+  }
+
+/**
+ * slideImage
+ * @description Slide to previous or next catalogue object image in a loop.
+ * Supports any number of figures per object, and any number of objects
+ * per page. Also pass in the maps array to invalidate size after transition.
+ */
+function slideImage (direction, event, mapArr) {
+    event.stopPropagation()
+    let deepzoomCont = $(".leaflet-image-layer")
+    deepzoomCont.hide()
+    let slider = $('.quire-entry__image__group-container');
+    let firstImage = slider.children('.first-image');
+    let lastImage = slider.children('.last-image');
+    let currentImage = slider.children('.current-image');
+    let nextImage = currentImage.next('figure');
+    let prevImage = currentImage.prev('figure');
+    stopVideo(document.querySelector('.current-image'));
+    currentImage.hide();
+    currentImage.removeClass('current-image');
+    if (direction == 'next') {
+        if (currentImage.hasClass('last-image')) {
+            firstImage.addClass('current-image');
+            firstImage.css('display', 'flex');
+            firstImage.removeClass('visually-hidden');
+        } else {
+            nextImage.addClass('current-image');
+            nextImage.css('display', 'flex');
+            nextImage.removeClass('visually-hidden');
+        }
+    } else if (direction == 'prev') {
+        if (currentImage.hasClass('first-image')) {
+            lastImage.addClass('current-image');
+            lastImage.css('display', 'flex');
+            lastImage.removeClass('visually-hidden');
+        } else {
+            prevImage.addClass('current-image');
+            prevImage.css('display', 'flex');
+            prevImage.removeClass('visually-hidden');
+        }
+    }
+
+    mapArr.forEach(v => {
+      validateSize(v)
+        .then(()=>{
+          deepzoomCont.fadeIn({
+              duration: "fast"
+            })
+        })
+        .catch(err=>console.log(err)) 
+    });
+};
+
+/**
+ * @description toggle fullscreen for entry leaflet images
+ * Also pass in the maps array to invalidate size after transition.
+ */
+function toggleFullscreen(mapArr) {
+    const el = document.getElementById('quire-entry__image');
+    let toggleFullscreen = document.getElementById('toggleFullscreen')
+    toggleFullscreen.addEventListener('click', event => {
+        if (fullscreen.enabled && el) {
+          el.classList.toggle('fullscreen');
+          event.target.classList.toggle('fullscreen');
+          fullscreen.toggle(el);
+          mapArr.forEach(v => {validateSize(v).catch(err=>console.log(err))});
+        }
+    });
+  }
+
 /**
  * pageSetup
  * @description This function is called after each smoothState reload.
@@ -404,7 +451,13 @@ function pageSetup() {
     sliderSetup();
     navigationSetup();
     popupSetup(figureModal);
+    toggleFullscreen(mapArr)
     // smoothScroll();
+    // Wire up event listeners here, so we can pass in the maps array
+    const prev = document.getElementById("prev-image");   
+    const next = document.getElementById("next-image");
+    if (prev) prev.addEventListener("click", e => slideImage('prev',e, mapArr), false);
+    if (next) next.addEventListener("click", e => slideImage('next',e, mapArr), false);
 }
 
 /**

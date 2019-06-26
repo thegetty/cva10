@@ -2,10 +2,9 @@
 
 import L from "leaflet";
 import "leaflet-iiif";
-import "leaflet-fullscreen";
-
 class DeepZoom {
-  constructor(id) {
+  // add map array to access map objects outside of Deepzoom class
+  constructor(id, mapArr) {
     this.el = id;
 
     // remove and refresh before init
@@ -44,6 +43,8 @@ class DeepZoom {
             max: 5
           };
           this.map = this.createMap(zoom);
+          // add map objects to array
+          mapArr.push(this.map)
           if ($(`#${this.el}`).data("catalogue-entry") === undefined) {
             // @ts-ignore
             window.mapID = this.map;
@@ -97,6 +98,21 @@ class DeepZoom {
   /**
    * runMapTimeouts
    * @description
+   * invalidateSize map as a promise
+   * @param {object} map must be an integer
+  */
+  validateSize(map) {
+    return new Promise((resolve, reject) => {
+      if (!map) reject(new Error('No map!'))
+      setTimeout(() => {
+        resolve(map.invalidateSize());
+      }, 250);
+    });
+  }
+
+  /**
+   * runMapTimeouts
+   * @description
    * run map timeout functions
    * @param {object} map must be an integer
    */
@@ -104,10 +120,6 @@ class DeepZoom {
     setTimeout(() => {
       map.invalidateSize();
     }, 100);
-
-    this.map.on("fullscreenchange", () => {
-      map.invalidateSize();
-    });
 
     $(window).on("resize", event => {
       map.invalidateSize();
@@ -133,17 +145,13 @@ class DeepZoom {
   }
 
   createMap(zoom) {
-    console.log(zoom);
     return L.map(this.el, {
       center: [0, 0],
       crs: L.CRS.Simple,
       zoom: zoom.default,
       minZoom: zoom.min,
       maxZoom: zoom.max,
-      renderer: L.canvas(),
-      fullscreenControl: {
-        pseudoFullscreen: false // if true, fullscreen to page width and height
-      }
+      renderer: L.canvas()
     });
   }
 
