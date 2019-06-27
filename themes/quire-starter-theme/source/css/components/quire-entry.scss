@@ -173,7 +173,7 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
       }
     }
 
-    img {
+    &.fullscreen img {
       margin: 0 auto;
       max-height: calc(100vh - 6rem - 3rem);
 
@@ -588,6 +588,7 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
         }
 
         &.fullscreen {
+          width: 100vw;
           .quire-entry__image__group-container {
             figure {
               height: 100vh;
