@@ -46,10 +46,10 @@
       background-color: transparent;
     }
   }
-  
+
   &__secondary {
     background-color: $quire-menu-color;
-    padding: 1.25em;
+    /* padding: 1.25em; */
 
     @include foreground-color($quire-menu-color, $quire-menu-text-color);
     .title {
@@ -62,10 +62,6 @@
   // Styles when JS is not supported; menu at bottom
   &.no-js {
     min-height: 100vh;
-
-    .quire__primary {
-
-    }
 
     .quire__secondary {
       width: 100%;
@@ -96,7 +92,7 @@
           color: $print-text-color;
         }
       }
-      
+
       .section {
         padding-left: 0;
         padding-right: 0;
@@ -135,7 +131,7 @@
 
       &.is-expanded {
         overflow-y: scroll;
-        transform: translate3d(0, 0 ,0);
+        transform: translate3d(0, 0, 0);
         width: calc(#{$quire-menu-width} - 2em);
         // width: calc(100% - 3rem);
         @media screen and (max-width: $quire-menu-width) {
@@ -150,16 +146,24 @@
           // right: $quire-menu-width;
           // width: calc(100% - #{$quire-menu-width});
           // transform: translate3d($quire-menu-width, 0, 0);
-          transform: translate3d(calc(-#{$quire-menu-width} + 2em), 0 ,0);
+          transform: translateX(calc(-#{$quire-menu-width} + 2em));
+          -ms-transform: translateX(-#{$quire-menu-width}) translateX(2em);
           // position: fixed;
-          // transform: translate3d(-352px, 0 ,0);
+          // transform: translate3d(-352px, 0, 0);
           @media screen and (max-width: $quire-menu-width) {
             // right: $quire-menu-width;
             // width: calc(100vh - #{$quire-menu-width});
-            transform: translate3d(calc(-100% + 3rem), 0 ,0);
+            transform: translateX(calc(-100% + 3rem));
+            -ms-transform: translateX(-100%) translateX(3em);
             // right: calc(100vw - #{$navbar-height});
             // transform: translate3d(- $quire-menu-width, 0, 0);
             // width: #{$navbar-height};
+          }
+          .quire-navbar {
+            -ms-transform: translateX(-#{$quire-menu-width}) translateX(2em);
+            @media screen and (max-width: $quire-menu-width) {
+              -ms-transform: translateX(-100%) translateX(3em);
+            }
           }
         }
       }
@@ -176,9 +180,13 @@
       height: 100%;
     }
 
-    &__secondary { display: none; }
+    &__secondary {
+      display: none;
+    }
   }
 }
 
-
-
+// overflow does not need to be set on overflow scroll ?
+html {
+  overflow: auto;
+}

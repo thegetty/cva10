@@ -3,32 +3,28 @@ publish = "site"
 command = "npm run build"
 
 [context.production.environment]
-HUGO_VERSION = "0.55.4"
+HUGO_VERSION = "0.48"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
-NPM_VERSION = "6.4.1"
 
 [context.split1]
 command = "npm run build"
 
 [context.split1.environment]
-HUGO_VERSION = "0.55.4"
+HUGO_VERSION = "0.48"
 HUGO_ENV = "production"
-NPM_VERSION = "6.4.1"
 
 [context.deploy-preview]
 command = "npm run build"
 
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.55.4"
-NPM_VERSION = "6.4.1"
+HUGO_VERSION = "0.48"
 
 [context.branch-deploy]
 command = "npm run build"
 
 [context.branch-deploy.environment]
-HUGO_VERSION = "0.55.4"
-NPM_VERSION = "6.4.1"
+HUGO_VERSION = "0.48"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
