@@ -262,6 +262,7 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
         opacity: 1;
         top: 50%;
         transform: translateY(-50%);
+        cursor: pointer;
       }
 
       &--next-image {
@@ -280,6 +281,7 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
         opacity: 1;
         top: 50%;
         transform: translateY(-50%);
+        cursor: pointer;
       }
 
       svg {

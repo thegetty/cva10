@@ -11,9 +11,10 @@ import 'intersection-observer';
 import 'leaflet-fullscreen/dist/leaflet.fullscreen.css';
 import '../css/application.scss';
 import 'leaflet/dist/leaflet.css';
-import quicklink from 'quicklink';
+// import quicklink from 'quicklink';
 
 // JS Libraries (add them to package.json with `npm install [library]`)
+import 'babel-polyfill';
 import $ from 'jquery';
 import 'velocity-animate';
 import './soundcloud-api';
@@ -21,11 +22,8 @@ import fullscreen from './fullscreen'
 
 // Modules (feel free to define your own and import here)
 import {
-    smoothScroll,
-    enableScroll,
-    disableScroll,
     preloadImages,
-    stopVideo,
+    stopVideo
 } from './helper';
 import Search from './search';
 import Navigation from './navigation';
@@ -48,7 +46,7 @@ window.toggleMenu = () => {
     let menu = document.getElementById('site-menu');
     document.getElementsByClassName;
     let menuAriaStatus = menu.getAttribute('aria-expanded');
-    menu.classList.toggle('is-expanded');
+    menu.classList.toggle('is-expanded', !menu.classList.contains('is-expanded'));
     if (menuAriaStatus === 'true') {
         // nav.style.top = ``
         // enableScroll(primary);
@@ -97,7 +95,7 @@ window.toggleSearch = () => {
     let searchControls = document.getElementById('js-search');
     let searchInput = document.getElementById('js-search-input');
     let searchAriaStatus = searchControls.getAttribute('aria-expanded');
-    searchControls.classList.toggle('is-active');
+    searchControls.classList.toggle('is-active', !searchControls.classList.contains('is-active'));
     if (searchAriaStatus === 'true') {
         searchControls.setAttribute('aria-expanded', 'false');
     } else {
@@ -198,7 +196,7 @@ function globalSetup() {
     var body = document.getElementsByTagName('body')[0];
 
     if (classNames.length) classNames.push('on-device');
-    if (body.classList) body.classList.add.apply(body.classList, classNames);
+    // if (body) body.classList.add(...classNames);
     loadSearchData();
     scrollToHash();
 }
@@ -308,7 +306,7 @@ function deepZoomSetup(ele, mapArr) {
  * Adding GoogleChromeLabs quicklinks https://github.com/GoogleChromeLabs/quicklink
  * For faster subsequent page-loads by prefetching in-viewport links during idle time
  */
-function quickLinksSetup() {
+/* function quickLinksSetup() {
     let links = [...document.getElementsByTagName('a')];
     links = links.filter(a => {
         return a.hostname === window.location.hostname;
@@ -325,7 +323,7 @@ function quickLinksSetup() {
             uri => uri.includes('#'),
         ],
     });
-}
+} */
 
 /**
  * @description
@@ -431,8 +429,8 @@ function toggleFullscreen(mapArr) {
     let toggleFullscreen = document.getElementById('toggleFullscreen')
     toggleFullscreen.addEventListener('click', event => {
         if (fullscreen.enabled && el) {
-          el.classList.toggle('fullscreen');
-          event.target.classList.toggle('fullscreen');
+          el.classList.toggle('fullscreen', !el.classList.contains('fullscreen'));
+          event.target.classList.toggle('fullscreen', !event.target.classList.contains('fullscreen'));
           fullscreen.toggle(el);
           mapArr.forEach(v => {validateSize(v).catch(err=>console.log(err))});
         }
@@ -446,7 +444,7 @@ function toggleFullscreen(mapArr) {
  */
 function pageSetup() {
     setDate();
-    quickLinksSetup();
+    // quickLinksSetup();
     activeMenuPage();
     sliderSetup();
     navigationSetup();
