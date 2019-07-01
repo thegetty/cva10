@@ -270,8 +270,8 @@
           bleed: .125in;
           prince-trim: .25in;
           marks: crop;
-          margin-top: .5in;
-          margin-bottom: .75in;
+          margin-top: .625in;
+          margin-bottom: .625in;
           margin-left: .25in;
           margin-right: .25in;
           text-transform: uppercase;
@@ -294,6 +294,7 @@
           @top-left {
             content: string(fascicule);
             margin-left: .25in;
+            padding-top: .0625in;
           }
           @top-right {
             content: string(platenumber);
@@ -302,14 +303,17 @@
             font-size: 1.5em;
             margin-right: .25in;
             color: #000;
+            padding-top: .0625in;
           }
           @bottom-left {
             content: string(country-fascicule);
             margin-left: .25in;
+            padding-bottom: .0625in;
           }
           @bottom-right {
             content: string(typology);
             margin-right: .25in;
+            padding-bottom: .0625in;
           }    
         }
         @page:left {

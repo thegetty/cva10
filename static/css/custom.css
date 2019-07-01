@@ -589,3 +589,16 @@ sup a {
     widows: 3;
   }
 }
+
+/* Add space before last three table rows in the Abbreviations */
+tr#diam\. td {
+  padding-top: 2rem;
+}
+@media print {
+  tr#diam\. {
+    page-break-before: always;
+  }
+  tr#diam\. td {
+    padding-top: .5em;
+  }
+}

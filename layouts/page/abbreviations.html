@@ -20,7 +20,7 @@
         <table>
           <tbody>
         {{- range $.Site.Data.abbreviations.listing -}}
-          <tr><td>{{ .abbreviation | markdownify }}</td><td>{{ .citation | markdownify }}</td></tr>
+          <tr id="{{ .abbreviation | urlize }}"><td>{{ .abbreviation | markdownify }}</td><td>{{ .citation | markdownify }}</td></tr>
         {{ end }}
           </tbody>
         </table>

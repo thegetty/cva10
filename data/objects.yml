@@ -26,7 +26,7 @@ object_list:
       - id: 86AE205-top
       - id: 86AE205-detail-a
       - id: 86AE205-detail-b
-      - id: c
+      - id: 86AE205-detail-c
       - id: 86AE205-detail-d
 
   - id: 2
@@ -187,7 +187,7 @@ object_list:
     plates: "534–36"
     plate_list: 534, 535, 536
     accession_number: 81.AE.37
-    sort: 81AE37
+    sort: 81AE037
     link: http://www.getty.edu/art/collection/objects/9407/
     bapd: http://www.beazley.ox.ac.uk/record/1B2592D0-F5D9-4A9B-8EEE-CDAA83C76C72
     bareiss_number:
@@ -342,7 +342,7 @@ object_list:
     plates: "547, 5–6"
     plate_list: 547
     accession_numbers: 79.AE.95.12 and 79.AE.95.13
-    sort: 79AE9512
+    sort: 79AE09512
     link: http://www.getty.edu/art/collection/objects/20062/
     bareiss_number:
     fabric: Athenian
