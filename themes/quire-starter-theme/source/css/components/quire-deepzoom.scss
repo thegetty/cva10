@@ -156,13 +156,16 @@ div.leaflet-control {
     a {
       background-position: top;
       box-shadow: none;
-      background-image: url("../img/fullscreen-leaflet.png");
+      background-image: $fullscreen-button-img;
       &.fullscreen {
         background-position-y: bottom;
       }
       &:hover {
         background-color: transparent;
       }
+    }
+    @media print {
+      display: none;
     }
   }
 }

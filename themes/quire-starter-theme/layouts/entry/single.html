@@ -39,7 +39,7 @@ a single image or object needs to be featured prominently.\
   >
     <a
     id="toggleFullscreen" 
-    class="leaflet-control-fullscreen-button leaflet-bar-part" 
+    class="remove-from-epub leaflet-control-fullscreen-button leaflet-bar-part" 
     href="#" 
     title="View Fullscreen" 
     style="outline: none;">
@@ -54,7 +54,7 @@ a single image or object needs to be featured prominently.\
         {{ range where $.Site.Data.objects.object_list "id" "eq" .id }}
         <div class="quire-entry__image__group-container">
           {{ if gt (len .figure) 1 -}}
-          {{ if ne $.Site.Params.pdf true }}
+          {{ if ne $.Site.Params.pdf true }} 
         <button class="remove-from-epub quire-image-control quire-image-control--prev-image" id="prev-image" title="Previous image"></button>
         <button class="remove-from-epub quire-image-control quire-image-control--next-image" id="next-image" title="Next image"></button>
           {{ end }}
