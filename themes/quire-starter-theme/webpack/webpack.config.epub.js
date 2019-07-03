@@ -44,7 +44,8 @@ module.exports = {
         test: /\.scss$/,
         exclude: [
           /node_modules/,
-          path.join(PATHS.build, "css", "application.scss")
+          path.join(PATHS.source, "css", "application.scss"),
+          path.join(PATHS.source, "css", "variables.scss")
         ],
         use: [
           "style-loader",
@@ -64,6 +65,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
+        exclude: [path.join(PATHS.build, "css", "application.css")],
         use: [
           "style-loader",
           MiniCssExtractPlugin.loader,

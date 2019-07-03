@@ -4,6 +4,50 @@
 // Custom font declarations (if any) can be imported here
 
 ////
+// Cardo
+// https://fonts.google.com/specimen/Cardo
+// http://scholarsfonts.net/cardofnt.html
+// Open Font License 1.1 (https://scripts.sil.org/OFL)
+//
+// Cardo Regular
+@font-face {
+  font-family: "Cardo";
+  src: url("../fonts/cardo/cardo-regular.eot");
+  src: url("../fonts/cardo/cardo-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/cardo/cardo-regular.woff2") format("woff2"),
+    url("../fonts/cardo/cardo-regular.woff") format("woff"),
+    url("../fonts/cardo/cardo-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Cardo Italic
+@font-face {
+  font-family: "Cardo";
+  src: url("../fonts/cardo/cardo-italic.eot");
+  src: url("../fonts/cardo/cardo-italic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/cardo/cardo-italic.woff2") format("woff2"),
+    url("../fonts/cardo/cardo-italic.woff") format("woff"),
+    url("../fonts/cardo/cardo-italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+// Cardo Bold
+@font-face {
+  font-family: "Cardo";
+  src: url("../fonts/cardo/cardo-bold.eot");
+  src: url("../fonts/cardo/cardo-bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/cardo/cardo-bold.woff2") format("woff2"),
+    url("../fonts/cardo/cardo-bold.woff") format("woff"),
+    url("../fonts/cardo/cardo-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* 
+////
 // IBM Plex Sans Condensed
 // https://github.com/IBM/plex
 // Open Font License 1.1 (https://scripts.sil.org/OFL)
@@ -166,6 +210,6 @@
 * Load material icon font
 */
 
-$material-icons-font-path: '~material-icons/iconfont/';
+/* $material-icons-font-path: '~material-icons/iconfont/';
 
-@import '~material-icons/iconfont/material-icons.scss';
+@import '~material-icons/iconfont/material-icons.scss'; */

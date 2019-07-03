@@ -1,10 +1,6 @@
 ---
 title: About
-type: page
 weight: 500
-pdf: false
-epub: false
-search: false
 ---
 
 Cataloging some hundred thousand examples of ancient Greek painted pottery held in collections around the world, the authoritative *Corpus Vasorum Antiquorum* (Corpus of Ancient Vases) is the oldest research project of the Union Académique Internationale. Nearly four hundred volumes have been published since the first fascicule appeared in 1922. 
