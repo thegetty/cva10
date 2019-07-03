@@ -1,10 +1,9 @@
-const path = require('path');
-const webpack = require('webpack');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const autoprefixer = require('autoprefixer');
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const path = require("path");
+const webpack = require("webpack");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const autoprefixer = require("autoprefixer");
 const ImageminPlugin = require("imagemin-webpack");
 const imageminGifsicle = require("imagemin-gifsicle");
 const imageminJpegtran = require("imagemin-jpegtran");
@@ -12,95 +11,96 @@ const imageminOptipng = require("imagemin-optipng");
 const imageminSvgo = require("imagemin-svgo");
 
 const PATHS = {
-  source: path.join(__dirname, '../source'),
-  build: path.join(__dirname, '../static')
+  source: path.join(__dirname, "../source"),
+  build: path.join(__dirname, "../static")
 };
 
-// the path(s) that should be cleaned
-let pathsToClean = [
-  path.join(__dirname, '../img'), path.join(__dirname, '../fonts')
-]
+const ASSET_PATH = process.env.ASSET_PATH || "/";
 
-// the clean options to use
-let cleanOptions = {
-  verbose: false,
-  watch: false,
-  allowExternal: true
-}
+console.log(ASSET_PATH);
 
 module.exports = {
-  mode: 'production',
+  mode: "production",
   entry: {
-    source: path.join(PATHS.source, 'js', 'application.js')
+    source: path.join(PATHS.source, "js", "application.js")
   },
   output: {
     path: PATHS.build,
-    publicPath: "/",
-    filename: path.join('js', 'application.js')
+    publicPath: ASSET_PATH,
+    filename: path.join("js", "application.js")
   },
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
-            presets: ['@babel/preset-env']
+            presets: ["@babel/preset-env"]
           }
         }
       },
       {
         test: /\.scss$/,
-        exclude: [/node_modules/, path.join(PATHS.build, 'css', 'epub.scss')],
-        use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader',
+        exclude: [/node_modules/, path.join(PATHS.build, "css", "epub.scss")],
+        use: [
+          "style-loader",
+          MiniCssExtractPlugin.loader,
+          "css-loader",
           {
-            loader: 'postcss-loader',
+            loader: "postcss-loader",
             options: {
               autoprefixer: {
-                browsers: ['last 3 versions']
+                browsers: ["last 3 versions"]
               },
-              plugins: () => [
-                autoprefixer
-              ]
+              plugins: () => [autoprefixer]
             }
-          }, 'sass-loader'
+          },
+          "sass-loader"
         ]
       },
       {
         test: /\.css$/,
-        use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader',
+        use: [
+          "style-loader",
+          MiniCssExtractPlugin.loader,
+          "css-loader",
           {
-            loader: 'postcss-loader',
+            loader: "postcss-loader",
             options: {
               autoprefixer: {
-                browsers: ['last 3 versions']
+                browsers: ["last 3 versions"]
               },
-              plugins: () => [
-                autoprefixer
-              ]
+              plugins: () => [autoprefixer]
             }
-          }, 'sass-loader'
+          },
+          "sass-loader"
         ]
       },
       {
         test: /\.(jpg|png|gif|svg)$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'img/'
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "img/"
+            }
           }
-        }]
+        ]
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'fonts/'
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "fonts/"
+            }
           }
-        }]
+        ]
       }
     ]
   },
@@ -122,8 +122,8 @@ module.exports = {
         default: false,
         commons: {
           test: /[\\/]node_modules[\\/]/,
-          name: 'vendor_app',
-          chunks: 'all',
+          name: "vendor_app",
+          chunks: "all",
           minChunks: 2
         }
       }
@@ -131,13 +131,12 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'css/application.css'
+      filename: "css/application.css"
     }),
-    new CleanWebpackPlugin(pathsToClean, cleanOptions),
     new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery'
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery"
     }),
     // Make sure that the plugin is after any plugins that add images, example `CopyWebpackPlugin`
     new ImageminPlugin({

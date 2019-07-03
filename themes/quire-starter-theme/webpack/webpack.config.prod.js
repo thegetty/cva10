@@ -3,7 +3,6 @@ const webpack = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 const autoprefixer = require("autoprefixer");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
 const ImageminPlugin = require("imagemin-webpack");
 const imageminGifsicle = require("imagemin-gifsicle");
 const imageminJpegtran = require("imagemin-jpegtran");
@@ -16,16 +15,6 @@ const PATHS = {
 };
 
 const ASSET_PATH = process.env.ASSET_PATH || "/";
-
-// the clean options to use
-let cleanOptions = {
-  dry: false,
-  dangerouslyAllowCleanPatternsOutsideProject: true,
-  cleanOnceBeforeBuildPatterns: [
-    path.join(__dirname, "../img"),
-    path.join(__dirname, "../fonts")
-  ]
-};
 
 module.exports = {
   mode: "production",
@@ -140,7 +129,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "css/application.css"
     }),
-    new CleanWebpackPlugin(cleanOptions),
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",

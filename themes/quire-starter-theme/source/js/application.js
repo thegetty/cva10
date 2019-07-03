@@ -7,29 +7,25 @@
  * responsible for building all CSS and JS assets for the theme.
  */
 // Stylesheets
-import 'intersection-observer';
-import 'leaflet-fullscreen/dist/leaflet.fullscreen.css';
-import '../css/application.scss';
-import 'leaflet/dist/leaflet.css';
-// import quicklink from 'quicklink';
+import "intersection-observer";
+import "leaflet-fullscreen/dist/leaflet.fullscreen.css";
+import "../css/application.scss";
+import "leaflet/dist/leaflet.css";
+import quicklink from "quicklink";
 
 // JS Libraries (add them to package.json with `npm install [library]`)
-import 'babel-polyfill';
-import $ from 'jquery';
-import 'velocity-animate';
-import './soundcloud-api';
-import fullscreen from './fullscreen'
+import "babel-polyfill";
+import $ from "jquery";
+import "velocity-animate";
+import "./soundcloud-api";
 
 // Modules (feel free to define your own and import here)
-import {
-    preloadImages,
-    stopVideo
-} from './helper';
-import Search from './search';
-import Navigation from './navigation';
-import Popup from './popup';
-import DeepZoom from './deepzoom';
-import Map from './map';
+import { preloadImages, stopVideo, toggleFullscreen } from "./helper";
+import Search from "./search";
+import Navigation from "./navigation";
+import Popup from "./popup";
+import DeepZoom from "./deepzoom";
+import Map from "./map";
 
 const mapArr = [];
 
@@ -39,28 +35,22 @@ const mapArr = [];
  * This function is bound to the global window object so it can be called from
  * templates without additional binding.
  */
-window.toggleMenu = () => {
-    let nav = document.querySelector('.quire-navbar');
-    let primary = document.querySelector('.quire__primary');
-    // nav.style.top = `${window.scrollY + nav.getBoundingClientRect().top}px`
-    let menu = document.getElementById('site-menu');
-    document.getElementsByClassName;
-    let menuAriaStatus = menu.getAttribute('aria-expanded');
-    menu.classList.toggle('is-expanded', !menu.classList.contains('is-expanded'));
-    if (menuAriaStatus === 'true') {
-        // nav.style.top = ``
-        // enableScroll(primary);
-        $(
-            '.side-by-side > .quire-entry__image-wrap > .quire-entry__image'
-        ).removeClass('menu_open');
-        menu.setAttribute('aria-expanded', 'false');
-    } else {
-        // disableScroll(primary);
-        $(
-            '.side-by-side > .quire-entry__image-wrap > .quire-entry__image'
-        ).addClass('menu_open');
-        menu.setAttribute('aria-expanded', 'true');
-    }
+window["toggleMenu"] = () => {
+  let menu = document.getElementById("site-menu");
+  document.getElementsByClassName;
+  let menuAriaStatus = menu.getAttribute("aria-expanded");
+  menu.classList.toggle("is-expanded", !menu.classList.contains("is-expanded"));
+  if (menuAriaStatus === "true") {
+    $(
+      ".side-by-side > .quire-entry__image-wrap > .quire-entry__image"
+    ).removeClass("menu_open");
+    menu.setAttribute("aria-expanded", "false");
+  } else {
+    $(
+      ".side-by-side > .quire-entry__image-wrap > .quire-entry__image"
+    ).addClass("menu_open");
+    menu.setAttribute("aria-expanded", "true");
+  }
 };
 
 /**
@@ -71,18 +61,18 @@ window.toggleMenu = () => {
  * current URL directory matches the nav anchor, it's the active link.
  */
 function activeMenuPage() {
-    let nav = document.getElementById('nav');
-    let anchor = nav.getElementsByTagName('a');
-    let current =
-        window.location.protocol +
-        '//' +
-        window.location.host +
-        window.location.pathname;
-    for (var i = 0; i < anchor.length; i++) {
-        if (anchor[i].href == current) {
-            anchor[i].className = 'active';
-        }
+  let nav = document.getElementById("nav");
+  let anchor = nav.getElementsByTagName("a");
+  let current =
+    window.location.protocol +
+    "//" +
+    window.location.host +
+    window.location.pathname;
+  for (var i = 0; i < anchor.length; i++) {
+    if (anchor[i].href == current) {
+      anchor[i].className = "active";
     }
+  }
 }
 
 /**
@@ -91,17 +81,20 @@ function activeMenuPage() {
  * This function is bound to the global window object so it can be called from
  * templates without additinoal binding.
  */
-window.toggleSearch = () => {
-    let searchControls = document.getElementById('js-search');
-    let searchInput = document.getElementById('js-search-input');
-    let searchAriaStatus = searchControls.getAttribute('aria-expanded');
-    searchControls.classList.toggle('is-active', !searchControls.classList.contains('is-active'));
-    if (searchAriaStatus === 'true') {
-        searchControls.setAttribute('aria-expanded', 'false');
-    } else {
-        searchInput.focus();
-        searchControls.setAttribute('aria-expanded', 'true');
-    }
+window["toggleSearch"] = () => {
+  let searchControls = document.getElementById("js-search");
+  let searchInput = document.getElementById("js-search-input");
+  let searchAriaStatus = searchControls.getAttribute("aria-expanded");
+  searchControls.classList.toggle(
+    "is-active",
+    !searchControls.classList.contains("is-active")
+  );
+  if (searchAriaStatus === "true") {
+    searchControls.setAttribute("aria-expanded", "false");
+  } else {
+    searchInput.focus();
+    searchControls.setAttribute("aria-expanded", "true");
+  }
 };
 
 /**
@@ -110,74 +103,80 @@ window.toggleSearch = () => {
  * objects with multiple figure images. See also slideImage function below.
  */
 function sliderSetup() {
-    let slider = $('.quire-entry__image__group-container');
-    slider.each(function() {
-        let sliderImages = $(this).find('figure');
-        sliderImages.each((i, v) => {
-            if (sliderImages.length > 1) {
-                $(v)
-                    .find('.quire-image-counter-download-container')
-                    .append(
-                        `<div class="quire-counter-container"><span class="counter">${i +
-                            1} of ${sliderImages.length}</span></div>`
-                    );
-            }
-        });
-        let firstImage = $(sliderImages.first());
-        let lastImage = $(sliderImages.last());
-        sliderImages.addClass('visually-hidden');
-        firstImage.addClass('current-image first-image');
-        firstImage.removeClass('visually-hidden');
-        firstImage.css('display', 'flex');
-        lastImage.addClass('last-image');
+  toggleFullscreen(
+    mapArr,
+    document.getElementById("toggleFullscreen"),
+    document.getElementById("quire-entry__image")
+  );
+
+  let slider = $(".quire-entry__image__group-container");
+  slider.each(function() {
+    let sliderImages = $(this).find("figure");
+    sliderImages.each((i, v) => {
+      if (sliderImages.length > 1) {
+        $(v)
+          .find(".quire-image-counter-download-container")
+          .append(
+            `<div class="quire-counter-container"><span class="counter">${i +
+              1} of ${sliderImages.length}</span></div>`
+          );
+      }
     });
-    let images = [...document.querySelectorAll('.quire-deepzoom-entry')]
-        .filter(v => {
-            return v.getAttribute('src') !== null ? v : '';
-        })
-        .map(v => {
-            return v.getAttribute('src');
-        });
-    preloadImages(images, () => {
-        mapSetup('.quire-map-entry');
-        deepZoomSetup('.quire-deepzoom-entry', mapArr);
+    let firstImage = $(sliderImages.first());
+    let lastImage = $(sliderImages.last());
+    sliderImages.addClass("visually-hidden");
+    firstImage.addClass("current-image first-image");
+    firstImage.removeClass("visually-hidden");
+    firstImage.css("display", "flex");
+    lastImage.addClass("last-image");
+  });
+  let images = [...document.querySelectorAll(".quire-deepzoom-entry")]
+    .filter(v => {
+      return v.getAttribute("src") !== null ? v : "";
+    })
+    .map(v => {
+      return v.getAttribute("src");
     });
+  preloadImages(images, () => {
+    mapSetup(".quire-map-entry");
+    deepZoomSetup(".quire-deepzoom-entry", mapArr);
+  });
 }
 
 /**
  * search
  * @description makes a search query using Lunr
  */
-window.search = () => {
-    let searchInput = document.getElementById('js-search-input');
-    let searchQuery = searchInput.value;
-    let searchInstance = window.QUIRE_SEARCH;
-    let resultsContainer = document.getElementById('js-search-results-list');
-    let resultsTemplate = document.getElementById('js-search-results-template');
-    if (searchQuery.length >= 3) {
-        let searchResults = searchInstance.search(searchQuery);
-        displayResults(searchResults);
-    }
+window["search"] = () => {
+  let searchInput = document.getElementById("js-search-input");
+  let searchQuery = searchInput["value"];
+  let searchInstance = window["QUIRE_SEARCH"];
+  let resultsContainer = document.getElementById("js-search-results-list");
+  let resultsTemplate = document.getElementById("js-search-results-template");
+  if (searchQuery.length >= 3) {
+    let searchResults = searchInstance.search(searchQuery);
+    displayResults(searchResults);
+  }
 
-    function clearResults() {
-        resultsContainer.innerText = '';
-    }
+  function clearResults() {
+    resultsContainer.innerText = "";
+  }
 
-    function displayResults(results) {
-        clearResults();
-        results.forEach(result => {
-            let clone = document.importNode(resultsTemplate.content, true);
-            let item = clone.querySelector('.js-search-results-item');
-            let title = clone.querySelector('.js-search-results-item-title');
-            let type = clone.querySelector('.js-search-results-item-type');
-            let length = clone.querySelector('.js-search-results-item-length');
-            item.href = result.url;
-            title.textContent = result.title;
-            type.textContent = result.type;
-            length.textContent = result.length;
-            resultsContainer.appendChild(clone);
-        });
-    }
+  function displayResults(results) {
+    clearResults();
+    results.forEach(result => {
+      let clone = document.importNode(resultsTemplate.content, true);
+      let item = clone.querySelector(".js-search-results-item");
+      let title = clone.querySelector(".js-search-results-item-title");
+      let type = clone.querySelector(".js-search-results-item-type");
+      let length = clone.querySelector(".js-search-results-item-length");
+      item.href = result.url;
+      title.textContent = result.title;
+      type.textContent = result.type;
+      length.textContent = result.length;
+      resultsContainer.appendChild(clone);
+    });
+  }
 };
 
 /**
@@ -185,20 +184,19 @@ window.search = () => {
  * @description Initial setup on first page load.
  */
 function globalSetup() {
-    let container = document.getElementById('container');
-    container.classList.remove('no-js');
-    var classNames = [];
-    if (navigator.userAgent.match(/(iPad|iPhone|iPod)/i))
-        classNames.push('device-ios');
-    if (navigator.userAgent.match(/android/i))
-        classNames.push('device-android');
+  let container = document.getElementById("container");
+  container.classList.remove("no-js");
+  var classNames = [];
+  if (navigator.userAgent.match(/(iPad|iPhone|iPod)/i))
+    classNames.push("device-ios");
+  if (navigator.userAgent.match(/android/i)) classNames.push("device-android");
 
-    var body = document.getElementsByTagName('body')[0];
+  var body = document.getElementsByTagName("body")[0];
 
-    if (classNames.length) classNames.push('on-device');
-    // if (body) body.classList.add(...classNames);
-    loadSearchData();
-    scrollToHash();
+  if (classNames.length) classNames.push("on-device");
+  // if (body) body.classList.add(...classNames);
+  loadSearchData();
+  scrollToHash();
 }
 
 /**
@@ -207,14 +205,14 @@ function globalSetup() {
  * and pass it to the search module.
  */
 function loadSearchData() {
-    // Grab search data
-    let dataURL = $('#js-search').data('search-index');
-    $.get(dataURL, {
-        cache: true,
-    }).done(data => {
-        data = typeof data === 'string' ? JSON.parse(data) : data;
-        window.QUIRE_SEARCH = new Search(data);
-    });
+  // Grab search data
+  let dataURL = $("#js-search").data("search-index");
+  $.get(dataURL, {
+    cache: true
+  }).done(data => {
+    data = typeof data === "string" ? JSON.parse(data) : data;
+    window["QUIRE_SEARCH"] = new Search(data);
+  });
 }
 
 /**
@@ -225,9 +223,9 @@ function loadSearchData() {
 let navigation;
 
 function navigationSetup() {
-    if (!navigation) {
-        navigation = new Navigation();
-    }
+  if (!navigation) {
+    navigation = new Navigation();
+  }
 }
 
 /*
@@ -246,24 +244,24 @@ function navigationTeardown() {
  * taking into account the height of the navbar.
  */
 function scrollToHash() {
-    let $scroller = $('#main');
-    let $navbar = $('.quire-navbar');
-    let targetHash = window.location.hash;
+  let $scroller = $("#main");
+  let $navbar = $(".quire-navbar");
+  let targetHash = window.location.hash;
 
-    if (targetHash) {
-        let targetHashEl = document.getElementById(targetHash.slice(1));
-        let $targetHashEl = $(targetHashEl);
+  if (targetHash) {
+    let targetHashEl = document.getElementById(targetHash.slice(1));
+    let $targetHashEl = $(targetHashEl);
 
-        if ($targetHashEl.length) {
-            let newPosition = $targetHashEl.offset().top;
-            if ($navbar.length) {
-                newPosition -= $navbar.height();
-            }
-            $scroller.scrollTop(newPosition);
-        }
-    } else {
-        $scroller.scrollTop(0);
+    if ($targetHashEl.length) {
+      let newPosition = $targetHashEl.offset().top;
+      if ($navbar.length) {
+        newPosition -= $navbar.height();
+      }
+      $scroller.scrollTop(newPosition);
     }
+  } else {
+    $scroller.scrollTop(0);
+  }
 }
 
 /**
@@ -271,12 +269,17 @@ function scrollToHash() {
  * Set up modal for media
  */
 function popupSetup(figureModal) {
-    if (figureModal) {
-        Popup('.q-figure__wrapper');
-    } else {
-        mapSetup('.quire-map');
-        deepZoomSetup('.quire-deepzoom', mapArr);
-    }
+  toggleFullscreen(
+    mapArr,
+    document.getElementById("toggleFullscreen"),
+    document.querySelector(".mfp-wrap")
+  );
+  if (figureModal) {
+    Popup(".q-figure__wrapper", mapArr);
+  } else {
+    mapSetup(".quire-map");
+    deepZoomSetup(".quire-deepzoom", mapArr);
+  }
 }
 
 /**
@@ -284,10 +287,10 @@ function popupSetup(figureModal) {
  * Render Map if Popup @false
  */
 function mapSetup(ele) {
-    return [...document.querySelectorAll(ele)].forEach(v => {
-        let id = v.getAttribute('id');
-        new Map(id);
-    });
+  return [...document.querySelectorAll(ele)].forEach(v => {
+    let id = v.getAttribute("id");
+    new Map(id);
+  });
 }
 
 /**
@@ -295,10 +298,10 @@ function mapSetup(ele) {
  * Render deepzoom or iiif if Popup @false
  */
 function deepZoomSetup(ele, mapArr) {
-    return [...document.querySelectorAll(ele)].forEach(v => {
-        let id = v.getAttribute('id');
-        new DeepZoom(id, mapArr);
-    });
+  return [...document.querySelectorAll(ele)].forEach(v => {
+    let id = v.getAttribute("id");
+    new DeepZoom(id, mapArr);
+  });
 }
 
 /**
@@ -306,24 +309,24 @@ function deepZoomSetup(ele, mapArr) {
  * Adding GoogleChromeLabs quicklinks https://github.com/GoogleChromeLabs/quicklink
  * For faster subsequent page-loads by prefetching in-viewport links during idle time
  */
-/* function quickLinksSetup() {
-    let links = [...document.getElementsByTagName('a')];
-    links = links.filter(a => {
-        return a.hostname === window.location.hostname;
-    });
-    quicklink({
-        urls: links,
-        timeout: 4000,
-        ignores: [
-            /tel:/g,
-            /mailto:/g,
-            /#(.+)/,
-            uri => uri.includes('tel:'),
-            uri => uri.includes('mailto:'),
-            uri => uri.includes('#'),
-        ],
-    });
-} */
+function quickLinksSetup() {
+  let links = [...document.getElementsByTagName("a")];
+  links = links.filter(a => {
+    return a.hostname === window.location.hostname;
+  });
+  quicklink({
+    urls: links,
+    timeout: 4000,
+    ignores: [
+      /tel:/g,
+      /mailto:/g,
+      /#(.+)/,
+      uri => uri.includes("tel:"),
+      uri => uri.includes("mailto:"),
+      uri => uri.includes("#")
+    ]
+  });
+}
 
 /**
  * @description
@@ -334,108 +337,94 @@ function deepZoomSetup(ele, mapArr) {
  *
  */
 function setDate() {
-    let $date = $('.cite-current-date');
-    let options = {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric',
-    };
-    let today = new Date();
-    let formattedDate =
-        today.toLocaleDateString('en-US', options).indexOf('May') !== -1
-            ? today.toLocaleDateString('en-US', options)
-            : [
-                  today.toLocaleDateString('en-US', options).slice(0, 3),
-                  '. ',
-                  today.toLocaleDateString('en-US', options).slice(4),
-              ].join('');
-    $date.empty();
-    $date.text(formattedDate);
+  let $date = $(".cite-current-date");
+  let options = {
+    year: "numeric",
+    month: "short",
+    day: "numeric"
+  };
+  let today = new Date();
+  let formattedDate =
+    today.toLocaleDateString("en-US", options).indexOf("May") !== -1
+      ? today.toLocaleDateString("en-US", options)
+      : [
+          today.toLocaleDateString("en-US", options).slice(0, 3),
+          ". ",
+          today.toLocaleDateString("en-US", options).slice(4)
+        ].join("");
+  $date.empty();
+  $date.text(formattedDate);
 }
-
-  /**
-   * validateSize
-   * @description
-   * invalidateSize map as a promise
-   * @param {object} map must be an integer
-  */
-function validateSize(map) {
-    return new Promise((resolve, reject) => {
-      if (!map) reject(new Error('No map!'))
-      setTimeout(() => {
-        resolve(map.invalidateSize());
-      }, 250);
-    });
-  }
 
 /**
  * slideImage
  * @description Slide to previous or next catalogue object image in a loop.
  * Supports any number of figures per object, and any number of objects
  * per page. Also pass in the maps array to invalidate size after transition.
+ * @param {string} direction must be an integer
+ * @param {object} event must be an object
+ * @param {array} mapArr must be an array
  */
-function slideImage (direction, event, mapArr) {
-    event.stopPropagation()
-    let deepzoomCont = $(".leaflet-image-layer")
-    deepzoomCont.hide()
-    let slider = $('.quire-entry__image__group-container');
-    let firstImage = slider.children('.first-image');
-    let lastImage = slider.children('.last-image');
-    let currentImage = slider.children('.current-image');
-    let nextImage = currentImage.next('figure');
-    let prevImage = currentImage.prev('figure');
-    stopVideo(document.querySelector('.current-image'));
-    currentImage.hide();
-    currentImage.removeClass('current-image');
-    if (direction == 'next') {
-        if (currentImage.hasClass('last-image')) {
-            firstImage.addClass('current-image');
-            firstImage.css('display', 'flex');
-            firstImage.removeClass('visually-hidden');
-        } else {
-            nextImage.addClass('current-image');
-            nextImage.css('display', 'flex');
-            nextImage.removeClass('visually-hidden');
-        }
-    } else if (direction == 'prev') {
-        if (currentImage.hasClass('first-image')) {
-            lastImage.addClass('current-image');
-            lastImage.css('display', 'flex');
-            lastImage.removeClass('visually-hidden');
-        } else {
-            prevImage.addClass('current-image');
-            prevImage.css('display', 'flex');
-            prevImage.removeClass('visually-hidden');
-        }
+function slideImage(direction, event, mapArr) {
+  event.stopPropagation();
+  let deepzoomCont = $(".leaflet-image-layer");
+  deepzoomCont.hide();
+  let slider = $(".quire-entry__image__group-container");
+  let firstImage = slider.children(".first-image");
+  let lastImage = slider.children(".last-image");
+  let currentImage = slider.children(".current-image");
+  let nextImage = currentImage.next("figure");
+  let prevImage = currentImage.prev("figure");
+  stopVideo(document.querySelector(".current-image"));
+  currentImage.hide();
+  currentImage.removeClass("current-image");
+  if (direction == "next") {
+    if (currentImage.hasClass("last-image")) {
+      firstImage.addClass("current-image");
+      firstImage.css("display", "flex");
+      firstImage.removeClass("visually-hidden");
+    } else {
+      nextImage.addClass("current-image");
+      nextImage.css("display", "flex");
+      nextImage.removeClass("visually-hidden");
     }
+  } else if (direction == "prev") {
+    if (currentImage.hasClass("first-image")) {
+      lastImage.addClass("current-image");
+      lastImage.css("display", "flex");
+      lastImage.removeClass("visually-hidden");
+    } else {
+      prevImage.addClass("current-image");
+      prevImage.css("display", "flex");
+      prevImage.removeClass("visually-hidden");
+    }
+  }
 
-    mapArr.forEach(v => {
-      validateSize(v)
-        .then(()=>{
-          deepzoomCont.fadeIn({
-              duration: "fast"
-            })
-        })
-        .catch(err=>console.log(err)) 
-    });
-};
+  mapArr.forEach(v => {
+    validateSize(v)
+      .then(() => {
+        deepzoomCont.fadeIn({
+          duration: "fast"
+        });
+      })
+      .catch(err => console.log(err));
+  });
+}
 
 /**
- * @description toggle fullscreen for entry leaflet images
- * Also pass in the maps array to invalidate size after transition.
+ * validateSize
+ * @description
+ * invalidateSize map as a promise
+ * @param {object} map must be an object
  */
-function toggleFullscreen(mapArr) {
-    const el = document.getElementById('quire-entry__image');
-    let toggleFullscreen = document.getElementById('toggleFullscreen')
-    toggleFullscreen.addEventListener('click', event => {
-        if (fullscreen.enabled && el) {
-          el.classList.toggle('fullscreen', !el.classList.contains('fullscreen'));
-          event.target.classList.toggle('fullscreen', !event.target.classList.contains('fullscreen'));
-          fullscreen.toggle(el);
-          mapArr.forEach(v => {validateSize(v).catch(err=>console.log(err))});
-        }
-    });
-  }
+function validateSize(map) {
+  return new Promise((resolve, reject) => {
+    if (!map) reject(new Error("No map!"));
+    setTimeout(() => {
+      resolve(map.invalidateSize());
+    }, 250);
+  });
+}
 
 /**
  * pageSetup
@@ -443,19 +432,20 @@ function toggleFullscreen(mapArr) {
  * Initialize any jquery plugins or set up page UI elements here.
  */
 function pageSetup() {
-    setDate();
-    // quickLinksSetup();
-    activeMenuPage();
-    sliderSetup();
-    navigationSetup();
-    popupSetup(figureModal);
-    toggleFullscreen(mapArr)
-    // smoothScroll();
-    // Wire up event listeners here, so we can pass in the maps array
-    const prev = document.getElementById("prev-image");   
-    const next = document.getElementById("next-image");
-    if (prev) prev.addEventListener("click", e => slideImage('prev',e, mapArr), false);
-    if (next) next.addEventListener("click", e => slideImage('next',e, mapArr), false);
+  setDate();
+  // quickLinksSetup();
+  activeMenuPage();
+  sliderSetup();
+  navigationSetup();
+  popupSetup(figureModal);
+  // smoothScroll();
+  // Wire up event listeners here, so we can pass in the maps array
+  const prev = document.getElementById("prev-image");
+  const next = document.getElementById("next-image");
+  if (prev)
+    prev.addEventListener("click", e => slideImage("prev", e, mapArr), false);
+  if (next)
+    next.addEventListener("click", e => slideImage("next", e, mapArr), false);
 }
 
 /**
@@ -477,5 +467,5 @@ globalSetup();
 
 // Run when document is ready
 $(window).ready(() => {
-    pageSetup();
+  pageSetup();
 });
