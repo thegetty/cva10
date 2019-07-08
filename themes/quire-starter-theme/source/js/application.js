@@ -206,11 +206,7 @@ function globalSetup() {
  */
 function loadSearchData() {
   // Grab search data
-<<<<<<< HEAD
-  let dataURL = $("#js-search").data("search-index");
-=======
   let dataURL = $("#js-search").attr("href");
->>>>>>> 5b25a2c3cb94d9ebc901f4b48dae8ff270a9b0f0
   $.get(dataURL, {
     cache: true
   }).done(data => {

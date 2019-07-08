@@ -57,7 +57,7 @@ document and render only the values given in the shortcode
     data-type="inline" 
     title='{{ .Get "caption" | markdownify | safeHTML }}'>
     <img
-      id='{{ with .Get "id" }}{{ . | urlize }}{{ end }}'
+      id='q-{{ with .Get "id" }}{{ . | urlize }}{{ end }}'
       class="quire-figure__image" 
       src='{{ with .Get "src"}}{{ printf "%s/%s" ($.Scratch.Get "imageDir") . | relURL }}{{ end }}'
       alt='{{ with .Get "alt" }}{{ . }}{{ end }}' />
@@ -98,7 +98,7 @@ document and render only the values given in the shortcode
     data-type='inline' 
     {{ if .Get "caption" }}  title='{{ .Get "caption" | markdownify | safeHTML }}' {{ end }}>
       <img
-      id='{{ with .Get "id" }}{{ . | urlize }}{{ end }}'
+      id='q-{{ with .Get "id" }}{{ . | urlize }}{{ end }}'
       class="quire-figure__image" 
       src='{{ with .Get "src"}}{{ printf "%s/%s" ($.Scratch.Get "imageDir") . | relURL }}{{ end }}'
       alt='{{ with .Get "alt" }}{{ . }}{{ end }}' />
@@ -137,7 +137,7 @@ document and render only the values given in the shortcode
     data-type='inline' 
     {{ if .Get "caption" }}  title='{{ .Get "caption" | markdownify | safeHTML }}' {{ end }}>
       <img
-      id='{{ with .Get "id" }}{{ . | urlize }}{{ end }}'
+      id='q-{{ with .Get "id" }}{{ . | urlize }}{{ end }}'
       class="quire-figure__image" 
       src='{{ with .Get "src"}}{{ printf "%s/%s" ($.Scratch.Get "imageDir") . | relURL }}{{ end }}'
       alt='{{ with .Get "alt" }}{{ . }}{{ end }}' />
@@ -188,7 +188,7 @@ document and render only the values given in the shortcode
 
 {{ else }}
 <img
-id='{{ with .Get "id" }}{{ . | urlize }}{{ end }}'
+id='q-{{ with .Get "id" }}{{ . | urlize }}{{ end }}'
 class="quire-figure__image" 
 src='{{ with .Get "src"}}{{ printf "%s/%s" ($.Scratch.Get "imageDir") . | relURL }}{{ end }}'
 alt='{{ with .Get "alt" }}{{ . }}{{ end }}' />
@@ -330,7 +330,7 @@ alt='{{ with .Get "alt" }}{{ . }}{{ end }}' />
         data-type="inline"
         {{ if .caption }} title='{{ .caption | markdownify | safeHTML }}' {{ end }}>
         <img
-          id='{{ .id }}'
+          id='q-{{ .id }}'
           class="quire-figure__image" 
           src='{{ printf "%s/%s" ($.Scratch.Get "imageDir") .src | relURL }}' />
 
@@ -368,7 +368,7 @@ alt='{{ with .Get "alt" }}{{ . }}{{ end }}' />
     data-type='inline'
     {{ if .caption }} title='{{ .caption | markdownify | safeHTML }}' {{ end }}>
       <img
-      id='{{ .id }}'
+      id='q-{{ .id }}'
       class="quire-figure__image" 
       src='{{ printf "%s/%s" ($.Scratch.Get "imageDir") .src | relURL }}' />
 
@@ -405,7 +405,7 @@ alt='{{ with .Get "alt" }}{{ . }}{{ end }}' />
     data-type='inline'
     {{ if .caption }} title='{{ .caption | markdownify | safeHTML }}' {{ end }}>
       <img
-      id='{{ .id }}'
+      id='q-{{ .id }}'
       class="quire-figure__image" 
       src='{{ printf "%s/%s" ($.Scratch.Get "imageDir") .src | relURL }}' />
 
@@ -455,7 +455,7 @@ alt='{{ with .Get "alt" }}{{ . }}{{ end }}' />
 {{ else }}
 
 <img
-id='{{ .id }}'
+id='q-{{ .id }}'
 class="quire-figure__image" 
 src='{{ printf "%s/%s" ($.Scratch.Get "imageDir") .src | relURL }}' />
 
