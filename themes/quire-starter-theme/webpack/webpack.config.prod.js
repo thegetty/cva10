@@ -14,7 +14,11 @@ const PATHS = {
   build: path.join(__dirname, "../static")
 };
 
+<<<<<<< HEAD
 const ASSET_PATH = process.env.ASSET_PATH || "/";
+=======
+const ASSET_PATH = process.env.ASSET_PATH || "../";
+>>>>>>> 5b25a2c3cb94d9ebc901f4b48dae8ff270a9b0f0
 
 module.exports = {
   mode: "production",
