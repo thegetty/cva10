@@ -7,7 +7,8 @@
 # you've copied the default theme and given it a different name make sure to
 # update the value here too.
 
-baseURL: ""
+baseURL: "/"
+relativeURLs: true
 
 title: "Corpus Vasorum Antiquorum, Fascicule 10"
 languageCode: "en-us"
