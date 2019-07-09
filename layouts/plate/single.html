@@ -356,6 +356,12 @@
 
     </style>
   <body>
+   <main id="main" role="main">
+    <h1 
+    class="quire-page__header__title" 
+    id="plate-{{ .File.BaseFileName }}">
+      Plate {{ .File.BaseFileName }}
+    </h1>
 
     <div class="page" id="plate-{{ .File.BaseFileName }}">
       
@@ -468,5 +474,6 @@
         {{ end }}
 
     </div>
+    </main>
   </body>
 </html>
