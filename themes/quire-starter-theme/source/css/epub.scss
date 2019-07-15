@@ -170,6 +170,8 @@ i, cite, dfn, em {
   font-style: italic;
 }
 
+
+
 /* Get back to normal when italic nested in italic */
 
 i {
@@ -243,9 +245,6 @@ figure {
   page-break-inside: avoid;
   break-inside: avoid;
   margin: 1.5em 0;
-  img {
-    background-color: $gray;
-  }
 }
 
 figcaption {
@@ -383,6 +382,13 @@ pre {
 code, kbd, samp, var {
   font-family: monospace;
   /* Embed a font cos Kobo doesn't provide a monospace */
+}
+
+pre {
+  margin-left: 0;
+}
+code {
+  font-family: serif;
 }
 
 /* MEDIAS */
@@ -538,4 +544,14 @@ h2 + hr {
   width: 30%;
   float: left;
   margin-right: 1em;
+}
+
+
+// Hide elements in CVA table of contents
+#contents ul li ul li {
+  display: none;
+}
+#contents ul li ul li:nth-child(1), 
+#contents ul li ul li:nth-child(18) {
+  display: list-item;
 }

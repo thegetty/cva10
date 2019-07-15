@@ -85,9 +85,11 @@ h1, h2, h3, h4, h5, h6, blockquote p cite, dt, pre, address, table, caption, th,
 h1, h2, h3, h4, h5, h6, dt, hr {
   page-break-inside: avoid;
   -webkit-column-break-inside: avoid;
+     -moz-column-break-inside: avoid;
           break-inside: avoid;
   page-break-after: avoid;
   -webkit-column-break-after: avoid;
+     -moz-column-break-after: avoid;
           break-after: avoid; }
 
 p {
@@ -115,8 +117,8 @@ a {
   text-decoration: underline;
   /* Note: KF8 will force this value unless you use "el.class a" */
   font-weight: bold;
-  color: #6A8EB8;
-  -webkit-text-fill-color: #6A8EB8;
+  color: Tomato;
+  -webkit-text-fill-color: Tomato;
   /* iBooks override (iOS 9 + El Capitan in night mode) */
   /* inherit = text color */ }
 
@@ -175,10 +177,9 @@ sup {
 figure {
   page-break-inside: avoid;
   -webkit-column-break-inside: avoid;
+     -moz-column-break-inside: avoid;
           break-inside: avoid;
   margin: 1.5em 0; }
-  figure img {
-    background-color: #CCCCCC; }
 
 figcaption {
   font-size: 0.9375em;
@@ -237,7 +238,7 @@ hr {
   margin-bottom: 1.4375em;
   height: 0;
   border: none;
-  border-top: 0.125em solid #6A8EB8;
+  border-top: 0.125em solid Tomato;
   /* currentColor = color of text (getting around night mode) */
   opacity: 0.5;
   /* Opacity -> grayscale. If opacity is declared for too many elements in a XHTML file, performance of legacy RMSDK takes a hit */ }
@@ -266,7 +267,7 @@ tbody, thead, tfoot, tr {
 
 th {
   empty-cells: show;
-  border-bottom: 0.125em solid #6A8EB8;
+  border-bottom: 0.125em solid Tomato;
   /* Current color = color of text (inverted in night mode) */
   padding: 0.6875em 2% 0.6875em 0;
   text-align: left;
@@ -274,7 +275,7 @@ th {
 
 td {
   empty-cells: show;
-  border-bottom: 0.0625em solid #6A8EB8;
+  border-bottom: 0.0625em solid Tomato;
   /* Current color = color of text (inverted in night mode) */
   padding: 0.75em 2% 0.6875em 0;
   text-align: left; }
@@ -293,6 +294,12 @@ pre {
 code, kbd, samp, var {
   font-family: monospace;
   /* Embed a font cos Kobo doesn't provide a monospace */ }
+
+pre {
+  margin-left: 0; }
+
+code {
+  font-family: serif; }
 
 /* MEDIAS */
 audio, video {
@@ -362,7 +369,7 @@ section:not(#contents) h1 + ul {
 a {
   font-weight: 400;
   text-decoration: none;
-  border-bottom: 1px dotted #6A8EB8; }
+  border-bottom: 1px dotted Tomato; }
   a.footnote-return,
   .footnote-ref a {
     font-weight: 700;
@@ -395,4 +402,11 @@ h2 + hr {
   width: 30%;
   float: left;
   margin-right: 1em; }
+
+#contents ul li ul li {
+  display: none; }
+
+#contents ul li ul li:nth-child(1),
+#contents ul li ul li:nth-child(18) {
+  display: list-item; }
 

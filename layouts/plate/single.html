@@ -356,6 +356,12 @@
 
     </style>
   <body>
+   <main id="main" role="main">
+
+    
+    {{ if eq .Site.Params.epub true }}
+      <img src="/img/plates/{{ .File.BaseFileName }}.jpg" alt="object images" />
+    {{ else }}
 
     <div class="page" id="plate-{{ .File.BaseFileName }}">
       
@@ -468,5 +474,7 @@
         {{ end }}
 
     </div>
+    {{ end }}
+    </main>
   </body>
 </html>
