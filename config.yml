@@ -16,7 +16,7 @@ publishDir: site
 
 footnoteReturnLinkContents: "↩"
 metaDataFormat: "yaml"
-googleAnalytics: ""
+googleAnalytics: "UA-8087223-1"
 
 pluralizeListTitles: true
 disableKinds:
