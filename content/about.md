@@ -1,6 +1,7 @@
 ---
 title: About
 weight: 500
+toc: false
 pdf: false
 epub: false
 search: false
