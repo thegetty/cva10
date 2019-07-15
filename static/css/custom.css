@@ -70,23 +70,14 @@ sup a {
   font-variant: prince-opentype(onum);
 }
 
-/*  Hide cat entries in TOC and menu, and splash pages in catalogue grid.
-    The starter theme is not currently handling
-    toc: false and menu: false the way we need it to here. */
-#contents .quire-contents-list li.section-item li {
-  display: none;
-}
-#contents .quire-contents-list li.section-item li:nth-child(1), 
-#contents .quire-contents-list li.section-item li:nth-child(18) {
-  display: list-item;
-  margin-bottom: 1.5rem;
-}
-#contents .quire-contents-list li.section-item li:nth-child(1) a, 
-#contents .quire-contents-list li.section-item li:nth-child(18) a {
+/*  Hide cat entries in menu, and splash pages in catalogue grid.
+    The starter theme is not currently handling menu: false the way we need it 
+    to here. */
+#contents .quire-contents-list li.section-item li a {
   border-width: 0;
 }
-#contents .quire-contents-list li.section-item li:nth-child(18) {
-  margin-bottom: 1rem;
+#contents .quire-contents-list .menu-list .section-item ul .page-item {
+  margin-bottom: 1em;
 }
 .quire-menu__list li.section-item li {
   display: none;
