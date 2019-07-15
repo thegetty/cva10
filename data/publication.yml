@@ -79,20 +79,20 @@ license:
 
 resource_link:
   - type: other-format
-    name: PDF (9.6 MB)
+    name: PDF (9.2 MB)
     media_type: application/pdf
     link_relation: alternate
-    url: /downloads/output.pdf
+    url: /downloads/Tsiafakis_CVA10.pdf
   - type: other-format
-    name: EPUB (38.1 MB)
+    name: EPUB (14.8 MB)
     media_type: application/epub+zip
     link_relation: alternate
-    url: /downloads/output.epub
+    url: /downloads/Tsiafakis_CVA10.epub
   - type: other-format
-    name: MOBI/Kindle (90.9 MB)
+    name: MOBI/Kindle (36.7 MB)
     media_type: application/mobi
     link_relation: alternate
-    url: /downloads/output.mobi
+    url: /downloads/Tsiafakis_CVA10.mobi
   - type: footer-link
     name: About
     link_relation: about
