@@ -545,3 +545,13 @@ h2 + hr {
   float: left;
   margin-right: 1em;
 }
+
+
+// Hide elements in CVA table of contents
+#contents ul li ul li {
+  display: none;
+}
+#contents ul li ul li:nth-child(1), 
+#contents ul li ul li:nth-child(18) {
+  display: list-item;
+}

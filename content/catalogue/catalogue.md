@@ -5,4 +5,5 @@ type: contents
 class: grid
 slug: .
 pdf: false
+epub: false
 ---
