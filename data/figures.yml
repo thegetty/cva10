@@ -317,7 +317,7 @@ figure_list:
   - id: "79AE9512-back"
     src: objects/024862F1V1.jpg
     caption: "79.AE.95.12 and 79.AE.95.13, interior view of fragments from neck of vessel"
-    Alt: "The back side of the two pottery fragments, one mostly black, the other is mottled"
+    alt: "The back side of the two pottery fragments, one mostly black, the other is mottled"
     description: "79.AE.95.12, 79.AE.95.13"
 
   - id: "80AE13813-front"
