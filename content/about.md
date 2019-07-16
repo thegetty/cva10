@@ -32,15 +32,16 @@ http://getty.edu/publications/cva10
 
 Any revisions or corrections made to this publication after the first edition date will be listed here and in the project repository at https://github.com/thegetty/cva10, where a more detailed version history is available. The revisions branch of the project repository, when present, will also show any changes currently under consideration but not yet published here.
 
-### August 29, 2019
+### July 16, 2019
   
   - First edition
 
 ## Other Formats
 
-  - [PDF (9.6 MB)](/downloads/output.pdf)
-  - [EPUB (38.1 MB)](/downloads/output.epub)
-  - [MOBI/Kindle (90.9 MB)](/downloads/output.mobi)
+  - [PDF (9.2 MB)](/downloads/Tsiafakis_CVA10.pdf)
+  - [EPUB (14.8 MB)](/downloads/Tsiafakis_CVA10.epub)
+  - [MOBI/Kindle (36.7 MB)](/downloads/Tsiafakis_CVA10.mobi)
+  - [JPEG Images (39.8 MB)](/downloads/Tsiafakis_CVA10_Images.zip)
 
 ## Copyright
 
