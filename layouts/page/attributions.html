@@ -70,7 +70,7 @@
               {{- else -}}
               <td rowspan="{{ $.Page.Scratch.Get $name }}">{{ .attribution }}</td>
               {{- end }}
-              <td><a href="/catalogue/{{ .id }}">{{ .id }}</a>{{ range where $.Site.Data.objects.object_list "id" .id }}{{ if eq .attribution_uncertain true }} *{{ $.Scratch.Add "uncertainty" 1 }}{{ end }}{{ end }}</td>
+              <td><a href="/catalogue/{{ .id | relURL }}">{{ .id }}</a>{{ range where $.Site.Data.objects.object_list "id" .id }}{{ if eq .attribution_uncertain true }} *{{ $.Scratch.Add "uncertainty" 1 }}{{ end }}{{ end }}</td>
               <td>{{ .plates }}</td>
               <td>{{ .accession_number }}</td>
             </tr>
