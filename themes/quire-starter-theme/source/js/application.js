@@ -165,13 +165,18 @@ window["search"] = () => {
   function displayResults(results) {
     clearResults();
     results.forEach(result => {
-      console.log(result);
+      // console.log(result)
       let clone = document.importNode(resultsTemplate.content, true);
       let item = clone.querySelector(".js-search-results-item");
       let title = clone.querySelector(".js-search-results-item-title");
       let type = clone.querySelector(".js-search-results-item-type");
       let length = clone.querySelector(".js-search-results-item-length");
-      item.href = `${result.url}`;
+      let baseUrl =
+        window.location.host.indexOf(`netlify`) === -1 ||
+        window.location.host.indexOf(`localhost`) === -1
+          ? `/publications/cva10`
+          : ``;
+      item.href = baseUrl + result.url;
       title.textContent = result.title;
       type.textContent = result.type;
       length.textContent = result.length;
