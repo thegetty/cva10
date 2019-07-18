@@ -93,6 +93,7 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
     align-items: center;
     justify-content: center;
     position: relative;
+    padding: 0 1.5em;
 
     @media print {
       display: block;
@@ -250,7 +251,7 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
         background: $image no-Repeat top left $off-black-semi-transparent;
         background-position-x: -139px;
         background-position-y: -44px;
-        left: 10px;
+        left: 34px;
 
         width: 30px;
         height: 30px;
@@ -269,7 +270,7 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
         background: $image no-Repeat top right $off-black-semi-transparent;
         background-position-x: -95px;
         background-position-y: -44px;
-        right: 10px;
+        right: 34px;
 
         width: 30px;
         height: 30px;
