@@ -172,7 +172,7 @@ window["search"] = () => {
       let type = clone.querySelector(".js-search-results-item-type");
       let length = clone.querySelector(".js-search-results-item-length");
       let baseUrl =
-        window.location.host.indexOf(`netlify`) === -1 ||
+        window.location.host.indexOf(`netlify`) === -1 &&
         window.location.host.indexOf(`localhost`) === -1
           ? `/publications/cva10`
           : ``;
