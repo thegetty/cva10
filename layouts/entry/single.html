@@ -93,8 +93,17 @@ THEY'RE INSTEAD INCLUDED AS PLATES, SIMILAR TO THE PDF TREATMENT
   {{ end }}
 </div>
 </div>
-
-<div class="quire-entry__content">
+<section class="quire-entry__more">
+  <div class="quire-entry__more-body hero-more">
+    {{ if and (ne $.Site.Params.epub true) (ne $.Site.Params.pdf true) }}
+    <a href="#content">
+      {{- partial "icon.html" (dict "type" "down-arrow" "description" "Scroll down to read more") -}}
+    </a>
+    {{ end }}
+  </div>
+</section>
+<div class="quire-entry__content" id="content">
+  
   
   {{/* Entry header */}}
   {{ if ne .Site.Params.epub true }}
@@ -118,7 +127,7 @@ THEY'RE INSTEAD INCLUDED AS PLATES, SIMILAR TO THE PDF TREATMENT
   {{ end }}
 
   {{/* Entry content */}}
-  <section class="section quire-page__content" id="content">
+  <section class="section quire-page__content" >
     <div class="container">
       <div class="content">
         {{ .Content }}
