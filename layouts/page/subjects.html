@@ -79,7 +79,7 @@
               <td rowspan="{{- $.Page.Scratch.Get $subject -}}">{{- .subject | markdownify -}}</td>
               {{- $.Page.Scratch.Add "names" (slice $subject) -}}
               {{- end -}}
-              <td><a href="{{print "%" "/catalogue/" .id | urlize | relURL }}">{{- .id -}}</a></td>
+              <td><a href="{{print "%" "/catalogue/" .id | urlize | relURL }}/">{{- .id -}}</a></td>
               <td>{{- .accession_number -}}</td>
             </tr>
             {{- end -}}

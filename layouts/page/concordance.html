@@ -24,10 +24,10 @@
         {{ range sort $.Site.Data.objects.object_list "sort" -}}
           {{- if .accession_numbers -}}
             <tr><td>{{ .accession_numbers }}</td><td>{{ .bareiss_number }}</td><td>
-            <a href="{{print "%" "/catalogue/" .id | urlize | relURL }}">{{ .id }}</a></td></tr>
+            <a href="{{print "%" "/catalogue/" .id | urlize | relURL }}/">{{ .id }}</a></td></tr>
           {{- else -}}
             <tr><td>{{ .accession_number }}</td><td>{{ .bareiss_number }}</td><td>
-            <a href="{{print "%" "/catalogue/" .id | urlize | relURL }}">{{ .id }}</a></td></tr>
+            <a href="{{print "%" "/catalogue/" .id | urlize | relURL }}/">{{ .id }}</a></td></tr>
           {{- end -}}        
         {{- end }}
           </tbody>
