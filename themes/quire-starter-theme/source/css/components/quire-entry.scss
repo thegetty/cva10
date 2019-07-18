@@ -88,11 +88,12 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
       $quire-entry-image-icons-color
     );
     background-color: $black;
-    min-height: calc(100vh - #{$quire-entry-header-height} - #{$navbar-height});
+    min-height: calc(95vh - #{$quire-entry-header-height} - #{$navbar-height});
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    padding: 0 1.5em;
 
     @media print {
       display: block;
@@ -110,7 +111,7 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
     figure {
       flex: 1 1 100%;
       width: 100%;
-      height: calc(100vh - 6rem - 3rem);
+      height: calc(95vh - 6rem - 3rem);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -250,7 +251,7 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
         background: $image no-Repeat top left $off-black-semi-transparent;
         background-position-x: -139px;
         background-position-y: -44px;
-        left: 10px;
+        left: 34px;
 
         width: 30px;
         height: 30px;
@@ -269,7 +270,7 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
         background: $image no-Repeat top right $off-black-semi-transparent;
         background-position-x: -95px;
         background-position-y: -44px;
-        right: 10px;
+        right: 34px;
 
         width: 30px;
         height: 30px;
@@ -534,7 +535,7 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
       color: background-color-text($cva-cream);
       width: 50px;
       height: 50px;
-      margin: 25px auto;
+      margin: 15px auto;
       text-align: center;
       svg {
         height: 3.5rem;
@@ -598,7 +599,7 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
       div.quire-entry__image {
         position: relative;
         width: 100%;
-        height: calc(100vh - 6rem - 3rem);
+        height: calc(95vh - 6rem - 3rem);
 
         @media screen and (min-width: $widescreen) {
           position: fixed;
