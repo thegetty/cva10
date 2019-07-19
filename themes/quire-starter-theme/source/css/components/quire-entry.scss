@@ -251,7 +251,7 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
         background: $image no-Repeat top left $off-black-semi-transparent;
         background-position-x: -139px;
         background-position-y: -44px;
-        left: 34px;
+        left: 10px;
 
         width: 30px;
         height: 30px;
@@ -270,7 +270,7 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
         background: $image no-Repeat top right $off-black-semi-transparent;
         background-position-x: -95px;
         background-position-y: -44px;
-        right: 34px;
+        right: 10px;
 
         width: 30px;
         height: 30px;
@@ -535,7 +535,7 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
       color: background-color-text($cva-cream);
       width: 50px;
       height: 50px;
-      margin: 15px auto;
+      margin: 7.5px auto;
       text-align: center;
       svg {
         height: 3.5rem;
