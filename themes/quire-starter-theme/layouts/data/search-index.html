@@ -40,7 +40,7 @@ block-scoped .Scratch inside the `range` loop.
 
 {{- if gt (len $page.Content) 0 -}}
 {{- .Scratch.Set "searchContent" $page.Plain -}}
-{{- .Scratch.Set "pageURL" $page.Permalink | relURL -}}
+{{- .Scratch.Set "pageURL" $page.Permalink -}}
 {{- .Scratch.Set "pageType" $page.Type -}}
 {{- .Scratch.Set "pageLength" $page.WordCount -}}
 
@@ -58,7 +58,7 @@ block-scoped .Scratch inside the `range` loop.
   {{ .Scratch.Set "pageFullTitle" (.Scratch.Get "pageTitle") }}
 {{- end -}}
 
-{{- .Scratch.Set "pageData" (dict "id" $index "title" (.Scratch.Get "pageFullTitle") "url" (.Scratch.Get "pageURL") "type" (.Scratch.Get "pageType") "length" (.Scratch.Get "pageLength") "content" (.Scratch.Get "searchContent")) -}}
+{{- .Scratch.Set "pageData" (dict "id" $index "title" (.Scratch.Get "pageFullTitle") "url" (.Scratch.Get "pageURL" | absURL) "type" (.Scratch.Get "pageType") "length" (.Scratch.Get "pageLength") "content" (.Scratch.Get "searchContent")) -}}
 
 {{- $.Scratch.Add "index" (.Scratch.Get "pageData") -}}
 {{- end -}}
