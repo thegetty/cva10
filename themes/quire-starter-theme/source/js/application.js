@@ -20,7 +20,11 @@ import "velocity-animate";
 import "./soundcloud-api";
 
 // Modules (feel free to define your own and import here)
-import { preloadImages, stopVideo, toggleFullscreen } from "./helper";
+import {
+  preloadImages,
+  stopVideo,
+  toggleFullscreen
+} from "./helper";
 import Search from "./search";
 import Navigation from "./navigation";
 import Popup from "./popup";
@@ -110,7 +114,7 @@ function sliderSetup() {
   );
 
   let slider = $(".quire-entry__image__group-container");
-  slider.each(function() {
+  slider.each(function () {
     let sliderImages = $(this).find("figure");
     sliderImages.each((i, v) => {
       if (sliderImages.length > 1) {
@@ -166,16 +170,16 @@ window["search"] = () => {
     clearResults();
     results.forEach(result => {
       // console.log(result)
-      let clone = document.importNode(resultsTemplate.content, true);
+      let clone = document.importNode(resultsTemplate["content"], true);
       let item = clone.querySelector(".js-search-results-item");
       let title = clone.querySelector(".js-search-results-item-title");
       let type = clone.querySelector(".js-search-results-item-type");
       let length = clone.querySelector(".js-search-results-item-length");
       let baseUrl =
         window.location.host.indexOf(`netlify`) === -1 &&
-        window.location.host.indexOf(`localhost`) === -1
-          ? `/publications/cva10`
-          : ``;
+        window.location.host.indexOf(`localhost`) === -1 ?
+        `/publications/cva10` :
+        ``;
       item.href = baseUrl + result.url;
       title.textContent = result.title;
       type.textContent = result.type;
@@ -351,13 +355,13 @@ function setDate() {
   };
   let today = new Date();
   let formattedDate =
-    today.toLocaleDateString("en-US", options).indexOf("May") !== -1
-      ? today.toLocaleDateString("en-US", options)
-      : [
-          today.toLocaleDateString("en-US", options).slice(0, 3),
-          ". ",
-          today.toLocaleDateString("en-US", options).slice(4)
-        ].join("");
+    today.toLocaleDateString("en-US", options).indexOf("May") !== -1 ?
+    today.toLocaleDateString("en-US", options) :
+    [
+      today.toLocaleDateString("en-US", options).slice(0, 3),
+      ". ",
+      today.toLocaleDateString("en-US", options).slice(4)
+    ].join("");
   $date.empty();
   $date.text(formattedDate);
 }
