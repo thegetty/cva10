@@ -7,9 +7,7 @@ class Search {
   }
 
   buildIndex(data) {
-    data.forEach(v => {
-      console.log(v.url)
-    })
+    console.log(data)
     return lunr(function () {
       this.field('title', {
         boost: 100
