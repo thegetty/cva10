@@ -58,7 +58,7 @@ block-scoped .Scratch inside the `range` loop.
   {{ .Scratch.Set "pageFullTitle" (.Scratch.Get "pageTitle") }}
 {{- end -}}
 
-{{- .Scratch.Set "pageData" (dict "id" $index "title" (.Scratch.Get "pageFullTitle") "url" (.Scratch.Get "pageURL" | absURL) "type" (.Scratch.Get "pageType") "length" (.Scratch.Get "pageLength") "content" (.Scratch.Get "searchContent")) -}}
+{{- .Scratch.Set "pageData" (dict "id" $index "title" (.Scratch.Get "pageFullTitle") "url" (.Scratch.Get "pageURL" | urlize) "url1" (.Scratch.Get "pageURL" | absURL) "url2" (.Scratch.Get "pageURL" | relURL) "type" (.Scratch.Get "pageType") "length" (.Scratch.Get "pageLength") "content" (.Scratch.Get "searchContent")) -}}
 
 {{- $.Scratch.Add "index" (.Scratch.Get "pageData") -}}
 {{- end -}}
