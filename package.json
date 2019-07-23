@@ -4,7 +4,7 @@
   "description": "scripts to run webpack to build js & css",
   "private": true,
   "scripts": {
-    "build": "cd themes/quire-starter-theme && webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --minify --config config.yml,config/site.yml"
+    "build": "export ASSET_PATH=/publications/cva10/ cd themes/quire-starter-theme && webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --minify --config config.yml,config/site.yml -d /publications/cva10/ -b /publications/cva10/"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
