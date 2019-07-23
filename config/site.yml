@@ -9,5 +9,5 @@
 #
 # If you are using the Quire commands, this will happen automatically.
 
-baseURL: "https://www.getty.edu/publications/cva10/"
-canonifyURLs: true 
+baseURL: ""
+relativeURLs: true

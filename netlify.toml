@@ -1,6 +1,6 @@
 [build]
 publish = "site"
-command = "npm run build"
+command = "npm run build:production"
 
 [context.production.environment]
 HUGO_VERSION = "0.48"
@@ -8,7 +8,7 @@ HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
 [context.split1]
-command = "npm run build"
+command = "npm run build:preview"
 
 [context.split1.environment]
 HUGO_VERSION = "0.48"
@@ -16,13 +16,13 @@ HUGO_ENV = "production"
 
 [context.deploy-preview]
 publish = "site"
-command = "npm run build"
+command = "npm run build:preview"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.48"
 
 [context.branch-deploy]
-command = "npm run build"
+command = "npm run build:preview"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.48"
