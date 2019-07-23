@@ -15,6 +15,7 @@ HUGO_VERSION = "0.48"
 HUGO_ENV = "production"
 
 [context.deploy-preview]
+publish = "publications/cva10/"
 command = "npm run build"
 
 [context.deploy-preview.environment]
