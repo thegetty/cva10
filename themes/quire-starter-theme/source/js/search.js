@@ -7,7 +7,6 @@ class Search {
   }
 
   buildIndex(data) {
-    console.log(data)
     return lunr(function () {
       this.field('title', {
         boost: 100
