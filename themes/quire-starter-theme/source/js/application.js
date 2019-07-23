@@ -20,11 +20,7 @@ import "velocity-animate";
 import "./soundcloud-api";
 
 // Modules (feel free to define your own and import here)
-import {
-  preloadImages,
-  stopVideo,
-  toggleFullscreen
-} from "./helper";
+import { preloadImages, stopVideo, toggleFullscreen } from "./helper";
 import Search from "./search";
 import Navigation from "./navigation";
 import Popup from "./popup";
@@ -114,7 +110,7 @@ function sliderSetup() {
   );
 
   let slider = $(".quire-entry__image__group-container");
-  slider.each(function () {
+  slider.each(function() {
     let sliderImages = $(this).find("figure");
     sliderImages.each((i, v) => {
       if (sliderImages.length > 1) {
@@ -169,7 +165,6 @@ window["search"] = () => {
   function displayResults(results) {
     clearResults();
     results.forEach(result => {
-      // console.log(result)
       let clone = document.importNode(resultsTemplate["content"], true);
       let item = clone.querySelector(".js-search-results-item");
       let title = clone.querySelector(".js-search-results-item-title");
@@ -177,9 +172,9 @@ window["search"] = () => {
       let length = clone.querySelector(".js-search-results-item-length");
       let baseUrl =
         window.location.host.indexOf(`netlify`) === -1 &&
-        window.location.host.indexOf(`localhost`) === -1 ?
-        `/publications/cva10` :
-        ``;
+        window.location.host.indexOf(`localhost`) === -1
+          ? `/publications/cva10`
+          : ``;
       item.href = baseUrl + result.url;
       title.textContent = result.title;
       type.textContent = result.type;
@@ -333,7 +328,11 @@ function quickLinksSetup() {
       /#(.+)/,
       uri => uri.includes("tel:"),
       uri => uri.includes("mailto:"),
-      uri => uri.includes("#")
+      uri => uri.includes("#"),
+      uri => uri.includes(".zip"),
+      uri => uri.includes(".epub"),
+      uri => uri.includes(".pdf"),
+      uri => uri.includes(".mobi")
     ]
   });
 }
@@ -355,13 +354,13 @@ function setDate() {
   };
   let today = new Date();
   let formattedDate =
-    today.toLocaleDateString("en-US", options).indexOf("May") !== -1 ?
-    today.toLocaleDateString("en-US", options) :
-    [
-      today.toLocaleDateString("en-US", options).slice(0, 3),
-      ". ",
-      today.toLocaleDateString("en-US", options).slice(4)
-    ].join("");
+    today.toLocaleDateString("en-US", options).indexOf("May") !== -1
+      ? today.toLocaleDateString("en-US", options)
+      : [
+          today.toLocaleDateString("en-US", options).slice(0, 3),
+          ". ",
+          today.toLocaleDateString("en-US", options).slice(4)
+        ].join("");
   $date.empty();
   $date.text(formattedDate);
 }
@@ -437,18 +436,69 @@ function validateSize(map) {
 }
 
 /**
+ * @description
+ * find expandable class and look for aria-expanded
+ * https://github.com/gettypubs/quire/issues/152
+ * Cite button where users can select, tied to two config settings:
+ * citationPopupStyle - text for text only | icon for text and icon
+ * citationPopupLinkText which is whatever text you it to say
+ */
+function toggleCite() {
+  let expandables = document.querySelectorAll(".expandable [aria-expanded]");
+  for (let i = 0; i < expandables.length; i++) {
+    expandables[i].addEventListener("click", function() {
+      var expanded = this.getAttribute("aria-expanded");
+      if (expanded === "false") {
+        this.setAttribute("aria-expanded", "true");
+      } else {
+        this.setAttribute("aria-expanded", "false");
+      }
+      var content = this.parentNode.querySelector("span");
+      if (content) {
+        content.getAttribute("hidden");
+        if (typeof content.getAttribute("hidden") === "string") {
+          content.removeAttribute("hidden");
+        } else {
+          content.setAttribute("hidden", "hidden");
+        }
+      }
+    });
+  }
+  document.addEventListener("click", function(event) {
+    let content = event.target.parentNode;
+    if (
+      content.classList.contains("quire-citation") ||
+      content.classList.contains("quire-citation__content")
+    ) {
+      // do nothing
+    } else {
+      // find all Buttons/Cites
+      let citeButtons = document.querySelectorAll(".quire-citation button");
+      let citesContents = document.querySelectorAll(".quire-citation__content");
+      // hide all buttons
+      for (let i = 0; i < citesContents.length; i++) {
+        citeButtons[i].setAttribute("aria-expanded", "false");
+        citesContents[i].setAttribute("hidden", "hidden");
+      }
+    }
+  });
+}
+
+/**
  * pageSetup
  * @description This function is called after each smoothState reload.
  * Initialize any jquery plugins or set up page UI elements here.
  */
 function pageSetup() {
   setDate();
-  // quickLinksSetup();
+  quickLinksSetup();
   activeMenuPage();
   sliderSetup();
   navigationSetup();
   popupSetup(figureModal);
+  toggleCite();
   // smoothScroll();
+
   // Wire up event listeners here, so we can pass in the maps array
   const prev = document.getElementById("prev-image");
   const next = document.getElementById("next-image");
