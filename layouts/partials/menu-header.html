@@ -14,7 +14,7 @@
 
 <header class="quire-menu__header">
   {{ if ne .Kind "home" -}}
-  <a class="quire-menu__header__title-link" href='{{ $.Scratch.Get "homepage-link" }}' rel="home">
+  <a class="quire-menu__header__title-link" href='{{ $.Scratch.Get "homepage-link" | relURL }}' rel="home">
   {{- end }}
   <h4 class="quire-menu__header__title">
     <span class="visually-hidden">Site Title: </span>
