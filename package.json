@@ -4,8 +4,12 @@
   "description": "scripts to run webpack to build js & css",
   "private": true,
   "scripts": {
+<<<<<<< HEAD
     "build:preview": "cd themes/quire-starter-theme && webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --minify --config config.yml,config/site.yml",
     "build:production": "cd themes/quire-starter-theme && webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --config config.yml,config/site.yml -b https://www.getty.edu/publications/cva10/"
+=======
+    "build": "cd themes/quire-starter-theme && webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --minify --config config.yml,config/site.yml"
+>>>>>>> 15b7d5390a330240548abcbfcb57376f56a020da
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
