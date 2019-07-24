@@ -467,10 +467,10 @@
         </div>
 
         {{ if eq .Prev.Section .Section }}
-        <a href="{{ .Prev.Permalink }}" rel="prev" class="simple-nav previous">◀</a>
+        <a href="{{ .Prev.Permalink | relURL }}" rel="prev" class="simple-nav previous">◀</a>
         {{ end }}
         {{ if eq .Next.Section .Section }}
-        <a href="{{ .Next.Permalink }}" rel="next" class="simple-nav next">▶</a>
+        <a href="{{ .Next.Permalink | relURL }}" rel="next" class="simple-nav next">▶</a>
         {{ end }}
 
     </div>
