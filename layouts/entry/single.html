@@ -378,7 +378,7 @@ THEY'RE INSTEAD INCLUDED AS PLATES, SIMILAR TO THE PDF TREATMENT
       </div>
   {{ end }}
   <div class="quire-image-counter-download-container wtf">
-    {{ if eq .figure.download true }}
+    {{ if eq .figure.figure.download true }}
     <a href="{{ .imgPath | relURL }}" target="_blank" class="remove-from-epub quire-image-control quire-image-control--download" title="Download image" download>
       {{- partial "icon.html" (dict "type" "download" "description" "Download image") -}}
     </a>
