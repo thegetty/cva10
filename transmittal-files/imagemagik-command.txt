@@ -1,1 +1,0 @@
-convert /Users/galbers/Downloads/final-images -quality 60% -resize 1800x1800> -set filename:name "%t" GitHub/heritagemanagement/static/img/figures/%[filename:name].jpg
