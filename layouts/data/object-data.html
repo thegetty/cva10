@@ -1,0 +1,44 @@
+{{/* Entry tombstone data */}}
+
+{{- range $.Site.Data.objects.object_display_order -}}
+  {{- $.Scratch.Add "keys" (slice .) -}}
+  {{ . }},
+{{- end }}
+
+{{ range $.Site.Data.objects.object_list -}}
+  {{- range $key, $value := . -}}
+    {{- if in ($.Scratch.Get "keys") $key -}}
+      "{{ $value }}", 
+    {{- end -}}
+  {{ end }}
+{{ end }}
+
+
+
+{{ range $.Site.Data.objects.object_list -}}
+  {{- $.Scratch.Add "object" (slice .) -}}
+
+{{ range ($.Scratch.Get "keys") }}
+  
+  {{- $.Scratch.Add "key" . -}}
+  {{ $.Scratch.Get "key" }}
+  
+  {{ range ($.Scratch.Get "object") }}
+  {{ $.Scratch.Get "object" }}
+  
+    {{ if eq ($.Scratch.Get "key") . }}
+      {{ . }},
+    {{ else }}
+      ,
+    {{ end }}
+  
+  {{ end }}
+  {{ $.Scratch.Delete "object" }}
+  
+  
+{{ end }}
+{{ $.Scratch.Delete "key" }}
+
+{{ end }}
+
+
