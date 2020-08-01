@@ -41,8 +41,9 @@ Any revisions or corrections made to this publication after the first edition da
   - [PDF (9.2 MB)](/downloads/Tsiafakis_CVA10.pdf)
   - [EPUB (14.8 MB)](/downloads/Tsiafakis_CVA10.epub)
   - [MOBI/Kindle (36.7 MB)](/downloads/Tsiafakis_CVA10.mobi)
+  - [Hardcover](https://shop.getty.edu/products/corpus-vasorum-antiquorum-fascicule-10-athenian-red-figure-column-volute-kraters-978-1606066034)
   - [JPEG Images (39.8 MB)](/downloads/Tsiafakis_CVA10_Images.zip)
-
+  
 ## Copyright
 
 © 2019 J. Paul Getty Trust

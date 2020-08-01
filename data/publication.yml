@@ -94,6 +94,11 @@ resource_link:
     link_relation: alternate
     url: /downloads/Tsiafakis_CVA10.mobi
   - type: other-format
+    name: Hardcover
+    media_type: print
+    link_relation: alternate
+    url: https://shop.getty.edu/products/corpus-vasorum-antiquorum-fascicule-10-athenian-red-figure-column-volute-kraters-978-1606066034
+  - type: other-format
     name: JPEG Images (39.8 MB)
     media_type: application/zip
     link_relation: alternate
