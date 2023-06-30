@@ -16,7 +16,7 @@ publishDir: site
 
 footnoteReturnLinkContents: "↩"
 metaDataFormat: "yaml"
-googleAnalytics: "UA-8087223-1"
+# googleAnalytics: "UA-8087223-1"
 
 pluralizeListTitles: true
 disableKinds:
@@ -50,3 +50,4 @@ params:
   frontmatterPageStart: 0
   bodyPageStart: 100
   backmatterPageStart: 300
+  GoogleAnalytics4: GTM-NRDC63K
